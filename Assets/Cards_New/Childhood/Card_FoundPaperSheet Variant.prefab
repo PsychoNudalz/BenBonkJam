@@ -33,7 +33,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Name
-      value: Card_FoundPaperSheet
+      value: Card_FoundPaperSheet Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_IsActive
@@ -114,6 +114,6 @@ PrefabInstance:
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: sequenceCardsHeads.Array.data[0]
       value: 
-      objectReference: {fileID: 2236561231605346268, guid: 48d1afbe9f8882b408500d829ec0d431, type: 3}
+      objectReference: {fileID: 6357337028064929874, guid: 6427a6f0aec286342ab60790be3c00e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}

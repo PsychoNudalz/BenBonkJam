@@ -102,7 +102,7 @@ public class CardEventManager : MonoBehaviour
         }
         if (i <= 0)
         {
-            Debug.LogError("Failed to pick random card");
+            Debug.LogWarning("Failed to pick random card");
             return null;
         }
         cardCounter++;
@@ -153,8 +153,17 @@ public class CardEventManager : MonoBehaviour
 
     }
 
-    void PlayCard(float[] values, List<Card> sequence, List<Card> removeSequence, List<StatusEnum> AddStatus, List<StatusEnum> RemoveStatus)
+    void PlayCard(float[] values, List<Card> sequence, List<Card> removeSequence, List<StatusEnum> AddStatus, List<StatusEnum> RemoveStatus, List<StatusEnum> requiredStatus)
     {
+        foreach(StatusEnum se in requiredStatus)
+        {
+            if (!playerScript.status.currentstatus.Contains(se))
+            {
+                return;
+            }
+        }
+
+
         playerScript.heal(values[0]);
         playerScript.GainBux(values[1]);
         playerScript.GainMood(values[2]);
@@ -191,12 +200,12 @@ public class CardEventManager : MonoBehaviour
     public void Play_Heads()
     {
         print("Player Heads");
-        PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads);
+        PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads,currentCard.RequoredStatusHeads);
     }
     public void Play_Tails()
     {
         print("Player Tails");
-        PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.RemoveSequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails);
+        PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.RemoveSequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails, currentCard.RequoredStatusTails);
     }
 
     void UpdatePlayerStatsUI()

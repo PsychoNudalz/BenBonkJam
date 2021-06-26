@@ -180,7 +180,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Description
+  m_text: 'Description
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
   m_sharedMaterial: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
@@ -350,9 +352,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tails
-
-    Description'
+  m_text: Tails
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
   m_sharedMaterial: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.35
+  m_fontSize: 5
   m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -524,7 +524,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Heads
 
-    Description'
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
   m_sharedMaterial: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.35
+  m_fontSize: 5
   m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -651,12 +651,14 @@ MonoBehaviour:
   moodHeads: 0
   buxHeads: 0
   sequenceCardsHeads: []
+  removeSequenceCardsHeads: []
   addStatusHeads: 
   removeStatusHeads: 
   healthTails: 0
   moodTails: 0
   buxTails: 0
   sequenceCardsTails: []
+  removeSequenceCardsTails: []
   addStatusTails: 
   removeStatusTails: 
   heads: 0

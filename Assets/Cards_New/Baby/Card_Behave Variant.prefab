@@ -18,13 +18,17 @@ MonoBehaviour:
   healthHeads: 0
   moodHeads: -20
   buxHeads: 0
+  requoredStatusHeads: 
   sequenceCardsHeads: []
+  removeSequenceCardsHeads: []
   addStatusHeads: 
   removeStatusHeads: 
   healthTails: 5
   moodTails: 0
   buxTails: 0
+  requoredStatusTails: 
   sequenceCardsTails: []
+  removeSequenceCardsTails: []
   addStatusTails: 
   removeStatusTails: 
   heads: 0
@@ -62,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Name
-      value: Card_Behave
+      value: Card_Behave Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_IsActive
@@ -131,6 +135,10 @@ PrefabInstance:
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardDescription
       value: Behave Baby
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: requoredStatusHeads.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}

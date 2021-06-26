@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     
     public Status status;
     public float StartingHealth = 100.0f;
-    public float StartingBux = 0f;
+    public float StartingBux = 20f;
 
     public float StartingMood = 50f;
     
@@ -67,8 +67,8 @@ public class Player : MonoBehaviour
     {
         get { return _Bux;}
         set {
-            // Make the cash in the range 0f to 1000f
-            _Bux = Mathf.Clamp(value, 0f, 1000f);
+            // Make the cash in the range 0f to 100f
+            _Bux = Mathf.Clamp(value, 0f, 100f);
             if(BuxPoint <= 0f) 
             {
                 //No more money!
@@ -123,7 +123,7 @@ public class Player : MonoBehaviour
         return status.HasSatus(statusEnum);
     }
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         HealthPoints = StartingHealth;
         BuxPoint = StartingBux;
