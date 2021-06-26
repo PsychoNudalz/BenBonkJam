@@ -1,0 +1,33 @@
+{
+    "name": "PlayerInputs",
+    "maps": [
+        {
+            "name": "PlayerInput",
+            "id": "7d689b76-56d6-4668-b001-2cb13ffa9e88",
+            "actions": [
+                {
+                    "name": "Flip",
+                    "type": "Button",
+                    "id": "17c855ce-75d7-4c73-b545-14842b359135",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8c645532-7a70-4783-b962-9eae3c995871",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
