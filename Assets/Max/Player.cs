@@ -108,6 +108,20 @@ public class Player : MonoBehaviour
         MoodPoint -= Amount;
     }
 
+    public void AddStatus(StatusEnum statusEnum)
+    {
+        status.AddStatus(statusEnum);
+    }
+
+    public void RemoveStatus(StatusEnum statusEnum)
+    {
+        status.RemoveStatus(statusEnum);
+    }
+
+    public bool HasSatus(StatusEnum statusEnum)
+    {
+        return status.HasSatus(statusEnum);
+    }
     // Start is called before the first frame update
     void Start()
     {

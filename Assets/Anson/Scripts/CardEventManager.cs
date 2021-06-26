@@ -12,6 +12,8 @@ public class CardEventManager : MonoBehaviour
     [SerializeField] List<Card> cardBuffer;
     [SerializeField] Player playerScript;
     [SerializeField] int randomPickTry = 50;
+    [SerializeField] int cardCounter = 0;
+    [SerializeField] int cardPerAge = 5;
     [Header("SpawnPoint")]
     [SerializeField] Transform cardSpawnPoint;
     [Header("Other Components")]
@@ -35,6 +37,10 @@ public class CardEventManager : MonoBehaviour
 
     public void LoadNewCard()
     {
+        if (cardCounter >= cardPerAge)
+        {
+            AgePlayer();
+        }
         Card newCard;
         if (cardBuffer.Count > 0)
         {
@@ -43,11 +49,27 @@ public class CardEventManager : MonoBehaviour
         }
         else
         {
-        newCard= NewRandomCard();
+            newCard = NewRandomCard();
+            if (!newCard)
+            {
+                if (AgePlayer())
+                {
+                LoadNewCard();
 
+                }
+                return;
+            }
         }
-        SetNewCard(newCard);
 
+        SetNewCard(newCard);
+        cardCounter++;
+    }
+
+    private bool AgePlayer()
+    {
+        playerScript.Older();
+        cardCounter = 0;
+        return !playerScript.age.Equals(AgeEnum.DEATH);
     }
 
     private Card NewRandomCard()
@@ -78,7 +100,7 @@ public class CardEventManager : MonoBehaviour
         {
             return null;
         }
-        return tempCards[Random.Range(0, tempCards.Count)% tempCards.Count];
+        return tempCards[Random.Range(0, tempCards.Count) % tempCards.Count];
     }
 
 
@@ -98,11 +120,12 @@ public class CardEventManager : MonoBehaviour
             previousCard = currentCard;
             Destroy(previousCard.gameObject);
         }
-        currentCard = Instantiate(newCard.gameObject,cardSpawnPoint.position,Quaternion.identity).GetComponent<Card>();
+        tempCards.Remove(newCard);
+        currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity).GetComponent<Card>();
 
     }
 
-    void PlayCard(float[] values, List<Card> sequence)
+    void PlayCard(float[] values, List<Card> sequence, List<StatusEnum> AddStatus, List<StatusEnum> RemoveStatus)
     {
         playerScript.heal(values[0]);
         playerScript.GainBux(values[1]);
@@ -112,6 +135,20 @@ public class CardEventManager : MonoBehaviour
             WipeBuffer();
             cardBuffer.AddRange(sequence);
         }
+        if (AddStatus.Count > 0)
+        {
+            foreach (StatusEnum addS in AddStatus)
+            {
+                playerScript.AddStatus(addS);
+            }
+        }
+        if (RemoveStatus.Count > 0)
+        {
+            foreach (StatusEnum remS in RemoveStatus)
+            {
+                playerScript.RemoveStatus(remS);
+            }
+        }
         UpdatePlayerStatsUI();
         LoadNewCard();
 
@@ -120,12 +157,12 @@ public class CardEventManager : MonoBehaviour
     public void Play_Heads()
     {
         print("Player Heads");
-        PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads);
+        PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads);
     }
     public void Play_Tails()
     {
         print("Player Tails");
-        PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails);
+        PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails);
     }
 
     void UpdatePlayerStatsUI()
@@ -135,7 +172,7 @@ public class CardEventManager : MonoBehaviour
 
     void RemoveFromBuffer(List<Card> cards)
     {
-        foreach(Card c in cards)
+        foreach (Card c in cards)
         {
             if (cardBuffer.Contains(c))
             {

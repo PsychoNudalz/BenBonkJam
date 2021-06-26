@@ -15,11 +15,15 @@ public class Card : MonoBehaviour
     public float moodHeads;
     public float buxHeads;
     [SerializeField] List<Card> sequenceCardsHeads;
+    [SerializeField] List<StatusEnum> addStatusHeads;
+    [SerializeField] List<StatusEnum> removeStatusHeads;
     [Header("Tails")]
     public float healthTails;
     public float moodTails;
     public float buxTails;
     [SerializeField] List<Card> sequenceCardsTails;
+    [SerializeField] List<StatusEnum> addStatusTails;
+    [SerializeField] List<StatusEnum> removeStatusTails;
 
     [Space]
     public bool heads;
@@ -29,10 +33,14 @@ public class Card : MonoBehaviour
     [Header("Condition")]
     public bool useCondition = false;
     public List<AgeEnum> ageEnum;
-    public List<cardStatus> cardStatuses;
+    public List<StatusEnum> cardStatuses;
 
     public List<Card> SequenceCardsTails { get => sequenceCardsTails;}
     public List<Card> SequenceCardsHeads { get => sequenceCardsHeads;}
+    public List<StatusEnum> AddStatusHeads { get => addStatusHeads; }
+    public List<StatusEnum> RemoveStatusHeads { get => removeStatusHeads;}
+    public List<StatusEnum> AddStatusTails { get => addStatusTails; }
+    public List<StatusEnum> RemoveStatusTails { get => removeStatusTails;}
 
     public float[] GetHeadsResults()
     {

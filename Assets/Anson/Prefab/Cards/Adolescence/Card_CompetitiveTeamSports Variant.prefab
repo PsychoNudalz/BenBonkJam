@@ -77,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2826712514635924023, guid: 5b692e98680482441913fb6c885ac06d, type: 3}
       propertyPath: m_Name
-      value: Card_CompetitiveTeamSports
+      value: Card_CompetitiveTeamSports Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2826712514693448433, guid: 5b692e98680482441913fb6c885ac06d, type: 3}
       propertyPath: m_text
