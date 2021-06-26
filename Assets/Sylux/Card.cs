@@ -10,14 +10,16 @@ public class Card : MonoBehaviour
     public int cardID;
 
     public string cardDescription;
-
+    [Header("Heads")]
     public float healthHeads;
     public float moodHeads;
     public float buxHeads;
+    [Header("Tails")]
     public float healthTails;
     public float moodTails;
     public float buxTails;
 
+    [Space]
     public bool heads;
     public bool tails;
     public bool cardMustBePlayed;
