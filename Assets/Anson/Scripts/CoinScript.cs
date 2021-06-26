@@ -6,8 +6,8 @@ using TMPro;
 
 public enum CoinSide
 {
-    Heads,
-    Tails
+    HEADS,
+    TAILS
 }
 public class CoinScript : MonoBehaviour
 {
@@ -29,11 +29,11 @@ public class CoinScript : MonoBehaviour
     {
         if (Vector2.Angle(transform.up, Vector2.up)<90)
         {
-            coinSideText.text = CoinSide.Heads.ToString();
+            coinSideText.text = CoinSide.HEADS.ToString();
         }
         else
         {
-            coinSideText.text = CoinSide.Tails.ToString();
+            coinSideText.text = CoinSide.TAILS.ToString();
 
         }
     }
