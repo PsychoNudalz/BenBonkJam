@@ -84,7 +84,7 @@ public class CardEventManager : MonoBehaviour
 
     bool CanPlay(Card card, Player playerStats)
     {
-        if (!card.ageEnum.Contains(playerScript.ageEnum))
+        if (!card.ageEnum.Contains(playerScript.age))
         {
             return false;
         }
