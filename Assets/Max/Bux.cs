@@ -18,7 +18,15 @@ public class Bux : MonoBehaviour
             }
         }
     }
-    private float _Bux = 0f;
+    private float _Bux = 1000f;
+
+    public void GainBux(float Amount) {
+        BuxPoint += Amount;
+    }
+
+    public void LoseBux(float Amount) {
+        BuxPoint -= Amount;
+    }
 
     // Start is called before the first frame update
     void Start()

@@ -17,9 +17,7 @@ public class Health : MonoBehaviour
                 //dead
             }
         }
-    }
-
-    private float _HealthPoints = 100f;
+    }private float _HealthPoints = 100f;
 
     public void heal(float Amount) {
         HealthPoints += Amount;
