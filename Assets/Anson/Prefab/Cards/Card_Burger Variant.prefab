@@ -81,6 +81,14 @@ PrefabInstance:
       propertyPath: cardDescription
       value: Eat Burger
       objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageEnum.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageEnum.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Sprite
       value: 

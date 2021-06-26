@@ -26,7 +26,8 @@ public class Card : MonoBehaviour
 
     [Header("Condition")]
     public bool useCondition = false;
-    public AgeEnum ageEnum;
+    public List<AgeEnum> ageEnum;
+    public List<cardStatus> cardStatuses;
 
 
 
