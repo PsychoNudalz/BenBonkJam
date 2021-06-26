@@ -41,10 +41,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9028641388262142668, guid: 269cbcba5f258ec40a1e5074dee9d468, type: 3}
       propertyPath: cardStatuses.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9028641388262142668, guid: 269cbcba5f258ec40a1e5074dee9d468, type: 3}
       propertyPath: cardStatuses.Array.data[0]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028641388262142668, guid: 269cbcba5f258ec40a1e5074dee9d468, type: 3}
+      propertyPath: addStatusTails.Array.data[0]
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9028641388262142669, guid: 269cbcba5f258ec40a1e5074dee9d468, type: 3}
@@ -93,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9028641388262142670, guid: 269cbcba5f258ec40a1e5074dee9d468, type: 3}
       propertyPath: m_Name
-      value: Card_Injury
+      value: Card_Injury Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 269cbcba5f258ec40a1e5074dee9d468, type: 3}

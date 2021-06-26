@@ -50,6 +50,10 @@ PrefabInstance:
       propertyPath: cardStatuses.Array.data[0]
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8784001855963863002, guid: 30e3102bcdfb089429b6dc5d9f7da7a3, type: 3}
+      propertyPath: sequenceCardsHeads.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8784001855963863003, guid: 30e3102bcdfb089429b6dc5d9f7da7a3, type: 3}
       propertyPath: m_RootOrder
       value: 0

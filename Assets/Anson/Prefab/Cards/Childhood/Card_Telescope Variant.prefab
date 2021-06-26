@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2923517241229032760, guid: 8a3193f087f1bf449885bff5047d6f54, type: 3}
       propertyPath: m_Name
-      value: Card_Telescope
+      value: Card_Telescope Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2923517241229032762, guid: 8a3193f087f1bf449885bff5047d6f54, type: 3}
       propertyPath: cardDescription
@@ -20,7 +20,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2923517241229032762, guid: 8a3193f087f1bf449885bff5047d6f54, type: 3}
+      propertyPath: addStatusTails.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923517241229032762, guid: 8a3193f087f1bf449885bff5047d6f54, type: 3}
       propertyPath: cardStatuses.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923517241229032762, guid: 8a3193f087f1bf449885bff5047d6f54, type: 3}
+      propertyPath: addStatusTails.Array.data[0]
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2923517241229032763, guid: 8a3193f087f1bf449885bff5047d6f54, type: 3}

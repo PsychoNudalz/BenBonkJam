@@ -15,6 +15,22 @@ PrefabInstance:
       propertyPath: moodHeads
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4449598057167844826, guid: c3983d586b3503444b76818d8cc7b211, type: 3}
+      propertyPath: addStatusHeads.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449598057167844826, guid: c3983d586b3503444b76818d8cc7b211, type: 3}
+      propertyPath: addStatusTails.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449598057167844826, guid: c3983d586b3503444b76818d8cc7b211, type: 3}
+      propertyPath: addStatusHeads.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449598057167844826, guid: c3983d586b3503444b76818d8cc7b211, type: 3}
+      propertyPath: addStatusTails.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4449598057167844827, guid: c3983d586b3503444b76818d8cc7b211, type: 3}
       propertyPath: m_RootOrder
       value: 0

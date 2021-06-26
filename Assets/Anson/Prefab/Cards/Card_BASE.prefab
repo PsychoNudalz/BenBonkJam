@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 3946193657962473602}
   - component: {fileID: 3946193657962473603}
   m_Layer: 0
-  m_Name: Card
+  m_Name: Card_BASE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -651,10 +651,14 @@ MonoBehaviour:
   moodHeads: 0
   buxHeads: 0
   sequenceCardsHeads: []
+  addStatusHeads: 
+  removeStatusHeads: 
   healthTails: 0
   moodTails: 1
   buxTails: 0
   sequenceCardsTails: []
+  addStatusTails: 
+  removeStatusTails: 
   heads: 0
   tails: 0
   cardMustBePlayed: 0

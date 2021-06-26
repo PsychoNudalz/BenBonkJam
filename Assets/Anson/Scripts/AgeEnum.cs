@@ -6,7 +6,7 @@ public enum AgeEnum
 {
     BABY, 
     CHILDHOOD, 
-    ADOLESENSE, 
+    ADOLESENCE, 
     ADULT,
     OLDAGE, 
     DEATH

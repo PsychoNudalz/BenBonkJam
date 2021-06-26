@@ -42,12 +42,12 @@ public class CardEventManager : MonoBehaviour
         {
             AgePlayer();
         }
-        Card newCard;
+        Card newCard = null;
         if (cardBuffer.Count > 0)
         {
             newCard = NextBufferCard();
         }
-        else
+        if (newCard == null)
         {
             newCard = NewRandomCard();
             if (!newCard)
@@ -74,8 +74,16 @@ public class CardEventManager : MonoBehaviour
     }
     private Card NextBufferCard()
     {
-        Card newCard = cardBuffer[0];
-        cardBuffer.RemoveAt(0);
+        Card newCard = null;
+        while (!CanPlay(newCard, playerScript) && cardBuffer.Count > 0)
+        {
+            newCard = cardBuffer[0];
+            cardBuffer.RemoveAt(0);
+        }
+        if (!CanPlay(newCard, playerScript) && cardBuffer.Count == 0)
+        {
+            newCard = null;
+        }
         return newCard;
     }
 
@@ -113,6 +121,10 @@ public class CardEventManager : MonoBehaviour
 
     bool CanPlay(Card card, Player playerStats)
     {
+        if (card == null)
+        {
+            return false;
+        }
         if (!card.ageEnum.Contains(playerScript.age))
         {
             return false;

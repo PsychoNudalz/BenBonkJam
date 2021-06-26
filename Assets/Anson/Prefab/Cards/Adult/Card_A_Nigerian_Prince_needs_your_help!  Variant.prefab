@@ -38,6 +38,10 @@ PrefabInstance:
       propertyPath: cardDescription
       value: A Nigerian Prince needs your help!
       objectReference: {fileID: 0}
+    - target: {fileID: 8784001855963863002, guid: 30e3102bcdfb089429b6dc5d9f7da7a3, type: 3}
+      propertyPath: sequenceCardsHeads.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8784001855963863003, guid: 30e3102bcdfb089429b6dc5d9f7da7a3, type: 3}
       propertyPath: m_RootOrder
       value: 0

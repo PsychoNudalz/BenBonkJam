@@ -68,6 +68,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4762985374072948292, guid: 30e5937977aed79479e438dfb207e7e2, type: 3}
+      propertyPath: addStatusHeads.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4762985374072948292, guid: 30e5937977aed79479e438dfb207e7e2, type: 3}
       propertyPath: cardStatuses.Array.data[0]
       value: 5
       objectReference: {fileID: 0}
