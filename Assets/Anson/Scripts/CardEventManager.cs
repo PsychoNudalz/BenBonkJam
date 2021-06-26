@@ -9,16 +9,28 @@ public class CardEventManager : MonoBehaviour
     [Header("Manager")]
     [SerializeField] Card currentCard;
     [SerializeField] Card previousCard;
-    [SerializeField] Stack<Card> cardBuffer;
+    [SerializeField] List<Card> cardBuffer;
     [SerializeField] Player playerScript;
     [SerializeField] int randomPickTry = 50;
     [Header("SpawnPoint")]
     [SerializeField] Transform cardSpawnPoint;
+    [Header("Other Components")]
+    [SerializeField] UIHandler uIHandler;
 
     private void Start()
     {
         tempCards = allCards;
+        if (!playerScript)
+        {
+            playerScript = FindObjectOfType<Player>();
+        }
+        if (!uIHandler)
+        {
+            uIHandler = FindObjectOfType<UIHandler>();
+        }
 
+        UpdatePlayerStatsUI();
+        LoadNewCard();
     }
 
     public void LoadNewCard()
@@ -26,7 +38,8 @@ public class CardEventManager : MonoBehaviour
         Card newCard;
         if (cardBuffer.Count > 0)
         {
-            newCard = cardBuffer.Pop();
+            newCard = cardBuffer[0];
+            cardBuffer.RemoveAt(0);
         }
         else
         {
@@ -96,19 +109,25 @@ public class CardEventManager : MonoBehaviour
         playerScript.GainMood(values[2]);
         if (sequence.Count > 0)
         {
-            foreach(Card c in sequence)
-            {
-                cardBuffer.Push(c);
-            }
+            cardBuffer.AddRange(sequence);
         }
+        UpdatePlayerStatsUI();
+        LoadNewCard();
+
     }
 
-    void Play_Heads()
+    public void Play_Heads()
     {
         PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads);
     }
-    void Play_Tails()
+    public void Play_Tails()
     {
         PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails);
+    }
+
+    void UpdatePlayerStatsUI()
+    {
+        uIHandler.UpdateStats(playerScript.HealthPoints, playerScript.BuxPoint, playerScript.MoodPoint);
+
     }
 }
