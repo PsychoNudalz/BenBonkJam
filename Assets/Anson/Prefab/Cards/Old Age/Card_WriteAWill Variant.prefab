@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4778124030349655743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2190614342583031584, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_text
+      value: Time to write a will
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568365, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_Name
+      value: Card_WriteAWill
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568366, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342907568367, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: cardDescription
+      value: Write a Will
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342986326059, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_text
+      value: Donate to charity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614342986326059, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_fontSize
+      value: 4.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614343005657251, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_text
+      value: Give to children [Requires Children]
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190614343005657251, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
+      propertyPath: m_fontSize
+      value: 3.15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
