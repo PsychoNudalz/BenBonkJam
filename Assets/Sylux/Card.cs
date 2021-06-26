@@ -24,6 +24,9 @@ public class Card : MonoBehaviour
     public bool tails;
     public bool cardMustBePlayed;
 
+    [Header("Condition")]
+    public bool useCondition = false;
+    public AgeEnum ageEnum;
     public enum cardStatus
     {
         DemonicKinship,
@@ -43,15 +46,7 @@ public class Card : MonoBehaviour
         Divorced,
     }
 
-    public enum cardType
-    {
-        Baby,
-        Childhood,
-        Adolescence,
-        Adult,
-        OldAge,
-        Death,
-    }
+
 
     float[] GetHeadsResults()
     {
