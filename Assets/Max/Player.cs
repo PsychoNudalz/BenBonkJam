@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public AgeEnum ageEnum;
     public float StartingHealth = 100.0f;
     public float StartingBux = 0f;
 
