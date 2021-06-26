@@ -18,7 +18,15 @@ public class Mood : MonoBehaviour
             }
         }
     }
-    private float _Mood = 50f;
+    private float _Mood = 100f;
+
+    public void GainMood(float Amount) {
+        MoodPoint += Amount;
+    }
+
+    public void LoseMood(float Amount) {
+        MoodPoint -= Amount;
+    }
 
     // Start is called before the first frame update
     void Start()
