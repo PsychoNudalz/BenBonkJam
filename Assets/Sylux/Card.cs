@@ -7,6 +7,8 @@ public class Card : MonoBehaviour
 {
     public Sprite cardSprite;
 
+    public int cardID;
+
     public string cardDescription;
 
     public float healthHeads;
@@ -19,7 +21,25 @@ public class Card : MonoBehaviour
     public bool heads;
     public bool tails;
     public bool cardMustBePlayed;
-    
+
+    public enum cardStatus
+    {
+        DemonicKinship,
+        Married,
+        AngelicBoon,
+        Pet,
+        Criminal,
+        Gambler,
+        Addict,
+        Spiritual,
+        Sick,
+        Paranormal,
+        EducatedI,
+        EducatedII,
+        Trained,
+        Parenthood,
+        Divorced,
+    }
 
     public enum cardType
     {
@@ -30,9 +50,6 @@ public class Card : MonoBehaviour
         OldAge,
         Death,
     }
-
-    public int cardID;
-
 
     float[] GetHeadsResults()
     {
