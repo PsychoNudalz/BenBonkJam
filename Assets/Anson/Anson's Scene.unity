@@ -339,6 +339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card_BASE
       objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -385,107 +389,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
---- !u!1001 &601316550
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_text
-      value: You have fallen and can't get up
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_text
-      value: Phone nephew for help
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_fontSize
-      value: 4.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_text
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_fontSize
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_Name
-      value: Card_YouHaveFallen
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: moodTails
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: healthHeads
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: cardDescription
-      value: You have fallen
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: ageEnum.Array.data[0]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: addStatusHeads.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: addStatusHeads.Array.data[0]
-      value: 9
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
 --- !u!1 &1169507535
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,10 +431,7 @@ MonoBehaviour:
   - {fileID: 4969041634796929483, guid: 572b6246bd5f12244852710c20f8ae35, type: 3}
   - {fileID: 2826712514635924021, guid: 5b692e98680482441913fb6c885ac06d, type: 3}
   - {fileID: 6745655749177145250, guid: 48efd305a0a33514588c4b3e2b7bb005, type: 3}
-  - {fileID: 5179293020115909949, guid: 1c67926a61904c744ad297f8c519687a, type: 3}
-  - {fileID: 7040786198816805778, guid: e303b21cfdc046a418f4f69c663d84fb, type: 3}
   - {fileID: 2855952189127785016, guid: f5c6440b5331f4b42b4d27eb32265577, type: 3}
-  - {fileID: 8784001855963863002, guid: 30e3102bcdfb089429b6dc5d9f7da7a3, type: 3}
   - {fileID: 7279537460161866075, guid: 3581311adae22954dbdfe118bf51431f, type: 3}
   - {fileID: 1192956707689746985, guid: dc8f2161d682d944d992689fe7f7a4ff, type: 3}
   - {fileID: 4762985374072948292, guid: 30e5937977aed79479e438dfb207e7e2, type: 3}
@@ -543,9 +443,6 @@ MonoBehaviour:
   - {fileID: 2923517241229032762, guid: 8a3193f087f1bf449885bff5047d6f54, type: 3}
   - {fileID: 5714269764514501635, guid: b4b17ce221fd4a541b32715dad3b0422, type: 3}
   - {fileID: 2236561231605346268, guid: 48d1afbe9f8882b408500d829ec0d431, type: 3}
-  - {fileID: 2190614342907568367, guid: eeb3fb4ca0174ba4eb230b71fcadcff7, type: 3}
-  - {fileID: 6641101213118897744, guid: 4b51b4e335660544eaeb7089b6273256, type: 3}
-  - {fileID: 2877738470991204938, guid: f06c0291d1290ff4abf0cb94ba4bc1c4, type: 3}
   tempCards: []
   currentCard: {fileID: 0}
   previousCard: {fileID: 0}
