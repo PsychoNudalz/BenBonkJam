@@ -25,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6669833746085299096, guid: f5e57d483252c7c479f87a59beb62306, type: 3}
       propertyPath: m_Name
-      value: Card_EducationChoices2
+      value: Card_EducationChoices2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6669833746085299098, guid: f5e57d483252c7c479f87a59beb62306, type: 3}
       propertyPath: moodHeads
-      value: -10
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6669833746085299098, guid: f5e57d483252c7c479f87a59beb62306, type: 3}
       propertyPath: cardDescription
-      value: Education Sequence 2
+      value: Need Money
       objectReference: {fileID: 0}
     - target: {fileID: 6669833746085299099, guid: f5e57d483252c7c479f87a59beb62306, type: 3}
       propertyPath: m_RootOrder
