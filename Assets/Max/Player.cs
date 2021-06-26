@@ -114,7 +114,7 @@ public class Player : MonoBehaviour
         HealthPoints = StartingHealth;
         BuxPoint = StartingBux;
         MoodPoint = StartingMood;
-        SetAge(0);
+        //SetAge(0);
     }
 
     // Update is called once per frame

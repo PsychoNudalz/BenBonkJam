@@ -109,6 +109,7 @@ public class CardEventManager : MonoBehaviour
         playerScript.GainMood(values[2]);
         if (sequence.Count > 0)
         {
+            WipeBuffer();
             cardBuffer.AddRange(sequence);
         }
         UpdatePlayerStatsUI();
@@ -118,16 +119,33 @@ public class CardEventManager : MonoBehaviour
 
     public void Play_Heads()
     {
+        print("Player Heads");
         PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads);
     }
     public void Play_Tails()
     {
+        print("Player Tails");
         PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails);
     }
 
     void UpdatePlayerStatsUI()
     {
         uIHandler.UpdateStats(playerScript.HealthPoints, playerScript.BuxPoint, playerScript.MoodPoint);
+    }
 
+    void RemoveFromBuffer(List<Card> cards)
+    {
+        foreach(Card c in cards)
+        {
+            if (cardBuffer.Contains(c))
+            {
+                cardBuffer.Remove(c);
+            }
+        }
+    }
+
+    void WipeBuffer()
+    {
+        cardBuffer = new List<Card>();
     }
 }
