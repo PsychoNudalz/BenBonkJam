@@ -15,6 +15,7 @@ public class Card : MonoBehaviour
     public float moodHeads;
     public float buxHeads;
     [SerializeField] List<Card> sequenceCardsHeads;
+    [SerializeField] List<Card> removeSequenceCardsHeads;
     [SerializeField] List<StatusEnum> addStatusHeads;
     [SerializeField] List<StatusEnum> removeStatusHeads;
     [Header("Tails")]
@@ -22,6 +23,7 @@ public class Card : MonoBehaviour
     public float moodTails;
     public float buxTails;
     [SerializeField] List<Card> sequenceCardsTails;
+    [SerializeField] List<Card> removeSequenceCardsTails;
     [SerializeField] List<StatusEnum> addStatusTails;
     [SerializeField] List<StatusEnum> removeStatusTails;
 
@@ -41,6 +43,8 @@ public class Card : MonoBehaviour
     public List<StatusEnum> RemoveStatusHeads { get => removeStatusHeads;}
     public List<StatusEnum> AddStatusTails { get => addStatusTails; }
     public List<StatusEnum> RemoveStatusTails { get => removeStatusTails;}
+    public List<Card> RemoveSequenceCardsHeads { get => removeSequenceCardsHeads; }
+    public List<Card> RemoveSequenceCardsTails { get => removeSequenceCardsTails; }
 
     public float[] GetHeadsResults()
     {

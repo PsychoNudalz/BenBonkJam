@@ -647,14 +647,14 @@ MonoBehaviour:
   cardSprite: {fileID: 0}
   cardID: 0
   cardDescription: this is a test card
-  healthHeads: 1
+  healthHeads: 0
   moodHeads: 0
   buxHeads: 0
   sequenceCardsHeads: []
   addStatusHeads: 
   removeStatusHeads: 
   healthTails: 0
-  moodTails: 1
+  moodTails: 0
   buxTails: 0
   sequenceCardsTails: []
   addStatusTails: 

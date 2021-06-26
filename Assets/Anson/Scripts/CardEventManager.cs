@@ -62,7 +62,6 @@ public class CardEventManager : MonoBehaviour
         }
 
         SetNewCard(newCard);
-        cardCounter++;
     }
 
 
@@ -106,6 +105,7 @@ public class CardEventManager : MonoBehaviour
             Debug.LogError("Failed to pick random card");
             return null;
         }
+        cardCounter++;
         return newCard;
     }
 
@@ -139,12 +139,13 @@ public class CardEventManager : MonoBehaviour
             previousCard = currentCard;
             Destroy(previousCard.gameObject);
         }
+        
         tempCards.Remove(newCard);
         currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity).GetComponent<Card>();
 
     }
 
-    void PlayCard(float[] values, List<Card> sequence, List<StatusEnum> AddStatus, List<StatusEnum> RemoveStatus)
+    void PlayCard(float[] values, List<Card> sequence, List<Card> removeSequence, List<StatusEnum> AddStatus, List<StatusEnum> RemoveStatus)
     {
         playerScript.heal(values[0]);
         playerScript.GainBux(values[1]);
@@ -154,6 +155,12 @@ public class CardEventManager : MonoBehaviour
             WipeBuffer();
             cardBuffer.AddRange(sequence);
         }
+
+        if (removeSequence.Count > 0)
+        {
+            RemoveFromBuffer(removeSequence);
+        }
+
         if (AddStatus.Count > 0)
         {
             foreach (StatusEnum addS in AddStatus)
@@ -176,12 +183,12 @@ public class CardEventManager : MonoBehaviour
     public void Play_Heads()
     {
         print("Player Heads");
-        PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads);
+        PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads);
     }
     public void Play_Tails()
     {
         print("Player Tails");
-        PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails);
+        PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.RemoveSequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails);
     }
 
     void UpdatePlayerStatsUI()
