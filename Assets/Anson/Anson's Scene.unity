@@ -419,30 +419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allCards:
-  - {fileID: 4218109042280290970, guid: c5e2c0ac860534f4ebc28fc510fc7552, type: 3}
-  - {fileID: 9028641388262142668, guid: 269cbcba5f258ec40a1e5074dee9d468, type: 3}
-  - {fileID: 6158880113529677900, guid: eec7d7ceb78ce674688410a78cf9de7c, type: 3}
-  - {fileID: 5974565766845499075, guid: ace5f99d27b8a7c4d8a032caad205c27, type: 3}
-  - {fileID: 6669833746085299098, guid: f5e57d483252c7c479f87a59beb62306, type: 3}
-  - {fileID: 4449598057167844826, guid: c3983d586b3503444b76818d8cc7b211, type: 3}
-  - {fileID: 1359836130620386839, guid: b91a97ea56a66074a92e29470c14f301, type: 3}
-  - {fileID: 7089603825940504091, guid: c8a9eaf840ec0f54aab07acfaf91842b, type: 3}
-  - {fileID: 4263845827315603508, guid: 32c1fdb86c096a8498cffb3d0db0e0bc, type: 3}
-  - {fileID: 4969041634796929483, guid: 572b6246bd5f12244852710c20f8ae35, type: 3}
-  - {fileID: 2826712514635924021, guid: 5b692e98680482441913fb6c885ac06d, type: 3}
-  - {fileID: 6745655749177145250, guid: 48efd305a0a33514588c4b3e2b7bb005, type: 3}
-  - {fileID: 2855952189127785016, guid: f5c6440b5331f4b42b4d27eb32265577, type: 3}
-  - {fileID: 7279537460161866075, guid: 3581311adae22954dbdfe118bf51431f, type: 3}
-  - {fileID: 1192956707689746985, guid: dc8f2161d682d944d992689fe7f7a4ff, type: 3}
-  - {fileID: 4762985374072948292, guid: 30e5937977aed79479e438dfb207e7e2, type: 3}
-  - {fileID: 6927619493991683507, guid: 58cfcd09eb8120245894169d2dc75c3c, type: 3}
-  - {fileID: 2392089042792455680, guid: 76576afb3abd55846ae3685619ce0ea1, type: 3}
-  - {fileID: 8006367593527951442, guid: b953814060d10b34ba4a117f89698587, type: 3}
-  - {fileID: 5707706936192149030, guid: 234c5eadfe379d94eb34a800962fc4ef, type: 3}
-  - {fileID: 593195145087125141, guid: b78beb3b25476f24f9c075b958805959, type: 3}
-  - {fileID: 2923517241229032762, guid: 8a3193f087f1bf449885bff5047d6f54, type: 3}
-  - {fileID: 5714269764514501635, guid: b4b17ce221fd4a541b32715dad3b0422, type: 3}
-  - {fileID: 2236561231605346268, guid: 48d1afbe9f8882b408500d829ec0d431, type: 3}
+  - {fileID: 9104859591870095200, guid: ba4b2ef95da766245829c3f39504ed6e, type: 3}
   tempCards: []
   currentCard: {fileID: 0}
   previousCard: {fileID: 0}
@@ -611,7 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60a73a20ebd44040a7b3bc68917f762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentstatus: 
+  currentstatus: 000000000a0000000b0000001100000012000000
 --- !u!1 &1936742513
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,67 +824,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ef972a95008a1847852ddfe2853961c, type: 3}
---- !u!1001 &1303101160646850144
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762209004678, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_Name
-      value: Card_JobSequence_Base
-      objectReference: {fileID: 0}
-    - target: {fileID: 7669844762303681719, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
 --- !u!1001 &5825788077026621502
 PrefabInstance:
   m_ObjectHideFlags: 0

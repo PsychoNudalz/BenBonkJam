@@ -54,7 +54,7 @@ public class CardEventManager : MonoBehaviour
             {
                 if (AgePlayer())
                 {
-                LoadNewCard();
+                    LoadNewCard();
 
                 }
                 return;
@@ -129,6 +129,14 @@ public class CardEventManager : MonoBehaviour
         {
             return false;
         }
+        foreach (StatusEnum s in card.cardStatuses)
+        {
+            if (!playerScript.status.currentstatus.Contains(s))
+            {
+                return false;
+            }
+
+        }
         return true;
     }
 
@@ -139,7 +147,7 @@ public class CardEventManager : MonoBehaviour
             previousCard = currentCard;
             Destroy(previousCard.gameObject);
         }
-        
+
         tempCards.Remove(newCard);
         currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity).GetComponent<Card>();
 
