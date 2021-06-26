@@ -9,7 +9,7 @@ public class CardEventManager : MonoBehaviour
     [Header("Manager")]
     [SerializeField] Card currentCard;
     [SerializeField] Card previousCard;
-    //[SerializeField] List<Card> cardBuffer;
+    [SerializeField] Stack<Card> cardBuffer;
     [SerializeField] Player playerScript;
     [SerializeField] int randomPickTry = 50;
     [Header("SpawnPoint")]
@@ -18,18 +18,35 @@ public class CardEventManager : MonoBehaviour
     private void Start()
     {
         tempCards = allCards;
+
     }
 
     public void LoadNewCard()
     {
-        Card newCard  = PickRandomCard();
+        Card newCard;
+        if (cardBuffer.Count > 0)
+        {
+            newCard = cardBuffer.Pop();
+        }
+        else
+        {
+        newCard= NewRandomCard();
+
+        }
+        SetNewCard(newCard);
+
+    }
+
+    private Card NewRandomCard()
+    {
+        Card newCard = PickRandomCard();
         if (!newCard)
         {
             Debug.LogError("card deck empty");
-            return;
+            return null;
         }
         int i = randomPickTry;
-        while (!CanPlay(newCard, playerScript)&& i>0)
+        while (!CanPlay(newCard, playerScript) && i > 0)
         {
             newCard = PickRandomCard();
             i--;
@@ -37,11 +54,9 @@ public class CardEventManager : MonoBehaviour
         if (i <= 0)
         {
             Debug.LogError("Failed to pick random card");
-            return;
+            return null;
         }
-        SetNewCard(newCard);
-        
-
+        return newCard;
     }
 
     public Card PickRandomCard()
@@ -72,5 +87,28 @@ public class CardEventManager : MonoBehaviour
         }
         currentCard = Instantiate(newCard.gameObject,cardSpawnPoint.position,Quaternion.identity).GetComponent<Card>();
 
+    }
+
+    void PlayCard(float[] values, List<Card> sequence)
+    {
+        playerScript.heal(values[0]);
+        playerScript.GainBux(values[1]);
+        playerScript.GainMood(values[2]);
+        if (sequence.Count > 0)
+        {
+            foreach(Card c in sequence)
+            {
+                cardBuffer.Push(c);
+            }
+        }
+    }
+
+    void Play_Heads()
+    {
+        PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads);
+    }
+    void Play_Tails()
+    {
+        PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails);
     }
 }

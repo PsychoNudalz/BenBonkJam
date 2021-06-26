@@ -14,10 +14,12 @@ public class Card : MonoBehaviour
     public float healthHeads;
     public float moodHeads;
     public float buxHeads;
+    [SerializeField] List<Card> sequenceCardsHeads;
     [Header("Tails")]
     public float healthTails;
     public float moodTails;
     public float buxTails;
+    [SerializeField] List<Card> sequenceCardsTails;
 
     [Space]
     public bool heads;
@@ -29,18 +31,19 @@ public class Card : MonoBehaviour
     public List<AgeEnum> ageEnum;
     public List<cardStatus> cardStatuses;
 
+    public List<Card> SequenceCardsTails { get => sequenceCardsTails;}
+    public List<Card> SequenceCardsHeads { get => sequenceCardsHeads;}
 
-
-
-    float[] GetHeadsResults()
+    public float[] GetHeadsResults()
     {
         return new float[] {healthHeads, moodHeads, buxHeads};
     }
 
-    float[] GetTailsResults()
+    public float[] GetTailsResults()
     {
         return new float[] { healthTails, moodTails, buxTails };
     }
+
 
 
 
