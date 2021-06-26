@@ -27,24 +27,7 @@ public class Card : MonoBehaviour
     [Header("Condition")]
     public bool useCondition = false;
     public AgeEnum ageEnum;
-    public enum cardStatus
-    {
-        DemonicKinship,
-        Married,
-        AngelicBoon,
-        Pet,
-        Criminal,
-        Gambler,
-        Addict,
-        Spiritual,
-        Sick,
-        Paranormal,
-        EducatedI,
-        EducatedII,
-        Trained,
-        Parenthood,
-        Divorced,
-    }
+
 
 
 
@@ -57,5 +40,7 @@ public class Card : MonoBehaviour
     {
         return new float[] { healthTails, moodTails, buxTails };
     }
+
+
 
 }
