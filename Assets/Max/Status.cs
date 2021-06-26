@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Status : MonoBehaviour
 {
-    enum DamageType {HEALTH, BUX, MOOD};
+   public List<cardStatus> currentstatus;
 
-    Health health;
-    Bux bux;
-    Mood mood;
 
-    public void TakeDamage(float amount) {
-        health.damage(50f);
-    }
+   public void AddStatus(cardStatus status) {
+       if(!currentstatus.Contains(status)) {
+        currentstatus.Add(status);
+       }
+   }
+
+   public void RemoveStatus(cardStatus status) {
+       if(currentstatus.Contains(status)) {
+           currentstatus.Remove(status);
+       }
+   }
 
     // Start is called before the first frame update
     void Start()
@@ -25,4 +30,15 @@ public class Status : MonoBehaviour
     {
         
     }
+
+
+     /*enum DamageType {HEALTH, BUX, MOOD};
+
+    Health health;
+    Bux bux;
+    Mood mood;
+
+    public void TakeDamage(float amount) {
+        health.damage(50f);
+    }*/
 }

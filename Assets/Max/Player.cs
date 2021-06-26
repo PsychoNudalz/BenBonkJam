@@ -4,12 +4,43 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public AgeEnum ageEnum;
+    
+    public Status status;
     public float StartingHealth = 100.0f;
     public float StartingBux = 0f;
 
     public float StartingMood = 50f;
     
+    //Init age
+    public AgeEnum age;
+    public void Older() {
+        int temp = (int)age;
+        temp ++;
+        age = (AgeEnum)temp;
+        if((int)age > 5) {
+               age = (AgeEnum)5; 
+        }else{
+            age = (AgeEnum)temp;
+        }
+    }
+
+    public void Younger() {
+        int temp = (int)age;
+        temp --;
+        if((int)age < 0) {
+               age = (AgeEnum)0; 
+        }else{
+            age = (AgeEnum)temp;
+        }
+    }
+
+    public void SetAge(int num) {
+        int temp = num;
+        age = (AgeEnum)temp;
+    }
+
+    //Init health
+    private float _HealthPoints = 100f;
     public float HealthPoints
     {
         get { return _HealthPoints;}
@@ -21,7 +52,7 @@ public class Player : MonoBehaviour
                 //dead
             }
         }
-    }private float _HealthPoints = 100f;
+    }
 
     public void heal(float Amount) {
         HealthPoints += Amount;
@@ -31,8 +62,7 @@ public class Player : MonoBehaviour
         HealthPoints -= Amount;
     }
 
-    
-    
+    //Init Bux
     public float BuxPoint
     {
         get { return _Bux;}
@@ -55,6 +85,7 @@ public class Player : MonoBehaviour
         BuxPoint -= Amount;
     }
     
+    //Init Mood
     public float MoodPoint
     {
         get { return _Mood;}
@@ -83,6 +114,7 @@ public class Player : MonoBehaviour
         HealthPoints = StartingHealth;
         BuxPoint = StartingBux;
         MoodPoint = StartingMood;
+        SetAge(0);
     }
 
     // Update is called once per frame
