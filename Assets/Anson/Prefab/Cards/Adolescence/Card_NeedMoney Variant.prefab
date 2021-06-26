@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7089603825940504089, guid: c8a9eaf840ec0f54aab07acfaf91842b, type: 3}
       propertyPath: m_Name
-      value: Card_NeedMoney
+      value: Card_NeedMoney Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7089603825940504089, guid: c8a9eaf840ec0f54aab07acfaf91842b, type: 3}
       propertyPath: m_IsActive
@@ -90,6 +90,10 @@ PrefabInstance:
     - target: {fileID: 7089603825940504091, guid: c8a9eaf840ec0f54aab07acfaf91842b, type: 3}
       propertyPath: cardDescription
       value: Need Money
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089603825940504091, guid: c8a9eaf840ec0f54aab07acfaf91842b, type: 3}
+      propertyPath: cardStatuses.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7089603826252458452, guid: c8a9eaf840ec0f54aab07acfaf91842b, type: 3}
       propertyPath: m_text
