@@ -37,6 +37,7 @@ public class CardEventManager : MonoBehaviour
 
     public void LoadNewCard()
     {
+        UpdatePlayerStatsUI();
         if (cardCounter >= cardPerAge)
         {
             AgePlayer();
@@ -44,8 +45,7 @@ public class CardEventManager : MonoBehaviour
         Card newCard;
         if (cardBuffer.Count > 0)
         {
-            newCard = cardBuffer[0];
-            cardBuffer.RemoveAt(0);
+            newCard = NextBufferCard();
         }
         else
         {
@@ -65,11 +65,18 @@ public class CardEventManager : MonoBehaviour
         cardCounter++;
     }
 
+
     private bool AgePlayer()
     {
         playerScript.Older();
         cardCounter = 0;
         return !playerScript.age.Equals(AgeEnum.DEATH);
+    }
+    private Card NextBufferCard()
+    {
+        Card newCard = cardBuffer[0];
+        cardBuffer.RemoveAt(0);
+        return newCard;
     }
 
     private Card NewRandomCard()
@@ -167,7 +174,7 @@ public class CardEventManager : MonoBehaviour
 
     void UpdatePlayerStatsUI()
     {
-        uIHandler.UpdateStats(playerScript.HealthPoints, playerScript.BuxPoint, playerScript.MoodPoint);
+        uIHandler.UpdateStats(playerScript);
     }
 
     void RemoveFromBuffer(List<Card> cards)

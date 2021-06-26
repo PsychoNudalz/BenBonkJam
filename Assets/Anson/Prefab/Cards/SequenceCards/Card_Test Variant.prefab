@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8006367593527951440, guid: b953814060d10b34ba4a117f89698587, type: 3}
       propertyPath: m_Name
-      value: Card_Test
+      value: Card_Test Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8006367593527951440, guid: b953814060d10b34ba4a117f89698587, type: 3}
       propertyPath: m_IsActive
@@ -30,6 +30,14 @@ PrefabInstance:
     - target: {fileID: 8006367593527951442, guid: b953814060d10b34ba4a117f89698587, type: 3}
       propertyPath: cardDescription
       value: Test!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006367593527951442, guid: b953814060d10b34ba4a117f89698587, type: 3}
+      propertyPath: sequenceCardsHeads.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006367593527951442, guid: b953814060d10b34ba4a117f89698587, type: 3}
+      propertyPath: sequenceCardsHeads.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8006367593527951443, guid: b953814060d10b34ba4a117f89698587, type: 3}
       propertyPath: m_RootOrder

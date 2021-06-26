@@ -12,6 +12,8 @@ public class UIHandler : MonoBehaviour
     [SerializeField] TextMeshProUGUI healthValue;
     [SerializeField] TextMeshProUGUI buxValue;
     [SerializeField] TextMeshProUGUI moodValue;
+    [SerializeField] TextMeshProUGUI ageText;
+    [SerializeField] TextMeshProUGUI statusText;
 
     [Header("Card")]
     [SerializeField] Card currentCard;
@@ -29,6 +31,18 @@ public class UIHandler : MonoBehaviour
         healthValue.text = h.ToString();
         buxValue.text = b.ToString();
         moodValue.text = m.ToString();
+    }
+
+    public void UpdateStats(Player p)
+    {
+        UpdateStats(p.HealthPoints, p.BuxPoint, p.MoodPoint);
+        ageText.text = p.age.ToString();
+        string tempStatus = "";
+        foreach(StatusEnum s in p.status.currentstatus)
+        {
+            tempStatus += s.ToString() + "\n";
+        }
+        statusText.text = tempStatus;
     }
 
     public void Play_Heads()
