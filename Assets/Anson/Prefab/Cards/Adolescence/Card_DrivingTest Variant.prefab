@@ -20,6 +20,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3108347227348693460, guid: 47a0c1fc90c6d0a47aa6e1c8a430d548, type: 3}
+      propertyPath: cardDescription
+      value: Driving Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108347227348693460, guid: 47a0c1fc90c6d0a47aa6e1c8a430d548, type: 3}
       propertyPath: ageEnum.Array.data[0]
       value: 2
       objectReference: {fileID: 0}
@@ -69,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3108347227348693462, guid: 47a0c1fc90c6d0a47aa6e1c8a430d548, type: 3}
       propertyPath: m_Name
-      value: Card_DrivingTest
+      value: Card_DrivingTest Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3108347227433775376, guid: 47a0c1fc90c6d0a47aa6e1c8a430d548, type: 3}
       propertyPath: m_text
