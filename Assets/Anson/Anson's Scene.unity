@@ -490,6 +490,13 @@ MonoBehaviour:
   - {fileID: 6266243418410330304, guid: b75692e7df0bbb94284014b54d330637, type: 3}
   - {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
   - {fileID: 5483661451227686800, guid: 78d5322529c323c418db9e0feba8966f, type: 3}
+  - {fileID: 2392089042792455680, guid: 76576afb3abd55846ae3685619ce0ea1, type: 3}
+  - {fileID: 1192956707689746985, guid: dc8f2161d682d944d992689fe7f7a4ff, type: 3}
+  - {fileID: 4762985374072948292, guid: 30e5937977aed79479e438dfb207e7e2, type: 3}
+  - {fileID: 6927619493991683507, guid: 58cfcd09eb8120245894169d2dc75c3c, type: 3}
+  - {fileID: 593195145087125141, guid: b78beb3b25476f24f9c075b958805959, type: 3}
+  - {fileID: 8006367593527951442, guid: b953814060d10b34ba4a117f89698587, type: 3}
+  - {fileID: 5707706936192149030, guid: 234c5eadfe379d94eb34a800962fc4ef, type: 3}
   tempCards: []
   currentCard: {fileID: 0}
   previousCard: {fileID: 0}
