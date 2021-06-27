@@ -16,16 +16,16 @@ MonoBehaviour:
   cardID: 0
   cardDescription: PlayGames
   healthHeads: 0
-  moodHeads: 5
   buxHeads: -5
+  moodHeads: 5
   requoredStatusHeads: 
   sequenceCardsHeads: []
   removeSequenceCardsHeads: []
   addStatusHeads: 
   removeStatusHeads: 
   healthTails: 0
-  moodTails: -5
   buxTails: 5
+  moodTails: -5
   requoredStatusTails: 
   sequenceCardsTails: []
   removeSequenceCardsTails: []
@@ -54,16 +54,16 @@ MonoBehaviour:
   cardID: 0
   cardDescription: PlayGames
   healthHeads: 0
-  moodHeads: 5
   buxHeads: -5
+  moodHeads: 5
   requoredStatusHeads: 
   sequenceCardsHeads: []
   removeSequenceCardsHeads: []
   addStatusHeads: 
   removeStatusHeads: 
   healthTails: 0
-  moodTails: -5
   buxTails: 5
+  moodTails: -5
   requoredStatusTails: 
   sequenceCardsTails: []
   removeSequenceCardsTails: []
@@ -161,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: buxTails
-      value: 5
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: moodHeads
@@ -169,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: moodTails
-      value: -5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: healthHeads
