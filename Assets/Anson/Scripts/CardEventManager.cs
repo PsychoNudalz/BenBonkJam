@@ -40,12 +40,12 @@ public class CardEventManager : MonoBehaviour
     public void LoadNewCard()
     {
         UpdatePlayerStatsUI();
-        if (cardCounter >= cardPerAge&& cardBuffer.Count == 0)
+        if (cardCounter >= cardPerAge && cardBuffer.Count == 0)
         {
             AgePlayer();
         }
         Card newCard = null;
-        
+
         if (cardBuffer.Count > 0)
         {
             newCard = NextBufferCard();
@@ -160,7 +160,7 @@ public class CardEventManager : MonoBehaviour
         }
 
         tempCards.Remove(newCard);
-        currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity,cardSpawnPoint).GetComponent<Card>();
+        currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity, cardSpawnPoint).GetComponent<Card>();
 
     }
 
@@ -205,9 +205,10 @@ public class CardEventManager : MonoBehaviour
 
     private void ModifyPlayerStats(float[] values)
     {
-        playerScript.heal(values[0]);
-        playerScript.GainBux(values[1]);
-        playerScript.GainMood(values[2]);
+        if (playerScript.heal(values[0]) || playerScript.GainBux(values[1]) || playerScript.GainMood(values[2]))
+        {
+            playerScript.SetAge((int)AgeEnum.DEATH);
+        }
         uIHandler.PlayStatsParticles(StatsType.HEALTH, values[0]);
         uIHandler.PlayStatsParticles(StatsType.BUX, values[1]);
         uIHandler.PlayStatsParticles(StatsType.MOOD, values[2]);
@@ -215,7 +216,7 @@ public class CardEventManager : MonoBehaviour
 
     public void Play_Heads()
     {
-        PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads,currentCard.RequoredStatusHeads);
+        PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads, currentCard.RequoredStatusHeads);
         PlayCardSound(CardSoundEnum.HEADS);
         UpdatePlayerStatsUI();
         LoadNewCard();
@@ -237,10 +238,10 @@ public class CardEventManager : MonoBehaviour
             case CoinSide.TAILS:
                 Play_Tails();
                 break;
-        } 
+        }
     }
 
-        void UpdatePlayerStatsUI()
+    void UpdatePlayerStatsUI()
     {
         uIHandler.UpdateStats(playerScript);
     }
@@ -260,13 +261,14 @@ public class CardEventManager : MonoBehaviour
     {
         cardBuffer = new List<Card>();
     }
-    
+
     void PlayCardSound(CardSoundEnum c)
     {
         try
         {
             currentCard.CardEffectScript.PlaySound(c);
-        }catch(System.Exception e)
+        }
+        catch (System.Exception e)
         {
             Debug.LogError("Failed to play card sound");
         }

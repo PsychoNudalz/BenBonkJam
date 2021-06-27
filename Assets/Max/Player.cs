@@ -60,8 +60,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void heal(float Amount) {
+    public bool heal(float Amount) {
         HealthPoints += Amount;
+        return HealthPoints <= 0;
     }
 
     public void damage(float Amount) {
@@ -83,8 +84,10 @@ public class Player : MonoBehaviour
     }
     private float _Bux = 1000f;
 
-    public void GainBux(float Amount) {
+    public bool GainBux(float Amount) {
         BuxPoint += Amount;
+        return BuxPoint <= 0;
+
     }
 
     public void LoseBux(float Amount) {
@@ -106,8 +109,10 @@ public class Player : MonoBehaviour
     }
     private float _Mood = 100f;
 
-    public void GainMood(float Amount) {
+    public bool GainMood(float Amount) {
         MoodPoint += Amount;
+        return BuxPoint <= 0;
+
     }
 
     public void LoseMood(float Amount) {
@@ -127,6 +132,11 @@ public class Player : MonoBehaviour
     public bool HasSatus(StatusEnum statusEnum)
     {
         return status.HasSatus(statusEnum);
+    }
+
+    public bool IsGameOver()
+    {
+        return HealthPoints <= 0 || MoodPoint <= 0 || BuxPoint <= 0;
     }
     // Start is called before the first frame update
     void Awake()
