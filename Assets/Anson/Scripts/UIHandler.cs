@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 
@@ -9,9 +10,9 @@ public class UIHandler : MonoBehaviour
 
     [Header("Stats")]
     [SerializeField] Player playerStats;
-    [SerializeField] TextMeshProUGUI healthValue;
-    [SerializeField] TextMeshProUGUI buxValue;
-    [SerializeField] TextMeshProUGUI moodValue;
+    [SerializeField] Slider healthValue;
+    [SerializeField] Slider buxValue;
+    [SerializeField] Slider moodValue;
     [SerializeField] TextMeshProUGUI ageText;
     [SerializeField] TextMeshProUGUI statusText;
 
@@ -43,9 +44,9 @@ public class UIHandler : MonoBehaviour
     }
     public void UpdateStats(float h, float b, float m)
     {
-        healthValue.text = h.ToString();
-        buxValue.text = b.ToString();
-        moodValue.text = m.ToString();
+        healthValue.value = h;
+        buxValue.value = b;
+        moodValue.value = m;
     }
 
     public void UpdateStats(Player p)
