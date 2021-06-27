@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Blue Light
   m_Shader: {fileID: 4800000, guid: 79ee6cefbc672a44e97359d4d14ea301, type: 3}
-  m_ShaderKeywords: BLURISHD_ON GLITCH_ON _BLURHD_ON _GLOWAFFECTLIGHT_ON
+  m_ShaderKeywords: BLURISHD_ON GLITCH_ON GLOWLIGHT_ON _BLURHD_ON _GLOWAFFECTLIGHT_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -152,7 +152,7 @@ Material:
     - _InnerOutlineAlpha: 1
     - _InnerOutlineGlow: 4
     - _InnerOutlineThickness: 1
-    - _LitAmount: 1
+    - _LitAmount: 0
     - _MaxXUV: 1
     - _MaxYUV: 1
     - _MinXUV: 0
