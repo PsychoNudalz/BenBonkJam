@@ -1100,16 +1100,16 @@ MonoBehaviour:
   cardID: 0
   cardDescription: this is a test card
   healthHeads: 0
-  moodHeads: 0
   buxHeads: 0
+  moodHeads: 0
   requoredStatusHeads: 
   sequenceCardsHeads: []
   removeSequenceCardsHeads: []
   addStatusHeads: 
   removeStatusHeads: 
   healthTails: 0
-  moodTails: 0
   buxTails: 0
+  moodTails: 0
   requoredStatusTails: 
   sequenceCardsTails: []
   removeSequenceCardsTails: []
@@ -1309,7 +1309,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fded4c9d18ae6534395a8bf8f1a2f72f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 782208efb126a074399f8a98b9ae289a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

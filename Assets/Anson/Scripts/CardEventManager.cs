@@ -20,6 +20,8 @@ public class CardEventManager : MonoBehaviour
     [Header("Other Components")]
     [SerializeField] UIHandler uIHandler;
     [SerializeField] Animator animator;
+    [SerializeField] ParticleSystem headsPS;
+    [SerializeField] ParticleSystem tailsPS;
 
     private void Start()
     {
@@ -62,6 +64,7 @@ public class CardEventManager : MonoBehaviour
                 if (AgePlayer())
                 {
                     LoadNewCard();
+                    UpdatePlayerStatsUI();
 
                 }
                 return;
@@ -226,6 +229,8 @@ public class CardEventManager : MonoBehaviour
     {
         PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads, currentCard.RequoredStatusHeads);
         PlayCardSound(CardSoundEnum.HEADS);
+        headsPS.Stop();
+        headsPS.Play();
         UpdatePlayerStatsUI();
         LoadNewCard();
     }
@@ -233,6 +238,8 @@ public class CardEventManager : MonoBehaviour
     {
         PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.RemoveSequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails, currentCard.RequoredStatusTails);
         PlayCardSound(CardSoundEnum.TAILS);
+        tailsPS.Stop();
+        tailsPS.Play();
         UpdatePlayerStatsUI();
         LoadNewCard();
     }
