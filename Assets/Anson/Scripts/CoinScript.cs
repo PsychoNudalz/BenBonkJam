@@ -17,6 +17,7 @@ public class CoinScript : MonoBehaviour
     [SerializeField] PlayerControlScript playerControlScript;
     [SerializeField] TextMeshPro coinSideText;
     [SerializeField] CardEventManager cardEventManager;
+    [SerializeField] AudioSource collisionSound;
 
     public bool LaunchCoin { get => launchCoin; set => launchCoin = value; }
 
@@ -54,6 +55,14 @@ public class CoinScript : MonoBehaviour
         {
             return;
         }
+        else
+        {
+            if (collisionSound)
+            {
+                collisionSound.Stop();
+                collisionSound.Play();
+            }
+        }
         if (!playerControlScript)
         {
             playerControlScript = FindObjectOfType<PlayerControlScript>();
@@ -62,6 +71,7 @@ public class CoinScript : MonoBehaviour
         {
             cardEventManager = FindObjectOfType<CardEventManager>();
         }
+        
 
         cardEventManager.Play_Coin(GetCoinSide());
         launchCoin = false;

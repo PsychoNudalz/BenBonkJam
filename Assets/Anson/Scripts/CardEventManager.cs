@@ -73,7 +73,7 @@ public class CardEventManager : MonoBehaviour
         }
 
         SetNewCard(newCard);
-        PlayCardSound(CardSoundEnum.PLAY);
+        //PlayCardSound(CardSoundEnum.PLAY);
     }
 
 

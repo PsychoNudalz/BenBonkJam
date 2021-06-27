@@ -12,6 +12,8 @@ public class CoinFlipScript : MonoBehaviour
     [SerializeField] Vector2 launchForce = new Vector2(10f, 100f);
     [SerializeField] Vector2 launchTorque = new Vector2(10f, 100f);
     [SerializeField] Transform lauchPoint;
+    [Space]
+    [SerializeField] AudioSource flickSound; 
 
     private void Start()
     {
@@ -45,6 +47,11 @@ public class CoinFlipScript : MonoBehaviour
         coinRB.AddForce(coinRB.mass* transform.up * (launchForce.x + charge * (launchForce.y-launchForce.x)));
         coinRB.AddTorque(coinRB.mass * launchTorque.x + charge * (launchTorque.y- launchTorque.x));
         coinScript.LaunchCoin = true;
+        if (flickSound)
+        {
+            flickSound.Stop();
+            flickSound.Play();
+        }
     }
 
     public void ResetCoinPosition()
