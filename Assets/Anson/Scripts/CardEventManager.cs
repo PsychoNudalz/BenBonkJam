@@ -14,10 +14,12 @@ public class CardEventManager : MonoBehaviour
     [SerializeField] int randomPickTry = 50;
     [SerializeField] int cardCounter = 0;
     [SerializeField] int cardPerAge = 5;
-    [Header("SpawnPoint")]
+    [Header("Transforms")]
     [SerializeField] Transform cardSpawnPoint;
+    [SerializeField] Transform previousCardTransform;
     [Header("Other Components")]
     [SerializeField] UIHandler uIHandler;
+    [SerializeField] Animator animator;
 
     private void Start()
     {

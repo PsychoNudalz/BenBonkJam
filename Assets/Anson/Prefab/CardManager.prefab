@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &168685017709200663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 757599601080306835}
+  m_Layer: 0
+  m_Name: PreviousCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &757599601080306835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168685017709200663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4379163752723092414}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3624792844612944276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3149122795622043081}
+  m_Layer: 0
+  m_Name: CurrentCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3149122795622043081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3624792844612944276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4379163752723092414}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4379163752723092384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4379163752723092414}
+  - component: {fileID: 4379163752723092415}
+  - component: {fileID: 4379163752723092413}
+  m_Layer: 0
+  m_Name: CardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4379163752723092414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4379163752723092384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.24, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3149122795622043081}
+  - {fileID: 757599601080306835}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4379163752723092415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4379163752723092384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792d5b98b3fbb6a44b14d4d1f1cc8197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allCards:
+  - {fileID: 4533897546233336297, guid: 51d24f6906b425b4085ec8a7ed2385a3, type: 3}
+  - {fileID: 2807433185893684330, guid: 0176718abb9c97249a5feea54894009f, type: 3}
+  - {fileID: 5888586143951602582, guid: 8eb24462ba84e2841abab6479718383c, type: 3}
+  - {fileID: 3320848566424815590, guid: 3a0dcf37538b40b449002a04321009cd, type: 3}
+  - {fileID: 8611028769503477673, guid: e72baac493f4c0f41b64c45cc2449b48, type: 3}
+  - {fileID: 2112639078667641513, guid: 0a9c213865e89dd4daabb03d48165002, type: 3}
+  - {fileID: 2562217848404789846, guid: 1035b99f3e13d4f45b532965b6ab67af, type: 3}
+  - {fileID: 8892792323996777008, guid: db6ff8f6dd476db48b9b66e5186d4d32, type: 3}
+  - {fileID: 4785778201158671410, guid: 11911a9c308dfab43b49e323da662e94, type: 3}
+  - {fileID: 2684295152946769946, guid: 43439a992db0503428af7c3d4a9d22dc, type: 3}
+  - {fileID: 4942113819870713017, guid: 8255aa51bd4094a498992a9410da0963, type: 3}
+  - {fileID: 2648449486647513702, guid: 0496ed902e1cfed4091f57f5d1dc3eb0, type: 3}
+  - {fileID: 8717620557786065504, guid: 21805c56a4da24f42a1f0b1183c750bb, type: 3}
+  - {fileID: 8425272131992147096, guid: 7a6332ba8f7eeeb498068535bd2eb54f, type: 3}
+  - {fileID: 9104859591870095200, guid: ba4b2ef95da766245829c3f39504ed6e, type: 3}
+  - {fileID: 160490404756560367, guid: 1ee7fd785c69e9048924a6fec3c3182f, type: 3}
+  - {fileID: 6295919497674796355, guid: f8e7e9b26f733534fbc92e0361a0b0b1, type: 3}
+  - {fileID: 640138031864916219, guid: 9d06c59eef4f3374b8cb369099cbb825, type: 3}
+  - {fileID: 7230685250844740725, guid: 3b4c71113ebc54b4cb921fe5da3c25b4, type: 3}
+  - {fileID: 5928408998946846789, guid: 189e98d1efe36104e9059d1ee3fc4ef3, type: 3}
+  - {fileID: 3459122788306182728, guid: 7097ac1d992f5054e876ec6f35999101, type: 3}
+  - {fileID: 8560258718981291798, guid: 9c7da73fa4c09694aaecf8a2ec1522d8, type: 3}
+  - {fileID: 58014075942243183, guid: 197bf95b54a7f824bb27302a8b970aa6, type: 3}
+  - {fileID: 1930198761016535054, guid: ba1f373797bf7d8429a20763ab8d6e4b, type: 3}
+  - {fileID: 63440611095722468, guid: 9f68ab9054c40ed41aec914e7b2b8692, type: 3}
+  - {fileID: 847828207512327042, guid: 20d96210d27df2740982428125c161c4, type: 3}
+  - {fileID: 4636448852657911969, guid: cadb429e99c4fd4488c82ce78366c410, type: 3}
+  - {fileID: 5283694661270316034, guid: 33f2621dd26dd504ca1cc068d8be1f11, type: 3}
+  - {fileID: 5153488396008969021, guid: 1a7f307da4c8fd341bee6cda7aab60c6, type: 3}
+  - {fileID: 8468810482098887805, guid: fec4ad3fb4317fb4abd4e062ed560b46, type: 3}
+  - {fileID: 5920392604792802365, guid: ef228e989abc1ae48bb5bd029e22c637, type: 3}
+  - {fileID: 1099158058640419983, guid: eca1221f3e74daf48bdf1147d68566ef, type: 3}
+  - {fileID: 2427784321663750598, guid: 4ae4a06ba11278a4690312d91eb94e67, type: 3}
+  - {fileID: 2646225681748486214, guid: e39805a563a7bcd4f9264d4cd8e0529e, type: 3}
+  - {fileID: 3479757443120513789, guid: ce4d271e9083882429a83ada9e98d135, type: 3}
+  - {fileID: 4471089236294595038, guid: 22da14b4c06f1ee4bb599040a4b07d04, type: 3}
+  - {fileID: 5438889043908063673, guid: 6b217071cacb98940b68827a61e76bcc, type: 3}
+  - {fileID: 7977516903070547708, guid: fb42401634b436a49b32ffdf667edacc, type: 3}
+  - {fileID: 6682875185228172568, guid: bd369d61951f547469eb977e21301cb9, type: 3}
+  - {fileID: 5952367954240617518, guid: 86a94bdd4898cba408d810823337f244, type: 3}
+  - {fileID: 3882383228389411444, guid: a15941dfbfa7a7748aec6565a5b981ea, type: 3}
+  - {fileID: 8360037848177417952, guid: d1532565659650c44a247713112ffb48, type: 3}
+  - {fileID: 181574464784439270, guid: ad4726ef01caf3f4ebfaddb3ab323eb0, type: 3}
+  - {fileID: 7679312073930544540, guid: 4bca58077baf1884cbbbedbdea75bcba, type: 3}
+  - {fileID: 3939321471148414023, guid: 2871d617f13341d4eae7dea035dd9174, type: 3}
+  - {fileID: 1611881977945887625, guid: 3c0893be66091d94d966b67e27e3511f, type: 3}
+  - {fileID: 4155734721241057912, guid: 36adfc8cc1b7b114e9691962fc64a44e, type: 3}
+  - {fileID: 3124251663748081056, guid: aaf8b20e7098c9b4b86a0acbbb5aa567, type: 3}
+  - {fileID: 8005500373588756478, guid: 694931fe8813d7e4b978492e4875aa40, type: 3}
+  - {fileID: 4330290378203120105, guid: 002a52f4662afd74781ed8d218cd49a3, type: 3}
+  - {fileID: 5443072472895060722, guid: 8ac803fe355743842bbae4fc88b01a7d, type: 3}
+  - {fileID: 4253557641884581493, guid: bc1db34ad4430184d97c5ad85e798a20, type: 3}
+  tempCards: []
+  currentCard: {fileID: 0}
+  previousCard: {fileID: 0}
+  cardBuffer: []
+  playerScript: {fileID: 0}
+  randomPickTry: 50
+  cardCounter: 0
+  cardPerAge: 5
+  cardSpawnPoint: {fileID: 3149122795622043081}
+  uIHandler: {fileID: 0}
+--- !u!95 &4379163752723092413
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4379163752723092384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 37f9ca6e13c33754987ac79f486dadc7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
