@@ -200,8 +200,6 @@ public class CardEventManager : MonoBehaviour
                 playerScript.RemoveStatus(remS);
             }
         }
-        UpdatePlayerStatsUI();
-        LoadNewCard();
 
     }
 
@@ -219,11 +217,15 @@ public class CardEventManager : MonoBehaviour
     {
         PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads,currentCard.RequoredStatusHeads);
         PlayCardSound(CardSoundEnum.HEADS);
+        UpdatePlayerStatsUI();
+        LoadNewCard();
     }
     public void Play_Tails()
     {
         PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.RemoveSequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails, currentCard.RequoredStatusTails);
         PlayCardSound(CardSoundEnum.TAILS);
+        UpdatePlayerStatsUI();
+        LoadNewCard();
     }
     public void Play_Coin(CoinSide side)
     {
