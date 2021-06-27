@@ -62,6 +62,7 @@ public class CardEventManager : MonoBehaviour
         }
 
         SetNewCard(newCard);
+        PlayCardSound(CardSoundEnum.PLAY);
     }
 
 
@@ -207,10 +208,12 @@ public class CardEventManager : MonoBehaviour
     public void Play_Heads()
     {
         PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads,currentCard.RequoredStatusHeads);
+        PlayCardSound(CardSoundEnum.HEADS);
     }
     public void Play_Tails()
     {
         PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.RemoveSequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails, currentCard.RequoredStatusTails);
+        PlayCardSound(CardSoundEnum.TAILS);
     }
     public void Play_Coin(CoinSide side)
     {
@@ -246,4 +249,14 @@ public class CardEventManager : MonoBehaviour
         cardBuffer = new List<Card>();
     }
     
+    void PlayCardSound(CardSoundEnum c)
+    {
+        try
+        {
+            currentCard.CardEffectScript.PlaySound(c);
+        }catch(System.Exception e)
+        {
+            Debug.LogError("Failed to play card sound");
+        }
+    }
 }

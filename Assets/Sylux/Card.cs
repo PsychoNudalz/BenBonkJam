@@ -41,6 +41,10 @@ public class Card : MonoBehaviour
     public List<AgeEnum> ageEnum;
     public List<StatusEnum> cardStatuses;
 
+
+    [Header("Other Components")]
+    [SerializeField] CardEffectScript cardEffectScript;
+
     public List<Card> SequenceCardsTails { get => sequenceCardsTails;}
     public List<Card> SequenceCardsHeads { get => sequenceCardsHeads;}
     public List<StatusEnum> AddStatusHeads { get => addStatusHeads; }
@@ -51,6 +55,15 @@ public class Card : MonoBehaviour
     public List<Card> RemoveSequenceCardsTails { get => removeSequenceCardsTails; }
     public List<StatusEnum> RequoredStatusHeads { get => requoredStatusHeads; set => requoredStatusHeads = value; }
     public List<StatusEnum> RequoredStatusTails { get => requoredStatusTails; set => requoredStatusTails = value; }
+    public CardEffectScript CardEffectScript { get => cardEffectScript; set => cardEffectScript = value; }
+
+    private void Start()
+    {
+        if (!cardEffectScript)
+        {
+            cardEffectScript = GetComponent<CardEffectScript>();
+        }
+    }
 
     public float[] GetHeadsResults()
     {

@@ -27,6 +27,7 @@ public class CoinScript : MonoBehaviour
         {
             playerControlScript = FindObjectOfType<PlayerControlScript>();
         }
+
     }
 
     // Update is called once per frame
