@@ -64,7 +64,6 @@ public class CardEventManager : MonoBehaviour
                 if (AgePlayer())
                 {
                     LoadNewCard();
-                    UpdatePlayerStatsUI();
 
                 }
                 return;
@@ -84,6 +83,8 @@ public class CardEventManager : MonoBehaviour
     {
         playerScript.Older();
         cardCounter = 0;
+        UpdatePlayerStatsUI();
+
         return !playerScript.age.Equals(AgeEnum.DEATH);
     }
     private Card NextBufferCard()
