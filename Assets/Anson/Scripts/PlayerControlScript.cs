@@ -84,6 +84,7 @@ public class PlayerControlScript : MonoBehaviour
             if (isCharging)
             {
                 coinFlipScript.LaunchCoin(launchForce);
+                launchForce = 0f;
                 SetControlLock(true);
             }
             isCharging = false;
