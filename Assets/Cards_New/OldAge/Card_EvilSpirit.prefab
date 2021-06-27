@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6538896671982034901
+--- !u!1001 &1112266578408514299
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,31 +9,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: You entered the finals in a tournament sport event
+      value: "Crossing a busy road, an angry truck rushed at you with high speed\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
-      value: 4.65
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: Eat delicious junk food
+      value: Try to Resist and wake yourself up
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_fontSize
+      value: 3.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_text
+      value: Submit to the spirit peacefully
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
       value: 4.2
       objectReference: {fileID: 0}
-    - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_text
-      value: Eat well
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_fontSize
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Name
-      value: Card_FinalsTournSports
+      value: Card_EvilSpirit
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_RootOrder
@@ -81,27 +81,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: moodHeads
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: moodTails
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: moodTails
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: healthHeads
-      value: 20
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: healthTails
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: cardDescription
+      value: "Dreaming, an evil spirit spinning its body and saying, \u201CDIE, DIE,
+        DIE!\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: ageEnum.Array.data[0]
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardStatuses.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: cardStatuses.Array.data[0]
-      value: 17
+      propertyPath: addStatusHeads.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1883385151796885853
+--- !u!1001 &3507066502332098389
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,19 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: Time for some team sports!
+      value: You got Injured...
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: Get Steroids
+      value: Force yourself to train
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
-      value: 5
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: Stay Clean
+      value: Rest and heal
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
@@ -29,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Name
-      value: Card_CompetitiveTeamSports Variant
+      value: Card_Injury
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_RootOrder
@@ -76,36 +76,48 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: buxTails
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: moodTails
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: healthHeads
-      value: 5
+      propertyPath: moodHeads
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: healthTails
-      value: -15
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardDescription
-      value: Steroids or clean?
+      value: Injury
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: ageEnum.Array.data[0]
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: addStatusTails.Array.size
+      propertyPath: cardStatuses.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: addStatusTails.Array.data[0]
-      value: 9
+      propertyPath: cardStatuses.Array.data[0]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: sequenceCardsHeads.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: sequenceCardsTails.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: sequenceCardsHeads.Array.data[0]
+      value: 
+      objectReference: {fileID: 7817512115802584918, guid: fae4bd8004edba24a9257e7f7f26ebc9, type: 3}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: sequenceCardsTails.Array.data[0]
+      value: 
+      objectReference: {fileID: 382990877479239873, guid: 1e868904a692be14f8adfa35e9ccee69, type: 3}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
