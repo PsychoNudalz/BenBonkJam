@@ -50,6 +50,10 @@ public class CardEventManager : MonoBehaviour
         {
             newCard = NextBufferCard();
         }
+        else if (tempCards.Count ==0&& playerScript.age.Equals(AgeEnum.DEATH))
+        {
+            FindObjectOfType<GameManagerScript>().setGameOver();
+        }
         if (newCard == null)
         {
             newCard = NewRandomCard();
@@ -61,6 +65,10 @@ public class CardEventManager : MonoBehaviour
 
                 }
                 return;
+            }
+            if (playerScript.age.Equals(AgeEnum.DEATH))
+            {
+                tempCards = new List<Card>();
             }
         }
 
