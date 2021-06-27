@@ -168,7 +168,9 @@ MonoBehaviour:
   cardCounter: 0
   cardPerAge: 5
   cardSpawnPoint: {fileID: 3149122795622043081}
+  previousCardTransform: {fileID: 757599601080306835}
   uIHandler: {fileID: 0}
+  animator: {fileID: 4379163752723092413}
 --- !u!95 &4379163752723092413
 Animator:
   serializedVersion: 3

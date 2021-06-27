@@ -40,11 +40,12 @@ public class CardEventManager : MonoBehaviour
     public void LoadNewCard()
     {
         UpdatePlayerStatsUI();
-        if (cardCounter >= cardPerAge)
+        if (cardCounter >= cardPerAge&& cardBuffer.Count == 0)
         {
             AgePlayer();
         }
         Card newCard = null;
+        
         if (cardBuffer.Count > 0)
         {
             newCard = NextBufferCard();
@@ -145,14 +146,21 @@ public class CardEventManager : MonoBehaviour
 
     void SetNewCard(Card newCard)
     {
+        if (previousCard)
+        {
+            Destroy(previousCard.gameObject);
+
+        }
         if (currentCard)
         {
             previousCard = currentCard;
-            Destroy(previousCard.gameObject);
+            previousCard.transform.parent = previousCardTransform;
+            previousCard.transform.position = previousCardTransform.position;
+            animator.SetTrigger("Next");
         }
 
         tempCards.Remove(newCard);
-        currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity).GetComponent<Card>();
+        currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity,cardSpawnPoint).GetComponent<Card>();
 
     }
 
