@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
-    
-
     public Canvas mainCanvas;
     public Canvas helpCanvas;
     public Canvas creditsCanvas;
@@ -24,7 +22,7 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         Debug.Log("Loading Game");
-     //   SceneManager.LoadScene("Scene 01"); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void Help()
