@@ -24054,7 +24054,7 @@ Transform:
   - {fileID: 857378324}
   - {fileID: 760364713}
   m_Father: {fileID: 5825788077025271610}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2104335424
 GameObject:
@@ -29006,8 +29006,9 @@ GameObject:
   - component: {fileID: 8093801901904655104}
   - component: {fileID: 3001413969924625575}
   - component: {fileID: 1898834147288585120}
+  - component: {fileID: 3228257307667706178}
   m_Layer: 0
-  m_Name: CoinMode
+  m_Name: Coin Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29025,12 +29026,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1725806314509751166}
-  m_Father: {fileID: 5825788077025271610}
+  m_Father: {fileID: 1697636051640387788}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 439.7, y: -310}
+  m_AnchoredPosition: {x: 681.7, y: -0.000030517578}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8093801901904655104
@@ -29115,9 +29116,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerControlScript, Assembly-CSharp
-        m_MethodName: SetControlLock
+      - m_Target: {fileID: 1044822925904992560}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29127,6 +29128,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3228257307667706178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004920045263722327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9321f1e1a35f2d04787eb80d258e0d1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1898834147288585120}
+  playerControlScript: {fileID: 0}
 --- !u!1 &1044822925904992560
 GameObject:
   m_ObjectHideFlags: 0
@@ -29157,8 +29184,9 @@ RectTransform:
   m_Children:
   - {fileID: 5825788077045290420}
   - {fileID: 4216004393612739801}
+  - {fileID: 4643386488815812737}
   m_Father: {fileID: 5825788077025271610}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -30145,7 +30173,6 @@ RectTransform:
   m_Children:
   - {fileID: 1909274867237890831}
   - {fileID: 2464492667968865555}
-  - {fileID: 4643386488815812737}
   - {fileID: 1697636051640387788}
   - {fileID: 8850792874664797548}
   - {fileID: 1743954183}
@@ -30420,7 +30447,7 @@ RectTransform:
   - {fileID: 6142435312056815004}
   - {fileID: 3999951749995482146}
   m_Father: {fileID: 5825788077025271610}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -31367,11 +31394,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
---- !u!224 &4625839339949148482 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7814555248801733829, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
-  m_PrefabInstance: {fileID: 3188734106813830535}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3000401462101666842 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 424246549295298973, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
@@ -31383,6 +31405,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &4625839339949148482 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7814555248801733829, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+  m_PrefabInstance: {fileID: 3188734106813830535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6978446224574953818
 PrefabInstance:
   m_ObjectHideFlags: 0

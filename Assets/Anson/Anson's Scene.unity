@@ -10346,6 +10346,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1083102599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1044822925904992560, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+  m_PrefabInstance: {fileID: 5825788077026621502}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1396388472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30238,9 +30243,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1898834147288585120, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898834147288585120, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 857423660}
+    - target: {fileID: 1898834147288585120, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetControlLock
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898834147288585120, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlayerControlScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898834147288585120, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3751080929209564042, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -30423,6 +30444,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7357103195331062966, guid: 964cdcab5d2a82749902009117e43b9a, type: 3}
+      propertyPath: OnCollisionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1083102599}
     - target: {fileID: 9075987464594698941, guid: 964cdcab5d2a82749902009117e43b9a, type: 3}
       propertyPath: m_Name
       value: CoinFliper

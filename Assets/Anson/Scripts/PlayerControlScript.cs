@@ -11,6 +11,7 @@ public class PlayerControlScript : MonoBehaviour
     [SerializeField] float lineWidth = 0.1f;
     [SerializeField] float lineLength = 5f;
     [SerializeField] Vector3 lineDir = new Vector3(0, 1f);
+    [SerializeField] AnimationCurve lineCurve;
 
     [Header("Control Stats")]
     [Range(0f, 1f)]
@@ -19,6 +20,7 @@ public class PlayerControlScript : MonoBehaviour
     [SerializeField] bool isGain;
     [SerializeField] bool isCharging;
     [SerializeField] bool controlLock = false;
+    [SerializeField] int Segments = 5;
     [Header("Fliper")]
     [SerializeField] CoinFlipScript coinFlipScript;
      // Start is called before the first frame update
@@ -45,7 +47,7 @@ public class PlayerControlScript : MonoBehaviour
     void ShowLaunchForce()
     {
         lineRenderer.SetPosition(0, new Vector3());
-        lineRenderer.SetPosition(1, lineDir* lineLength * launchForce);
+        lineRenderer.SetPosition(1, lineDir* lineLength * ConvertForce());
     }
     void ChargeForce()
     {
@@ -83,7 +85,29 @@ public class PlayerControlScript : MonoBehaviour
         {
             if (isCharging)
             {
-                coinFlipScript.LaunchCoin(launchForce);
+                coinFlipScript.LaunchCoin(ConvertForce());
+                launchForce = 0f;
+                SetControlLock(true);
+            }
+            isCharging = false;
+        }
+    }
+
+    public void SetCharge(bool b)
+    {
+        if (controlLock)
+        {
+            return;
+        }
+        if (b)
+        {
+            isCharging = true;
+        }
+        else 
+        {
+            if (isCharging)
+            {
+                coinFlipScript.LaunchCoin(ConvertForce());
                 launchForce = 0f;
                 SetControlLock(true);
             }
@@ -94,5 +118,14 @@ public class PlayerControlScript : MonoBehaviour
     public void SetControlLock(bool b)
     {
         controlLock = b;
+    }
+
+    public float ConvertForce()
+    {
+        float temp = lineCurve.Evaluate(launchForce);
+        float i = 1f /(float) Segments;
+
+        temp = temp - temp%i;
+        return temp;
     }
 }

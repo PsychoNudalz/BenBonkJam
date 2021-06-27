@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.Events;
 
 public enum CoinSide
 {
@@ -13,6 +13,9 @@ public class CoinScript : MonoBehaviour
 {
     [SerializeField] CoinSide coinSide;
     [SerializeField] bool launchCoin;
+    [Space]
+    [SerializeField] UnityEvent OnCollisionEvent;
+
     [Header("Other Components")]
     [SerializeField] PlayerControlScript playerControlScript;
     [SerializeField] TextMeshPro coinSideText;
@@ -62,6 +65,7 @@ public class CoinScript : MonoBehaviour
                 collisionSound.Stop();
                 collisionSound.Play();
             }
+            OnCollisionEvent.Invoke();
         }
         if (!playerControlScript)
         {
@@ -71,7 +75,7 @@ public class CoinScript : MonoBehaviour
         {
             cardEventManager = FindObjectOfType<CardEventManager>();
         }
-        
+
 
         cardEventManager.Play_Coin(GetCoinSide());
         launchCoin = false;
