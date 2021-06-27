@@ -155,7 +155,7 @@ public class CardEventManager : MonoBehaviour
 
     void PlayCard(float[] values, List<Card> sequence, List<Card> removeSequence, List<StatusEnum> AddStatus, List<StatusEnum> RemoveStatus, List<StatusEnum> requiredStatus)
     {
-        foreach(StatusEnum se in requiredStatus)
+        foreach (StatusEnum se in requiredStatus)
         {
             if (!playerScript.status.currentstatus.Contains(se))
             {
@@ -163,10 +163,7 @@ public class CardEventManager : MonoBehaviour
             }
         }
 
-
-        playerScript.heal(values[0]);
-        playerScript.GainBux(values[1]);
-        playerScript.GainMood(values[2]);
+        ModifyPlayerStats(values);
         if (sequence.Count > 0)
         {
             WipeBuffer();
@@ -197,14 +194,22 @@ public class CardEventManager : MonoBehaviour
 
     }
 
+    private void ModifyPlayerStats(float[] values)
+    {
+        playerScript.heal(values[0]);
+        playerScript.GainBux(values[1]);
+        playerScript.GainMood(values[2]);
+        uIHandler.PlayStatsParticles(StatsType.HEALTH, values[0]);
+        uIHandler.PlayStatsParticles(StatsType.BUX, values[1]);
+        uIHandler.PlayStatsParticles(StatsType.MOOD, values[2]);
+    }
+
     public void Play_Heads()
     {
-        print("Player Heads");
         PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads,currentCard.RequoredStatusHeads);
     }
     public void Play_Tails()
     {
-        print("Player Tails");
         PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.RemoveSequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails, currentCard.RequoredStatusTails);
     }
     public void Play_Coin(CoinSide side)

@@ -84,6 +84,7 @@ public class PlayerControlScript : MonoBehaviour
             if (isCharging)
             {
                 coinFlipScript.LaunchCoin(launchForce);
+                launchForce = 0f;
                 SetControlLock(true);
             }
             isCharging = false;
@@ -92,7 +93,6 @@ public class PlayerControlScript : MonoBehaviour
 
     public void SetControlLock(bool b)
     {
-        print("Set control lock:" + b);
         controlLock = b;
     }
 }
