@@ -37,6 +37,7 @@ MonoBehaviour:
   useCondition: 0
   ageEnum: 01000000
   cardStatuses: 
+  cardEffectScript: {fileID: 0}
 --- !u!114 &7065530230732899267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +75,7 @@ MonoBehaviour:
   useCondition: 0
   ageEnum: 01000000
   cardStatuses: 
+  cardEffectScript: {fileID: 0}
 --- !u!1001 &7271843959000196286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -182,8 +184,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: m_Size.x
+      value: 1.3333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 21300000, guid: 1d0fd597ba565ad4d9a9d3ff86215c96, type: 3}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
