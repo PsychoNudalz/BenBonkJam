@@ -37,6 +37,7 @@ MonoBehaviour:
   useCondition: 0
   ageEnum: 00000000
   cardStatuses: 
+  cardEffectScript: {fileID: 0}
 --- !u!1001 &487224251602062027
 PrefabInstance:
   m_ObjectHideFlags: 0
