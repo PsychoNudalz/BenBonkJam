@@ -92,7 +92,6 @@ public class PlayerControlScript : MonoBehaviour
 
     public void SetControlLock(bool b)
     {
-        print("Set control lock:" + b);
         controlLock = b;
     }
 }
