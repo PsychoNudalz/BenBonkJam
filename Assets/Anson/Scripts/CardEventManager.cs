@@ -207,8 +207,20 @@ public class CardEventManager : MonoBehaviour
         print("Player Tails");
         PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.RemoveSequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails, currentCard.RequoredStatusTails);
     }
+    public void Play_Coin(CoinSide side)
+    {
+        switch (side)
+        {
+            case CoinSide.HEADS:
+                Play_Heads();
+                break;
+            case CoinSide.TAILS:
+                Play_Tails();
+                break;
+        } 
+    }
 
-    void UpdatePlayerStatsUI()
+        void UpdatePlayerStatsUI()
     {
         uIHandler.UpdateStats(playerScript);
     }
@@ -228,4 +240,5 @@ public class CardEventManager : MonoBehaviour
     {
         cardBuffer = new List<Card>();
     }
+    
 }

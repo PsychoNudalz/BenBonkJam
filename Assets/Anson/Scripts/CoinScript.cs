@@ -12,9 +12,14 @@ public enum CoinSide
 public class CoinScript : MonoBehaviour
 {
     [SerializeField] CoinSide coinSide;
+    [SerializeField] bool launchCoin;
     [Header("Other Components")]
     [SerializeField] PlayerControlScript playerControlScript;
     [SerializeField] TextMeshPro coinSideText;
+    [SerializeField] CardEventManager cardEventManager;
+
+    public bool LaunchCoin { get => launchCoin; set => launchCoin = value; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,23 +32,38 @@ public class CoinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector2.Angle(transform.up, Vector2.up)<90)
+        coinSideText.text = GetCoinSide().ToString();
+    }
+
+    CoinSide GetCoinSide()
+    {
+        if (Vector2.Angle(transform.up, Vector2.up) < 90)
         {
-            coinSideText.text = CoinSide.HEADS.ToString();
+            return CoinSide.HEADS;
         }
         else
         {
-            coinSideText.text = CoinSide.TAILS.ToString();
-
+            return CoinSide.TAILS;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!launchCoin)
+        {
+            return;
+        }
         if (!playerControlScript)
         {
             playerControlScript = FindObjectOfType<PlayerControlScript>();
         }
-        playerControlScript.SetControlLock(false);
+        if (!cardEventManager)
+        {
+            cardEventManager = FindObjectOfType<CardEventManager>();
+        }
+
+        cardEventManager.Play_Coin(GetCoinSide());
+        launchCoin = false;
+
     }
 }

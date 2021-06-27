@@ -44,6 +44,7 @@ public class CoinFlipScript : MonoBehaviour
         coinRB.bodyType = RigidbodyType2D.Dynamic;
         coinRB.AddForce(coinRB.mass* transform.up * (launchForce.x + charge * (launchForce.y-launchForce.x)));
         coinRB.AddTorque(coinRB.mass * launchTorque.x + charge * (launchTorque.y- launchTorque.x));
+        coinScript.LaunchCoin = true;
     }
 
     public void ResetCoinPosition()
