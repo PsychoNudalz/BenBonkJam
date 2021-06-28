@@ -30458,7 +30458,7 @@ MonoBehaviour:
   buxValue: {fileID: 3000401462101666842}
   moodValue: {fileID: 7294514331869954247}
   ageText: {fileID: 6854482473599639288}
-  UIStatusEffectGO: {fileID: 6266174529979273152, guid: 554b15c0bca9f5343a3748426c62baa8, type: 3}
+  UIStatusEffectGO: {fileID: 6266174529979273152, guid: 720bef49f0c5fc746aff275542a77b61, type: 3}
   statusDisplay: {fileID: 1322031705177578023}
   currentCard: {fileID: 0}
   cardEventManager: {fileID: 0}
