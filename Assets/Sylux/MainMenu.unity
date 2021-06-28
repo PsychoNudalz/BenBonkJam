@@ -1758,7 +1758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 221, y: -45}
+  m_AnchoredPosition: {x: 221, y: -15}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &482394884
@@ -1781,7 +1781,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: How you live your life determines your ultimate fate.
+  m_text: How you live your life determines your ultimate fate. Can you find the
+    nine endings?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
   m_sharedMaterial: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
@@ -2141,7 +2142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33, y: 297}
+  m_AnchoredPosition: {x: 33, y: 300}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &580988020
@@ -4134,7 +4135,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -418, y: -19}
+  m_AnchoredPosition: {x: -418, y: -15}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1140636718
