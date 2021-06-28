@@ -33,6 +33,7 @@ public static class StatusToScore
             case StatusEnum.Sick:
                 break;
             case StatusEnum.Paranormal:
+                score = 15f;
                 break;
             case StatusEnum.EducatedI:
                 break;
