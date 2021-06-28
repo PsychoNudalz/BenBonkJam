@@ -6,6 +6,7 @@ public class CardEventManager : MonoBehaviour
 {
     public List<Card> allCards;
     public List<Card> tempCards;
+    public List<Card> deathCards;
     [Header("Manager")]
     [SerializeField] Card currentCard;
     [SerializeField] Card previousCard;
@@ -44,11 +45,21 @@ public class CardEventManager : MonoBehaviour
     public void LoadNewCard()
     {
         UpdatePlayerStatsUI();
+        if (currentCard!= null&& currentCard.ageEnum.Contains(AgeEnum.DEATH))
+        {
+            FindObjectOfType<GameManagerScript>().setGameOver();
+        }
         if (cardCounter >= cardPerAge && cardBuffer.Count == 0)
         {
             AgePlayer();
         }
         Card newCard = null;
+
+        if (playerScript.age.Equals(AgeEnum.DEATH))
+        {
+            tempCards = new List<Card>();
+            cardBuffer = new List<Card>(deathCards);
+        }
 
         if (cardBuffer.Count > 0)
         {

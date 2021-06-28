@@ -16,16 +16,16 @@ MonoBehaviour:
   cardID: 0
   cardDescription: PlayGames
   healthHeads: 0
-  buxHeads: -5
-  moodHeads: 5
+  buxHeads: 10
+  moodHeads: -10
   requoredStatusHeads: 
   sequenceCardsHeads: []
   removeSequenceCardsHeads: []
   addStatusHeads: 
   removeStatusHeads: 
   healthTails: 0
-  buxTails: 5
-  moodTails: -5
+  buxTails: -10
+  moodTails: 20
   requoredStatusTails: 
   sequenceCardsTails: []
   removeSequenceCardsTails: []

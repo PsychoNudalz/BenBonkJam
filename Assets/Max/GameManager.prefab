@@ -193,7 +193,7 @@ MonoBehaviour:
   - status: 1
     icon: {fileID: 21300000, guid: 6a166739552a21e42b54a007e03b8e1f, type: 3}
   - status: 2
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 1031f365b77b55b4ba0b48feaf1424b1, type: 3}
   - status: 3
     icon: {fileID: 21300000, guid: 22a1245bbae0c6f4a8d0147b4fdedbd5, type: 3}
   - status: 4
