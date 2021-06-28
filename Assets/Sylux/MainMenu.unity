@@ -1205,7 +1205,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Sylux02 - https://sylux02.itch.io\nJoi Ruden - https://www.artstation.com/joirudin\nNudalZmith
-    https://nudalzmith.itch.io/\r\nHcay https://hcay.itch.io\r"
+    - https://nudalzmith.itch.io/\r\nHcay - https://hcay.itch.io\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
   m_sharedMaterial: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
@@ -2438,8 +2438,8 @@ MonoBehaviour:
     - https://freesound.org/people/trijohnstone/sounds/536335/ \r\nCrowd Cheer -
     https://freesound.org/people/jayfrosting/sounds/333404/ \r\nWhistle -  https://freesound.org/people/SpliceSound/sounds/218318/
     \r\nHaunted Manor - https://freesound.org/people/deleted_user_6025018/sounds/350468/
-    \r\nFemale scream - https://freesound.org/people/tomattka/sounds/400181/\rBGM
-    (Pendulum) - BGM (Pendulum) https://jdbartist.itch.io/retro-music-pack"
+    \r\nFemale scream - https://freesound.org/people/tomattka/sounds/400181/\r\nBGM
+    (Pendulum) - https://jdbartist.itch.io/retro-music-pack"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
   m_sharedMaterial: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
@@ -4538,8 +4538,8 @@ MonoBehaviour:
     Beep - https://freesound.org/people/Soundwarf/sounds/387533/ \r\nSweet Alert
     - https://freesound.org/people/KIZILSUNGUR/sounds/72126/ \r\nCoin Flip - https://freesound.org/people/SpaceJoe/sounds/485729/
     \r\nFart - https://freesound.org/people/Breviceps/sounds/446000/ \r\nFlip Card
-    -https://freesound.org/people/Splashdust/sounds/84322/\r\nBed squeaking sound
-    -https://freesound.org/people/Breviceps/sounds/450623/\r\n"
+    - https://freesound.org/people/Splashdust/sounds/84322/\r\nBed squeaking sound
+    - https://freesound.org/people/Breviceps/sounds/450623/\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
   m_sharedMaterial: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
