@@ -25,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7669844762209004676, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: buxHeads
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7669844762209004676, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: moodHeads
-      value: -10
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 7669844762209004676, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: healthHeads
-      value: -10
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 7669844762209004676, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardStatuses.Array.size
