@@ -30,7 +30,7 @@ public class GameManagerScript : MonoBehaviour
     public string GetGrade()
     {
         float s = player.GetTotalStats();
-        if (s > 200f)
+        if (s > 180f)
         {
             return "S";
         }

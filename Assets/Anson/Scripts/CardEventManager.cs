@@ -25,7 +25,7 @@ public class CardEventManager : MonoBehaviour
 
     private void Start()
     {
-        tempCards = allCards;
+        tempCards =new List<Card>( allCards);
         if (!playerScript)
         {
             playerScript = FindObjectOfType<Player>();
