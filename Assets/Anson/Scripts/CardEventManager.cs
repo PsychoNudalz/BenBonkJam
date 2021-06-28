@@ -54,7 +54,7 @@ public class CardEventManager : MonoBehaviour
         {
             newCard = NextBufferCard();
         }
-        else if (tempCards.Count ==0&& playerScript.age.Equals(AgeEnum.DEATH))
+        else if (tempCards.Count == 0 && playerScript.age.Equals(AgeEnum.DEATH))
         {
             FindObjectOfType<GameManagerScript>().setGameOver();
         }
@@ -143,10 +143,6 @@ public class CardEventManager : MonoBehaviour
         {
             return false;
         }
-        if (!card.ageEnum.Contains(playerScript.age))
-        {
-            return false;
-        }
         foreach (StatusEnum s in card.cardStatuses)
         {
             if (!playerScript.status.currentstatus.Contains(s))
@@ -154,6 +150,14 @@ public class CardEventManager : MonoBehaviour
                 return false;
             }
 
+        }
+        if (card.ageEnum.Count == 0)
+        {
+            return !playerScript.age.Equals(AgeEnum.DEATH);
+        }
+        if (!card.ageEnum.Contains(playerScript.age))
+        {
+            return false;
         }
         return true;
     }

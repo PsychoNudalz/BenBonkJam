@@ -123,6 +123,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7777152403300026144, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e6ed917d9ffc0754699d03f5935cc2fa, type: 3}
     - target: {fileID: 8408579004432548936, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_audioClip
       value: 
