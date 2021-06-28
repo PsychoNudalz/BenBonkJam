@@ -123,5 +123,9 @@ PrefabInstance:
       propertyPath: shaderTypes
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7777152403300026144, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ba0d4ae216224f4fb18f3ed589855fa, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
