@@ -55,11 +55,13 @@ public class CardEventManager : MonoBehaviour
         }
         Card newCard = null;
 
+        //Death Card
         if (playerScript.age.Equals(AgeEnum.DEATH))
         {
             tempCards = new List<Card>();
             cardBuffer = new List<Card>(deathCards);
         }
+
 
         if (cardBuffer.Count > 0)
         {
@@ -236,7 +238,9 @@ public class CardEventManager : MonoBehaviour
     {
         if (playerScript.heal(values[0]) || playerScript.GainBux(values[1]) || playerScript.GainMood(values[2]))
         {
+            //if player death
             playerScript.SetAge((int)AgeEnum.DEATH);
+            FindObjectOfType<CameraShake>().PlayShake(.3f, .4f);
         }
         uIHandler.PlayStatsParticles(StatsType.HEALTH, values[0]);
         uIHandler.PlayStatsParticles(StatsType.BUX, values[1]);

@@ -121,7 +121,7 @@ Material:
     - _GhostTransparency: 0
     - _GlitchAmount: 3
     - _GlitchSize: 1
-    - _Glow: 10
+    - _Glow: 5
     - _GlowAffectLight: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
