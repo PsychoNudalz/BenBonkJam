@@ -152,4 +152,9 @@ public class Player : MonoBehaviour
     {
         
     }
+
+    public float GetTotalStats()
+    {
+        return HealthPoints + BuxPoint + MoodPoint;
+    }
 }

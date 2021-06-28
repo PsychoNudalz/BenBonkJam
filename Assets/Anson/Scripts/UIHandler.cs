@@ -22,6 +22,11 @@ public class UIHandler : MonoBehaviour
     [Header("Card")]
     [SerializeField] Card currentCard;
     [SerializeField] CardEventManager cardEventManager;
+    [Header("Game Over")]
+    [SerializeField] GameObject gameOverScreen;
+    [SerializeField] TextMeshProUGUI gradeText;
+    [SerializeField] TextMeshProUGUI extraMessage;
+    
 
     [Header("Particle Effects")]
     [SerializeField] ParticleSystem health_Gain;
@@ -137,5 +142,13 @@ public class UIHandler : MonoBehaviour
     public void BackToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void DisplayGameOver(string grade, string s = "")
+    {
+        gameOverScreen.SetActive(true);
+        gradeText.text = grade;
+        extraMessage.text = s;
+        statusDisplay.transform.parent = gameOverScreen.transform;
     }
 }

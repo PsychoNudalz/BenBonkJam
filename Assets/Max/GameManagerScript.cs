@@ -9,8 +9,7 @@ public class GameManagerScript : MonoBehaviour
     public bool gameOver;
     public Player player;
     [Header("Game Over")]
-    public GameObject gameOverScreen;
-    [SerializeField] TextMeshProUGUI grades;
+    public UIHandler uIHandler;
    
     //if health is 0 -> gameover (Redundant)
     /*public void CheckHealth() {
@@ -21,7 +20,39 @@ public class GameManagerScript : MonoBehaviour
 
     public void setGameOver() {
         gameOver = true;
-        gameOverScreen.SetActive(true);
+        if (!uIHandler)
+        {
+            uIHandler = FindObjectOfType<UIHandler>();
+        }
+        uIHandler.DisplayGameOver(GetGrade());
+    }
+
+    public string GetGrade()
+    {
+        float s = player.GetTotalStats();
+        if (s > 250f)
+        {
+            return "A";
+        }else if (s > 200f)
+        {
+            return "B";
+        }
+        else if (s > 150f)
+        {
+            return "C";
+        }
+        else if (s > 100f)
+        {
+            return "D";
+        }
+        else if (s > 50f)
+        {
+            return "E";
+        }
+        else
+        {
+            return "F";
+        }
     }
 
     // Start is called before the first frame update
