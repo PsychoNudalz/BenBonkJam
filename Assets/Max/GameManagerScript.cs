@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManagerScript : MonoBehaviour
 {
     public bool gameOver;
     public Player player;
+    [Header("Game Over")]
     public GameObject gameOverScreen;
-    
+    [SerializeField] TextMeshProUGUI grades;
+   
     //if health is 0 -> gameover (Redundant)
     /*public void CheckHealth() {
         if (player.HealthPoints < 0f) {

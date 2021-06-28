@@ -15,7 +15,9 @@ public class UIHandler : MonoBehaviour
     [SerializeField] Slider buxValue;
     [SerializeField] Slider moodValue;
     [SerializeField] TextMeshProUGUI ageText;
-    [SerializeField] TextMeshProUGUI statusText;
+    [Header("Status")]
+    [SerializeField] GameObject UIStatusEffectGO;
+    [SerializeField] GameObject statusDisplay;
 
     [Header("Card")]
     [SerializeField] Card currentCard;
@@ -59,7 +61,26 @@ public class UIHandler : MonoBehaviour
         {
             tempStatus += s.ToString() + "\n";
         }
-        statusText.text = tempStatus;
+        UpdateStatusDisplay(p);
+    }
+
+    public void UpdateStatusDisplay(Player p)
+    {
+        foreach (Transform g in statusDisplay.transform.GetComponentsInChildren<Transform>())
+        {
+            if (!g.Equals(statusDisplay.transform))
+            {
+                Destroy(g.gameObject);
+            }
+        }
+        UIStatusEffect currentUI;
+        foreach(StatusEnum se in p.status.currentstatus)
+        {
+            currentUI = Instantiate(UIStatusEffectGO, statusDisplay.transform).GetComponent<UIStatusEffect>();
+            currentUI.SetNewStatus(FindObjectOfType<StatusEffectManager>().GetStatusEffectPair(se));
+        }
+
+
     }
 
     public void Play_Heads()
