@@ -11,7 +11,7 @@ public class CardEventManager : MonoBehaviour
     [SerializeField] Card previousCard;
     [SerializeField] List<Card> cardBuffer;
     [SerializeField] Player playerScript;
-    [SerializeField] int randomPickTry = 50;
+    [SerializeField] int randomPickTry = 100;
     [SerializeField] int cardCounter = 0;
     [SerializeField] int cardPerAge = 5;
     [Header("Transforms")]
@@ -37,6 +37,8 @@ public class CardEventManager : MonoBehaviour
 
         UpdatePlayerStatsUI();
         LoadNewCard();
+        currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
+        randomPickTry = allCards.Count * 2;
     }
 
     public void LoadNewCard()

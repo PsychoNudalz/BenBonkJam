@@ -47,8 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: 0
   player: {fileID: 0}
-  gameOverScreen: {fileID: 0}
-  grades: {fileID: 0}
+  uIHandler: {fileID: 0}
 --- !u!82 &275986649
 AudioSource:
   m_ObjectHideFlags: 0
@@ -233,3 +232,5 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 4a70ba60b35aea54e9820567cffbe741, type: 3}
   - status: 21
     icon: {fileID: 21300000, guid: 76676d1f31274a846991411240a3d3c3, type: 3}
+  - status: 22
+    icon: {fileID: 21300000, guid: 4f0950b2450a28d47988669569154010, type: 3}
