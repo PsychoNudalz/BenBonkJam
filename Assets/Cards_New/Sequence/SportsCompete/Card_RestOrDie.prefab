@@ -9,19 +9,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: Forced into intensive training, you feel so ill...
+      value: Your body is failing, you feel so ill...
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
-      value: 4.95
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657743435846, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2.3972
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657743435846, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.7859
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657743435846, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.85
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: Never give up the tournament!
+      value: 'Never give up the tournament!
+
+        Keep going!'
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
-      value: 3.85
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
@@ -104,7 +118,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: addStatusTails.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardStatuses.Array.data[0]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: addStatusTails.Array.data[0]
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
@@ -116,8 +138,12 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 21300000, guid: 463b028bbd6e2b548bc9e2522ed992f4, type: 3}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}

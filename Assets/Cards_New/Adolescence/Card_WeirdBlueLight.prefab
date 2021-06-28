@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: Investigate (Find a portal and get Isekaid)
+      value: investigate this fascinating phenomenon
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
@@ -74,6 +74,14 @@ PrefabInstance:
     - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: moodTails
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: healthHeads
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardDescription

@@ -13,15 +13,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: No
+      value: No they poop too much
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
-      value: 5
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: Yes
+      value: Yes! So cute!
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
@@ -77,11 +77,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: buxHeads
-      value: -5
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: moodHeads
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: moodTails
@@ -101,11 +101,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardStatuses.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: addStatusHeads.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardStatuses.Array.data[0]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: addStatusHeads.Array.data[0]
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Sprite
