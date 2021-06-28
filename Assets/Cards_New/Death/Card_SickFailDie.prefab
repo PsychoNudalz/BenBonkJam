@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6955590437037003717
+--- !u!1001 &4735792295860752538
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,25 +9,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: 'People say marriage is a big investment. What about me?
-
-'
+      value: "Your body fails, you feel so ill\u2026 and die in sick pain."
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
-      value: 4.2
+      value: 4.65
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: I can have a partner without needing to marry, you know...
+      value: Ok next time I will take more care to my body
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
-      value: 2.65
+      value: 3.15
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: Propose marriage sincerely (need soulmate)
+      value: '"So sick" in cantonese sounds like Su Shi the poet'
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
@@ -35,7 +33,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Name
-      value: Card_Marriage
+      value: Card_SickFailDie
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_RootOrder
@@ -82,44 +80,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: buxHeads
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: moodHeads
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardDescription
-      value: Marriage
+      value: SickFailDie
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: ageEnum.Array.data[0]
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: addStatusHeads.Array.size
+      propertyPath: cardStatuses.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: addStatusTails.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: addStatusHeads.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: addStatusTails.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: requoredStatusHeads.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: requoredStatusHeads.Array.data[0]
-      value: 20
+      propertyPath: cardStatuses.Array.data[0]
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3946193658470986072, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_LocalScale.x
@@ -131,16 +105,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Size.x
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Size.y
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f62e322c34736384d9a25b3922bde9ba, type: 3}
+      objectReference: {fileID: 21300000, guid: 8b78c3c0a9d2b284e8c1020a90ffe44a, type: 3}
     - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
