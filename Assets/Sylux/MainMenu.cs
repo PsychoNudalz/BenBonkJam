@@ -51,11 +51,28 @@ public class MainMenu : MonoBehaviour
         sfxCredits3.SetActive(false);
     }
 
-    public void CreditsTwo()
+    public void SFXCreditsOne()
     {
+        mainCredits.SetActive(false);
+        sfxCredits1.SetActive(true);
+        sfxCredits2.SetActive(false);
+        sfxCredits3.SetActive(false);
+    }
+
+    public void SFXCreditsTwo()
+    {
+        mainCredits.SetActive(false);
         sfxCredits1.SetActive(false);
         sfxCredits2.SetActive(true);
         sfxCredits3.SetActive(false);
+    }
+
+    public void SFXCreditsThree()
+    {
+        mainCredits.SetActive(false);
+        sfxCredits1.SetActive(false);
+        sfxCredits2.SetActive(false);
+        sfxCredits3.SetActive(true);
     }
 
     public void backToMain()
