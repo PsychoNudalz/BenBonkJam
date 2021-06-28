@@ -1782,7 +1782,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: How you live your life determines your ultimate fate. Can you find the
-    nine endings?
+    twelve endings?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
   m_sharedMaterial: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
@@ -4387,7 +4387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1259058907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5825,7 +5825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!223 &1912530210
 Canvas:
   m_ObjectHideFlags: 0
