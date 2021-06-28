@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 619a5c96bfc4ed34d874ab100e465385, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -427,10 +427,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  collisionSound: {fileID: 2313213936447865068}
+  coinRender: {fileID: 0}
+  headsSprite: {fileID: 0}
+  tailsSprite: {fileID: 0}
   playerControlScript: {fileID: 0}
   coinSideText: {fileID: 0}
   cardEventManager: {fileID: 0}
-  collisionSound: {fileID: 2313213936447865068}
 --- !u!82 &2313213936447865068
 AudioSource:
   m_ObjectHideFlags: 0
