@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: 'You can Reincarnate with a new destiny...
+      value: 'You can reincarnate with a new destiny...
 
 '
       objectReference: {fileID: 0}
