@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7669844761854057291, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_text
-      value: Competitive Sports Player
+      value: Professional Sports Player
       objectReference: {fileID: 0}
     - target: {fileID: 7669844761854057291, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_fontSize
