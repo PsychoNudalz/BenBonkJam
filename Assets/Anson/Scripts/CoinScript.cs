@@ -15,12 +15,16 @@ public class CoinScript : MonoBehaviour
     [SerializeField] bool launchCoin;
     [Space]
     [SerializeField] UnityEvent OnCollisionEvent;
-
+    [SerializeField] AudioSource collisionSound;
+    [Header("Coin Display")]
+    [SerializeField] SpriteRenderer coinRender;
+    [SerializeField] Sprite headsSprite;
+    [SerializeField] Sprite tailsSprite;
     [Header("Other Components")]
     [SerializeField] PlayerControlScript playerControlScript;
     [SerializeField] TextMeshPro coinSideText;
     [SerializeField] CardEventManager cardEventManager;
-    [SerializeField] AudioSource collisionSound;
+
 
     public bool LaunchCoin { get => launchCoin; set => launchCoin = value; }
 
@@ -38,6 +42,15 @@ public class CoinScript : MonoBehaviour
     void Update()
     {
         coinSideText.text = GetCoinSide().ToString();
+        switch (GetCoinSide())
+        {
+            case CoinSide.HEADS:
+                coinRender.sprite = headsSprite;
+                break;
+            case CoinSide.TAILS:
+                coinRender.sprite = tailsSprite;
+                break;
+        }
     }
 
     CoinSide GetCoinSide()

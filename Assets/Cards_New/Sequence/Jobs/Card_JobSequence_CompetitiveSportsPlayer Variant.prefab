@@ -39,6 +39,10 @@ PrefabInstance:
       propertyPath: cardStatuses.Array.data[0]
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 7669844762209004676, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: removeSequenceCardsHeads.Array.data[1]
+      value: 
+      objectReference: {fileID: 3302008355984725730}
     - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -97,6 +101,17 @@ PrefabInstance:
       objectReference: {fileID: 3302008355744952017}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+--- !u!114 &3302008355984725730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7669844762209004676, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+  m_PrefabInstance: {fileID: 5162202928069278310}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a111226cd9b4d741bc3847d2579b1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &3302008355744952017 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7669844762303681719, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}

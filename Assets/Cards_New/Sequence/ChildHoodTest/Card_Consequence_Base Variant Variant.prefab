@@ -61,6 +61,10 @@ PrefabInstance:
       propertyPath: m_text
       value: ...
       objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740540, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: ageEnum.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
       propertyPath: m_RootOrder
       value: 0

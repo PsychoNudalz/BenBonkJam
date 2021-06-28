@@ -34,23 +34,23 @@ public class GameManagerScript : MonoBehaviour
         {
             return "S";
         }
-        else if (s > 170f)
+        else if (s > 150f)
         {
             return "A";
         }
-        else if (s > 150f)
+        else if (s > 120f)
         {
             return "B";
         }
-        else if (s > 130f)
+        else if (s > 100f)
         {
             return "C";
         }
-        else if (s > 100f)
+        else if (s > 80f)
         {
             return "D";
         }
-        else if (s > 50f)
+        else if (s > 30f)
         {
             return "E";
         }

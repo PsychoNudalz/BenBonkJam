@@ -130,6 +130,6 @@ PrefabInstance:
     - target: {fileID: 8408579004432548936, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: e6b88ef0b5573eb419ab5153bea0d30b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
