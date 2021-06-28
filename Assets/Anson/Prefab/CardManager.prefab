@@ -168,7 +168,7 @@ MonoBehaviour:
   playerScript: {fileID: 0}
   randomPickTry: 50
   cardCounter: 0
-  cardPerAge: 5
+  cardPerAge: 6
   cardSpawnPoint: {fileID: 3149122795622043081}
   previousCardTransform: {fileID: 757599601080306835}
   uIHandler: {fileID: 0}
