@@ -2438,7 +2438,8 @@ MonoBehaviour:
     - https://freesound.org/people/trijohnstone/sounds/536335/ \r\nCrowd Cheer -
     https://freesound.org/people/jayfrosting/sounds/333404/ \r\nWhistle -  https://freesound.org/people/SpliceSound/sounds/218318/
     \r\nHaunted Manor - https://freesound.org/people/deleted_user_6025018/sounds/350468/
-    \r\nFemale scream - https://freesound.org/people/tomattka/sounds/400181/\r"
+    \r\nFemale scream - https://freesound.org/people/tomattka/sounds/400181/\rBGM
+    (Pendulum) - BGM (Pendulum) https://jdbartist.itch.io/retro-music-pack"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
   m_sharedMaterial: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
@@ -4387,7 +4388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1259058907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5825,7 +5826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!223 &1912530210
 Canvas:
   m_ObjectHideFlags: 0
