@@ -18,6 +18,9 @@ public class CardEventManager : MonoBehaviour
     [Header("Transforms")]
     [SerializeField] Transform cardSpawnPoint;
     [SerializeField] Transform previousCardTransform;
+    [Header("Button Lock")]
+    [SerializeField] float lastPressTime = 10f;
+    [SerializeField] float pressCooldown = 1f;
     [Header("Other Components")]
     [SerializeField] UIHandler uIHandler;
     [SerializeField] Animator animator;
@@ -231,6 +234,7 @@ public class CardEventManager : MonoBehaviour
                 playerScript.RemoveStatus(remS);
             }
         }
+        lastPressTime = Time.time;
 
     }
 
@@ -249,6 +253,11 @@ public class CardEventManager : MonoBehaviour
 
     public void Play_Heads()
     {
+        if (Time.time < lastPressTime + pressCooldown)
+        {
+            return;
+        }
+
         PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads, currentCard.RequoredStatusHeads);
         PlayCardSound(CardSoundEnum.HEADS);
         headsPS.Stop();
@@ -258,6 +267,10 @@ public class CardEventManager : MonoBehaviour
     }
     public void Play_Tails()
     {
+        if (Time.time < lastPressTime + pressCooldown)
+        {
+            return;
+        }
         PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.RemoveSequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails, currentCard.RequoredStatusTails);
         PlayCardSound(CardSoundEnum.TAILS);
         tailsPS.Stop();

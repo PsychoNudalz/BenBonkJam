@@ -192,6 +192,8 @@ MonoBehaviour:
   cardPerAge: 6
   cardSpawnPoint: {fileID: 3149122795622043081}
   previousCardTransform: {fileID: 757599601080306835}
+  lastPressTime: -10
+  pressCooldown: 1.5
   uIHandler: {fileID: 0}
   animator: {fileID: 4379163752723092413}
   headsPS: {fileID: 4589058755587404897}
