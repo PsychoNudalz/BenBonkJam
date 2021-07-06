@@ -12,8 +12,8 @@ public struct CardOption
     [SerializeField] float mood;
     [SerializeField] List<StatusEnum> requiredStatus;
     [Header("Sequence Cards")]
-    [SerializeField] List<CardOLD> sequenceCardsAdd;
-    [SerializeField] List<CardOLD> sequenceCardsRemove;
+    [SerializeField] List<Card> sequenceCardsAdd;
+    [SerializeField] List<Card> sequenceCardsRemove;
     [Header("Status Effect")]
     [SerializeField] List<StatusEnum> statusAdd;
     [SerializeField] List<StatusEnum> statusRemove;
@@ -22,8 +22,8 @@ public struct CardOption
     public float Bux { get => bux; set => bux = value; }
     public float Mood { get => mood; set => mood = value; }
     public List<StatusEnum> RequiredStatus { get => requiredStatus; set => requiredStatus = value; }
-    public List<CardOLD> SequenceCardsAdd { get => sequenceCardsAdd; set => sequenceCardsAdd = value; }
-    public List<CardOLD> SequenceCardsRemove { get => sequenceCardsRemove; set => sequenceCardsRemove = value; }
+    public List<Card> SequenceCardsAdd { get => sequenceCardsAdd; set => sequenceCardsAdd = value; }
+    public List<Card> SequenceCardsRemove { get => sequenceCardsRemove; set => sequenceCardsRemove = value; }
     public List<StatusEnum> StatusAdd { get => statusAdd; set => statusAdd = value; }
     public List<StatusEnum> StatusRemove { get => statusRemove; set => statusRemove = value; }
 
@@ -38,10 +38,44 @@ public struct CardOption
         this.bux = bux;
         this.mood = mood;
         this.requiredStatus = requiredStatus;
-        this.sequenceCardsAdd = sequenceCardsAdd;
-        this.sequenceCardsRemove = sequenceCardsRemove;
+        //this.sequenceCardsAdd = sequenceCardsAdd;
+        //this.sequenceCardsRemove = sequenceCardsRemove;
         this.statusAdd = statusAdd;
         this.statusRemove = statusRemove;
+        this.sequenceCardsAdd = new List<Card>();
+        this.sequenceCardsRemove = new List<Card>();
+        foreach (CardOLD old in sequenceCardsAdd)
+        {
+            if (old != null)
+            {
+
+                if (old.gameObject.TryGetComponent(out Card newCard))
+                {
+                    this.sequenceCardsAdd.Add(newCard);
+
+                }
+                else
+                {
+                    Debug.LogError("Failed to get new card class");
+                }
+            }
+        }
+        foreach (CardOLD old in sequenceCardsRemove)
+        {
+            if (old != null)
+            {
+                if (old.gameObject.TryGetComponent(out Card newCard))
+                {
+                    this.sequenceCardsRemove.Add(newCard);
+
+                }
+                else
+                {
+                    Debug.LogError("Failed to get new card class");
+
+                }
+            }
+        }
     }
 }
 
@@ -52,7 +86,7 @@ public class Card : MonoBehaviour
     [SerializeField] string cardID;
     [SerializeField] string cardDescription;
     [SerializeField] string cardDescriptionText;
-    [Header("Heads")] 
+    [Header("Heads")]
     [SerializeField] string headsDescriptionText;
     [SerializeField] CardOption headsOption;
     [Header("Tails")]
@@ -67,6 +101,13 @@ public class Card : MonoBehaviour
     [SerializeField] TextMeshPro tailsDescriptionTMPro;
     [Header("Other Components")]
     [SerializeField] CardEffectScript cardEffectScript;
+
+    public CardEffectScript CardEffectScript { get => cardEffectScript; set => cardEffectScript = value; }
+    public List<AgeEnum> AgeNeeded { get => ageNeeded; set => ageNeeded = value; }
+    public List<StatusEnum> StatusNeeded { get => statusNeeded; set => statusNeeded = value; }
+    public CardOption HeadsOption { get => headsOption; set => headsOption = value; }
+    public CardOption TailsOption { get => tailsOption; set => tailsOption = value; }
+
     // Start is called before the first frame update
 
     public bool PortOldToNew(CardOLD old)
@@ -81,7 +122,7 @@ public class Card : MonoBehaviour
             statusNeeded = new List<StatusEnum>(old.cardStatuses);
             UpdateSavedDescriptions();
         }
-        catch(System.Exception e)
+        catch (System.Exception e)
         {
             Debug.LogError("Card Port failed on: " + old.cardDescription);
             print(e.StackTrace);
@@ -100,8 +141,8 @@ public class Card : MonoBehaviour
     void UpdateCardDescriptions()
     {
         cardDescriptionTMPro.text = cardDescriptionText;
-         headsDescriptionTMPro.text = headsDescriptionText;
-         tailsDescriptionTMPro.text= tailsDescriptionText;
+        headsDescriptionTMPro.text = headsDescriptionText;
+        tailsDescriptionTMPro.text = tailsDescriptionText;
     }
 
     private void Start()

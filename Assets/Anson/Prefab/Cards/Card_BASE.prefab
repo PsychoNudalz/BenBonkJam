@@ -1056,7 +1056,7 @@ GameObject:
   - component: {fileID: 3946193657962473602}
   - component: {fileID: 3946193657962473603}
   - component: {fileID: 8972083844679716449}
-  - component: {fileID: -1202165042388871809}
+  - component: {fileID: -2587406193006211280}
   m_Layer: 0
   m_Name: Card_BASE
   m_TagString: Untagged
@@ -1139,7 +1139,7 @@ MonoBehaviour:
   playCardSound: {fileID: 8408579004432548936}
   headsSound: {fileID: 8279266555296958886}
   tailsSound: {fileID: 7777152403300026144}
---- !u!114 &-1202165042388871809
+--- !u!114 &-2587406193006211280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1179,7 +1179,7 @@ MonoBehaviour:
   cardDescriptionTMPro: {fileID: 3946193657608576844}
   headsDescriptionTMPro: {fileID: 3946193657792254159}
   tailsDescriptionTMPro: {fileID: 3946193657743435847}
-  cardEffectScript: {fileID: 0}
+  cardEffectScript: {fileID: 8972083844679716449}
 --- !u!1 &3946193658470986071
 GameObject:
   m_ObjectHideFlags: 0
