@@ -353,12 +353,11 @@ public class CardEventManager : MonoBehaviour
         {
             currentCard = newTempCards[i];
             Debug.Log(currentCard.cardDescription);
-            if (!TryGetComponent(out CardNew newCom))
+            if (!currentCard.TryGetComponent(out CardNew newCom))
             {
                 newCom = currentCard.gameObject.AddComponent<CardNew>();
-
             }
-            flag = (RunCardConversion(currentCard,newCom)) == null;
+            flag = (RunCardConversion(currentCard,newCom)) != null;
         }
         if (!flag)
         {

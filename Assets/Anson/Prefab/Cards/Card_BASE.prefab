@@ -1176,9 +1176,9 @@ MonoBehaviour:
     statusRemove: 
   ageNeeded: 
   statusNeeded: 
-  cardDescriptionTMPro: {fileID: 0}
-  headsDescriptionTMPro: {fileID: 0}
-  tailsDescriptionTMPro: {fileID: 0}
+  cardDescriptionTMPro: {fileID: 3946193657608576844}
+  headsDescriptionTMPro: {fileID: 3946193657792254159}
+  tailsDescriptionTMPro: {fileID: 3946193657743435847}
   cardEffectScript: {fileID: 0}
 --- !u!1 &3946193658470986071
 GameObject:

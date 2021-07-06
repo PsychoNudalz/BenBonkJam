@@ -79,6 +79,7 @@ public class CardNew : MonoBehaviour
             tailsOption.Init(old.healthTails, old.buxTails, old.moodTails, old.RequoredStatusTails, old.SequenceCardsTails, old.RemoveSequenceCardsTails, old.AddStatusTails, old.RemoveStatusTails);
             ageNeeded = new List<AgeEnum>(old.ageEnum);
             statusNeeded = new List<StatusEnum>(old.cardStatuses);
+            UpdateSavedDescriptions();
         }
         catch(System.Exception e)
         {
@@ -91,7 +92,16 @@ public class CardNew : MonoBehaviour
 
     void UpdateSavedDescriptions()
     {
+        cardDescriptionText = cardDescriptionTMPro.text;
+        headsDescriptionText = headsDescriptionTMPro.text;
+        tailsDescriptionText = tailsDescriptionTMPro.text;
+    }
 
+    void UpdateCardDescriptions()
+    {
+        cardDescriptionTMPro.text = cardDescriptionText;
+         headsDescriptionTMPro.text = headsDescriptionText;
+         tailsDescriptionTMPro.text= tailsDescriptionText;
     }
 
     private void Start()
