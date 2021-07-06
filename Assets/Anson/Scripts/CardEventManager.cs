@@ -26,6 +26,8 @@ public class CardEventManager : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] ParticleSystem headsPS;
     [SerializeField] ParticleSystem tailsPS;
+    [Header("Debug")]
+    [SerializeField] bool runConverter;
 
     private void Start()
     {
@@ -322,5 +324,11 @@ public class CardEventManager : MonoBehaviour
         {
             Debug.LogError("Failed to play card sound");
         }
+    }
+
+
+    void RunCardConversion(Card old)
+    {
+
     }
 }
