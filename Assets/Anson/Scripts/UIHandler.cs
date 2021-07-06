@@ -20,7 +20,7 @@ public class UIHandler : MonoBehaviour
     [SerializeField] GameObject statusDisplay;
 
     [Header("Card")]
-    [SerializeField] Card currentCard;
+    [SerializeField] CardOLD currentCard;
     [SerializeField] CardEventManager cardEventManager;
     [Header("Game Over")]
     [SerializeField] GameObject gameOverScreen;

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CardEventManager : MonoBehaviour
 {
-    public List<Card> allCards;
-    public List<Card> tempCards;
-    public List<Card> deathCards;
+    public List<CardOLD> allCards;
+    public List<CardOLD> tempCards;
+    public List<CardOLD> deathCards;
     [Header("Manager")]
-    [SerializeField] Card currentCard;
-    [SerializeField] Card previousCard;
-    [SerializeField] List<Card> cardBuffer;
+    [SerializeField] CardOLD currentCard;
+    [SerializeField] CardOLD previousCard;
+    [SerializeField] List<CardOLD> cardBuffer;
     [SerializeField] Player playerScript;
     [SerializeField] int randomPickTry = 100;
     [SerializeField] int cardCounter = 0;
@@ -31,7 +31,7 @@ public class CardEventManager : MonoBehaviour
 
     private void Start()
     {
-        tempCards =new List<Card>( allCards);
+        tempCards =new List<CardOLD>( allCards);
         if (!playerScript)
         {
             playerScript = FindObjectOfType<Player>();
@@ -63,13 +63,13 @@ public class CardEventManager : MonoBehaviour
         {
             AgePlayer();
         }
-        Card newCard = null;
+        CardOLD newCard = null;
 
         //Death Card
         if (playerScript.age.Equals(AgeEnum.DEATH))
         {
-            tempCards = new List<Card>();
-            cardBuffer = new List<Card>(deathCards);
+            tempCards = new List<CardOLD>();
+            cardBuffer = new List<CardOLD>(deathCards);
         }
 
 
@@ -95,7 +95,7 @@ public class CardEventManager : MonoBehaviour
             }
             if (playerScript.age.Equals(AgeEnum.DEATH))
             {
-                tempCards = new List<Card>();
+                tempCards = new List<CardOLD>();
             }
         }
 
@@ -112,9 +112,9 @@ public class CardEventManager : MonoBehaviour
 
         return !playerScript.age.Equals(AgeEnum.DEATH);
     }
-    private Card NextBufferCard()
+    private CardOLD NextBufferCard()
     {
-        Card newCard = null;
+        CardOLD newCard = null;
         while (!CanPlay(newCard, playerScript) && cardBuffer.Count > 0)
         {
             newCard = cardBuffer[0];
@@ -127,9 +127,9 @@ public class CardEventManager : MonoBehaviour
         return newCard;
     }
 
-    private Card NewRandomCard()
+    private CardOLD NewRandomCard()
     {
-        Card newCard = PickRandomCard();
+        CardOLD newCard = PickRandomCard();
         if (!newCard)
         {
             Debug.LogError("card deck empty");
@@ -150,7 +150,7 @@ public class CardEventManager : MonoBehaviour
         return newCard;
     }
 
-    public Card PickRandomCard()
+    public CardOLD PickRandomCard()
     {
         if (tempCards.Count == 0)
         {
@@ -160,7 +160,7 @@ public class CardEventManager : MonoBehaviour
     }
 
 
-    bool CanPlay(Card card, Player playerStats)
+    bool CanPlay(CardOLD card, Player playerStats)
     {
         if (card == null)
         {
@@ -185,7 +185,7 @@ public class CardEventManager : MonoBehaviour
         return true;
     }
 
-    void SetNewCard(Card newCard)
+    void SetNewCard(CardOLD newCard)
     {
         if (previousCard)
         {
@@ -201,11 +201,11 @@ public class CardEventManager : MonoBehaviour
         }
 
         tempCards.Remove(newCard);
-        currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity, cardSpawnPoint).GetComponent<Card>();
+        currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity, cardSpawnPoint).GetComponent<CardOLD>();
 
     }
 
-    void PlayCard(float[] values, List<Card> sequence, List<Card> removeSequence, List<StatusEnum> AddStatus, List<StatusEnum> RemoveStatus, List<StatusEnum> requiredStatus)
+    void PlayCard(float[] values, List<CardOLD> sequence, List<CardOLD> removeSequence, List<StatusEnum> AddStatus, List<StatusEnum> RemoveStatus, List<StatusEnum> requiredStatus)
     {
         foreach (StatusEnum se in requiredStatus)
         {
@@ -303,9 +303,9 @@ public class CardEventManager : MonoBehaviour
         uIHandler.UpdateStats(playerScript);
     }
 
-    void RemoveFromBuffer(List<Card> cards)
+    void RemoveFromBuffer(List<CardOLD> cards)
     {
-        foreach (Card c in cards)
+        foreach (CardOLD c in cards)
         {
             if (cardBuffer.Contains(c))
             {
@@ -316,7 +316,7 @@ public class CardEventManager : MonoBehaviour
 
     void WipeBuffer()
     {
-        cardBuffer = new List<Card>();
+        cardBuffer = new List<CardOLD>();
     }
 
     void PlayCardSound(CardSoundEnum c)
@@ -333,7 +333,7 @@ public class CardEventManager : MonoBehaviour
 
 
     //CARD CONVERSION
-    CardNew RunCardConversion(Card oldC, CardNew newC)
+    Card RunCardConversion(CardOLD oldC, Card newC)
     {
         if (newC.PortOldToNew(oldC))
         {
@@ -345,17 +345,17 @@ public class CardEventManager : MonoBehaviour
     void RunCardConversion()
     {
         bool flag = true;
-        List<Card> newTempCards = new List<Card>();
+        List<CardOLD> newTempCards = new List<CardOLD>();
         newTempCards.AddRange(allCards);
         newTempCards.AddRange(deathCards);
-        Card currentCard;
+        CardOLD currentCard;
         for(int i = 0; i < newTempCards.Count && flag; i++)
         {
             currentCard = newTempCards[i];
             Debug.Log(currentCard.cardDescription);
-            if (!currentCard.TryGetComponent(out CardNew newCom))
+            if (!currentCard.TryGetComponent(out Card newCom))
             {
-                newCom = currentCard.gameObject.AddComponent<CardNew>();
+                newCom = currentCard.gameObject.AddComponent<Card>();
             }
             flag = (RunCardConversion(currentCard,newCom)) != null;
         }

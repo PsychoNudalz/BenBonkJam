@@ -12,8 +12,8 @@ public struct CardOption
     [SerializeField] float mood;
     [SerializeField] List<StatusEnum> requiredStatus;
     [Header("Sequence Cards")]
-    [SerializeField] List<Card> sequenceCardsAdd;
-    [SerializeField] List<Card> sequenceCardsRemove;
+    [SerializeField] List<CardOLD> sequenceCardsAdd;
+    [SerializeField] List<CardOLD> sequenceCardsRemove;
     [Header("Status Effect")]
     [SerializeField] List<StatusEnum> statusAdd;
     [SerializeField] List<StatusEnum> statusRemove;
@@ -22,8 +22,8 @@ public struct CardOption
     public float Bux { get => bux; set => bux = value; }
     public float Mood { get => mood; set => mood = value; }
     public List<StatusEnum> RequiredStatus { get => requiredStatus; set => requiredStatus = value; }
-    public List<Card> SequenceCardsAdd { get => sequenceCardsAdd; set => sequenceCardsAdd = value; }
-    public List<Card> SequenceCardsRemove { get => sequenceCardsRemove; set => sequenceCardsRemove = value; }
+    public List<CardOLD> SequenceCardsAdd { get => sequenceCardsAdd; set => sequenceCardsAdd = value; }
+    public List<CardOLD> SequenceCardsRemove { get => sequenceCardsRemove; set => sequenceCardsRemove = value; }
     public List<StatusEnum> StatusAdd { get => statusAdd; set => statusAdd = value; }
     public List<StatusEnum> StatusRemove { get => statusRemove; set => statusRemove = value; }
 
@@ -32,7 +32,7 @@ public struct CardOption
         return new float[] { health, bux, mood };
     }
 
-    public void Init(float health, float bux, float mood, List<StatusEnum> requiredStatus, List<Card> sequenceCardsAdd, List<Card> sequenceCardsRemove, List<StatusEnum> statusAdd, List<StatusEnum> statusRemove)
+    public void Init(float health, float bux, float mood, List<StatusEnum> requiredStatus, List<CardOLD> sequenceCardsAdd, List<CardOLD> sequenceCardsRemove, List<StatusEnum> statusAdd, List<StatusEnum> statusRemove)
     {
         this.health = health;
         this.bux = bux;
@@ -46,7 +46,7 @@ public struct CardOption
 }
 
 
-public class CardNew : MonoBehaviour
+public class Card : MonoBehaviour
 {
     [Header("Card Info")]
     [SerializeField] string cardID;
@@ -69,7 +69,7 @@ public class CardNew : MonoBehaviour
     [SerializeField] CardEffectScript cardEffectScript;
     // Start is called before the first frame update
 
-    public bool PortOldToNew(Card old)
+    public bool PortOldToNew(CardOLD old)
     {
         try
         {
