@@ -1054,7 +1054,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3946193657962473602}
-  - component: {fileID: 3946193657962473603}
   - component: {fileID: 8972083844679716449}
   - component: {fileID: -2587406193006211280}
   m_Layer: 0
@@ -1086,44 +1085,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3946193657962473603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3946193657962473601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a111226cd9b4d741bc3847d2579b1bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
-  cardID: 0
-  cardDescription: this is a test card
-  healthHeads: 0
-  buxHeads: 0
-  moodHeads: 0
-  requoredStatusHeads: 
-  sequenceCardsHeads: []
-  removeSequenceCardsHeads: []
-  addStatusHeads: 
-  removeStatusHeads: 
-  healthTails: 0
-  buxTails: 0
-  moodTails: 0
-  requoredStatusTails: 
-  sequenceCardsTails: []
-  removeSequenceCardsTails: []
-  addStatusTails: 
-  removeStatusTails: 
-  heads: 0
-  tails: 0
-  cardMustBePlayed: 0
-  useCondition: 0
-  ageEnum: 00000000
-  cardStatuses: 
-  cardEffectScript: {fileID: 8972083844679716449}
 --- !u!114 &8972083844679716449
 MonoBehaviour:
   m_ObjectHideFlags: 0

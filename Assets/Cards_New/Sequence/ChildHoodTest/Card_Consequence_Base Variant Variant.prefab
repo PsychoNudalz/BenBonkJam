@@ -117,6 +117,28 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: cardID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: cardDescription
+      value: this is a test card
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: cardDescriptionText
+      value: "As your scribbles take shape, a pentagram glows amongst your doodles
+        and a demonic voice answers your call - I guess a demon is going to suggest
+        your test\u2019s answers?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: headsDescriptionText
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: tailsDescriptionText
+      value: ...
+      objectReference: {fileID: 0}
     - target: {fileID: 7172463096149028096, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
       propertyPath: cardID
       value: 0
@@ -139,5 +161,6 @@ PrefabInstance:
       propertyPath: tailsDescriptionText
       value: ...
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4186951640777740540, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}

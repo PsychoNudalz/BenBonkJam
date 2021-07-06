@@ -59,33 +59,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: ageEnum.Array.data[0]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: addStatusHeads.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: sequenceCardsHeads.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: sequenceCardsHeads.Array.data[0]
-      value: 
-      objectReference: {fileID: 2581229922305514117, guid: 071de8d51b8d79545895262013c5e03d, type: 3}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: sequenceCardsHeads.Array.data[1]
-      value: 
-      objectReference: {fileID: 3499591077538613742, guid: 44c6df103eefa854495b938fcae96c21, type: 3}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: sequenceCardsHeads.Array.data[2]
-      value: 
-      objectReference: {fileID: 1708491267385599100, guid: 9ff60025134001740a42b7280fe4a2ee, type: 3}
-    - target: {fileID: 3946193657962473603, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: sequenceCardsHeads.Array.data[3]
-      value: 
-      objectReference: {fileID: 5737764997285369472, guid: 02fdd6874233cc147ba9f9b77bc99cac, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
