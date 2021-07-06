@@ -107,6 +107,7 @@ public class Card : MonoBehaviour
     public List<StatusEnum> StatusNeeded { get => statusNeeded; set => statusNeeded = value; }
     public CardOption HeadsOption { get => headsOption; set => headsOption = value; }
     public CardOption TailsOption { get => tailsOption; set => tailsOption = value; }
+    public string CardID { get => cardID; set => cardID = value; }
 
     // Start is called before the first frame update
 
