@@ -1056,6 +1056,7 @@ GameObject:
   - component: {fileID: 3946193657962473602}
   - component: {fileID: 3946193657962473603}
   - component: {fileID: 8972083844679716449}
+  - component: {fileID: -1202165042388871809}
   m_Layer: 0
   m_Name: Card_BASE
   m_TagString: Untagged
@@ -1138,6 +1139,47 @@ MonoBehaviour:
   playCardSound: {fileID: 8408579004432548936}
   headsSound: {fileID: 8279266555296958886}
   tailsSound: {fileID: 7777152403300026144}
+--- !u!114 &-1202165042388871809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3946193657962473601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcbd6888b04c6db45a1cda542a894ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardID: 
+  cardDescription: 
+  cardDescriptionText: 
+  headsDescriptionText: 
+  headsOption:
+    health: 0
+    bux: 0
+    mood: 0
+    requiredStatus: 
+    sequenceCardsAdd: []
+    sequenceCardsRemove: []
+    statusAdd: 
+    statusRemove: 
+  tailsDescriptionText: 
+  tailsOption:
+    health: 0
+    bux: 0
+    mood: 0
+    requiredStatus: 
+    sequenceCardsAdd: []
+    sequenceCardsRemove: []
+    statusAdd: 
+    statusRemove: 
+  ageNeeded: 
+  statusNeeded: 
+  cardDescriptionTMPro: {fileID: 0}
+  headsDescriptionTMPro: {fileID: 0}
+  tailsDescriptionTMPro: {fileID: 0}
+  cardEffectScript: {fileID: 0}
 --- !u!1 &3946193658470986071
 GameObject:
   m_ObjectHideFlags: 0

@@ -45,6 +45,11 @@ public class CardEventManager : MonoBehaviour
         LoadNewCard();
         currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
         randomPickTry = allCards.Count * 2;
+
+        if (runConverter)
+        {
+            RunCardConversion();
+        }
     }
 
     public void LoadNewCard()
@@ -327,8 +332,37 @@ public class CardEventManager : MonoBehaviour
     }
 
 
-    void RunCardConversion(Card old)
+    //CARD CONVERSION
+    CardNew RunCardConversion(Card oldC, CardNew newC)
     {
+        if (newC.PortOldToNew(oldC))
+        {
+            return newC;
+        }
+        return null;
+    }
 
+    void RunCardConversion()
+    {
+        bool flag = true;
+        List<Card> newTempCards = new List<Card>();
+        newTempCards.AddRange(allCards);
+        newTempCards.AddRange(deathCards);
+        Card currentCard;
+        for(int i = 0; i < newTempCards.Count && flag; i++)
+        {
+            currentCard = newTempCards[i];
+            Debug.Log(currentCard.cardDescription);
+            if (!TryGetComponent(out CardNew newCom))
+            {
+                newCom = currentCard.gameObject.AddComponent<CardNew>();
+
+            }
+            flag = (RunCardConversion(currentCard,newCom)) == null;
+        }
+        if (!flag)
+        {
+            Debug.LogError("Fail to port");
+        }
     }
 }
