@@ -84,7 +84,7 @@ public class Card : MonoBehaviour
 {
     [Header("Card Info")]
     [SerializeField] string cardID;
-    [SerializeField] string cardDescription;
+    //[SerializeField] string cardDescription;
     [SerializeField] string cardDescriptionText;
     [Header("Heads")]
     [SerializeField] string headsDescriptionText;
@@ -108,6 +108,10 @@ public class Card : MonoBehaviour
     public CardOption HeadsOption { get => headsOption; set => headsOption = value; }
     public CardOption TailsOption { get => tailsOption; set => tailsOption = value; }
     public string CardID { get => cardID; set => cardID = value; }
+    public string CardID1 { get => cardID; set => cardID = value; }
+    public string CardDescriptionText { get => cardDescriptionText; set => cardDescriptionText = value; }
+    public string HeadsDescriptionText { get => headsDescriptionText; set => headsDescriptionText = value; }
+    public string TailsDescriptionText { get => tailsDescriptionText; set => tailsDescriptionText = value; }
 
     // Start is called before the first frame update
 
@@ -116,7 +120,7 @@ public class Card : MonoBehaviour
         try
         {
             cardID = old.cardID.ToString();
-            cardDescription = old.cardDescription;
+            //cardDescription = old.cardDescription;
             headsOption.Init(old.healthHeads, old.buxHeads, old.moodHeads, old.RequoredStatusHeads, old.SequenceCardsHeads, old.RemoveSequenceCardsHeads, old.AddStatusHeads, old.RemoveStatusHeads);
             tailsOption.Init(old.healthTails, old.buxTails, old.moodTails, old.RequoredStatusTails, old.SequenceCardsTails, old.RemoveSequenceCardsTails, old.AddStatusTails, old.RemoveStatusTails);
             ageNeeded = new List<AgeEnum>(old.ageEnum);
@@ -144,6 +148,11 @@ public class Card : MonoBehaviour
         cardDescriptionTMPro.text = cardDescriptionText;
         headsDescriptionTMPro.text = headsDescriptionText;
         tailsDescriptionTMPro.text = tailsDescriptionText;
+    }
+
+    public bool LoadFromSave(CardSave cs, bool forceOverride = false)
+    {
+        return false;
     }
 
     private void Start()
