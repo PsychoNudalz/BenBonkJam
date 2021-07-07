@@ -3,13 +3,21 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using UnityEngine.SceneManagement;
+using UnityEditor.SceneManagement;
 
 public class CardHandler : MonoBehaviour
 {
     [SerializeField] List<Card> allCards;
     [Header("Start Controls")]
     [SerializeField] bool runUpdateCardID;
-
+    
+    private void Awake()
+    {
+        //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
+    }
+    
     private void Start()
     {
         UpdateCardIDs();
@@ -19,9 +27,12 @@ public class CardHandler : MonoBehaviour
     void UpdateCardIDs()
     {
         CardManager.ResetCounters();
+
         foreach (Card c in allCards)
         {
             c.CardID = CardManager.GetIDValue(c);
+            c.gameObject.SetActive(false);
+            c.gameObject.SetActive(true);
         }
     }
 
