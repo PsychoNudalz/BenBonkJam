@@ -119,7 +119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
       propertyPath: cardID
-      value: 0
+      value: GEN_7_
       objectReference: {fileID: 0}
     - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
       propertyPath: cardDescription
