@@ -98,16 +98,26 @@ public struct CardOption
         {
             statusRemove.Add((StatusEnum)i);
         }
+
+        Card tempCard;
         sequenceCardsAdd = new List<Card>();
         foreach(string s in cos.sequenceCardsAdd)
         {
-            sequenceCardsAdd.Add(UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s));
+            tempCard = UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s);
+            if (tempCard != null)
+            {
+            sequenceCardsAdd.Add(tempCard);
+            }
         }
 
         sequenceCardsRemove = new List<Card>();
         foreach (string s in cos.sequenceCardsRemove)
         {
-            sequenceCardsRemove.Add(UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s));
+            tempCard = UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s);
+            if (tempCard != null)
+            {
+                sequenceCardsRemove.Add(tempCard);
+            }
         }
     }
 }
@@ -247,7 +257,7 @@ public class Card : MonoBehaviour
             {
                 statusNeeded.Add((StatusEnum)i);
             }
-
+            UpdateCardDescriptions();
         }
         catch (System.Exception e)
         {

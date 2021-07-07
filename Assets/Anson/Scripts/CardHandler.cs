@@ -9,21 +9,22 @@ using UnityEditor.SceneManagement;
 
 public class CardHandler : MonoBehaviour
 {
+    [SerializeField] GameObject baseCard;
     [SerializeField] List<Card> allCards;
     [Header("Start Controls")]
     [SerializeField] bool runUpdateCardID;
 
-    public List<Card> AllCards { get => allCards;}
+    public List<Card> AllCards { get => allCards; }
 
     private void Awake()
     {
         //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
     }
-    
+
     private void Start()
     {
-        UpdateCardIDs();
-        SaveCardsToJson();
+        //UpdateCardIDs();
+        //SaveCardsToJson();
     }
 
     public void UpdateCardIDs()
@@ -56,7 +57,7 @@ public class CardHandler : MonoBehaviour
         {
             File.WriteAllText(Application.dataPath + "/Resource/" + "SavedCardsJSON.json", saveString);
         }
-        catch(DirectoryNotFoundException e)
+        catch (DirectoryNotFoundException e)
         {
             Directory.CreateDirectory(Application.dataPath + "/Resource/");
             File.WriteAllText(Application.dataPath + "/Resource/" + "SavedCardsJSON.json", saveString);
@@ -65,6 +66,53 @@ public class CardHandler : MonoBehaviour
     }
 
     public void LoadCardsFromJson()
+    {
+        CardManager.ResetCounters();
+        CardSave[] allCardsSaves = LoadAllCardsSaves();
+        if (allCardsSaves == null)
+        {
+            return;
+        }
+        Card currentCard;
+        foreach (CardSave cs in allCardsSaves)
+        {
+            currentCard = GetCardByID(cs.cardID);
+            if (currentCard != null)
+            {
+                Debug.Log("Updating card: " + cs.cardID);
+                currentCard.UpdateCard(cs);
+                CardManager.UpdateCounter(cs.cardID);
+            }
+            else
+            {
+                Debug.LogError("Failed to get card: " + cs.cardID + " " + cs.cardDes);
+            }
+        }
+        print("Card Manager Counter: " + CardManager.GetCounterString());
+        CardManager.RefreshCounter(allCardsSaves);
+        CardManager.RefreshCounter(allCards.ToArray());
+    }
+
+    public void GenerateCardsFromJson()
+    {
+        CardSave[] allCardsSaves = LoadAllCardsSaves();
+        if (allCardsSaves == null)
+        {
+            return;
+        }
+        Card currentCard;
+        foreach (CardSave cs in allCardsSaves)
+        {
+            currentCard = GetCardByID(cs.cardID);
+            if (currentCard == null)
+            {
+                Card newCard = CreateNewCard(cs).GetComponent<Card>();
+                allCards.Add(newCard);
+            }
+        }
+    }
+
+    public CardSave[] LoadAllCardsSaves()
     {
         string loadString = "";
         try
@@ -75,24 +123,9 @@ public class CardHandler : MonoBehaviour
         {
             Debug.LogWarning("Failed to find save file, loading default save");
 
-            return;
+            return null;
         }
-        CardSave[] allCardsSaves = JsonUtility.FromJson<AllCardsSave>(loadString).allCardSave;
-        Card currentCard;        
-        foreach(CardSave cs in allCardsSaves)
-        {
-            currentCard = GetCardByID(cs.cardID);
-            if (currentCard != null)
-            {
-                Debug.Log("Updating card: " + cs.cardID);
-            currentCard.UpdateCard(cs);
-
-            }
-            else
-            {
-                Debug.LogError("Failed to get card: " + cs.cardID + " " + cs.cardDes);
-            }
-        }
+        return JsonUtility.FromJson<AllCardsSave>(loadString).allCardSave;
     }
 
     public string SaveCardToCSV()
@@ -103,14 +136,32 @@ public class CardHandler : MonoBehaviour
     public Card GetCardByID(string id)
     {
         Card temp = null;
-        foreach(Card c in allCards)
+        foreach (Card c in allCards)
         {
             if (c.Equals(id))
             {
                 return c;
             }
         }
-
+        Debug.LogError("Failed to get card: " + id);
         return temp;
+    }
+
+    public GameObject CreateNewCard(CardSave sc, string cardName = null)
+    {
+        GameObject instanceRoot = (GameObject)PrefabUtility.InstantiatePrefab(baseCard);
+        Card newCard = instanceRoot.GetComponent<Card>();
+        newCard.UpdateCard(sc);
+        newCard.CardID = CardManager.GetIDValue(newCard);
+        if (cardName == null)
+        {
+            instanceRoot.name = "Card_" + newCard.CardDescriptionText;
+        }
+        else
+        {
+            instanceRoot.name = "Card_" + cardName;
+        }
+        GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)sc.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
+        return pVariant;
     }
 }

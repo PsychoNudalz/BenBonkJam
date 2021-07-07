@@ -42,6 +42,10 @@ public class CardHandlerWindow : EditorWindow
         {
             cardHandler.LoadCardsFromJson();
         }
+        if (GUILayout.Button("Generate Cards from JSON"))
+        {
+            cardHandler.GenerateCardsFromJson();
+        }
 
     }
 
