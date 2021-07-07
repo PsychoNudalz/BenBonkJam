@@ -96,6 +96,7 @@ public class CardHandler : MonoBehaviour
     public void GenerateCardsFromJson()
     {
         CardSave[] allCardsSaves = LoadAllCardsSaves();
+        CardManager.RefreshCounter(allCardsSaves);
         if (allCardsSaves == null)
         {
             return;
@@ -108,6 +109,7 @@ public class CardHandler : MonoBehaviour
             {
                 Card newCard = CreateNewCard(cs).GetComponent<Card>();
                 allCards.Add(newCard);
+                Debug.Log("Successfully generated: " + newCard.CardID + "  " + newCard.CardDescriptionText);
             }
         }
     }
@@ -138,7 +140,7 @@ public class CardHandler : MonoBehaviour
         Card temp = null;
         foreach (Card c in allCards)
         {
-            if (c.Equals(id))
+            if (c != null && c.Equals(id))
             {
                 return c;
             }
@@ -162,6 +164,7 @@ public class CardHandler : MonoBehaviour
             instanceRoot.name = "Card_" + cardName;
         }
         GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)sc.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
+        DestroyImmediate(instanceRoot);
         return pVariant;
     }
 }
