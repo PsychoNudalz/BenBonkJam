@@ -70,6 +70,7 @@ public class CardOptionSave
         this.statusAdd = statusAdd;
         this.statusRemove = statusRemove;
     }
+
 }
 
 [System.Serializable]

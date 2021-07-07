@@ -77,6 +77,39 @@ public struct CardOption
             }
         }
     }
+
+    public CardOption(CardOptionSave cos)
+    {
+        health = cos.health;
+        bux = cos.bux;
+        mood = cos.mood;
+        requiredStatus = new List<StatusEnum>();
+        foreach (int i in cos.requiredStatus)
+        {
+            requiredStatus.Add((StatusEnum)i);
+        }
+        statusAdd = new List<StatusEnum>();
+        foreach(int i in cos.statusAdd)
+        {
+            statusAdd.Add((StatusEnum)i);
+        }
+        statusRemove = new List<StatusEnum>();
+        foreach (int i in cos.statusRemove)
+        {
+            statusRemove.Add((StatusEnum)i);
+        }
+        sequenceCardsAdd = new List<Card>();
+        foreach(string s in cos.sequenceCardsAdd)
+        {
+            sequenceCardsAdd.Add(UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s));
+        }
+
+        sequenceCardsRemove = new List<Card>();
+        foreach (string s in cos.sequenceCardsRemove)
+        {
+            sequenceCardsRemove.Add(UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s));
+        }
+    }
 }
 
 
@@ -173,6 +206,56 @@ public class Card : MonoBehaviour
         return tailsOption.GetStatsResults();
     }
 
+    public bool IsCardSave(CardSave cs)
+    {
+        return CardID.Equals(cs.cardID);
+    }
+    public override bool Equals(object other)
+    {
+        if (other is CardSave)
+        {
+            return IsCardSave(other as CardSave);
+        }
+        if (other is string)
+        {
+            return CardID.Equals(other as string);
+        }
+
+        return base.Equals(other);
+    }
+    public override int GetHashCode()
+    {
+        return base.GetHashCode();
+    }
+
+    public bool UpdateCard(CardSave cs)
+    {
+        try
+        {
+            cardDescriptionText = cs.cardDes;
+            headsDescriptionText = cs.headsDes;
+            tailsDescriptionText = cs.tailsDes;
+            headsOption = new CardOption(cs.headsOption);
+            tailsOption = new CardOption(cs.tailsOption);
+            ageNeeded = new List<AgeEnum>();
+            foreach ( int i in cs.ageNeeded)
+            {
+                ageNeeded.Add((AgeEnum)i);
+            }
+            statusNeeded = new List<StatusEnum>();
+            foreach(int i in cs.statusNeeded)
+            {
+                statusNeeded.Add((StatusEnum)i);
+            }
+
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError(e.StackTrace);
+        }
+
+        return false;
+    }
 
 }
 

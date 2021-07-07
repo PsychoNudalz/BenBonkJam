@@ -12,7 +12,9 @@ public class CardHandler : MonoBehaviour
     [SerializeField] List<Card> allCards;
     [Header("Start Controls")]
     [SerializeField] bool runUpdateCardID;
-    
+
+    public List<Card> AllCards { get => allCards;}
+
     private void Awake()
     {
         //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
@@ -24,7 +26,7 @@ public class CardHandler : MonoBehaviour
         SaveCardsToJson();
     }
 
-    void UpdateCardIDs()
+    public void UpdateCardIDs()
     {
         CardManager.ResetCounters();
 
@@ -33,7 +35,8 @@ public class CardHandler : MonoBehaviour
             c.CardID = CardManager.GetIDValue(c);
             c.gameObject.SetActive(false);
             c.gameObject.SetActive(true);
-            Destroy(Instantiate(c.gameObject), 0.1f);
+            //Destroy(Instantiate(c.gameObject), 0.1f);
+            print("ResetID: " + c.name);
         }
     }
 
@@ -61,8 +64,53 @@ public class CardHandler : MonoBehaviour
         }
     }
 
+    public void LoadCardsFromJson()
+    {
+        string loadString = "";
+        try
+        {
+            loadString = File.ReadAllText(Application.dataPath + "/Resource/" + "SavedCardsJSON.json");
+        }
+        catch (FileNotFoundException e)
+        {
+            Debug.LogWarning("Failed to find save file, loading default save");
+
+            return;
+        }
+        CardSave[] allCardsSaves = JsonUtility.FromJson<AllCardsSave>(loadString).allCardSave;
+        Card currentCard;        
+        foreach(CardSave cs in allCardsSaves)
+        {
+            currentCard = GetCardByID(cs.cardID);
+            if (currentCard != null)
+            {
+                Debug.Log("Updating card: " + cs.cardID);
+            currentCard.UpdateCard(cs);
+
+            }
+            else
+            {
+                Debug.LogError("Failed to get card: " + cs.cardID + " " + cs.cardDes);
+            }
+        }
+    }
+
     public string SaveCardToCSV()
     {
         return "";
+    }
+
+    public Card GetCardByID(string id)
+    {
+        Card temp = null;
+        foreach(Card c in allCards)
+        {
+            if (c.Equals(id))
+            {
+                return c;
+            }
+        }
+
+        return temp;
     }
 }
