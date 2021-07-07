@@ -33,6 +33,7 @@ public class CardHandler : MonoBehaviour
             c.CardID = CardManager.GetIDValue(c);
             c.gameObject.SetActive(false);
             c.gameObject.SetActive(true);
+            Destroy(Instantiate(c.gameObject), 0.1f);
         }
     }
 
