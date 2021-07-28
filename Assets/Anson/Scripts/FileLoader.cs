@@ -8,10 +8,8 @@ public static class FileLoader
     {
         try
         {
-            Debug.Log($"Sprites/Cards/{s}");
-        var CardSprite = Resources.Load<Sprite>($"Sprites/Cards/{s}");
-        Debug.Log((CardSprite as Sprite).name);
-        return CardSprite as Sprite;
+            Sprite CardSprite = Resources.Load<Sprite>($"Sprites/Cards/{s}");
+            return CardSprite;
 
         }
         catch (System.Exception e)
