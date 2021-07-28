@@ -116,6 +116,12 @@ public class CardHandler : MonoBehaviour
 
     public CardSave[] LoadAllCardsSaves()
     {
+
+        return LoadAllCardsSave().allCardSave;
+    }
+
+    public AllCardsSave LoadAllCardsSave()
+    {
         string loadString = "";
         try
         {
@@ -127,7 +133,8 @@ public class CardHandler : MonoBehaviour
 
             return null;
         }
-        return JsonUtility.FromJson<AllCardsSave>(loadString).allCardSave;
+        return JsonUtility.FromJson<AllCardsSave>(loadString);
+
     }
 
     public string SaveCardToCSV()

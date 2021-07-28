@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 [System.Serializable]
 public struct CardOption
@@ -128,7 +127,8 @@ public class Card : MonoBehaviour
 {
     [Header("Card Info")]
     [SerializeField] string cardID;
-    //[SerializeField] string cardDescription;
+    [SerializeField] string cardDetails;
+    [Space]
     [SerializeField] string cardDescriptionText;
     [Header("Heads")]
     [SerializeField] string headsDescriptionText;
@@ -158,6 +158,7 @@ public class Card : MonoBehaviour
     public string HeadsDescriptionText { get => headsDescriptionText; set => headsDescriptionText = value; }
     public string TailsDescriptionText { get => tailsDescriptionText; set => tailsDescriptionText = value; }
     public SpriteRenderer CardSprite { get => cardSprite; set => cardSprite = value; }
+    public string CardDetails { get => cardDetails; set => cardDetails = value; }
 
     // Start is called before the first frame update
 
@@ -250,6 +251,7 @@ public class Card : MonoBehaviour
     {
         try
         {
+            cardDetails = cs.cardDetails;
             cardDescriptionText = cs.cardDes;
             headsDescriptionText = cs.headsDes;
             tailsDescriptionText = cs.tailsDes;

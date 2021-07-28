@@ -71,6 +71,40 @@ public class CardOptionSave
         this.statusRemove = statusRemove;
     }
 
+    public override string ToString()
+    {
+        string retString = "";
+        retString += health + ",";
+        retString += bux + ",";
+        retString += mood + ",";
+        foreach(int i in requiredStatus)
+        {
+            retString += i + "/";
+        }
+        retString += ",";
+        foreach (string i in sequenceCardsAdd)
+        {
+            retString += i + "/";
+        }
+        retString += ",";
+        foreach (string i in sequenceCardsRemove)
+        {
+            retString += i + "/";
+        }
+        retString += ",";
+        foreach (int i in statusAdd)
+        {
+            retString += i + "/";
+        }
+        retString += ",";
+        foreach (int i in statusRemove)
+        {
+            retString += i + "/";
+        }
+        retString += ",";
+        return retString;
+    }
+
 }
 
 [System.Serializable]
@@ -103,6 +137,7 @@ public class CardSave
     public CardSave(Card c)
     {
         this.cardID = c.CardID;
+        this.cardDetails = c.CardDetails;
         this.cardDes = c.CardDescriptionText;
         this.headsDes = c.HeadsDescriptionText;
         this.tailsDes = c.TailsDescriptionText;
@@ -121,7 +156,45 @@ public class CardSave
             tempInt.Add((int)se);
         }
         statusNeeded = tempInt.ToArray();
+        try
+        {
+
         cardSpriteName = c.CardSprite.sprite.name;
+        }catch(System.NullReferenceException e)
+        {
+            Debug.LogError($"{cardID} missing sprite");
+        }
+    }
+
+    public override string ToString()
+    {
+        string retString = "";
+        retString += cardID+",";
+        retString += cardDetails + ",";
+        foreach (int i in ageNeeded)
+        {
+            retString += i + "/";
+        }
+        retString += ",";
+        foreach (int i in statusNeeded)
+        {
+            retString += i + "/";
+        }
+        retString += ",";
+        retString += cardSpriteName+",";
+
+
+        retString += cardDes + ",";
+        retString +=  headsDes + ",";
+        retString += headsOption.ToString();
+        retString += tailsDes + ",";
+        retString += tailsOption.ToString();
+        retString = retString.Replace("\n", " ").Replace("\r", " ");
+        if (retString.Contains("\n"))
+        {
+            Debug.LogError($"Found paragraph in to string: {cardID}");
+        }
+        return retString;
     }
 
 }

@@ -46,6 +46,10 @@ public class CardHandlerWindow : EditorWindow
         {
             cardHandler.GenerateCardsFromJson();
         }
+        if (GUILayout.Button("Save JSON to EXCEL"))
+        {
+            CSVHandler.FromJSON(cardHandler);
+        }
 
     }
 
