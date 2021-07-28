@@ -1,7 +1,7 @@
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.IO;
 
 public class GameDataManager : MonoBehaviour
 {
@@ -12,14 +12,19 @@ public class GameDataManager : MonoBehaviour
 
         Achievements achievements = new Achievements();
         EndingsUnlocked endingsUnlocked = new EndingsUnlocked();
+       // Achievements.gamesPlayed = 0;
+
 
         string json = JsonUtility.ToJson(achievements);
         string json2 = JsonUtility.ToJson(endingsUnlocked);
-
-        Achievements loadedAchievements = JsonUtility.FromJson<Achievements>(json);
-
         Debug.Log(json);
         Debug.Log(json2);
+
+        File.WriteAllText(Application.dataPath + "saveFile.json", json);
+
+      //  Achievements loadedAchievements = JsonUtility.FromJson<Achievements>(json);
+      //  EndingsUnlocked loadedEndingsUnlocked = JsonUtility.FromJson<EndingsUnlocked>(json);
+
 
     }
 
@@ -52,3 +57,4 @@ public class GameDataManager : MonoBehaviour
 
     }
 }
+
