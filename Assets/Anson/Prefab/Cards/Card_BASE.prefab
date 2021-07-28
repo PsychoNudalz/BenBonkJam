@@ -1113,7 +1113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardID: 
-  cardDescription: 
   cardDescriptionText: 
   headsDescriptionText: 
   headsOption:
@@ -1140,6 +1139,7 @@ MonoBehaviour:
   cardDescriptionTMPro: {fileID: 3946193657608576844}
   headsDescriptionTMPro: {fileID: 3946193657792254159}
   tailsDescriptionTMPro: {fileID: 3946193657743435847}
+  cardSprite: {fileID: 3946193658470986073}
   cardEffectScript: {fileID: 8972083844679716449}
 --- !u!1 &3946193658470986071
 GameObject:

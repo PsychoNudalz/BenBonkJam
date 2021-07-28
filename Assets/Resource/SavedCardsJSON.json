@@ -41,9 +41,9 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "manor spooky"
     },
-   
     {
       "cardID": "ADO_1_",
       "cardDetails": "",
@@ -85,7 +85,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "truck"
     },
     {
       "cardID": "ADO_2_",
@@ -128,7 +129,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "steroids"
     },
     {
       "cardID": "ADO_3_",
@@ -171,7 +173,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "soulmate"
     },
     {
       "cardID": "ADO_4_",
@@ -214,7 +217,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "truck"
     },
     {
       "cardID": "ADO_5_",
@@ -259,7 +263,8 @@
       ],
       "statusNeeded": [
         10
-      ]
+      ],
+      "cardSpriteName": "education 2"
     },
     {
       "cardID": "ADO_6_",
@@ -303,7 +308,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "education 2"
     },
     {
       "cardID": "ADO_7_",
@@ -345,7 +351,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "console xbox"
     },
     {
       "cardID": "ADO_8_",
@@ -388,7 +395,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "hamster"
     },
     {
       "cardID": "ADO_9_",
@@ -430,7 +438,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "pc bang"
     },
     {
       "cardID": "ADO_10_",
@@ -474,7 +483,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "invest money"
     },
     {
       "cardID": "ADO_11_",
@@ -517,7 +527,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "bluelight"
     },
     {
       "cardID": "ADU_0_",
@@ -560,7 +571,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "nigerian prince"
     },
     {
       "cardID": "ADU_1_",
@@ -603,7 +615,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "dogo"
     },
     {
       "cardID": "ADU_2_",
@@ -647,7 +660,8 @@
       ],
       "statusNeeded": [
         1
-      ]
+      ],
+      "cardSpriteName": "divorce"
     },
     {
       "cardID": "ADU_3_",
@@ -700,7 +714,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "job needs you"
     },
     {
       "cardID": "ADU_4_",
@@ -742,7 +757,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "milf"
     },
     {
       "cardID": "ADU_5_",
@@ -785,7 +801,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "milf"
     },
     {
       "cardID": "ADU_6_",
@@ -829,7 +846,8 @@
       ],
       "statusNeeded": [
         20
-      ]
+      ],
+      "cardSpriteName": "have a child stork"
     },
     {
       "cardID": "ADU_7_",
@@ -873,7 +891,8 @@
       ],
       "statusNeeded": [
         20
-      ]
+      ],
+      "cardSpriteName": "marriage"
     },
     {
       "cardID": "ADU_8_",
@@ -916,7 +935,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "dice"
     },
     {
       "cardID": "ADU_9_",
@@ -958,7 +978,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "doge"
     },
     {
       "cardID": "ADU_10_",
@@ -1000,7 +1021,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "doge"
     },
     {
       "cardID": "ADU_11_",
@@ -1043,7 +1065,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "middle east"
     },
     {
       "cardID": "ADU_12_",
@@ -1085,7 +1108,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "doge"
     },
     {
       "cardID": "ADU_13_",
@@ -1127,7 +1151,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "telemarketer"
     },
     {
       "cardID": "INF_0_",
@@ -1170,7 +1195,8 @@
         0
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "battery"
     },
     {
       "cardID": "INF_1_",
@@ -1212,7 +1238,8 @@
         0
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "babyannoiyin"
     },
     {
       "cardID": "INF_2_",
@@ -1254,7 +1281,8 @@
         0
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "babyannoiyin"
     },
     {
       "cardID": "INF_3_",
@@ -1296,7 +1324,8 @@
         0
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "baby scream noise"
     },
     {
       "cardID": "INF_4_",
@@ -1338,7 +1367,8 @@
         0
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "babyannoiyin"
     },
     {
       "cardID": "INF_5_",
@@ -1381,7 +1411,8 @@
         0
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "socket"
     },
     {
       "cardID": "INF_6_",
@@ -1423,7 +1454,8 @@
         0
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "poop"
     },
     {
       "cardID": "INF_7_",
@@ -1465,7 +1497,8 @@
         0
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "sus noise"
     },
     {
       "cardID": "INF_8_",
@@ -1507,7 +1540,8 @@
         0
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "vase"
     },
     {
       "cardID": "CHI_0_",
@@ -1549,7 +1583,8 @@
         1
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "Choices"
     },
     {
       "cardID": "CHI_1_",
@@ -1592,7 +1627,8 @@
         1
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "note"
     },
     {
       "cardID": "CHI_2_",
@@ -1634,7 +1670,8 @@
         1
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "studytest"
     },
     {
       "cardID": "CHI_3_",
@@ -1676,7 +1713,8 @@
         1
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "gaming"
     },
     {
       "cardID": "CHI_4_",
@@ -1718,7 +1756,8 @@
         1
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "team sport"
     },
     {
       "cardID": "CHI_5_",
@@ -1760,7 +1799,8 @@
         1
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "sloth vs ant"
     },
     {
       "cardID": "CHI_6_",
@@ -1802,7 +1842,8 @@
         1
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "schoolskip"
     },
     {
       "cardID": "CHI_7_",
@@ -1845,7 +1886,8 @@
         1
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "telescope"
     },
     {
       "cardID": "DEA_0_",
@@ -1888,7 +1930,8 @@
       ],
       "statusNeeded": [
         9
-      ]
+      ],
+      "cardSpriteName": "alien"
     },
     {
       "cardID": "DEA_1_",
@@ -1931,7 +1974,8 @@
       ],
       "statusNeeded": [
         17
-      ]
+      ],
+      "cardSpriteName": "champ"
     },
     {
       "cardID": "DEA_2_",
@@ -1974,7 +2018,8 @@
       ],
       "statusNeeded": [
         7
-      ]
+      ],
+      "cardSpriteName": "ending"
     },
     {
       "cardID": "DEA_3_",
@@ -2017,7 +2062,8 @@
       ],
       "statusNeeded": [
         22
-      ]
+      ],
+      "cardSpriteName": "dead baby"
     },
     {
       "cardID": "DEA_4_",
@@ -2060,7 +2106,8 @@
       ],
       "statusNeeded": [
         21
-      ]
+      ],
+      "cardSpriteName": "ghost friend"
     },
     {
       "cardID": "DEA_5_",
@@ -2104,7 +2151,8 @@
       "statusNeeded": [
         3,
         19
-      ]
+      ],
+      "cardSpriteName": "pett adventure"
     },
     {
       "cardID": "DEA_6_",
@@ -2147,7 +2195,8 @@
       ],
       "statusNeeded": [
         0
-      ]
+      ],
+      "cardSpriteName": "death"
     },
     {
       "cardID": "DEA_7_",
@@ -2190,7 +2239,8 @@
       ],
       "statusNeeded": [
         2
-      ]
+      ],
+      "cardSpriteName": "bluelight"
     },
     {
       "cardID": "DEA_8_",
@@ -2235,7 +2285,8 @@
         7,
         5,
         4
-      ]
+      ],
+      "cardSpriteName": "purgatory"
     },
     {
       "cardID": "DEA_9_",
@@ -2279,7 +2330,8 @@
       "statusNeeded": [
         15,
         1
-      ]
+      ],
+      "cardSpriteName": "reincarnation"
     },
     {
       "cardID": "DEA_10_",
@@ -2322,7 +2374,8 @@
       ],
       "statusNeeded": [
         8
-      ]
+      ],
+      "cardSpriteName": "sick"
     },
     {
       "cardID": "DEA_11_",
@@ -2366,7 +2419,8 @@
       "statusNeeded": [
         0,
         4
-      ]
+      ],
+      "cardSpriteName": "void"
     },
     {
       "cardID": "DEA_12_",
@@ -2408,7 +2462,8 @@
         5
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "enlighteneed"
     },
     {
       "cardID": "GEN_0_",
@@ -2449,7 +2504,8 @@
       "ageNeeded": [
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "food"
     },
     {
       "cardID": "GEN_1_",
@@ -2494,7 +2550,8 @@
       ],
       "statusNeeded": [
         3
-      ]
+      ],
+      "cardSpriteName": "rippet"
     },
     {
       "cardID": "GEN_2_",
@@ -2539,7 +2596,8 @@
       ],
       "statusNeeded": [
         19
-      ]
+      ],
+      "cardSpriteName": "rippet"
     },
     {
       "cardID": "GEN_3_",
@@ -2580,7 +2638,8 @@
       "ageNeeded": [
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "bamboozle"
     },
     {
       "cardID": "GEN_4_",
@@ -2621,7 +2680,8 @@
       "ageNeeded": [
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "silica"
     },
     {
       "cardID": "GEN_5_",
@@ -2664,7 +2724,8 @@
       ],
       "statusNeeded": [
         11
-      ]
+      ],
+      "cardSpriteName": "fail drop out"
     },
     {
       "cardID": "GEN_6_",
@@ -2707,7 +2768,8 @@
       ],
       "statusNeeded": [
         12
-      ]
+      ],
+      "cardSpriteName": "fail drop out"
     },
     {
       "cardID": "OLD_0_",
@@ -2750,7 +2812,8 @@
         4
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "AD"
     },
     {
       "cardID": "OLD_1_",
@@ -2792,7 +2855,8 @@
         4
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "bird"
     },
     {
       "cardID": "OLD_2_",
@@ -2834,7 +2898,8 @@
         4
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "truck"
     },
     {
       "cardID": "OLD_3_",
@@ -2878,7 +2943,8 @@
       ],
       "statusNeeded": [
         0
-      ]
+      ],
+      "cardSpriteName": "death"
     },
     {
       "cardID": "OLD_4_",
@@ -2921,7 +2987,8 @@
       ],
       "statusNeeded": [
         13
-      ]
+      ],
+      "cardSpriteName": "fail drop out"
     },
     {
       "cardID": "OLD_5_",
@@ -2963,7 +3030,8 @@
         4
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "sail off happy"
     },
     {
       "cardID": "OLD_6_",
@@ -3005,7 +3073,8 @@
         4
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "TV"
     },
     {
       "cardID": "OLD_7_",
@@ -3047,7 +3116,8 @@
         4
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "martial art"
     },
     {
       "cardID": "OLD_8_",
@@ -3091,7 +3161,8 @@
       ],
       "statusNeeded": [
         13
-      ]
+      ],
+      "cardSpriteName": "will"
     },
     {
       "cardID": "GEN_7_",
@@ -3132,7 +3203,8 @@
       "ageNeeded": [
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "devil"
     },
     {
       "cardID": "CHI_8_",
@@ -3176,7 +3248,8 @@
         1
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "note"
     },
     {
       "cardID": "CHI_9_",
@@ -3219,7 +3292,8 @@
         1
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "studytest"
     },
     {
       "cardID": "GEN_8_",
@@ -3261,7 +3335,8 @@
       "ageNeeded": [
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "exam"
     },
     {
       "cardID": "ADU_14_",
@@ -3317,7 +3392,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "burger flipper"
     },
     {
       "cardID": "ADU_15_",
@@ -3374,7 +3450,8 @@
       ],
       "statusNeeded": [
         17
-      ]
+      ],
+      "cardSpriteName": "team sport"
     },
     {
       "cardID": "ADU_16_",
@@ -3431,7 +3508,8 @@
       ],
       "statusNeeded": [
         4
-      ]
+      ],
+      "cardSpriteName": "criminal"
     },
     {
       "cardID": "ADU_17_",
@@ -3487,7 +3565,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "nade"
     },
     {
       "cardID": "ADU_18_",
@@ -3544,7 +3623,8 @@
       ],
       "statusNeeded": [
         12
-      ]
+      ],
+      "cardSpriteName": "plumber"
     },
     {
       "cardID": "ADU_19_",
@@ -3601,7 +3681,8 @@
       ],
       "statusNeeded": [
         11
-      ]
+      ],
+      "cardSpriteName": "sysadmin"
     },
     {
       "cardID": "ADU_20_",
@@ -3657,7 +3738,8 @@
         3
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "telemarketer"
     },
     {
       "cardID": "ADU_21_",
@@ -3714,7 +3796,8 @@
       ],
       "statusNeeded": [
         7
-      ]
+      ],
+      "cardSpriteName": "TV"
     },
     {
       "cardID": "ADU_22_",
@@ -3771,7 +3854,8 @@
       ],
       "statusNeeded": [
         18
-      ]
+      ],
+      "cardSpriteName": "truck"
     },
     {
       "cardID": "ADU_23_",
@@ -3818,7 +3902,8 @@
       ],
       "statusNeeded": [
         9
-      ]
+      ],
+      "cardSpriteName": "ufo"
     },
     {
       "cardID": "ADO_12_",
@@ -3861,7 +3946,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "team sport"
     },
     {
       "cardID": "ADO_13_",
@@ -3905,7 +3991,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "injury"
     },
     {
       "cardID": "ADO_14_",
@@ -3949,7 +4036,8 @@
         2
       ],
       "statusNeeded": [
-      ]
+      ],
+      "cardSpriteName": "health gain"
     }
   ]
 }

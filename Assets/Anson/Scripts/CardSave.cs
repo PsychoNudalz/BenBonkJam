@@ -85,6 +85,7 @@ public class CardSave
     public CardOptionSave tailsOption;
     public int[] ageNeeded;
     public int[] statusNeeded;
+    public string cardSpriteName;
 
     public CardSave(string cardID, string cardDetails, string cardDes, string headsDes, string tailsDes, CardOptionSave headsOption, CardOptionSave tailsOption, int[] ageNeeded, int[] statusNeeded)
     {
@@ -120,6 +121,7 @@ public class CardSave
             tempInt.Add((int)se);
         }
         statusNeeded = tempInt.ToArray();
+        cardSpriteName = c.CardSprite.sprite.name;
     }
 
 }
