@@ -10,9 +10,9 @@ public class MainMenu : MonoBehaviour
     public Canvas mainCanvas;
     public Canvas helpCanvas;
     public Canvas creditsCanvas;
+    public Canvas statsCanvas;
 
     // credits objects
-
     public GameObject mainCredits;
     public GameObject sfxCredits1;
     public GameObject sfxCredits2;
@@ -21,15 +21,23 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         mainCanvas.enabled = true;
+        statsCanvas.enabled = false;
         helpCanvas.enabled = false;
         creditsCanvas.enabled = false;
-
     }
 
     public void Play()
     {
         Debug.Log("Loading Game");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void Stats()
+    {
+        mainCanvas.enabled = false;
+        helpCanvas.enabled = false;
+        creditsCanvas.enabled = false;
+        statsCanvas.enabled = true;
     }
 
     public void Help()
@@ -40,6 +48,7 @@ public class MainMenu : MonoBehaviour
     }
 
     // credits
+    #region Credits
     public void Credits()
     {
         mainCanvas.enabled = false;
@@ -74,12 +83,13 @@ public class MainMenu : MonoBehaviour
         sfxCredits2.SetActive(false);
         sfxCredits3.SetActive(true);
     }
-
+    #endregion
     public void backToMain()
     {
         mainCanvas.enabled = true;
         helpCanvas.enabled = false;
         creditsCanvas.enabled = false;
+        statsCanvas.enabled = false;
     }
 
     public void Quit()
