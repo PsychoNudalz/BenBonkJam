@@ -18,12 +18,20 @@ public class MainMenu : MonoBehaviour
     public GameObject sfxCredits2;
     public GameObject sfxCredits3;
 
+    //stats objects
+    public Canvas statisticsCanvas;
+    public Canvas achievementsCanvas;
+    public Canvas endingsCanvas;
+
     void Start()
     {
         mainCanvas.enabled = true;
         statsCanvas.enabled = false;
         helpCanvas.enabled = false;
         creditsCanvas.enabled = false;
+        statisticsCanvas.enabled = false;
+        achievementsCanvas.enabled = false;
+        endingsCanvas.enabled = false;
     }
 
     public void Play()
@@ -38,6 +46,7 @@ public class MainMenu : MonoBehaviour
         helpCanvas.enabled = false;
         creditsCanvas.enabled = false;
         statsCanvas.enabled = true;
+        achievementsCanvas.enabled = true;
     }
 
     public void Help()
@@ -46,6 +55,30 @@ public class MainMenu : MonoBehaviour
         helpCanvas.enabled = true;
         creditsCanvas.enabled = false;
     }
+
+    //statisticsMenu
+    #region statistics
+    public void Endings()
+    {
+        achievementsCanvas.enabled = false;
+        statisticsCanvas.enabled = false;
+        endingsCanvas.enabled = true;
+    }
+
+    public void Achievements()
+    {
+        achievementsCanvas.enabled = true;
+        statisticsCanvas.enabled = false;
+        endingsCanvas.enabled = false;
+    }
+
+    public void Statistics()
+    {
+        achievementsCanvas.enabled = false;
+        statisticsCanvas.enabled = true;
+        endingsCanvas.enabled = false;
+    }
+    #endregion
 
     // credits
     #region Credits
@@ -90,6 +123,9 @@ public class MainMenu : MonoBehaviour
         helpCanvas.enabled = false;
         creditsCanvas.enabled = false;
         statsCanvas.enabled = false;
+        achievementsCanvas.enabled = false;
+        statisticsCanvas.enabled = false;
+        endingsCanvas.enabled = false;
     }
 
     public void Quit()

@@ -112,7 +112,7 @@ public class GameDataManager : MonoBehaviour
             this.sick = false;
             this.voidEnding = false;
             this.wakeUpSim = false;
-}
+        }
 
     }
     
