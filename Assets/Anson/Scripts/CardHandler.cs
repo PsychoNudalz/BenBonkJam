@@ -55,12 +55,12 @@ public class CardHandler : MonoBehaviour
         print(saveString);
         try
         {
-            File.WriteAllText(Application.dataPath + "/Resource/" + "SavedCardsJSON.json", saveString);
+            File.WriteAllText(Application.dataPath + "/Resources/Data/" + "SavedCardsJSON.json", saveString);
         }
         catch (DirectoryNotFoundException e)
         {
-            Directory.CreateDirectory(Application.dataPath + "/Resource/");
-            File.WriteAllText(Application.dataPath + "/Resource/" + "SavedCardsJSON.json", saveString);
+            Directory.CreateDirectory(Application.dataPath + "/Resources/Data/");
+            File.WriteAllText(Application.dataPath + "/Resources/Data/" + "SavedCardsJSON.json", saveString);
 
         }
     }
@@ -116,10 +116,16 @@ public class CardHandler : MonoBehaviour
 
     public CardSave[] LoadAllCardsSaves()
     {
+
+        return LoadAllCardsSave().allCardSave;
+    }
+
+    public AllCardsSave LoadAllCardsSave()
+    {
         string loadString = "";
         try
         {
-            loadString = File.ReadAllText(Application.dataPath + "/Resource/" + "SavedCardsJSON.json");
+            loadString = File.ReadAllText(Application.dataPath + "/Resources/Data/" + "SavedCardsJSON.json");
         }
         catch (FileNotFoundException e)
         {
@@ -127,7 +133,8 @@ public class CardHandler : MonoBehaviour
 
             return null;
         }
-        return JsonUtility.FromJson<AllCardsSave>(loadString).allCardSave;
+        return JsonUtility.FromJson<AllCardsSave>(loadString);
+
     }
 
     public string SaveCardToCSV()

@@ -127,7 +127,8 @@ public class Card : MonoBehaviour
 {
     [Header("Card Info")]
     [SerializeField] string cardID;
-    //[SerializeField] string cardDescription;
+    [SerializeField] string cardDetails;
+    [Space]
     [SerializeField] string cardDescriptionText;
     [Header("Heads")]
     [SerializeField] string headsDescriptionText;
@@ -142,6 +143,7 @@ public class Card : MonoBehaviour
     [SerializeField] TextMeshPro cardDescriptionTMPro;
     [SerializeField] TextMeshPro headsDescriptionTMPro;
     [SerializeField] TextMeshPro tailsDescriptionTMPro;
+    [SerializeField] SpriteRenderer cardSprite; 
     [Header("Other Components")]
     [SerializeField] CardEffectScript cardEffectScript;
 
@@ -155,6 +157,8 @@ public class Card : MonoBehaviour
     public string CardDescriptionText { get => cardDescriptionText; set => cardDescriptionText = value; }
     public string HeadsDescriptionText { get => headsDescriptionText; set => headsDescriptionText = value; }
     public string TailsDescriptionText { get => tailsDescriptionText; set => tailsDescriptionText = value; }
+    public SpriteRenderer CardSprite { get => cardSprite; set => cardSprite = value; }
+    public string CardDetails { get => cardDetails; set => cardDetails = value; }
 
     // Start is called before the first frame update
 
@@ -191,6 +195,11 @@ public class Card : MonoBehaviour
         cardDescriptionTMPro.text = cardDescriptionText;
         headsDescriptionTMPro.text = headsDescriptionText;
         tailsDescriptionTMPro.text = tailsDescriptionText;
+    }
+
+    void UpdateCardSprite(Sprite s)
+    {
+        cardSprite.sprite = s;
     }
 
     public bool LoadFromSave(CardSave cs, bool forceOverride = false)
@@ -242,6 +251,7 @@ public class Card : MonoBehaviour
     {
         try
         {
+            cardDetails = cs.cardDetails;
             cardDescriptionText = cs.cardDes;
             headsDescriptionText = cs.headsDes;
             tailsDescriptionText = cs.tailsDes;
@@ -258,6 +268,7 @@ public class Card : MonoBehaviour
                 statusNeeded.Add((StatusEnum)i);
             }
             UpdateCardDescriptions();
+            UpdateCardSprite(FileLoader.GetCardSprite(cs.cardSpriteName));
         }
         catch (System.Exception e)
         {
