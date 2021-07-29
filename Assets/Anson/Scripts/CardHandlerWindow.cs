@@ -50,6 +50,10 @@ public class CardHandlerWindow : EditorWindow
         {
             CSVHandler.FromJSON(cardHandler);
         }
+        if (GUILayout.Button("Load EXCEL to JSON"))
+        {
+            CSVHandler.FromExcelToJSON(cardHandler);
+        }
 
     }
 

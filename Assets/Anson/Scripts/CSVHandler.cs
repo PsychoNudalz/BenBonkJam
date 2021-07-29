@@ -8,11 +8,19 @@ public static class CSVHandler
     static string[] headerFormat = { "Card ID", "Card Details", "Ages Neede", "Status Needed", "Card Sprite Name", "Card Description",
         "Heads Description","Heads Health","Heads Bux","Heads Mood", "Heads Required Status","Heads Sequence Cards Add","Heads Sequence Cards Remove", "Heads Status Add","Heads Status Remove",
         "Tails Description","Tails Health","Tails Bux","Tails Mood", "Tails Required Status","Tails Sequence Cards Add","Tails Sequence Cards Remove", "Tails Status Add","Tails Status Remove",
+        "END"
     };
 
     public static void FromJSON(CardHandler cardHandler)
     {
         WriteToCSV(cardHandler.LoadAllCardsSave());
+    }
+
+    public static void FromExcelToJSON(CardHandler cardHandler)
+    {
+        cardHandler.SaveCardsToJson(LoadFromCSV());
+        Debug.Log("Load from Excel complete");
+
     }
 
     public static void WriteToCSV(AllCardsSave allCardsSave)
@@ -41,11 +49,37 @@ public static class CSVHandler
 
         foreach(CardSave cs in allCardsSave.allCardSave)
         {
-            retString += cs.ToString() + "\n";
+            retString += cs.ToString() + "END\n";
         }
-
+        //retString += "END";
         return retString;
 
+    }
+
+    public static AllCardsSave LoadFromCSV()
+    {
+        string loadString = "";
+        try
+        {
+            loadString = File.ReadAllText(Application.dataPath + "/Resources/Data/" + "AllCards.csv");
+        }
+        catch (FileNotFoundException e)
+        {
+            Debug.LogWarning("Failed to find AllCards.csv");
+
+            return null;
+        }
+
+        List<string> loadedArray = new List<string>( loadString.Split('\n'));
+        loadedArray.RemoveAt(0);
+        
+        List<CardSave> cardSaves = new List<CardSave>();
+        foreach(string s in loadedArray)
+        {
+            cardSaves.Add(new CardSave(s.Split(',')));
+        }
+
+        return new AllCardsSave(cardSaves.ToArray());
     }
 
 }

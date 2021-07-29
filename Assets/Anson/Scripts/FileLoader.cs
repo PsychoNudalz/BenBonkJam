@@ -19,4 +19,28 @@ public static class FileLoader
         }
         return null;
     }
+
+    public static int[] StringSplitToInt(string stringArray, char c)
+    {
+        string[] tempStringArray = stringArray.Split(c);
+        List<int> returnInt = new List<int>();
+        string temp;
+        foreach (string s in tempStringArray)
+        {
+            temp = s.Replace(" ", "");
+            try
+            {
+                if (!temp.Equals(""))
+                {
+
+                    returnInt.Add(int.Parse(temp));
+                }
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError(e);
+            }
+        }
+        return returnInt.ToArray();
+    }
 }

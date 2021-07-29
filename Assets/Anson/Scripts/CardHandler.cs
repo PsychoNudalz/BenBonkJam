@@ -41,15 +41,24 @@ public class CardHandler : MonoBehaviour
         }
     }
 
-    public void SaveCardsToJson()
+    public void SaveCardsToJson(AllCardsSave allCardsSaveInput = null)
     {
         string saveString = "";
-        List<CardSave> cardSaves = new List<CardSave>();
-        foreach (Card c in allCards)
+        AllCardsSave allCardsSave;
+        if (allCardsSaveInput == null)
         {
-            cardSaves.Add(new CardSave(c));
+
+            List<CardSave> cardSaves = new List<CardSave>();
+            foreach (Card c in allCards)
+            {
+                cardSaves.Add(new CardSave(c));
+            }
+            allCardsSave = new AllCardsSave(cardSaves.ToArray());
         }
-        AllCardsSave allCardsSave = new AllCardsSave(cardSaves.ToArray());
+        else
+        {
+            allCardsSave = allCardsSaveInput;
+        }
         saveString = JsonUtility.ToJson(allCardsSave);
         print("Saving all cards");
         print(saveString);
@@ -65,10 +74,18 @@ public class CardHandler : MonoBehaviour
         }
     }
 
-    public void LoadCardsFromJson()
+    public void LoadCardsFromJson(AllCardsSave allCardsSaveInput = null)
     {
         CardManager.ResetCounters();
-        CardSave[] allCardsSaves = LoadAllCardsSaves();
+        CardSave[] allCardsSaves;
+        if (allCardsSaveInput == null)
+        {
+            allCardsSaves = LoadAllCardsSaves();
+        }
+        else
+        {
+            allCardsSaves = allCardsSaveInput.allCardSave;
+        }
         if (allCardsSaves == null)
         {
             return;

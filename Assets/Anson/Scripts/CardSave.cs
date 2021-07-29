@@ -71,13 +71,38 @@ public class CardOptionSave
         this.statusRemove = statusRemove;
     }
 
+    public CardOptionSave(string[] s)
+    {
+        try
+        {
+        this.health = int.Parse(s[0]);
+        this.bux = int.Parse(s[1]);
+        this.mood = int.Parse(s[2]);
+        this.requiredStatus = FileLoader.StringSplitToInt(s[3], '/');
+        this.sequenceCardsAdd = s[4].Split('/');
+        this.sequenceCardsRemove = s[5].Split('/');
+        this.statusAdd = FileLoader.StringSplitToInt(s[6], '/');
+        this.statusRemove = FileLoader.StringSplitToInt(s[7], '/');
+        }catch(System.FormatException e)
+        {
+            Debug.LogError($"card option save parse error {s[0]}");
+            foreach(string x in s)
+            {
+
+            Debug.LogWarning(x);
+            }
+            Debug.LogError(e.StackTrace);
+        }
+
+    }
+
     public override string ToString()
     {
         string retString = "";
         retString += health + ",";
         retString += bux + ",";
         retString += mood + ",";
-        foreach(int i in requiredStatus)
+        foreach (int i in requiredStatus)
         {
             retString += i + "/";
         }
@@ -133,6 +158,18 @@ public class CardSave
         this.ageNeeded = ageNeeded;
         this.statusNeeded = statusNeeded;
     }
+    public CardSave()
+    {
+        this.cardID = "Empty";
+        this.cardDetails = "Empty";
+        this.cardDes = "Empty";
+        this.headsDes = "Empty";
+        this.tailsDes = "Empty";
+        this.headsOption = null;
+        this.tailsOption = null;
+        this.ageNeeded = null;
+        this.statusNeeded = null;
+    }
 
     public CardSave(Card c)
     {
@@ -158,18 +195,52 @@ public class CardSave
         statusNeeded = tempInt.ToArray();
         try
         {
-
-        cardSpriteName = c.CardSprite.sprite.name;
-        }catch(System.NullReferenceException e)
+            cardSpriteName = c.CardSprite.sprite.name;
+        }
+        catch (System.NullReferenceException e)
         {
             Debug.LogError($"{cardID} missing sprite");
         }
     }
 
+    public CardSave(string[] s)
+    {
+        if (s.Length < 20)
+        {
+            
+            return;
+        }
+        string loadString = "";
+        foreach(string x in s)
+        {
+            loadString += x + ",";
+        }
+        Debug.Log("loading string: "+loadString);
+
+
+        this.cardID = s[0];
+        Debug.Log("Loading Card: "+cardID);
+
+        this.cardDetails = s[1];
+        this.ageNeeded = FileLoader.StringSplitToInt(s[2], '/');
+        this.statusNeeded = FileLoader.StringSplitToInt(s[3], '/');
+        this.cardSpriteName = s[4];
+        this.cardDes = s[5];
+
+        Debug.Log("Loading Head");
+        this.headsDes = s[6];
+        List<string> subArray = new List<string>(s);
+        this.headsOption = new CardOptionSave(subArray.GetRange(7, 8).ToArray());// 7,14
+
+        Debug.Log("Loading Tails");
+        this.tailsDes = s[15];
+        this.tailsOption = new CardOptionSave(subArray.GetRange(16, 8).ToArray());
+    }
+
     public override string ToString()
     {
         string retString = "";
-        retString += cardID+",";
+        retString += cardID + ",";
         retString += cardDetails + ",";
         foreach (int i in ageNeeded)
         {
@@ -181,13 +252,13 @@ public class CardSave
             retString += i + "/";
         }
         retString += ",";
-        retString += cardSpriteName+",";
+        retString += cardSpriteName + ",";
 
 
-        retString += cardDes + ",";
-        retString +=  headsDes + ",";
+        retString += cardDes.Replace("\n", " ").Replace("\r", " ").Replace(",", " ") + ",";
+        retString += headsDes.Replace("\n", " ").Replace("\r", " ").Replace(",", " ") + ",";
         retString += headsOption.ToString();
-        retString += tailsDes + ",";
+        retString += tailsDes.Replace("\n", " ").Replace("\r", " ").Replace(",", " ") + ",";
         retString += tailsOption.ToString();
         retString = retString.Replace("\n", " ").Replace("\r", " ");
         if (retString.Contains("\n"))
