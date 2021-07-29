@@ -215,7 +215,7 @@ public class CardSave
         {
             loadString += x + ",";
         }
-        Debug.Log("loading string: "+loadString);
+        //Debug.Log("loading string: "+loadString);
 
 
         this.cardID = s[0];
@@ -227,12 +227,12 @@ public class CardSave
         this.cardSpriteName = s[4];
         this.cardDes = s[5];
 
-        Debug.Log("Loading Head");
+        //Debug.Log("Loading Head");
         this.headsDes = s[6];
         List<string> subArray = new List<string>(s);
         this.headsOption = new CardOptionSave(subArray.GetRange(7, 8).ToArray());// 7,14
 
-        Debug.Log("Loading Tails");
+        //Debug.Log("Loading Tails");
         this.tailsDes = s[15];
         this.tailsOption = new CardOptionSave(subArray.GetRange(16, 8).ToArray());
     }

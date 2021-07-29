@@ -109,19 +109,27 @@ public static class CardManager
         string[] cardSplit;
         try
         {
-            cardSplit = temp.Split(seperators, 2, System.StringSplitOptions.RemoveEmptyEntries);
-            cardSplit[1] = cardSplit[1].Replace("_", "");
-            //Debug.Log(cardSplit[0]);
-            //Debug.Log(cardSplit[1]);
-            for (int i = 0; i < 7; i++)
+            if (!cardID.Equals(""))
             {
-                if (GetAgeShortString(i).Equals(cardSplit[0]))
+
+                cardSplit = temp.Split(seperators, 2, System.StringSplitOptions.RemoveEmptyEntries);
+                cardSplit[1] = cardSplit[1].Replace("_", "");
+                //Debug.Log(cardSplit[0]);
+                //Debug.Log(cardSplit[1]);
+                for (int i = 0; i < 7; i++)
                 {
-                    if (counters[i] <= int.Parse(cardSplit[1]))
+                    if (GetAgeShortString(i).Equals(cardSplit[0]))
                     {
-                        counters[i] = int.Parse(cardSplit[1]) + 1;
+                        if (counters[i] <= int.Parse(cardSplit[1]))
+                        {
+                            counters[i] = int.Parse(cardSplit[1]) + 1;
+                        }
                     }
                 }
+            }
+            else
+            {
+                Debug.LogWarning("Empty Card ID");
             }
 
         }

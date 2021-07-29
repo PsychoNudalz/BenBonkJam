@@ -89,7 +89,7 @@ public struct CardOption
             requiredStatus.Add((StatusEnum)i);
         }
         statusAdd = new List<StatusEnum>();
-        foreach(int i in cos.statusAdd)
+        foreach (int i in cos.statusAdd)
         {
             statusAdd.Add((StatusEnum)i);
         }
@@ -101,22 +101,28 @@ public struct CardOption
 
         Card tempCard;
         sequenceCardsAdd = new List<Card>();
-        foreach(string s in cos.sequenceCardsAdd)
+        foreach (string s in cos.sequenceCardsAdd)
         {
-            tempCard = UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s);
-            if (tempCard != null)
+            if (!s.Equals(""))
             {
-            sequenceCardsAdd.Add(tempCard);
+                tempCard = UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s);
+                if (tempCard != null)
+                {
+                    sequenceCardsAdd.Add(tempCard);
+                }
             }
         }
 
         sequenceCardsRemove = new List<Card>();
         foreach (string s in cos.sequenceCardsRemove)
         {
-            tempCard = UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s);
-            if (tempCard != null)
+            if (!s.Equals(""))
             {
-                sequenceCardsRemove.Add(tempCard);
+                tempCard = UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s);
+                if (tempCard != null)
+                {
+                    sequenceCardsRemove.Add(tempCard);
+                }
             }
         }
     }
@@ -143,7 +149,7 @@ public class Card : MonoBehaviour
     [SerializeField] TextMeshPro cardDescriptionTMPro;
     [SerializeField] TextMeshPro headsDescriptionTMPro;
     [SerializeField] TextMeshPro tailsDescriptionTMPro;
-    [SerializeField] SpriteRenderer cardSprite; 
+    [SerializeField] SpriteRenderer cardSprite;
     [Header("Other Components")]
     [SerializeField] CardEffectScript cardEffectScript;
 
@@ -258,12 +264,12 @@ public class Card : MonoBehaviour
             headsOption = new CardOption(cs.headsOption);
             tailsOption = new CardOption(cs.tailsOption);
             ageNeeded = new List<AgeEnum>();
-            foreach ( int i in cs.ageNeeded)
+            foreach (int i in cs.ageNeeded)
             {
                 ageNeeded.Add((AgeEnum)i);
             }
             statusNeeded = new List<StatusEnum>();
-            foreach(int i in cs.statusNeeded)
+            foreach (int i in cs.statusNeeded)
             {
                 statusNeeded.Add((StatusEnum)i);
             }

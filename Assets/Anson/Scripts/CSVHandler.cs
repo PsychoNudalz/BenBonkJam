@@ -72,6 +72,7 @@ public static class CSVHandler
 
         List<string> loadedArray = new List<string>( loadString.Split('\n'));
         loadedArray.RemoveAt(0);
+        loadedArray.RemoveAt(loadedArray.Count - 1);
         
         List<CardSave> cardSaves = new List<CardSave>();
         foreach(string s in loadedArray)

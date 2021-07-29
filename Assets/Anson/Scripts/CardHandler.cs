@@ -126,7 +126,7 @@ public class CardHandler : MonoBehaviour
             {
                 Card newCard = CreateNewCard(cs).GetComponent<Card>();
                 allCards.Add(newCard);
-                Debug.Log("Successfully generated: " + newCard.CardID + "  " + newCard.CardDescriptionText);
+                Debug.LogWarning("Successfully generated: " + newCard.CardID + "  " + newCard.CardDescriptionText);
             }
         }
     }
@@ -169,7 +169,11 @@ public class CardHandler : MonoBehaviour
                 return c;
             }
         }
-        Debug.LogError("Failed to get card: " + id);
+        Debug.LogError("Failed to get card: " + id+".  All Cards:"+allCards.Count);
+        if (id.Equals(""))
+        {
+            Debug.LogWarning("Possible new card");
+        }
         return temp;
     }
 
