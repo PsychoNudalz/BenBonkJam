@@ -75,21 +75,22 @@ public class CardOptionSave
     {
         try
         {
-        this.health = int.Parse(s[0]);
-        this.bux = int.Parse(s[1]);
-        this.mood = int.Parse(s[2]);
-        this.requiredStatus = FileLoader.StringSplitToInt(s[3], '/');
-        this.sequenceCardsAdd = s[4].Split('/');
-        this.sequenceCardsRemove = s[5].Split('/');
-        this.statusAdd = FileLoader.StringSplitToInt(s[6], '/');
-        this.statusRemove = FileLoader.StringSplitToInt(s[7], '/');
-        }catch(System.FormatException e)
+            this.health = int.Parse(FileLoader.EmptyDataCheckString(s[0], "0"));
+            this.bux = int.Parse(FileLoader.EmptyDataCheckString(s[1], "0"));
+            this.mood = int.Parse(FileLoader.EmptyDataCheckString(s[2], "0"));
+            this.requiredStatus = FileLoader.StringSplitToInt(s[3], '/');
+            this.sequenceCardsAdd = s[4].Split('/');
+            this.sequenceCardsRemove = s[5].Split('/');
+            this.statusAdd = FileLoader.StringSplitToInt(s[6], '/');
+            this.statusRemove = FileLoader.StringSplitToInt(s[7], '/');
+        }
+        catch (System.FormatException e)
         {
             Debug.LogError($"card option save parse error {s[0]}");
-            foreach(string x in s)
+            foreach (string x in s)
             {
 
-            Debug.LogWarning(x);
+                Debug.LogWarning(x);
             }
             Debug.LogError(e.StackTrace);
         }
@@ -207,33 +208,32 @@ public class CardSave
     {
         if (s.Length < 20)
         {
-            
             return;
         }
         string loadString = "";
-        foreach(string x in s)
+        foreach (string x in s)
         {
             loadString += x + ",";
         }
         //Debug.Log("loading string: "+loadString);
 
 
-        this.cardID = s[0];
-        Debug.Log("Loading Card: "+cardID);
+        this.cardID = FileLoader.EmptyDataCheck(s[0], "") as string;
+        Debug.Log("Loading Card: " + cardID);
 
-        this.cardDetails = s[1];
-        this.ageNeeded = FileLoader.StringSplitToInt(s[2], '/');
-        this.statusNeeded = FileLoader.StringSplitToInt(s[3], '/');
-        this.cardSpriteName = s[4];
-        this.cardDes = s[5];
+        this.cardDetails = FileLoader.EmptyDataCheck(s[1], "") as string;
+        this.ageNeeded = FileLoader.StringSplitToInt(FileLoader.EmptyDataCheck(s[2], "") as string, '/');
+        this.statusNeeded = FileLoader.StringSplitToInt(FileLoader.EmptyDataCheck(s[3], "") as string, '/');
+        this.cardSpriteName = FileLoader.EmptyDataCheck(s[4], "") as string;
+        this.cardDes = FileLoader.EmptyDataCheck(s[5], "") as string;
 
         //Debug.Log("Loading Head");
-        this.headsDes = s[6];
+        this.headsDes = FileLoader.EmptyDataCheck(s[6], "") as string;
         List<string> subArray = new List<string>(s);
         this.headsOption = new CardOptionSave(subArray.GetRange(7, 8).ToArray());// 7,14
 
         //Debug.Log("Loading Tails");
-        this.tailsDes = s[15];
+        this.tailsDes = FileLoader.EmptyDataCheck(s[15], "") as string;
         this.tailsOption = new CardOptionSave(subArray.GetRange(16, 8).ToArray());
     }
 

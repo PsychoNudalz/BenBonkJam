@@ -185,7 +185,14 @@ public class CardHandler : MonoBehaviour
         newCard.CardID = CardManager.GetIDValue(newCard);
         if (cardName == null)
         {
+            if (newCard.CardDetails!= "")
+            {
+                instanceRoot.name = "Card_" + newCard.CardDetails;
+            }
+            else
+            {
             instanceRoot.name = "Card_" + newCard.CardDescriptionText;
+            }
         }
         else
         {
@@ -200,7 +207,15 @@ public class CardHandler : MonoBehaviour
     {
         Card[] sortedCards = allCards.ToArray();
         SortMethod(sortedCards, 0, allCards.Count - 1);
-        allCards = new List<Card>(sortedCards);
+        List<Card> tempCards = new List<Card>();
+        foreach(Card c in sortedCards)
+        {
+            if (!tempCards.Contains(c))
+            {
+                tempCards.Add(c);
+            }
+        }
+        allCards = tempCards;
         print("End of Sort");
     }
 

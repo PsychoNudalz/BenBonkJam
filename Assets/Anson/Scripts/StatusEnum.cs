@@ -4,5 +4,33 @@ using UnityEngine;
 
 public enum StatusEnum
 {
-    DemonicKinship, Married, AngelicBoon, PetDog, Criminal, Gambler, Addict, Spiritual, Sick, Paranormal, EducatedI, EducatedII, Trained, ParentHood, Divorced, Employed, Unemployed, SportsTalent, Driver, PetHamster, Soulmate, Haunted, DieYoung
+    DemonicKinship, 
+    Married, 
+    AngelicBoon, 
+    PetDog, 
+    Criminal, 
+    Gambler, 
+    Addict, 
+    Spiritual, 
+    Sick, 
+    Paranormal, 
+    EducatedI, 
+    EducatedII, 
+    Trained, 
+    ParentHood, 
+    Divorced, 
+    Employed, 
+    Unemployed, 
+    SportsTalent, 
+    Driver, 
+    PetHamster, 
+    Soulmate, 
+    Haunted, 
+    DieYoung, 
+    Streamer, 
+    EducatedIII, 
+    Evil, 
+    Magic,
+    Deserter,
+    Jailed
 }

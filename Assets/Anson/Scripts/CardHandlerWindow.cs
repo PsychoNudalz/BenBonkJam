@@ -35,13 +35,13 @@ public class CardHandlerWindow : EditorWindow
             cardHandler.SortCards();
         }
 
-
-        GUILayout.Label("Save/ Load Buttons", EditorStyles.boldLabel);
-
         if (GUILayout.Button("Set Card ID"))
         {
             cardHandler.UpdateCardIDs();
         }
+
+        GUILayout.Label("Save/ Load Buttons", EditorStyles.boldLabel);
+
         if (GUILayout.Button("Save Cards to JSON"))
         {
             cardHandler.SaveCardsToJson();
@@ -50,10 +50,15 @@ public class CardHandlerWindow : EditorWindow
         {
             cardHandler.LoadCardsFromJson();
         }
+        GUILayout.Space(10);
+
         if (GUILayout.Button("Generate Cards from JSON"))
         {
             cardHandler.GenerateCardsFromJson();
         }
+
+        GUILayout.Space(10);
+
         if (GUILayout.Button("Save JSON to EXCEL"))
         {
             CSVHandler.FromJSON(cardHandler);

@@ -58,4 +58,30 @@ public static class FileLoader
         }
         return AgeEnum.OLDAGE;
     }
+
+
+    public static object EmptyDataCheck(string s, object defaultValue)
+    {
+        if (s.Equals(""))
+        {
+            return defaultValue;
+        }
+        else
+        {
+            return s;
+        }
+
+    }
+    public static string EmptyDataCheckString(string s, string i)
+    {
+        if (s.Equals(""))
+        {
+            return i;
+        }
+        else
+        {
+            return s;
+        }
+
+    }
 }
