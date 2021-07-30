@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,5 +43,19 @@ public static class FileLoader
             }
         }
         return returnInt.ToArray();
+    }
+
+    public static AgeEnum TextToAge(string s)
+    {
+        s = s.ToLower();
+
+        foreach(int i in Enum.GetValues(typeof(AgeEnum)))
+        {
+            if (s.Equals(((AgeEnum)i).ToString().ToLower()))
+            {
+                return (AgeEnum)i;
+            }
+        }
+        return AgeEnum.OLDAGE;
     }
 }
