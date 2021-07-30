@@ -27,8 +27,16 @@ public class CardHandlerWindow : EditorWindow
 
         }
 
-        GUILayout.Label("Remeber to save ctrl+s",EditorStyles.boldLabel);
-        
+        GUILayout.Label("Remeber to save ctrl+s", EditorStyles.boldLabel);
+
+        GUILayout.Label("Card Handler", EditorStyles.boldLabel);
+        if (GUILayout.Button("Sort Cards"))
+        {
+            cardHandler.SortCards();
+        }
+
+
+        GUILayout.Label("Save/ Load Buttons", EditorStyles.boldLabel);
 
         if (GUILayout.Button("Set Card ID"))
         {

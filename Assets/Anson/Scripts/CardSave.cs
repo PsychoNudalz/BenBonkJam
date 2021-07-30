@@ -278,5 +278,12 @@ public class AllCardsSave
     {
         this.allCardSave = allCardSave;
     }
+
+    /*
+    void SortCards()
+    {
+        List<CardSave>
+    }
+    */
 }
 

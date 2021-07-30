@@ -169,7 +169,7 @@ public class CardHandler : MonoBehaviour
                 return c;
             }
         }
-        Debug.LogError("Failed to get card: " + id+".  All Cards:"+allCards.Count);
+        Debug.LogError("Failed to get card: " + id + ".  All Cards:" + allCards.Count);
         if (id.Equals(""))
         {
             Debug.LogWarning("Possible new card");
@@ -195,4 +195,56 @@ public class CardHandler : MonoBehaviour
         DestroyImmediate(instanceRoot);
         return pVariant;
     }
+
+    public void SortCards()
+    {
+        Card[] sortedCards = allCards.ToArray();
+        SortMethod(sortedCards, 0, allCards.Count - 1);
+        allCards = new List<Card>(sortedCards);
+        print("End of Sort");
+    }
+
+    static public void MergeMethod(Card[] numbers, int left, int mid, int right)
+    {
+        try
+        {
+
+        Card[] temp = new Card[numbers.Length];
+        int i, left_end, num_elements, tmp_pos;
+        left_end = (mid - 1);
+        tmp_pos = left;
+        num_elements = (right - left + 1);
+        while ((left <= left_end) && (mid <= right))
+        {
+            if (string.Compare(numbers[left].CardID, numbers[mid].CardID) <= 0)
+                temp[tmp_pos++] = numbers[left++];
+            else
+                temp[tmp_pos++] = numbers[mid++];
+        }
+        while (left <= left_end)
+            temp[tmp_pos++] = numbers[left++];
+        while (mid <= right)
+            temp[tmp_pos++] = numbers[mid++];
+        for (i = 0; i < num_elements; i++)
+        {
+            numbers[right] = temp[right];
+            right--;
+        }
+        } catch(IndexOutOfRangeException e)
+        {
+            Debug.LogError($"Index Out of Range {left}, {right}, {mid}, {numbers.Length}");
+        }
+    }
+    static public void SortMethod(Card[] idList, int left, int right)
+    {
+        int mid;
+        if (right > left)
+        {
+            mid = (right + left) / 2;
+            SortMethod(idList, left, mid);
+            SortMethod(idList, (mid + 1), right);
+            MergeMethod(idList, left, (mid + 1), right);
+        }
+    }
+
 }
