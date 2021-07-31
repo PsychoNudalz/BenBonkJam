@@ -23,8 +23,20 @@ public class MainMenu : MonoBehaviour
     public Canvas achievementsCanvas;
     public Canvas endingsCanvas;
 
+    //achievements Canvas
+    public Canvas achievementsCanvas2;
+    public Canvas achievementsCanvas3;
+
+    // endings Canvas
+    public Canvas endingsCanvas2;
+    public Canvas endingCanvas3;
+
     void Start()
     {
+        endingsCanvas2.enabled = false;
+        endingCanvas3.enabled = false;
+        achievementsCanvas2.enabled = false;
+        achievementsCanvas3.enabled = false;
         mainCanvas.enabled = true;
         statsCanvas.enabled = false;
         helpCanvas.enabled = false;
@@ -63,6 +75,22 @@ public class MainMenu : MonoBehaviour
         achievementsCanvas.enabled = false;
         statisticsCanvas.enabled = false;
         endingsCanvas.enabled = true;
+        endingsCanvas2.enabled = false;
+        endingCanvas3.enabled = false;
+    }
+
+    public void Endings2()
+    {
+        endingsCanvas2.enabled = true;
+        endingCanvas3.enabled = false;
+        endingsCanvas.enabled = false;
+    }
+
+    public void Endings3()
+    {
+        endingsCanvas2.enabled = false;
+        endingCanvas3.enabled = true;
+        endingsCanvas.enabled = false;
     }
 
     public void Achievements()
@@ -70,6 +98,20 @@ public class MainMenu : MonoBehaviour
         achievementsCanvas.enabled = true;
         statisticsCanvas.enabled = false;
         endingsCanvas.enabled = false;
+    }
+
+    public void Achievements2()
+    {
+        achievementsCanvas2.enabled = true;
+        achievementsCanvas3.enabled = false;
+        achievementsCanvas.enabled = false;
+    }
+
+    public void Achievements3()
+    {
+        achievementsCanvas2.enabled = false;
+        achievementsCanvas3.enabled = true;
+        achievementsCanvas.enabled = false;
     }
 
     public void Statistics()
