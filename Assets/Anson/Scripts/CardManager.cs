@@ -55,22 +55,22 @@ public static class CardManager
             AgeEnum ageEnum = (AgeEnum)ageInt;
             switch (ageEnum)
             {
-                case AgeEnum.INFANCY:
-                    return "Infancy";
-                case AgeEnum.CHILDHOOD:
-                    return "Childhood";
+                case AgeEnum.BABY:
+                    return "Baby";
+                case AgeEnum.CHILD:
+                    return "Child";
 
-                case AgeEnum.ADOLESENCE:
-                    return "Adolescence";
+                case AgeEnum.TEEN:
+                    return "Teen";
 
                 case AgeEnum.ADULT:
                     return "Adult";
 
-                case AgeEnum.OLDAGE:
-                    return "OldAge";
+                case AgeEnum.OLD:
+                    return "Old";
 
-                case AgeEnum.DEATH:
-                    return "Death";
+                case AgeEnum.DEAD:
+                    return "Dead";
                 default:
                     return "General";
             }

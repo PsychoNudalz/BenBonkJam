@@ -55,7 +55,7 @@ public class CardEventManager : MonoBehaviour
     public void LoadNewCard()
     {
         UpdatePlayerStatsUI();
-        if (currentCard != null && currentCard.AgeNeeded.Contains(AgeEnum.DEATH))
+        if (currentCard != null && currentCard.AgeNeeded.Contains(AgeEnum.DEAD))
         {
             FindObjectOfType<GameManagerScript>().setGameOver();
         }
@@ -66,7 +66,7 @@ public class CardEventManager : MonoBehaviour
         Card newCard = null;
 
         //Death Card
-        if (playerScript.age.Equals(AgeEnum.DEATH))
+        if (playerScript.age.Equals(AgeEnum.DEAD))
         {
             tempCards = new List<Card>();
             cardBuffer = new List<Card>(deathCards);
@@ -77,7 +77,7 @@ public class CardEventManager : MonoBehaviour
         {
             newCard = NextBufferCard();
         }
-        else if (tempCards.Count == 0 && playerScript.age.Equals(AgeEnum.DEATH))
+        else if (tempCards.Count == 0 && playerScript.age.Equals(AgeEnum.DEAD))
         {
             FindObjectOfType<GameManagerScript>().setGameOver();
         }
@@ -93,7 +93,7 @@ public class CardEventManager : MonoBehaviour
                 }
                 return;
             }
-            if (playerScript.age.Equals(AgeEnum.DEATH))
+            if (playerScript.age.Equals(AgeEnum.DEAD))
             {
                 tempCards = new List<Card>();
             }
@@ -110,7 +110,7 @@ public class CardEventManager : MonoBehaviour
         cardCounter = 0;
         UpdatePlayerStatsUI();
 
-        return !playerScript.age.Equals(AgeEnum.DEATH);
+        return !playerScript.age.Equals(AgeEnum.DEAD);
     }
     private Card NextBufferCard()
     {
@@ -176,7 +176,7 @@ public class CardEventManager : MonoBehaviour
         }
         if (card.AgeNeeded.Count == 0)
         {
-            return !playerScript.age.Equals(AgeEnum.DEATH);
+            return !playerScript.age.Equals(AgeEnum.DEAD);
         }
         if (!card.AgeNeeded.Contains(playerScript.age))
         {
@@ -296,8 +296,8 @@ public class CardEventManager : MonoBehaviour
     {
         if (playerScript.heal(values[0]) || playerScript.GainBux(values[1]) || playerScript.GainMood(values[2]))
         {
-            //if player death
-            playerScript.SetAge((int)AgeEnum.DEATH);
+            //if player DEAD
+            playerScript.SetAge((int)AgeEnum.DEAD);
             FindObjectOfType<CameraShake>().PlayShake(.3f, .4f);
         }
         uIHandler.PlayStatsParticles(StatsType.HEALTH, values[0]);

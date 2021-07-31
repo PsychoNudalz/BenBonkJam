@@ -56,7 +56,7 @@ public static class FileLoader
                 return (AgeEnum)i;
             }
         }
-        return AgeEnum.OLDAGE;
+        return AgeEnum.OLD;
     }
 
 

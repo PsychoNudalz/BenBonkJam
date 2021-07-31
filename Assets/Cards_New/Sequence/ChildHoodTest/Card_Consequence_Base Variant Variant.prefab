@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1cc6df4f45dec83418be8266d05fd2ca, type: 2}
     - target: {fileID: 4186951640590575411, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
       propertyPath: m_text
-      value: "As your scribbles take shape, a pentagram glows amongst your doodles
+      value: "As your scribbles take shape  a pentagram glows amongst your doodles
         and a demonic voice answers your call - I guess a demon is going to suggest
         your test\u2019s answers?"
       objectReference: {fileID: 0}
@@ -127,7 +127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
       propertyPath: cardDescriptionText
-      value: "As your scribbles take shape, a pentagram glows amongst your doodles
+      value: "As your scribbles take shape  a pentagram glows amongst your doodles
         and a demonic voice answers your call - I guess a demon is going to suggest
         your test\u2019s answers?"
       objectReference: {fileID: 0}

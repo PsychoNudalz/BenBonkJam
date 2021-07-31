@@ -4,10 +4,10 @@ using UnityEngine;
 
 public enum AgeEnum
 {
-    INFANCY, 
-    CHILDHOOD, 
-    ADOLESENCE, 
+    BABY, 
+    CHILD, 
+    TEEN, 
     ADULT,
-    OLDAGE, 
-    DEATH
+    OLD, 
+    DEAD
 }

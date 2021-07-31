@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardID
-      value: ADU_15_
+      value: ADU_10_
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardDescription
@@ -37,9 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: tailsDescriptionText
-      value: 'No...
-
-        Next Job'
+      value: No... Next Job
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: ageNeeded.Array.data[0]
@@ -334,6 +332,10 @@ PrefabInstance:
     - target: {fileID: 7669844762209004678, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_Name
       value: Card_JobSequence_TruckDriver Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7669844762256043072, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: m_text
+      value: No... Next Job
       objectReference: {fileID: 0}
     - target: {fileID: 7669844762303681719, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
