@@ -22,13 +22,14 @@ public static class CardManager
         if (c.AgeNeeded.Count > 0)
         {
             temp += GetAgeShortString((int)c.AgeNeeded[0]) + "_";
-            temp += counters[(int)c.AgeNeeded[0]].ToString() + "_";
+            temp += (counters[(int)c.AgeNeeded[0]] + 1000).ToString().Substring(1) + "_";
             counters[(int)c.AgeNeeded[0]]++;
         }
         else
         {
             temp += GetAgeShortString(7) + "_";
-            temp += counters[6].ToString() + "_";
+            
+            temp += (counters[6]+1000).ToString().Substring(1) + "_";
             counters[6]++;
         }
 
@@ -55,22 +56,22 @@ public static class CardManager
             AgeEnum ageEnum = (AgeEnum)ageInt;
             switch (ageEnum)
             {
-                case AgeEnum.INFANCY:
-                    return "Infancy";
-                case AgeEnum.CHILDHOOD:
-                    return "Childhood";
+                case AgeEnum.BABY:
+                    return "Baby";
+                case AgeEnum.CHILD:
+                    return "Child";
 
-                case AgeEnum.ADOLESENCE:
-                    return "Adolescence";
+                case AgeEnum.TEEN:
+                    return "Teen";
 
                 case AgeEnum.ADULT:
                     return "Adult";
 
-                case AgeEnum.OLDAGE:
-                    return "OldAge";
+                case AgeEnum.OLD:
+                    return "Old";
 
-                case AgeEnum.DEATH:
-                    return "Death";
+                case AgeEnum.DEAD:
+                    return "Dead";
                 default:
                     return "General";
             }
@@ -109,19 +110,27 @@ public static class CardManager
         string[] cardSplit;
         try
         {
-            cardSplit = temp.Split(seperators, 2, System.StringSplitOptions.RemoveEmptyEntries);
-            cardSplit[1] = cardSplit[1].Replace("_", "");
-            //Debug.Log(cardSplit[0]);
-            //Debug.Log(cardSplit[1]);
-            for (int i = 0; i < 7; i++)
+            if (!cardID.Equals(""))
             {
-                if (GetAgeShortString(i).Equals(cardSplit[0]))
+
+                cardSplit = temp.Split(seperators, 2, System.StringSplitOptions.RemoveEmptyEntries);
+                cardSplit[1] = cardSplit[1].Replace("_", "");
+                //Debug.Log(cardSplit[0]);
+                //Debug.Log(cardSplit[1]);
+                for (int i = 0; i < 7; i++)
                 {
-                    if (counters[i] <= int.Parse(cardSplit[1]))
+                    if (GetAgeShortString(i).Equals(cardSplit[0]))
                     {
-                        counters[i] = int.Parse(cardSplit[1]) + 1;
+                        if (counters[i] <= int.Parse(cardSplit[1]))
+                        {
+                            counters[i] = int.Parse(cardSplit[1]) + 1;
+                        }
                     }
                 }
+            }
+            else
+            {
+                Debug.LogWarning("Empty Card ID");
             }
 
         }

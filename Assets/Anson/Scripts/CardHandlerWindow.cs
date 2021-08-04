@@ -27,13 +27,52 @@ public class CardHandlerWindow : EditorWindow
 
         }
 
-        GUILayout.Label("Remeber to save ctrl+s",EditorStyles.boldLabel);
-        
+        GUILayout.Label("Remeber to save ctrl+s", EditorStyles.boldLabel);
+
+        GUILayout.Label("Card Handler", EditorStyles.boldLabel);
+        if (GUILayout.Button("Sort Cards"))
+        {
+            cardHandler.SortCards();
+        }
 
         if (GUILayout.Button("Set Card ID"))
         {
             cardHandler.UpdateCardIDs();
         }
+        GUILayout.Space(10);
+
+        if (GUILayout.Button("Full Add New Cards From Excel"))
+        {
+            CSVHandler.FromExcelToJSON(cardHandler);
+            cardHandler.GenerateCardsFromJson();
+            cardHandler.SaveCardsToJson();
+            cardHandler.LoadCardsFromJson();
+            cardHandler.SaveCardsToJson();
+            CSVHandler.FromJSON(cardHandler);
+
+        }
+        GUILayout.Space(10);
+
+        if (GUILayout.Button("Full Save"))
+        {
+            cardHandler.SaveCardsToJson();
+            CSVHandler.FromJSON(cardHandler);
+
+        }
+        GUILayout.Space(10);
+
+        if (GUILayout.Button("Full Load"))
+        {
+            CSVHandler.FromExcelToJSON(cardHandler);
+            cardHandler.LoadCardsFromJson();
+            cardHandler.SaveCardsToJson();
+            CSVHandler.FromJSON(cardHandler);
+
+        }
+
+        GUILayout.Space(20);
+        GUILayout.Label("Save/ Load Buttons", EditorStyles.boldLabel);
+
         if (GUILayout.Button("Save Cards to JSON"))
         {
             cardHandler.SaveCardsToJson();
@@ -42,13 +81,23 @@ public class CardHandlerWindow : EditorWindow
         {
             cardHandler.LoadCardsFromJson();
         }
+        GUILayout.Space(10);
+
         if (GUILayout.Button("Generate Cards from JSON"))
         {
             cardHandler.GenerateCardsFromJson();
         }
+
+        GUILayout.Space(10);
+        GUILayout.Label("Excel Handling", EditorStyles.boldLabel);
+
         if (GUILayout.Button("Save JSON to EXCEL"))
         {
             CSVHandler.FromJSON(cardHandler);
+        }
+        if (GUILayout.Button("Load EXCEL to JSON"))
+        {
+            CSVHandler.FromExcelToJSON(cardHandler);
         }
 
     }

@@ -71,13 +71,39 @@ public class CardOptionSave
         this.statusRemove = statusRemove;
     }
 
+    public CardOptionSave(string[] s)
+    {
+        try
+        {
+            this.health = int.Parse(FileLoader.EmptyDataCheckString(s[0], "0"));
+            this.bux = int.Parse(FileLoader.EmptyDataCheckString(s[1], "0"));
+            this.mood = int.Parse(FileLoader.EmptyDataCheckString(s[2], "0"));
+            this.requiredStatus = FileLoader.StringSplitToInt(s[3], '/');
+            this.sequenceCardsAdd = s[4].Split('/');
+            this.sequenceCardsRemove = s[5].Split('/');
+            this.statusAdd = FileLoader.StringSplitToInt(s[6], '/');
+            this.statusRemove = FileLoader.StringSplitToInt(s[7], '/');
+        }
+        catch (System.FormatException e)
+        {
+            Debug.LogError($"card option save parse error {s[0]}");
+            foreach (string x in s)
+            {
+
+                Debug.LogWarning(x);
+            }
+            Debug.LogError(e.StackTrace);
+        }
+
+    }
+
     public override string ToString()
     {
         string retString = "";
         retString += health + ",";
         retString += bux + ",";
         retString += mood + ",";
-        foreach(int i in requiredStatus)
+        foreach (int i in requiredStatus)
         {
             retString += i + "/";
         }
@@ -133,6 +159,18 @@ public class CardSave
         this.ageNeeded = ageNeeded;
         this.statusNeeded = statusNeeded;
     }
+    public CardSave()
+    {
+        this.cardID = "Empty";
+        this.cardDetails = "Empty";
+        this.cardDes = "Empty";
+        this.headsDes = "Empty";
+        this.tailsDes = "Empty";
+        this.headsOption = null;
+        this.tailsOption = null;
+        this.ageNeeded = null;
+        this.statusNeeded = null;
+    }
 
     public CardSave(Card c)
     {
@@ -158,18 +196,51 @@ public class CardSave
         statusNeeded = tempInt.ToArray();
         try
         {
-
-        cardSpriteName = c.CardSprite.sprite.name;
-        }catch(System.NullReferenceException e)
+            cardSpriteName = c.CardSprite.sprite.name;
+        }
+        catch (System.NullReferenceException e)
         {
             Debug.LogError($"{cardID} missing sprite");
         }
     }
 
+    public CardSave(string[] s)
+    {
+        if (s.Length < 20)
+        {
+            return;
+        }
+        string loadString = "";
+        foreach (string x in s)
+        {
+            loadString += x + ",";
+        }
+        //Debug.Log("loading string: "+loadString);
+
+
+        this.cardID = FileLoader.EmptyDataCheck(s[0], "") as string;
+        Debug.Log("Loading Card: " + cardID);
+
+        this.cardDetails = FileLoader.EmptyDataCheck(s[1], "") as string;
+        this.ageNeeded = FileLoader.StringSplitToInt(FileLoader.EmptyDataCheck(s[2], "") as string, '/');
+        this.statusNeeded = FileLoader.StringSplitToInt(FileLoader.EmptyDataCheck(s[3], "") as string, '/');
+        this.cardSpriteName = FileLoader.EmptyDataCheck(s[4], "") as string;
+        this.cardDes = FileLoader.EmptyDataCheck(s[5], "") as string;
+
+        //Debug.Log("Loading Head");
+        this.headsDes = FileLoader.EmptyDataCheck(s[6], "") as string;
+        List<string> subArray = new List<string>(s);
+        this.headsOption = new CardOptionSave(subArray.GetRange(7, 8).ToArray());// 7,14
+
+        //Debug.Log("Loading Tails");
+        this.tailsDes = FileLoader.EmptyDataCheck(s[15], "") as string;
+        this.tailsOption = new CardOptionSave(subArray.GetRange(16, 8).ToArray());
+    }
+
     public override string ToString()
     {
         string retString = "";
-        retString += cardID+",";
+        retString += cardID + ",";
         retString += cardDetails + ",";
         foreach (int i in ageNeeded)
         {
@@ -181,13 +252,13 @@ public class CardSave
             retString += i + "/";
         }
         retString += ",";
-        retString += cardSpriteName+",";
+        retString += cardSpriteName + ",";
 
 
-        retString += cardDes + ",";
-        retString +=  headsDes + ",";
+        retString += cardDes.Replace("\n", " ").Replace("\r", " ").Replace(",", " ") + ",";
+        retString += headsDes.Replace("\n", " ").Replace("\r", " ").Replace(",", " ") + ",";
         retString += headsOption.ToString();
-        retString += tailsDes + ",";
+        retString += tailsDes.Replace("\n", " ").Replace("\r", " ").Replace(",", " ") + ",";
         retString += tailsOption.ToString();
         retString = retString.Replace("\n", " ").Replace("\r", " ");
         if (retString.Contains("\n"))
@@ -207,5 +278,12 @@ public class AllCardsSave
     {
         this.allCardSave = allCardSave;
     }
+
+    /*
+    void SortCards()
+    {
+        List<CardSave>
+    }
+    */
 }
 

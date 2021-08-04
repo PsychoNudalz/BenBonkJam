@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardID
-      value: ADU_22_
+      value: ADU_010_
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardDescription
@@ -37,9 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: tailsDescriptionText
-      value: 'No...
-
-        Next Job'
+      value: No... Next Job
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: ageNeeded.Array.data[0]
@@ -87,48 +85,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.size
-      value: 10
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[0]
       value: 
-      objectReference: {fileID: 3345213397067803073, guid: 05450729627700d479770da9a1474474, type: 3}
+      objectReference: {fileID: 4343606627852743981, guid: 1ebe7e447d4d59f42a3e10b48dcf369e, type: 3}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[1]
       value: 
-      objectReference: {fileID: 5118071481035649361, guid: c0036e0703b8b9348838fa9555447a75, type: 3}
+      objectReference: {fileID: 4548527751823366517, guid: 19e340a86d726d744aa6a03e117ed98e, type: 3}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[2]
       value: 
-      objectReference: {fileID: 1684056493580507, guid: 7cacd74350e805149938ec3bbce8bcf8, type: 3}
+      objectReference: {fileID: 3480359045016101539, guid: 735987cd106517a43b677e0a9efe85d1, type: 3}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[3]
       value: 
-      objectReference: {fileID: 8063331667745150679, guid: 618fa34b0a7ce83498b398f75c3385ad, type: 3}
+      objectReference: {fileID: 3345213397067803073, guid: 05450729627700d479770da9a1474474, type: 3}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[4]
       value: 
-      objectReference: {fileID: 1326893458075625852, guid: 874949bba3356f945a49f9b50832553c, type: 3}
+      objectReference: {fileID: 5118071481035649361, guid: c0036e0703b8b9348838fa9555447a75, type: 3}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[5]
       value: 
-      objectReference: {fileID: 8959864372105648829, guid: 0fc14055a753c954ab691ec9a92eacd1, type: 3}
+      objectReference: {fileID: 1684056493580507, guid: 7cacd74350e805149938ec3bbce8bcf8, type: 3}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[6]
       value: 
-      objectReference: {fileID: 1909293496553196221, guid: 732b47bd02aa6114cb4b74a3c1d20012, type: 3}
+      objectReference: {fileID: 8063331667745150679, guid: 618fa34b0a7ce83498b398f75c3385ad, type: 3}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[7]
       value: 
-      objectReference: {fileID: 8621221889991041607, guid: 7df447292ce36da499ed282928a22655, type: 3}
+      objectReference: {fileID: 1326893458075625852, guid: 874949bba3356f945a49f9b50832553c, type: 3}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[8]
       value: 
-      objectReference: {fileID: 1443395139636661104}
+      objectReference: {fileID: 8959864372105648829, guid: 0fc14055a753c954ab691ec9a92eacd1, type: 3}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[9]
       value: 
+      objectReference: {fileID: 1909293496553196221, guid: 732b47bd02aa6114cb4b74a3c1d20012, type: 3}
+    - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: headsOption.sequenceCardsRemove.Array.data[10]
+      value: 
+      objectReference: {fileID: 8621221889991041607, guid: 7df447292ce36da499ed282928a22655, type: 3}
+    - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: headsOption.sequenceCardsRemove.Array.data[11]
+      value: 
+      objectReference: {fileID: 1443395139636661104}
+    - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: headsOption.sequenceCardsRemove.Array.data[12]
+      value: 
       objectReference: {fileID: 8081235765660229565, guid: b44629ff54b6abc488a93aa641439ac1, type: 3}
+    - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: headsOption.sequenceCardsRemove.Array.data[13]
+      value: 
+      objectReference: {fileID: 589086361448509104, guid: 402e0861231de11409b77f996c86c9fd, type: 3}
     - target: {fileID: 3738687351881191800, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardID
       value: 0
@@ -318,6 +332,10 @@ PrefabInstance:
     - target: {fileID: 7669844762209004678, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_Name
       value: Card_JobSequence_TruckDriver Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7669844762256043072, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: m_text
+      value: No... Next Job
       objectReference: {fileID: 0}
     - target: {fileID: 7669844762303681719, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_Materials.Array.data[0]

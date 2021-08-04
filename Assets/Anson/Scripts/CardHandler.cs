@@ -41,15 +41,24 @@ public class CardHandler : MonoBehaviour
         }
     }
 
-    public void SaveCardsToJson()
+    public void SaveCardsToJson(AllCardsSave allCardsSaveInput = null)
     {
         string saveString = "";
-        List<CardSave> cardSaves = new List<CardSave>();
-        foreach (Card c in allCards)
+        AllCardsSave allCardsSave;
+        if (allCardsSaveInput == null)
         {
-            cardSaves.Add(new CardSave(c));
+
+            List<CardSave> cardSaves = new List<CardSave>();
+            foreach (Card c in allCards)
+            {
+                cardSaves.Add(new CardSave(c));
+            }
+            allCardsSave = new AllCardsSave(cardSaves.ToArray());
         }
-        AllCardsSave allCardsSave = new AllCardsSave(cardSaves.ToArray());
+        else
+        {
+            allCardsSave = allCardsSaveInput;
+        }
         saveString = JsonUtility.ToJson(allCardsSave);
         print("Saving all cards");
         print(saveString);
@@ -65,10 +74,18 @@ public class CardHandler : MonoBehaviour
         }
     }
 
-    public void LoadCardsFromJson()
+    public void LoadCardsFromJson(AllCardsSave allCardsSaveInput = null)
     {
         CardManager.ResetCounters();
-        CardSave[] allCardsSaves = LoadAllCardsSaves();
+        CardSave[] allCardsSaves;
+        if (allCardsSaveInput == null)
+        {
+            allCardsSaves = LoadAllCardsSaves();
+        }
+        else
+        {
+            allCardsSaves = allCardsSaveInput.allCardSave;
+        }
         if (allCardsSaves == null)
         {
             return;
@@ -93,13 +110,14 @@ public class CardHandler : MonoBehaviour
         CardManager.RefreshCounter(allCards.ToArray());
     }
 
-    public void GenerateCardsFromJson()
+    public int GenerateCardsFromJson()
     {
+        int newCardsCount = 0;
         CardSave[] allCardsSaves = LoadAllCardsSaves();
         CardManager.RefreshCounter(allCardsSaves);
         if (allCardsSaves == null)
         {
-            return;
+            return 0;
         }
         Card currentCard;
         foreach (CardSave cs in allCardsSaves)
@@ -109,9 +127,13 @@ public class CardHandler : MonoBehaviour
             {
                 Card newCard = CreateNewCard(cs).GetComponent<Card>();
                 allCards.Add(newCard);
-                Debug.Log("Successfully generated: " + newCard.CardID + "  " + newCard.CardDescriptionText);
+                Debug.LogWarning("Successfully generated: " + newCard.CardID + "  " + newCard.CardDescriptionText);
+                newCardsCount++;
             }
         }
+        Debug.Log($"Generated ({newCardsCount}) new cards");
+
+        return newCardsCount;
     }
 
     public CardSave[] LoadAllCardsSaves()
@@ -152,7 +174,11 @@ public class CardHandler : MonoBehaviour
                 return c;
             }
         }
-        Debug.LogError("Failed to get card: " + id);
+        Debug.LogError("Failed to get card: " + id + ".  All Cards:" + allCards.Count);
+        if (id.Equals(""))
+        {
+            Debug.LogWarning("Possible new card");
+        }
         return temp;
     }
 
@@ -164,7 +190,14 @@ public class CardHandler : MonoBehaviour
         newCard.CardID = CardManager.GetIDValue(newCard);
         if (cardName == null)
         {
+            if (newCard.CardDetails!= "")
+            {
+                instanceRoot.name = "Card_" + newCard.CardDetails;
+            }
+            else
+            {
             instanceRoot.name = "Card_" + newCard.CardDescriptionText;
+            }
         }
         else
         {
@@ -174,4 +207,64 @@ public class CardHandler : MonoBehaviour
         DestroyImmediate(instanceRoot);
         return pVariant;
     }
+
+    public void SortCards()
+    {
+        Card[] sortedCards = allCards.ToArray();
+        SortMethod(sortedCards, 0, allCards.Count - 1);
+        List<Card> tempCards = new List<Card>();
+        foreach(Card c in sortedCards)
+        {
+            if (!tempCards.Contains(c))
+            {
+                tempCards.Add(c);
+            }
+        }
+        allCards = tempCards;
+        print("End of Sort");
+    }
+
+    static public void MergeMethod(Card[] numbers, int left, int mid, int right)
+    {
+        try
+        {
+
+        Card[] temp = new Card[numbers.Length];
+        int i, left_end, num_elements, tmp_pos;
+        left_end = (mid - 1);
+        tmp_pos = left;
+        num_elements = (right - left + 1);
+        while ((left <= left_end) && (mid <= right))
+        {
+            if (string.Compare(numbers[left].CardID, numbers[mid].CardID) <= 0)
+                temp[tmp_pos++] = numbers[left++];
+            else
+                temp[tmp_pos++] = numbers[mid++];
+        }
+        while (left <= left_end)
+            temp[tmp_pos++] = numbers[left++];
+        while (mid <= right)
+            temp[tmp_pos++] = numbers[mid++];
+        for (i = 0; i < num_elements; i++)
+        {
+            numbers[right] = temp[right];
+            right--;
+        }
+        } catch(IndexOutOfRangeException e)
+        {
+            Debug.LogError($"Index Out of Range {left}, {right}, {mid}, {numbers.Length}");
+        }
+    }
+    static public void SortMethod(Card[] idList, int left, int right)
+    {
+        int mid;
+        if (right > left)
+        {
+            mid = (right + left) / 2;
+            SortMethod(idList, left, mid);
+            SortMethod(idList, (mid + 1), right);
+            MergeMethod(idList, left, (mid + 1), right);
+        }
+    }
+
 }

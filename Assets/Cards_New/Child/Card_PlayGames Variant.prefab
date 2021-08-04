@@ -1,0 +1,273 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5943123075098233623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920392604792802367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a111226cd9b4d741bc3847d2579b1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardSprite: {fileID: 0}
+  cardID: 0
+  cardDescription: PlayGames
+  healthHeads: 0
+  buxHeads: 10
+  moodHeads: -10
+  requoredStatusHeads: 
+  sequenceCardsHeads: []
+  removeSequenceCardsHeads: []
+  addStatusHeads: 
+  removeStatusHeads: 
+  healthTails: 0
+  buxTails: -10
+  moodTails: 20
+  requoredStatusTails: 
+  sequenceCardsTails: []
+  removeSequenceCardsTails: []
+  addStatusTails: 
+  removeStatusTails: 
+  heads: 0
+  tails: 0
+  cardMustBePlayed: 0
+  useCondition: 0
+  ageEnum: 01000000
+  cardStatuses: 
+  cardEffectScript: {fileID: 0}
+--- !u!114 &7065530230732899267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920392604792802367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a111226cd9b4d741bc3847d2579b1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardSprite: {fileID: 0}
+  cardID: 0
+  cardDescription: PlayGames
+  healthHeads: 0
+  buxHeads: -5
+  moodHeads: 5
+  requoredStatusHeads: 
+  sequenceCardsHeads: []
+  removeSequenceCardsHeads: []
+  addStatusHeads: 
+  removeStatusHeads: 
+  healthTails: 0
+  buxTails: 5
+  moodTails: -5
+  requoredStatusTails: 
+  sequenceCardsTails: []
+  removeSequenceCardsTails: []
+  addStatusTails: 
+  removeStatusTails: 
+  heads: 0
+  tails: 0
+  cardMustBePlayed: 0
+  useCondition: 0
+  ageEnum: 01000000
+  cardStatuses: 
+  cardEffectScript: {fileID: 0}
+--- !u!1001 &7271843959000196286
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: cardID
+      value: CHI_007_
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: cardDescription
+      value: PlayGames
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsOption.bux
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsOption.mood
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsOption.mood
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: cardDescriptionText
+      value: Play games for how long?
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageNeeded.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsDescriptionText
+      value: Play for an hour
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsDescriptionText
+      value: JUST ONE MORE GAME!
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageNeeded.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: cardID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: cardDescription
+      value: PlayGames
+      objectReference: {fileID: 0}
+    - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsOption.bux
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsOption.mood
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsOption.mood
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: cardDescriptionText
+      value: Play games for how long?
+      objectReference: {fileID: 0}
+    - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageNeeded.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsDescriptionText
+      value: Play for an hour
+      objectReference: {fileID: 0}
+    - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsDescriptionText
+      value: JUST ONE MORE GAME!
+      objectReference: {fileID: 0}
+    - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageNeeded.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350933442539113009, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: shaderTypes
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_text
+      value: Play games for how long?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_text
+      value: JUST ONE MORE GAME!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_fontSize
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_text
+      value: Play for an hour
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_fontSize
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Name
+      value: Card_PlayGames Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d0fd597ba565ad4d9a9d3ff86215c96, type: 3}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 26a46d198342357439d5e79e33d10106, type: 2}
+    - target: {fileID: 7777152403300026144, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b0d097eeca294c441b1dc5e985e2f5bb, type: 3}
+    m_RemovedComponents:
+    - {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+--- !u!1 &5920392604792802367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+  m_PrefabInstance: {fileID: 7271843959000196286}
+  m_PrefabAsset: {fileID: 0}
