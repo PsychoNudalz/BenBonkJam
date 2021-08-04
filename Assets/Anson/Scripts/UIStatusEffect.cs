@@ -6,7 +6,7 @@ using TMPro;
 
 public class UIStatusEffect : MonoBehaviour
 {
-    public StatusEffectPair status;
+    public StatusEffect status;
     [SerializeField] Image spriteRenderer;
     [SerializeField] TextMeshProUGUI textMeshProUGUI;
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class UIStatusEffect : MonoBehaviour
         }
     }
 
-    public void SetNewStatus(StatusEffectPair s)
+    public void SetNewStatus(StatusEffect s)
     {
         status = s;
         spriteRenderer.sprite = s.icon;

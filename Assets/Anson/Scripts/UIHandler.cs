@@ -82,7 +82,7 @@ public class UIHandler : MonoBehaviour
         foreach(StatusEnum se in p.status.currentstatus)
         {
             currentUI = Instantiate(UIStatusEffectGO, statusDisplay.transform).GetComponent<UIStatusEffect>();
-            currentUI.SetNewStatus(FindObjectOfType<StatusEffectManager>().GetStatusEffectPair(se));
+            currentUI.SetNewStatus(FindObjectOfType<StatusEffectManager>().GetStatusEffect(se));
         }
 
 

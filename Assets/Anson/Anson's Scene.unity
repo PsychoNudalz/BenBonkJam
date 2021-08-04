@@ -10393,10 +10393,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1906904589}
-    - target: {fileID: 6748441795238032248, guid: e5e6f3eaa35e5cf44bcfadcb4076e1a6, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 5825788077026621503}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5e6f3eaa35e5cf44bcfadcb4076e1a6, type: 3}
 --- !u!1 &1409368680
@@ -25024,6 +25020,9 @@ MonoBehaviour:
   StartingBux: 70
   StartingMood: 50
   age: 0
+  healthMod: 0
+  buxMod: 0
+  moodMod: 0
 --- !u!4 &1906904590
 Transform:
   m_ObjectHideFlags: 0
@@ -30440,11 +30439,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
---- !u!1 &5825788077026621503 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5936022436916869094, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
-  m_PrefabInstance: {fileID: 5825788077026621502}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9075987464342703508
 PrefabInstance:
   m_ObjectHideFlags: 0

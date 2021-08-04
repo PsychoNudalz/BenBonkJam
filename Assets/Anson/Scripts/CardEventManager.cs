@@ -294,7 +294,7 @@ public class CardEventManager : MonoBehaviour
 
     private void ModifyPlayerStats(float[] values)
     {
-        if (playerScript.heal(values[0]) || playerScript.GainBux(values[1]) || playerScript.GainMood(values[2]))
+        if (playerScript.GainHealth(values[0]) || playerScript.GainBux(values[1]) || playerScript.GainMood(values[2]))
         {
             //if player DEAD
             playerScript.SetAge((int)AgeEnum.DEAD);

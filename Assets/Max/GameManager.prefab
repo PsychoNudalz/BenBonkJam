@@ -187,50 +187,179 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c21cb7eaaa7a0428cd4d834788a8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allSatusEffectPair:
+  allSatusEffect:
   - status: 0
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: deaa8e232ebf0bb419c563331005ac8c, type: 3}
+    description: 
   - status: 1
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 6a166739552a21e42b54a007e03b8e1f, type: 3}
+    description: 
   - status: 2
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 1031f365b77b55b4ba0b48feaf1424b1, type: 3}
+    description: 
   - status: 3
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 22a1245bbae0c6f4a8d0147b4fdedbd5, type: 3}
+    description: 
   - status: 4
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 5d612c580c912d6449cd604a300931b1, type: 3}
+    description: 
   - status: 5
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 10abe3ab4aaf2ed4badd2b12d8c01416, type: 3}
+    description: 
   - status: 6
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 8b78c3c0a9d2b284e8c1020a90ffe44a, type: 3}
+    description: 
   - status: 7
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 35ae9e39de023bd479c53c1918a641e5, type: 3}
+    description: 
   - status: 8
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 8b78c3c0a9d2b284e8c1020a90ffe44a, type: 3}
+    description: 
   - status: 9
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 770780cc012c8da4db5ec21cb1c05086, type: 3}
+    description: 
   - status: 10
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: c5a6f5855f80fe649adea6735d08e8bb, type: 3}
+    description: 
   - status: 11
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: dc010aab77f2be940b2c029e1e351180, type: 3}
+    description: 
   - status: 12
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 847ce2c5ff656774e826a5748428878e, type: 3}
+    description: 
   - status: 13
-    icon: {fileID: 21300000, guid: bc8f8285b1e11c544b802c03929cb99a, type: 3}
+    health: 0
+    bux: 0
+    mood: 0
+    icon: {fileID: 0}
+    description: 
   - status: 14
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 39568f21155b07641aaef31f767e251d, type: 3}
+    description: 
   - status: 15
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: b55e2002b2ea84d4c83e685c86f4ad4e, type: 3}
+    description: 
   - status: 16
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: fd56b2aec7cc7774981ae2108bef830e, type: 3}
+    description: 
   - status: 17
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: dfcbc588a0dab0240887273ad6949f2a, type: 3}
+    description: 
   - status: 18
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 8f08c5246d983bc47a79fd47eabf9010, type: 3}
+    description: 
   - status: 19
-    icon: {fileID: 21300000, guid: ae56abe671bd68141a49a3ac7c512ab3, type: 3}
+    health: 0
+    bux: 0
+    mood: 0
+    icon: {fileID: 21300000, guid: 3eb842aaa867de740bb3353ad402ee62, type: 3}
+    description: 
   - status: 20
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 4a70ba60b35aea54e9820567cffbe741, type: 3}
+    description: 
   - status: 21
+    health: 0
+    bux: 0
+    mood: 0
     icon: {fileID: 21300000, guid: 76676d1f31274a846991411240a3d3c3, type: 3}
+    description: 
   - status: 22
-    icon: {fileID: 21300000, guid: 4f0950b2450a28d47988669569154010, type: 3}
+    health: 0
+    bux: 0
+    mood: 0
+    icon: {fileID: 21300000, guid: b3f62b1c1b51e6a498cdaf127c33ec30, type: 3}
+    description: 
+  - status: 23
+    health: 0
+    bux: 0
+    mood: 0
+    icon: {fileID: 21300000, guid: 88c5722ccc793d04a8597a33d955aca0, type: 3}
+    description: 
+  - status: 24
+    health: 0
+    bux: 0
+    mood: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 25
+    health: 0
+    bux: 0
+    mood: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 26
+    health: 0
+    bux: 0
+    mood: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 27
+    health: 0
+    bux: 0
+    mood: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 28
+    health: 0
+    bux: 0
+    mood: 0
+    icon: {fileID: 0}
+    description: 
+  updateCSV: 0
