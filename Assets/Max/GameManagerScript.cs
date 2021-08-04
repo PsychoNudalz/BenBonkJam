@@ -87,7 +87,7 @@ public class GameManagerScript : MonoBehaviour
         } 
     }*/
 
-    public void setGameOver()
+    public void setGameOver(string deathCardID)
     {
         gameOver = true;
         if (!uIHandler)

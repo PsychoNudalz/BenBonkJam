@@ -57,7 +57,7 @@ public class CardEventManager : MonoBehaviour
         UpdatePlayerStatsUI();
         if (currentCard != null && currentCard.AgeNeeded.Contains(AgeEnum.DEAD))
         {
-            FindObjectOfType<GameManagerScript>().setGameOver();
+            FindObjectOfType<GameManagerScript>().setGameOver(currentCard.CardID);
         }
         if (cardCounter >= cardPerAge && cardBuffer.Count == 0)
         {
@@ -79,7 +79,7 @@ public class CardEventManager : MonoBehaviour
         }
         else if (tempCards.Count == 0 && playerScript.age.Equals(AgeEnum.DEAD))
         {
-            FindObjectOfType<GameManagerScript>().setGameOver();
+            FindObjectOfType<GameManagerScript>().setGameOver(currentCard.CardID);
         }
         if (newCard == null)
         {

@@ -39,6 +39,7 @@ public class CardHandlerWindow : EditorWindow
         {
             cardHandler.UpdateCardIDs();
         }
+        GUILayout.Space(10);
 
         if (GUILayout.Button("Full Add New Cards From Excel"))
         {
@@ -50,6 +51,7 @@ public class CardHandlerWindow : EditorWindow
             CSVHandler.FromJSON(cardHandler);
 
         }
+        GUILayout.Space(10);
 
         if (GUILayout.Button("Full Save"))
         {
@@ -57,6 +59,7 @@ public class CardHandlerWindow : EditorWindow
             CSVHandler.FromJSON(cardHandler);
 
         }
+        GUILayout.Space(10);
 
         if (GUILayout.Button("Full Load"))
         {

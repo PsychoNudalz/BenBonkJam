@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Events;
 
 public static class CSVHandler
 {
@@ -10,6 +11,7 @@ public static class CSVHandler
         "Tails Description","Tails Health","Tails Bux","Tails Mood", "Tails Required Status","Tails Sequence Cards Add","Tails Sequence Cards Remove", "Tails Status Add","Tails Status Remove",
         "END", "Rules: Age and stats must be in integer.  Set a card detail if description contains special characters"
     };
+
 
     public static void FromJSON(CardHandler cardHandler)
     {
