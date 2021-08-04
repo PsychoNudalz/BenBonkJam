@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardID
-      value: ADU_4_
+      value: ADU_004_
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardDescription
