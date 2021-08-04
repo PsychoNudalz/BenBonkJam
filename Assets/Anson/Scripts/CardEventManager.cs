@@ -8,7 +8,7 @@ public class CardEventManager : MonoBehaviour
     public List<Card> tempCards;
     public List<Card> deathCards;
     [Header("Manager")]
-    [SerializeField] Card currentCard;
+    [SerializeField] public Card currentCard;
     [SerializeField] Card previousCard;
     [SerializeField] List<Card> cardBuffer;
     [SerializeField] Player playerScript;

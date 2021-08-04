@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class GameDataManager : MonoBehaviour
 {
+    /*
+    public void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+    */
 
     private void Start()
     {
@@ -62,56 +68,66 @@ public class GameDataManager : MonoBehaviour
         }
     }
     
-    private class EndingsUnlocked
+    public class EndingsUnlocked
     {
-        public bool alien;
-        public bool athlete;
-        public bool borderAwake;
-        public bool dieYoung;
-        public bool friendGhost;
-        public bool hamDogAdventure;
-        public bool hell;
-        public bool paradise;
-        public bool purgatory;
-        public bool reincarnation;
-        public bool sick;
-        public bool voidEnding;
-        public bool wakeUpSim;
+        public static bool alien;
+        public static bool athlete;
+        public static bool borderAwake;
+        public static bool dieYoung;
+        public static bool friendGhost;
+        public static bool hamDogAdventure;
+        public static bool hell;
+        public static bool paradise;
+        public static bool purgatory;
+        public static bool reincarnation;
+        public static bool sick;
+        public static bool voidEnding;
+        public static bool wakeUpSim;
 
-            public EndingsUnlocked(bool alien, bool athlete, bool borderAwake, bool dieYoung, bool friendGhost, bool hamDogAdventure,
+        public void Update()
+        {
+            if (dieYoung == true)
+            {
+                Debug.Log("DIED YOUNG");
+            }
+        }
+
+        public EndingsUnlocked(bool alien, bool athlete, bool borderAwake, bool dieYoung, bool friendGhost, bool hamDogAdventure,
                 bool hell, bool paradise, bool purgatory, bool reincarnation, bool sick, bool voidEnding, bool wakeUpSim)        
         {
-            this.alien = alien;
-            this.athlete = athlete;
-            this.borderAwake = borderAwake;
-            this.dieYoung = dieYoung;
-            this.friendGhost = friendGhost;
-            this.hamDogAdventure = hamDogAdventure;
-            this.hell = hell;
-            this.paradise = paradise;
-            this.purgatory = purgatory;
-            this.reincarnation = reincarnation;
-            this.sick = sick;
-            this.voidEnding = voidEnding;
-            this.wakeUpSim = wakeUpSim;
+            EndingsUnlocked.alien = alien;
+            EndingsUnlocked.athlete = athlete;
+            EndingsUnlocked.borderAwake = borderAwake;
+            EndingsUnlocked.dieYoung = dieYoung;
+            EndingsUnlocked.friendGhost = friendGhost;
+            EndingsUnlocked.hamDogAdventure = hamDogAdventure;
+            EndingsUnlocked.hell = hell;
+            EndingsUnlocked.paradise = paradise;
+            EndingsUnlocked.purgatory = purgatory;
+            EndingsUnlocked.reincarnation = reincarnation;
+            EndingsUnlocked.sick = sick;
+            EndingsUnlocked.voidEnding = voidEnding;
+            EndingsUnlocked.wakeUpSim = wakeUpSim;
+
+
     }
 
         public EndingsUnlocked()
         {
 
-            this.alien = false;
-            this.athlete = false;
-            this.borderAwake = false;
-            this.dieYoung = false;
-            this.friendGhost = false;
-            this.hamDogAdventure = false;
-            this.hell = false;
-            this.paradise = false;
-            this.purgatory = false;
-            this.reincarnation = false;
-            this.sick = false;
-            this.voidEnding = false;
-            this.wakeUpSim = false;
+            EndingsUnlocked.alien = false;
+            EndingsUnlocked.athlete = false;
+            EndingsUnlocked.borderAwake = false;
+            EndingsUnlocked.dieYoung = false;
+            EndingsUnlocked.friendGhost = false;
+            EndingsUnlocked.hamDogAdventure = false;
+            EndingsUnlocked.hell = false;
+            EndingsUnlocked.paradise = false;
+            EndingsUnlocked.purgatory = false;
+            EndingsUnlocked.reincarnation = false;
+            EndingsUnlocked.sick = false;
+            EndingsUnlocked.voidEnding = false;
+            EndingsUnlocked.wakeUpSim = false;
         }
 
     }
