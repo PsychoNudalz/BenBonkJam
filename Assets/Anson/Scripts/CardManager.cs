@@ -22,13 +22,14 @@ public static class CardManager
         if (c.AgeNeeded.Count > 0)
         {
             temp += GetAgeShortString((int)c.AgeNeeded[0]) + "_";
-            temp += counters[(int)c.AgeNeeded[0]].ToString() + "_";
+            temp += (counters[(int)c.AgeNeeded[0]] + 1000).ToString().Substring(1) + "_";
             counters[(int)c.AgeNeeded[0]]++;
         }
         else
         {
             temp += GetAgeShortString(7) + "_";
-            temp += counters[6].ToString() + "_";
+            
+            temp += (counters[6]+1000).ToString().Substring(1) + "_";
             counters[6]++;
         }
 

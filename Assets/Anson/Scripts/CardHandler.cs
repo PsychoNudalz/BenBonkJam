@@ -110,13 +110,14 @@ public class CardHandler : MonoBehaviour
         CardManager.RefreshCounter(allCards.ToArray());
     }
 
-    public void GenerateCardsFromJson()
+    public int GenerateCardsFromJson()
     {
+        int newCardsCount = 0;
         CardSave[] allCardsSaves = LoadAllCardsSaves();
         CardManager.RefreshCounter(allCardsSaves);
         if (allCardsSaves == null)
         {
-            return;
+            return 0;
         }
         Card currentCard;
         foreach (CardSave cs in allCardsSaves)
@@ -127,8 +128,12 @@ public class CardHandler : MonoBehaviour
                 Card newCard = CreateNewCard(cs).GetComponent<Card>();
                 allCards.Add(newCard);
                 Debug.LogWarning("Successfully generated: " + newCard.CardID + "  " + newCard.CardDescriptionText);
+                newCardsCount++;
             }
         }
+        Debug.Log($"Generated ({newCardsCount}) new cards");
+
+        return newCardsCount;
     }
 
     public CardSave[] LoadAllCardsSaves()
