@@ -18,12 +18,32 @@ public class MainMenu : MonoBehaviour
     public GameObject sfxCredits2;
     public GameObject sfxCredits3;
 
+    //stats objects
+    public Canvas statisticsCanvas;
+    public Canvas achievementsCanvas;
+    public Canvas endingsCanvas;
+
+    //achievements Canvas
+    public Canvas achievementsCanvas2;
+    public Canvas achievementsCanvas3;
+
+    // endings Canvas
+    public Canvas endingsCanvas2;
+    public Canvas endingCanvas3;
+
     void Start()
     {
+        endingsCanvas2.enabled = false;
+        endingCanvas3.enabled = false;
+        achievementsCanvas2.enabled = false;
+        achievementsCanvas3.enabled = false;
         mainCanvas.enabled = true;
         statsCanvas.enabled = false;
         helpCanvas.enabled = false;
         creditsCanvas.enabled = false;
+        statisticsCanvas.enabled = false;
+        achievementsCanvas.enabled = false;
+        endingsCanvas.enabled = false;
     }
 
     public void Play()
@@ -38,6 +58,7 @@ public class MainMenu : MonoBehaviour
         helpCanvas.enabled = false;
         creditsCanvas.enabled = false;
         statsCanvas.enabled = true;
+        achievementsCanvas.enabled = true;
     }
 
     public void Help()
@@ -46,6 +67,60 @@ public class MainMenu : MonoBehaviour
         helpCanvas.enabled = true;
         creditsCanvas.enabled = false;
     }
+
+    //statisticsMenu
+    #region statistics
+    public void Endings()
+    {
+        achievementsCanvas.enabled = false;
+        statisticsCanvas.enabled = false;
+        endingsCanvas.enabled = true;
+        endingsCanvas2.enabled = false;
+        endingCanvas3.enabled = false;
+    }
+
+    public void Endings2()
+    {
+        endingsCanvas2.enabled = true;
+        endingCanvas3.enabled = false;
+        endingsCanvas.enabled = false;
+    }
+
+    public void Endings3()
+    {
+        endingsCanvas2.enabled = false;
+        endingCanvas3.enabled = true;
+        endingsCanvas.enabled = false;
+    }
+
+    public void Achievements()
+    {
+        achievementsCanvas.enabled = true;
+        statisticsCanvas.enabled = false;
+        endingsCanvas.enabled = false;
+    }
+
+    public void Achievements2()
+    {
+        achievementsCanvas2.enabled = true;
+        achievementsCanvas3.enabled = false;
+        achievementsCanvas.enabled = false;
+    }
+
+    public void Achievements3()
+    {
+        achievementsCanvas2.enabled = false;
+        achievementsCanvas3.enabled = true;
+        achievementsCanvas.enabled = false;
+    }
+
+    public void Statistics()
+    {
+        achievementsCanvas.enabled = false;
+        statisticsCanvas.enabled = true;
+        endingsCanvas.enabled = false;
+    }
+    #endregion
 
     // credits
     #region Credits
@@ -90,6 +165,9 @@ public class MainMenu : MonoBehaviour
         helpCanvas.enabled = false;
         creditsCanvas.enabled = false;
         statsCanvas.enabled = false;
+        achievementsCanvas.enabled = false;
+        statisticsCanvas.enabled = false;
+        endingsCanvas.enabled = false;
     }
 
     public void Quit()
