@@ -2,6 +2,7 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [System.Serializable]
 
@@ -19,7 +20,7 @@ public class GameDataManager : MonoBehaviour
     private Achievements Achievements1 { get => achievements; set => achievements = value; }
     public EndingsUnlocked EndingsUnlocked1 { get => endingsUnlocked; set => endingsUnlocked = value; }
 
-    private void Start()
+    private void Awake()
     {
         //WriteToSave();
         ReadFromSave();
@@ -27,48 +28,60 @@ public class GameDataManager : MonoBehaviour
 
     private void ReadFromSave()
     {
+        string json = JsonUtility.ToJson(achievements);
+        string json2 = JsonUtility.ToJson(endingsUnlocked);
+        try
+        {
+            Debug.Log("Loading save progress");
+            json = File.ReadAllText(Application.persistentDataPath + "/Save/achievements.json");
+        }
+        catch (System.Exception)
+        {
+            Debug.Log("Whoops");
+            Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+            File.WriteAllText(Application.persistentDataPath + "/Save/achievements.json", json);
+
+            Debug.LogError("Save file error");
+         //   Debug.LogError(Exception.StackTrace);
+
+        }
+
+        try
+        {
+            Debug.Log("Loading endings progress");
+            json2 = File.ReadAllText(Application.persistentDataPath + "/Save/saveEndings.json");
+        }
+        catch (System.Exception)
+        {
+
+            Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+            File.WriteAllText(Application.persistentDataPath + "/Save/saveEndings.json", json2);
+            json2 = JsonUtility.ToJson(endingsUnlocked);
+
+            Debug.LogError("Save file error");
+          //  Debug.LogError(e.StackTrace);
+        }
 
     }
 
     private void WriteToSave()
     {
-        Debug.Log("Game Data Manager Started");
+        Debug.Log("Writing Save");
         string json = JsonUtility.ToJson(achievements);
         string json2 = JsonUtility.ToJson(endingsUnlocked);
 
-        try
-        {
+        File.WriteAllText(Application.persistentDataPath + "/Save/achievements.json", json);
+        Debug.Log(Application.persistentDataPath);
+        Debug.Log(json);
+        
 
-            File.WriteAllText(Application.persistentDataPath + "/Save/achievements.json", json);
-            Debug.Log(Application.persistentDataPath);
-            Debug.Log(json);
-        }
-        catch (DirectoryNotFoundException e)
-        {
-            Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
-            File.WriteAllText(Application.persistentDataPath + "/Save/achievements.json", json);
-
-            Debug.LogError("Save file error");
-            Debug.LogError(e.StackTrace);
-        }
 
         Debug.Log("Saved Ach.");
 
-        try
-        {
-
-            File.WriteAllText(Application.persistentDataPath + "/Save/saveEndings.json", json2);
-            Debug.Log(Application.persistentDataPath);
-            Debug.Log(json2);
-        }
-        catch (DirectoryNotFoundException e)
-        {
-            Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
-            File.WriteAllText(Application.persistentDataPath + "/Save/saveEndings.json", json2);
-
-            Debug.LogError("Save file error");
-            Debug.LogError(e.StackTrace);
-        }
+        File.WriteAllText(Application.persistentDataPath + "/Save/saveEndings.json", json2);
+        Debug.Log(Application.persistentDataPath);
+        Debug.Log(json2);
+        
 
         Debug.Log("Saved End.");
 
