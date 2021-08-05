@@ -15342,6 +15342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529880268}
   - component: {fileID: 1529880267}
+  - component: {fileID: 1529880269}
   m_Layer: 0
   m_Name: GameProgressTrack
   m_TagString: Untagged
@@ -15358,11 +15359,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1529880266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03e6485bb2139f14a9de898b262e46da, type: 3}
+  m_Script: {fileID: 11500000, guid: cd71bad133507d045b903a14f121c0ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameDataManager: {fileID: 0}
-  cardEventManager: {fileID: 0}
+  gameDataManager: {fileID: 1529880269}
+  cardEventManager: {fileID: 1735484071}
   alien: 0
   athlete: 0
   borderAwake: 0
@@ -15390,6 +15391,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1529880269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529880266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b16ee88fbca1648a09372d2d80dd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1624996573
 GameObject:
   m_ObjectHideFlags: 0
@@ -20194,6 +20207,17 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1735484071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4379163752723092415, guid: 7450ae890bc52294c953e17c35dc959d, type: 3}
+  m_PrefabInstance: {fileID: 4379163753756153711}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792d5b98b3fbb6a44b14d4d1f1cc8197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1762091732
 GameObject:
   m_ObjectHideFlags: 0

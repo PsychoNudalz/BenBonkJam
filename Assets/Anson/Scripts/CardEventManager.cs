@@ -254,6 +254,7 @@ public class CardEventManager : MonoBehaviour
         List<StatusEnum> RemoveStatus = cardOption.StatusRemove;
         List<StatusEnum> requiredStatus = cardOption.RequiredStatus;
 
+        GameDataTracker.current.CheckIsDeathCard();
 
         foreach (StatusEnum se in requiredStatus)
         {

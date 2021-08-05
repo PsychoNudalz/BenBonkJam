@@ -4,91 +4,102 @@ using UnityEngine;
 
 public class GameDataTracker : MonoBehaviour
 {
+    public static GameDataTracker current;
+
     public GameDataManager gameDataManager;
     public CardEventManager cardEventManager;
-
-    public bool alien;
-    public bool athlete;
-    public bool borderAwake;
-    public bool dieYoung;
-    public bool friendGhost;
-    public bool hamDogAdventure;
-    public bool hell;
-    public bool paradise;
-    public bool purgatory;
-    public bool reincarnation;
-    public bool sick;
-    public bool voidEnding;
-    public bool wakeUpSim;
-
     // Start is called before the first frame update
     void Start()
     {
-     //   gameDataManager = FindObjectOfType("GameDataManager");
-
+        //   gameDataManager = FindObjectOfType("GameDataManager");
+        current = this;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //CheckIsDeathCard();
+    }
+
+    public void CheckIsDeathCard()
+    {
         if (cardEventManager.currentCard.CardID == "DEA_000_")
         {
-            alien = true;
             Debug.Log("Alien ending triggered");
-            alien = GameDataManager.EndingsUnlocked.alien == true;
+            gameDataManager.EndingsUnlocked1.alien = true;
+            gameDataManager.SaveGame();
         }
 
         if (cardEventManager.currentCard.CardID == "DEA_008_")
         {
-            borderAwake = GameDataManager.EndingsUnlocked.borderAwake == true;
+            gameDataManager.EndingsUnlocked1.borderAwake =true;
+            gameDataManager.SaveGame();
+
         }
 
         if (cardEventManager.currentCard.CardID == "DEA_009_")
         {
             // Debug.log works, but the other two do not change
-            dieYoung = true;
-            Debug.Log("die young");
-            dieYoung = GameDataManager.EndingsUnlocked.dieYoung == true;
+            //Debug.Log("die young");
+            gameDataManager.EndingsUnlocked1.dieYoung = true;
+            gameDataManager.SaveGame();
+
         }
 
         if (cardEventManager.currentCard.CardID == "DEA_010_")
         {
-            friendGhost = GameDataManager.EndingsUnlocked.friendGhost == true;
+            gameDataManager.EndingsUnlocked1.friendGhost = true;
+            gameDataManager.SaveGame();
+
         }
 
         if (cardEventManager.currentCard.CardID == "DEA_011_")
         {
-            hamDogAdventure = GameDataManager.EndingsUnlocked.hamDogAdventure == true;
+            gameDataManager.EndingsUnlocked1.hamDogAdventure = true;
+            gameDataManager.SaveGame();
+
         }
         if (cardEventManager.currentCard.CardID == "DEA_012_")
         {
-            hell = GameDataManager.EndingsUnlocked.hell == true;
+            gameDataManager.EndingsUnlocked1.hell = true;
+            gameDataManager.SaveGame();
+
         }
         if (cardEventManager.currentCard.CardID == "DEA_002_")
         {
-            paradise = GameDataManager.EndingsUnlocked.paradise == true;
+            gameDataManager.EndingsUnlocked1.paradise = true;
+            gameDataManager.SaveGame();
+
         }
         if (cardEventManager.currentCard.CardID == "DEA_003_")
         {
-            purgatory = GameDataManager.EndingsUnlocked.purgatory == true;
+            gameDataManager.EndingsUnlocked1.purgatory =true;
+            gameDataManager.SaveGame();
+
         }
         if (cardEventManager.currentCard.CardID == "DEA_004_")
         {
-            reincarnation = GameDataManager.EndingsUnlocked.reincarnation == true;
+           gameDataManager.EndingsUnlocked1.reincarnation = true;
+            gameDataManager.SaveGame();
+
         }
         if (cardEventManager.currentCard.CardID == "DEA_005_")
         {
-            sick = GameDataManager.EndingsUnlocked.sick == true;
+            gameDataManager.EndingsUnlocked1.sick = true;
+            gameDataManager.SaveGame();
+
         }
         if (cardEventManager.currentCard.CardID == "DEA_006_")
         {
-            voidEnding = GameDataManager.EndingsUnlocked.voidEnding == true;
+            gameDataManager.EndingsUnlocked1.voidEnding = true;
+            gameDataManager.SaveGame();
+
         }
         if (cardEventManager.currentCard.CardID == "DEA_007_")
         {
-            wakeUpSim = true;
-            Debug.Log("Wake up ending triggered");
-            wakeUpSim = GameDataManager.EndingsUnlocked.wakeUpSim == true;
+            gameDataManager.EndingsUnlocked1.wakeUpSim = true;
+            gameDataManager.SaveGame();
+
         }
     }
 }

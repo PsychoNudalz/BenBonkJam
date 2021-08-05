@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+
 public class GameDataManager : MonoBehaviour
 {
     /*
@@ -11,39 +13,78 @@ public class GameDataManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
     */
+    [SerializeField] Achievements achievements = new Achievements();
+    [SerializeField] EndingsUnlocked endingsUnlocked = new EndingsUnlocked();
+
+    private Achievements Achievements1 { get => achievements; set => achievements = value; }
+    public EndingsUnlocked EndingsUnlocked1 { get => endingsUnlocked; set => endingsUnlocked = value; }
 
     private void Start()
     {
+        //WriteToSave();
+        ReadFromSave();
+    }
+
+    private void ReadFromSave()
+    {
+
+    }
+
+    private void WriteToSave()
+    {
         Debug.Log("Game Data Manager Started");
-
-        Achievements achievements = new Achievements();
-        EndingsUnlocked endingsUnlocked = new EndingsUnlocked();
-
         string json = JsonUtility.ToJson(achievements);
         string json2 = JsonUtility.ToJson(endingsUnlocked);
 
         try
         {
 
-            File.WriteAllText(Application.persistentDataPath + "/Save/saveFile.json", json);
+            File.WriteAllText(Application.persistentDataPath + "/Save/achievements.json", json);
             Debug.Log(Application.persistentDataPath);
             Debug.Log(json);
-            Debug.Log(json2);
         }
         catch (DirectoryNotFoundException e)
         {
             Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
-            File.WriteAllText(Application.persistentDataPath + "/Save/saveFile.json", json);
+            File.WriteAllText(Application.persistentDataPath + "/Save/achievements.json", json);
 
             Debug.LogError("Save file error");
             Debug.LogError(e.StackTrace);
         }
 
+        Debug.Log("Saved Ach.");
+
+        try
+        {
+
+            File.WriteAllText(Application.persistentDataPath + "/Save/saveEndings.json", json2);
+            Debug.Log(Application.persistentDataPath);
+            Debug.Log(json2);
+        }
+        catch (DirectoryNotFoundException e)
+        {
+            Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+            File.WriteAllText(Application.persistentDataPath + "/Save/saveEndings.json", json2);
+
+            Debug.LogError("Save file error");
+            Debug.LogError(e.StackTrace);
+        }
+
+        Debug.Log("Saved End.");
+
+
         //  Achievements loadedAchievements = JsonUtility.FromJson<Achievements>(json);
         //  EndingsUnlocked loadedEndingsUnlocked = JsonUtility.FromJson<EndingsUnlocked>(json);
-
-
     }
+
+    public void SaveGame()
+    {
+        WriteToSave();
+        Debug.Log("Save complete");
+    }
+
+    [System.Serializable]
+
     private class Achievements
     {
         public int gamesPlayed;
@@ -67,22 +108,24 @@ public class GameDataManager : MonoBehaviour
             this.uniqueCardsDiscovered = 0;
         }
     }
-    
+
+    [System.Serializable]
+
     public class EndingsUnlocked
     {
-        public static bool alien;
-        public static bool athlete;
-        public static bool borderAwake;
-        public static bool dieYoung;
-        public static bool friendGhost;
-        public static bool hamDogAdventure;
-        public static bool hell;
-        public static bool paradise;
-        public static bool purgatory;
-        public static bool reincarnation;
-        public static bool sick;
-        public static bool voidEnding;
-        public static bool wakeUpSim;
+        public  bool alien;
+        public  bool athlete;
+        public  bool borderAwake;
+        public  bool dieYoung;
+        public  bool friendGhost;
+        public  bool hamDogAdventure;
+        public  bool hell;
+        public  bool paradise;
+        public  bool purgatory;
+        public  bool reincarnation;
+        public  bool sick;
+        public  bool voidEnding;
+        public  bool wakeUpSim;
 
         public void Update()
         {
@@ -93,44 +136,44 @@ public class GameDataManager : MonoBehaviour
         }
 
         public EndingsUnlocked(bool alien, bool athlete, bool borderAwake, bool dieYoung, bool friendGhost, bool hamDogAdventure,
-                bool hell, bool paradise, bool purgatory, bool reincarnation, bool sick, bool voidEnding, bool wakeUpSim)        
+                bool hell, bool paradise, bool purgatory, bool reincarnation, bool sick, bool voidEnding, bool wakeUpSim)
         {
-            EndingsUnlocked.alien = alien;
-            EndingsUnlocked.athlete = athlete;
-            EndingsUnlocked.borderAwake = borderAwake;
-            EndingsUnlocked.dieYoung = dieYoung;
-            EndingsUnlocked.friendGhost = friendGhost;
-            EndingsUnlocked.hamDogAdventure = hamDogAdventure;
-            EndingsUnlocked.hell = hell;
-            EndingsUnlocked.paradise = paradise;
-            EndingsUnlocked.purgatory = purgatory;
-            EndingsUnlocked.reincarnation = reincarnation;
-            EndingsUnlocked.sick = sick;
-            EndingsUnlocked.voidEnding = voidEnding;
-            EndingsUnlocked.wakeUpSim = wakeUpSim;
+            this.alien = alien;
+            this.athlete = athlete;
+            this.borderAwake = borderAwake;
+            this.dieYoung = dieYoung;
+            this.friendGhost = friendGhost;
+            this.hamDogAdventure = hamDogAdventure;
+            this.hell = hell;
+            this.paradise = paradise;
+            this.purgatory = purgatory;
+            this.reincarnation = reincarnation;
+            this.sick = sick;
+            this.voidEnding = voidEnding;
+            this.wakeUpSim = wakeUpSim;
 
 
-    }
+        }
 
         public EndingsUnlocked()
         {
 
-            EndingsUnlocked.alien = false;
-            EndingsUnlocked.athlete = false;
-            EndingsUnlocked.borderAwake = false;
-            EndingsUnlocked.dieYoung = false;
-            EndingsUnlocked.friendGhost = false;
-            EndingsUnlocked.hamDogAdventure = false;
-            EndingsUnlocked.hell = false;
-            EndingsUnlocked.paradise = false;
-            EndingsUnlocked.purgatory = false;
-            EndingsUnlocked.reincarnation = false;
-            EndingsUnlocked.sick = false;
-            EndingsUnlocked.voidEnding = false;
-            EndingsUnlocked.wakeUpSim = false;
+            alien = false;
+            athlete = false;
+            borderAwake = false;
+            dieYoung = false;
+            friendGhost = false;
+            hamDogAdventure = false;
+            hell = false;
+            paradise = false;
+            purgatory = false;
+            reincarnation = false;
+            sick = false;
+            voidEnding = false;
+            wakeUpSim = false;
         }
 
     }
-    
+
 }
 
