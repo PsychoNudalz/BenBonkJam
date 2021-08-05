@@ -7,25 +7,33 @@ public class StatusEffect
 {
     public StatusEnum status;
     [Header("Stats Modification")]
-    [SerializeField] int health;
-    [SerializeField] int bux;
-    [SerializeField] int mood;
+    [SerializeField] int healthPos;
+    [SerializeField] int buxPos;
+    [SerializeField] int moodPos;
+    [SerializeField] int healthNeg;
+    [SerializeField] int buxNeg;
+    [SerializeField] int moodNeg;
 
     [Header("UI Display")]
     public Sprite icon;
     public string description;
 
+    public int HealthPos { get => healthPos; set => healthPos = value; }
+    public int BuxPos { get => buxPos; set => buxPos = value; }
+    public int MoodPos { get => moodPos; set => moodPos = value; }
+    public int HealthNeg { get => healthNeg; set => healthNeg = value; }
+    public int BuxNeg { get => buxNeg; set => buxNeg = value; }
+    public int MoodNeg { get => moodNeg; set => moodNeg = value; }
 
-    public int Health { get => health; set => health = value; }
-    public int Bux { get => bux; set => bux = value; }
-    public int Mood { get => mood; set => mood = value; }
-
-    public StatusEffect(StatusEnum status, int health, int bux, int mood, Sprite icon, string description)
+    public StatusEffect(StatusEnum status, int healthPos, int buxPos, int moodPos, int healthNeg, int buxNeg, int moodNeg, Sprite icon, string description)
     {
         this.status = status;
-        this.health = health;
-        this.bux = bux;
-        this.mood = mood;
+        this.healthPos = healthPos;
+        this.buxPos = buxPos;
+        this.moodPos = moodPos;
+        this.healthNeg = healthNeg;
+        this.buxNeg = buxNeg;
+        this.moodNeg = moodNeg;
         this.icon = icon;
         this.description = description;
     }
@@ -58,7 +66,7 @@ public class StatusEffect
 
     public override string ToString()
     {
-        return ($"{status.ToString()},{health},{bux},{mood},{description}");
+        return ($"{status.ToString()},{healthPos},{buxPos},{moodPos},{HealthNeg},{buxNeg},{MoodNeg},{description}");
     }
 }
 

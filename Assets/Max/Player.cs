@@ -173,33 +173,12 @@ public class Player : MonoBehaviour
     public void AddStatus(StatusEffect statusEffect)
     {
         status.AddStatus(statusEffect.status);
-        if (statusEffect.Health >= 0) {
-            healthModPos += statusEffect.Health;
-        }
-        else
-        {
-            healthModNeg -= statusEffect.Health;
-
-        }
-        if (statusEffect.Bux >= 0)
-        {
-            buxModPos += statusEffect.Bux;
-
-        }
-        else
-        {
-            buxModNeg -= statusEffect.Bux;
-        }
-
-        if (statusEffect.Mood >= 0)
-        {
-        moodModPos += statusEffect.Mood;
-
-        }
-        else
-        {
-            moodModNeg -= statusEffect.Mood;
-        }
+        healthModPos += statusEffect.HealthPos;
+        buxModPos += statusEffect.BuxPos;
+        moodModPos += statusEffect.MoodPos;
+        healthModNeg += statusEffect.HealthNeg;
+        buxModNeg += statusEffect.BuxNeg;
+        moodModNeg += statusEffect.MoodNeg;
     }
 
     public void RemoveStatus(StatusEnum statusEnum)
@@ -210,31 +189,12 @@ public class Player : MonoBehaviour
     public void RemoveStatus(StatusEffect statusEffect)
     {
         status.RemoveStatus(statusEffect.status);
-        if (statusEffect.Health >= 0)
-        {
-            healthModPos -= statusEffect.Health;
-        }
-        else
-        {
-            healthModNeg += statusEffect.Health;
-        }
-        if (statusEffect.Bux >= 0)
-        {
-            buxModPos -= statusEffect.Bux;
-        }
-        else
-        {
-            buxModNeg += statusEffect.Bux;
-        }
-
-        if (statusEffect.Mood >= 0)
-        {
-            moodModPos -= statusEffect.Mood;
-        }
-        else
-        {
-            moodModNeg += statusEffect.Mood;
-        }
+        healthModPos -= statusEffect.HealthPos;
+        buxModPos -= statusEffect.BuxPos;
+        moodModPos -= statusEffect.MoodPos;
+        healthModNeg -= statusEffect.HealthNeg;
+        buxModNeg -= statusEffect.BuxNeg;
+        moodModNeg -= statusEffect.MoodNeg;
     }
 
     public bool HasSatus(StatusEnum statusEnum)

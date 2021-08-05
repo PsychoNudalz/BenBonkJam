@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class StatusEffectManager : MonoBehaviour
 {
+    static string headerFormat = "Status Effect,Heath Gain,Bux Gain,Mood Gain,Health Lost,Bux Lost,Mood Lost";
+
     [SerializeField] List<StatusEffect> allSatusEffect;
 
     public static StatusEffectManager current;
@@ -25,7 +27,7 @@ public class StatusEffectManager : MonoBehaviour
         {
             if (!AllSEContains(e))
             {
-                allSatusEffect.Add(new StatusEffect(e, 0, 0, 0, null, ""));
+                allSatusEffect.Add(new StatusEffect(e, 0, 0, 0, 0, 0, 0, null, ""));
             }
         }
 
@@ -90,7 +92,7 @@ public class StatusEffectManager : MonoBehaviour
         }
 
         List<string> loadedArray = new List<string>(loadString.Split('\n'));
-        //loadedArray.RemoveAt(0);
+        loadedArray.RemoveAt(0);
         //loadedArray.RemoveAt(loadedArray.Count - 1);
 
         List<CardSave> cardSaves = new List<CardSave>();
@@ -105,9 +107,12 @@ public class StatusEffectManager : MonoBehaviour
                 getSE = GetSEFromString(stringSplit[0]);
                 if (getSE != null)
                 {
-                    getSE.Health = int.Parse(stringSplit[1]);
-                    getSE.Bux = int.Parse(stringSplit[2]);
-                    getSE.Mood = int.Parse(stringSplit[3]);
+                    getSE.HealthPos = int.Parse(stringSplit[1]);
+                    getSE.BuxPos = int.Parse(stringSplit[2]);
+                    getSE.MoodPos = int.Parse(stringSplit[3]);
+                    getSE.HealthNeg = int.Parse(stringSplit[4]);
+                    getSE.BuxNeg = int.Parse(stringSplit[5]);
+                    getSE.MoodNeg = int.Parse(stringSplit[6]);
                 }
             }
 
@@ -134,7 +139,7 @@ public class StatusEffectManager : MonoBehaviour
 
     public override string ToString()
     {
-        string temp = "";
+        string temp = headerFormat+"\n";
         foreach (StatusEffect se in allSatusEffect)
         {
             temp += se.ToString()+"\n";
