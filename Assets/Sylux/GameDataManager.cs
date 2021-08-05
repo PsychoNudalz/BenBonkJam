@@ -16,6 +16,7 @@ public class GameDataManager : MonoBehaviour
     */
     [SerializeField] Achievements achievements = new Achievements();
     [SerializeField] EndingsUnlocked endingsUnlocked = new EndingsUnlocked();
+    public static GameDataManager gameDataManagerInstance;
 
     private Achievements Achievements1 { get => achievements; set => achievements = value; }
     public EndingsUnlocked EndingsUnlocked1 { get => endingsUnlocked; set => endingsUnlocked = value; }
@@ -170,7 +171,7 @@ public class GameDataManager : MonoBehaviour
 
         public EndingsUnlocked()
         {
-
+            
             alien = false;
             athlete = false;
             borderAwake = false;
@@ -184,6 +185,7 @@ public class GameDataManager : MonoBehaviour
             sick = false;
             voidEnding = false;
             wakeUpSim = false;
+            
         }
 
     }
