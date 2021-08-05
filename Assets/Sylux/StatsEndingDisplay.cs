@@ -52,7 +52,7 @@ public class StatsEndingDisplay : MonoBehaviour
     }
     public void Endings()
     {
-        if (gameDataManager.EndingsUnlocked1.alien == true)
+        if (gameDataManager.EndingsUnlocked1.alien = true)
         {
               alienEnding.image.sprite = alien;
             Debug.Log("Alien ending sprite");
