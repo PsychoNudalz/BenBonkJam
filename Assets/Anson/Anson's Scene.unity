@@ -15344,7 +15344,7 @@ GameObject:
   - component: {fileID: 1529880267}
   - component: {fileID: 1529880269}
   m_Layer: 0
-  m_Name: GameProgressTrack
+  m_Name: GameDataTracker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15359,24 +15359,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1529880266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd71bad133507d045b903a14f121c0ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 03e6485bb2139f14a9de898b262e46da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameDataManager: {fileID: 1529880269}
   cardEventManager: {fileID: 1735484071}
-  alien: 0
-  athlete: 0
-  borderAwake: 0
-  dieYoung: 0
-  friendGhost: 0
-  hamDogAdventure: 0
-  hell: 0
-  paradise: 0
-  purgatory: 0
-  reincarnation: 0
-  sick: 0
-  voidEnding: 0
-  wakeUpSim: 0
 --- !u!4 &1529880268
 Transform:
   m_ObjectHideFlags: 0
@@ -15403,6 +15390,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b16ee88fbca1648a09372d2d80dd12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  achievements:
+    gamesPlayed: 0
+    easterEggsFound: 0
+    endingsFound: 0
+    uniqueCardsDiscovered: 0
+  endingsUnlocked:
+    alien: 0
+    athlete: 0
+    borderAwake: 0
+    dieYoung: 0
+    friendGhost: 0
+    hamDogAdventure: 0
+    hell: 0
+    paradise: 0
+    purgatory: 0
+    reincarnation: 0
+    sick: 0
+    voidEnding: 0
+    wakeUpSim: 0
 --- !u!1 &1624996573
 GameObject:
   m_ObjectHideFlags: 0
