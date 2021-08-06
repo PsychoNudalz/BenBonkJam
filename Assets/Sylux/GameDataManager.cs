@@ -63,6 +63,10 @@ public class GameDataManager : MonoBehaviour
           //  Debug.LogError(e.StackTrace);
         }
 
+        achievements = JsonUtility.FromJson<Achievements>(json);
+        endingsUnlocked = JsonUtility.FromJson<EndingsUnlocked>(json2);
+
+
     }
 
     private void WriteToSave()
