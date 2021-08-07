@@ -7,9 +7,13 @@ public class StatsEndingDisplay : MonoBehaviour
 {
     public GameDataManager gameDataManager;
 
+    public Canvas endingsPage1StatsCanvas;
+    public Canvas endingsPage2StatsCanvas;
+    public Canvas endingsPage3StatsCanvas;
+    public Canvas endingsStatsCanvas;
+
     public Canvas alienCanvas;
     public Canvas athleteCanvas;
-    public Canvas endingsStatsCanvas;
     public Canvas borderAwakeCanvas;
     public Canvas dieYoungCanvas;
     public Canvas ghostFriendCanvas;
@@ -136,7 +140,8 @@ public class StatsEndingDisplay : MonoBehaviour
         else
         {
             ghostFriendEnding.image.sprite = basic;
-            ghostFriendEnding.interactable = false;        }
+            ghostFriendEnding.interactable = false;
+        }
 
         if (gameDataManager.EndingsUnlocked1.hamDogAdventure == true)
         {
@@ -146,7 +151,8 @@ public class StatsEndingDisplay : MonoBehaviour
         else
         {
             petAdventureEnding.image.sprite = basic;
-            petAdventureEnding.interactable = false;        }
+            petAdventureEnding.interactable = false;
+        }
 
         if (gameDataManager.EndingsUnlocked1.hell == true)
         {
@@ -156,7 +162,8 @@ public class StatsEndingDisplay : MonoBehaviour
         else
         {
             hellEnding.image.sprite = basic;
-            hellEnding.interactable = false;        }
+            hellEnding.interactable = false;
+        }
 
         if (gameDataManager.EndingsUnlocked1.paradise == true)
         {
@@ -166,7 +173,8 @@ public class StatsEndingDisplay : MonoBehaviour
         else
         {
             paradiseEnding.image.sprite = basic;
-            paradiseEnding.interactable = false;        }
+            paradiseEnding.interactable = false;
+        }
 
         if (gameDataManager.EndingsUnlocked1.purgatory == true)
         {
@@ -176,7 +184,8 @@ public class StatsEndingDisplay : MonoBehaviour
         else
         {
             purgatoryEnding.image.sprite = basic;
-            purgatoryEnding.interactable = false;        }
+            purgatoryEnding.interactable = false;
+        }
 
         if (gameDataManager.EndingsUnlocked1.reincarnation == true)
         {
@@ -186,7 +195,8 @@ public class StatsEndingDisplay : MonoBehaviour
         else
         {
             reincarnationEnding.image.sprite = basic;
-            reincarnationEnding.interactable = false;        }
+            reincarnationEnding.interactable = false;
+        }
 
         if (gameDataManager.EndingsUnlocked1.sick == true)
         {
@@ -196,7 +206,8 @@ public class StatsEndingDisplay : MonoBehaviour
         else
         {
             sickEnding.image.sprite = basic;
-            sickEnding.interactable = false;        }
+            sickEnding.interactable = false;
+        }
 
         if (gameDataManager.EndingsUnlocked1.voidEnding == true)
         {
@@ -206,7 +217,8 @@ public class StatsEndingDisplay : MonoBehaviour
         else
         {
             voidEnding.image.sprite = basic;
-            voidEnding.interactable = false;        }
+            voidEnding.interactable = false;
+        }
 
         if (gameDataManager.EndingsUnlocked1.wakeUpSim == true)
         {
@@ -216,7 +228,8 @@ public class StatsEndingDisplay : MonoBehaviour
         else
         {
             wakeUpSimEnding.image.sprite = basic;
-            wakeUpSimEnding.interactable = false;        }
+            wakeUpSimEnding.interactable = false;
+        }
 
 
     }
@@ -224,6 +237,9 @@ public class StatsEndingDisplay : MonoBehaviour
     public void AthleteButton()
     {
         athleteCanvas.enabled = true;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
         endingsStatsCanvas.enabled = false;
     }
 
@@ -231,25 +247,37 @@ public class StatsEndingDisplay : MonoBehaviour
     {
         alienCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
 
     }
     public void BorderAwakeButton()
     {
         borderAwakeCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
-        
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
+
     }
 
     public void DieYoungButton()
     {
         dieYoungCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
     }
 
     public void GhostFriendButton()
     {
         ghostFriendCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
 
     }
 
@@ -257,25 +285,36 @@ public class StatsEndingDisplay : MonoBehaviour
     {
         petAdventureCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
     }
 
     public void HellButton()
     {
         hellCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
-
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
     }
 
     public void ParadiseButton()
     {
         paradiseCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
     }
 
     public void PurgatoryButton()
     {
         purgatoryCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
 
     }
 
@@ -283,28 +322,42 @@ public class StatsEndingDisplay : MonoBehaviour
     {
         reincarnationCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
     }
 
     public void SickButton()
     {
         sickCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
     }
 
     public void VoidEButton()
     {
         voidCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
     }
 
     public void WakeUpSimButton()
     {
         wakeUpSimCanvas.enabled = true;
         endingsStatsCanvas.enabled = false;
+        endingsPage1StatsCanvas.enabled = false;
+        endingsPage2StatsCanvas.enabled = false;
+        endingsPage3StatsCanvas.enabled = false;
     }
 
-    public void Back()
+    public void EndingBackPage1()
     {
+        endingsPage1StatsCanvas.enabled = true;
+
         athleteCanvas.enabled = false;
         endingsStatsCanvas.enabled = true;
         alienCanvas.enabled = false;
@@ -322,8 +375,10 @@ public class StatsEndingDisplay : MonoBehaviour
         endingsStatsCanvas.enabled = true;
     }
 
-    public void BackPage2()
+    public void EndingBackPage2()
     {
+        endingsPage2StatsCanvas.enabled = true;
+
         athleteCanvas.enabled = false;
         endingsStatsCanvas.enabled = true;
         alienCanvas.enabled = false;
@@ -341,8 +396,10 @@ public class StatsEndingDisplay : MonoBehaviour
         endingsStatsCanvas.enabled = true;
     }
 
-    public void BackPage3()
+    public void EndingsBackPage3()
     {
+        endingsPage3StatsCanvas.enabled = true;
+
         athleteCanvas.enabled = false;
         endingsStatsCanvas.enabled = true;
         alienCanvas.enabled = false;

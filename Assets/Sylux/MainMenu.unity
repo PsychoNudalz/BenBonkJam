@@ -2103,7 +2103,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4329,7 +4329,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4916,7 +4916,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6206,9 +6206,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameDataManager: {fileID: 1679239962}
+  endingsPage1StatsCanvas: {fileID: 2079159757}
+  endingsPage2StatsCanvas: {fileID: 1665736610}
+  endingsPage3StatsCanvas: {fileID: 1265392584}
+  endingsStatsCanvas: {fileID: 581790978}
   alienCanvas: {fileID: 256377972}
   athleteCanvas: {fileID: 1424224298}
-  endingsStatsCanvas: {fileID: 581790978}
   borderAwakeCanvas: {fileID: 1852015911}
   dieYoungCanvas: {fileID: 1537886215}
   ghostFriendCanvas: {fileID: 773797559}
@@ -6797,7 +6800,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10077,7 +10080,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10945,7 +10948,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14484,7 +14487,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14826,7 +14829,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18143,7 +18146,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingsBackPage3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19402,7 +19405,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19875,7 +19878,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22272,7 +22275,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23349,7 +23352,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 459327297}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: EndingBackPage1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
