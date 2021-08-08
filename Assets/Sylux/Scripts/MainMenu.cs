@@ -59,6 +59,9 @@ public class MainMenu : MonoBehaviour
         creditsCanvas.enabled = false;
         statsCanvas.enabled = true;
         achievementsCanvas.enabled = true;
+        endingsCanvas.enabled = false;
+        endingsCanvas2.enabled = false;
+        endingCanvas3.enabled = false;
     }
 
     public void Help()
@@ -98,6 +101,8 @@ public class MainMenu : MonoBehaviour
         achievementsCanvas.enabled = true;
         statisticsCanvas.enabled = false;
         endingsCanvas.enabled = false;
+        endingsCanvas2.enabled = false;
+        endingCanvas3.enabled = false;
     }
 
     public void Achievements2()

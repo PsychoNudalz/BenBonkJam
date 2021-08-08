@@ -2,15 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEditor;
 
 public class StatsEndingDisplay : MonoBehaviour
 {
+    #region references
     public GameDataManager gameDataManager;
+
+    public Canvas achievementsPage1Canvas;
+    public Canvas achievementsPage2Canvas;
+    public Canvas achievementsPage3Canvas;
 
     public Canvas endingsPage1StatsCanvas;
     public Canvas endingsPage2StatsCanvas;
     public Canvas endingsPage3StatsCanvas;
     public Canvas endingsStatsCanvas;
+
+    public Canvas statisticsCanvas;
 
     public Canvas alienCanvas;
     public Canvas athleteCanvas;
@@ -25,6 +33,10 @@ public class StatsEndingDisplay : MonoBehaviour
     public Canvas sickCanvas;
     public Canvas voidCanvas;
     public Canvas wakeUpSimCanvas;
+
+    public Button endingsButton;
+    public Button achievementsButton;
+    public Button statisticsButton;
 
     public Button alienEnding;
     public Button athleteEnding;
@@ -56,6 +68,7 @@ public class StatsEndingDisplay : MonoBehaviour
 
     public Sprite basic;
 
+    #endregion
 
     public void Start()
     {
@@ -75,12 +88,71 @@ public class StatsEndingDisplay : MonoBehaviour
         voidCanvas.enabled = false;
         wakeUpSimCanvas.enabled = false;
 
+        endingsButton.interactable = true;
+        achievementsButton.interactable = true;
     }
 
     IEnumerator LateStart()
     {
         yield return new WaitForSeconds(1);
         Endings();
+    }
+
+    public void Update()
+    {
+        ColorBlock cb = endingsButton.colors;
+        ColorBlock cb2 = achievementsButton.colors;
+        ColorBlock cb3 = statisticsButton.colors;
+
+        if (endingsPage1StatsCanvas.enabled == true || endingsPage2StatsCanvas.enabled == true || endingsPage3StatsCanvas.enabled == true)
+        {
+            cb.selectedColor = new Color(0.0f, 0.75f, 1f, 1f);
+            cb.normalColor = new Color(0.0f, 0.75f, 1f, 1f);
+            endingsButton.interactable = false;
+            cb.disabledColor = new Color (0.0f, 0.75f, 1f, 1f); 
+            endingsButton.colors = cb;
+        }
+        else
+        {
+            cb.selectedColor = new Color(255, 255, 255, 255);
+            cb.normalColor = new Color(255, 255, 255, 255);
+            endingsButton.interactable = true;
+            endingsButton.colors = cb;
+        }
+
+        // achievements
+        if (achievementsPage1Canvas.enabled == true || achievementsPage2Canvas.enabled == true || achievementsPage3Canvas.enabled == true)
+        {
+            cb2.selectedColor = new Color(0.0f, 0.75f, 1f, 1f);
+            cb2.normalColor = new Color(0.0f, 0.75f, 1f, 1f);
+            achievementsButton.interactable = false;
+            cb2.disabledColor = new Color(0.0f, 0.75f, 1f, 1f);
+            achievementsButton.colors = cb2;
+        }
+        else
+        {
+            cb2.selectedColor = new Color(255, 255, 255, 255);
+            cb2.normalColor = new Color(255, 255, 255, 255);
+            achievementsButton.interactable = true;
+            achievementsButton.colors = cb2;
+        }
+
+        if (statisticsCanvas.enabled == true)
+        {
+            cb3.selectedColor = new Color(0.0f, 0.75f, 1f, 1f);
+            cb3.normalColor = new Color(0.0f, 0.75f, 1f, 1f);
+            statisticsButton.interactable = false;
+            cb3.disabledColor = new Color(0.0f, 0.75f, 1f, 1f);
+            statisticsButton.colors = cb3;
+        }
+        else
+        {
+            cb3.selectedColor = new Color(255, 255, 255, 255);
+            cb3.normalColor = new Color(255, 255, 255, 255);
+            statisticsButton.interactable = true;
+            statisticsButton.colors = cb3;
+        }
+
     }
 
     public void Endings()
