@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
     public Canvas mainCanvas;
     public Canvas helpCanvas;
     public Canvas creditsCanvas;

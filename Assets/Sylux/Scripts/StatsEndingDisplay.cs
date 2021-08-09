@@ -7,6 +7,10 @@ using UnityEditor;
 public class StatsEndingDisplay : MonoBehaviour
 {
     #region references
+
+    public Text timesDiedText;
+
+
     public GameDataManager gameDataManager;
 
     public Canvas achievementsPage1Canvas;
@@ -85,6 +89,7 @@ public class StatsEndingDisplay : MonoBehaviour
 
     public void Start()
     {
+        Statistics();
         StartCoroutine(LateStart());
 
         die50TimesCanvas.enabled = false;
@@ -114,6 +119,19 @@ public class StatsEndingDisplay : MonoBehaviour
         Endings();
     }
 
+    public void Statistics()
+    {
+        timesDiedText.text = gameDataManager.Achievements1.timesDied.ToString();
+        if (gameDataManager.Achievements1.timesDied >= 50 && gameDataManager.Achievements1.die50Times == false)
+        {
+            gameDataManager.Achievements1.die50Times = true;
+            gameDataManager.SaveGame();
+        }
+        else
+        {
+            return;
+        }
+    }
     public void Update()
     {
         ColorBlock cb = endingsButton.colors;
