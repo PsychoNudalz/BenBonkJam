@@ -18,7 +18,7 @@ public class GameDataManager : MonoBehaviour
     [SerializeField] EndingsUnlocked endingsUnlocked = new EndingsUnlocked();
     public static GameDataManager gameDataManagerInstance;
 
-    private Achievements Achievements1 { get => achievements; set => achievements = value; }
+    public Achievements Achievements1 { get => achievements; set => achievements = value; }
     public EndingsUnlocked EndingsUnlocked1 { get => endingsUnlocked; set => endingsUnlocked = value; }
 
     private void Awake()
@@ -103,27 +103,47 @@ public class GameDataManager : MonoBehaviour
 
     [System.Serializable]
 
-    private class Achievements
+    // achievements class contains BOTH, the statistics information and the achievements information
+    public class Achievements
     {
-        public int gamesPlayed;
+        // achievements
+        public bool die50Times;
+        public bool gradeSObtained;
+        public bool statusEffects10Obtained;
+        public bool educationMaxedOut;
+        public bool oldAgeObtained;
+
+        // stats
+        public int timesDied;
         public int easterEggsFound;
         public int endingsFound;
         public int uniqueCardsDiscovered;
 
-        public Achievements(int gamesPlayed, int easterEggsFound, int endingsFound, int uniqueCardsDiscovered)
+        public Achievements(int timesDied, int easterEggsFound, int endingsFound, int uniqueCardsDiscovered, 
+            bool gradeSObtained, bool statusEffects10Obtained, bool educationMaxedOut, bool oldAgeObtained, bool die50Times)
         {
-            this.gamesPlayed = gamesPlayed;
+            this.timesDied = timesDied;
             this.easterEggsFound = easterEggsFound;
             this.endingsFound = endingsFound;
             this.uniqueCardsDiscovered = uniqueCardsDiscovered;
+            this.gradeSObtained = gradeSObtained;
+            this.statusEffects10Obtained = statusEffects10Obtained;
+            this.educationMaxedOut = educationMaxedOut;
+            this.oldAgeObtained = oldAgeObtained;
+            this.die50Times = die50Times;
         }
 
         public Achievements()
         {
-            this.gamesPlayed = 0;
+            this.timesDied = 0;
             this.easterEggsFound = 0;
             this.endingsFound = 0;
             this.uniqueCardsDiscovered = 0;
+            this.gradeSObtained = false;
+            this.statusEffects10Obtained = false;
+            this.educationMaxedOut = false;
+            this.oldAgeObtained = false;
+            this.die50Times = false;
         }
     }
 

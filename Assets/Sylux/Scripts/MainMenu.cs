@@ -103,6 +103,8 @@ public class MainMenu : MonoBehaviour
         endingsCanvas.enabled = false;
         endingsCanvas2.enabled = false;
         endingCanvas3.enabled = false;
+        achievementsCanvas2.enabled = false;
+        achievementsCanvas3.enabled = false;
     }
 
     public void Achievements2()

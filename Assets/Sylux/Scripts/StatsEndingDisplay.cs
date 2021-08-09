@@ -20,6 +20,7 @@ public class StatsEndingDisplay : MonoBehaviour
 
     public Canvas statisticsCanvas;
 
+    // endings
     public Canvas alienCanvas;
     public Canvas athleteCanvas;
     public Canvas borderAwakeCanvas;
@@ -52,6 +53,15 @@ public class StatsEndingDisplay : MonoBehaviour
     public Button voidEnding;
     public Button wakeUpSimEnding;
 
+    // achievements
+    public Button die50TimesButton;
+    public Button gradeSObtainedButton;
+    public Button statusEffects10ObtainedButton;
+    public Button educationMaxedOutObtainedButton;
+    public Button oldAgeObtainedButton;
+
+    public Canvas die50TimesCanvas;
+
     public Sprite alien;
     public Sprite athlete;
     public Sprite borderAwake;
@@ -66,6 +76,9 @@ public class StatsEndingDisplay : MonoBehaviour
     public Sprite voidE;
     public Sprite wakeUpSim;
 
+    // achievement Sprites
+
+
     public Sprite basic;
 
     #endregion
@@ -73,6 +86,8 @@ public class StatsEndingDisplay : MonoBehaviour
     public void Start()
     {
         StartCoroutine(LateStart());
+
+        die50TimesCanvas.enabled = false;
 
         alienCanvas.enabled = false;
         athleteCanvas.enabled = false;
@@ -95,6 +110,7 @@ public class StatsEndingDisplay : MonoBehaviour
     IEnumerator LateStart()
     {
         yield return new WaitForSeconds(1);
+        Achievements();
         Endings();
     }
 
@@ -155,6 +171,93 @@ public class StatsEndingDisplay : MonoBehaviour
 
     }
 
+    public void Achievements()
+    {
+        if (gameDataManager.Achievements1.die50Times == true)
+        {
+            die50TimesButton.image.sprite = dieYoung;
+            die50TimesButton.interactable = true;
+        }
+        else
+        {
+            die50TimesButton.image.sprite = basic;
+            die50TimesButton.interactable = false;
+        }
+
+        if (gameDataManager.Achievements1.gradeSObtained == true)
+        {
+            gradeSObtainedButton.image.sprite = dieYoung;
+            gradeSObtainedButton.interactable = true;
+        }
+        else
+        {
+            gradeSObtainedButton.image.sprite = basic;
+            gradeSObtainedButton.interactable = false;
+        }
+
+        if (gameDataManager.Achievements1.statusEffects10Obtained == true)
+        {
+            statusEffects10ObtainedButton.image.sprite = dieYoung;
+            statusEffects10ObtainedButton.interactable = true;
+        }
+        else
+        {
+            statusEffects10ObtainedButton.image.sprite = basic;
+            statusEffects10ObtainedButton.interactable = false;
+        }
+
+        if (gameDataManager.Achievements1.educationMaxedOut == true)
+        {
+            educationMaxedOutObtainedButton.image.sprite = dieYoung;
+            educationMaxedOutObtainedButton.interactable = true;
+        }
+        else
+        {
+            educationMaxedOutObtainedButton.image.sprite = basic;
+            educationMaxedOutObtainedButton.interactable = false;
+        }
+
+        if (gameDataManager.Achievements1.oldAgeObtained == true)
+        {
+            oldAgeObtainedButton.image.sprite = dieYoung;
+            oldAgeObtainedButton.interactable = true;
+        }
+        else
+        {
+            oldAgeObtainedButton.image.sprite = basic;
+            oldAgeObtainedButton.interactable = false;
+        }
+    }
+    public void die50Times()
+    {
+        die50TimesCanvas.enabled = true;
+        achievementsPage1Canvas.enabled = false;
+        achievementsPage2Canvas.enabled = false;
+        achievementsPage3Canvas.enabled = false;
+        endingsStatsCanvas.enabled = false;
+    }
+
+    public void BackToAchievements1()
+    {
+        endingsStatsCanvas.enabled = true;
+
+        achievementsPage1Canvas.enabled = true;
+
+        die50TimesCanvas.enabled = false;
+
+    }
+
+    public void BackToAchievements2()
+    {
+
+    }
+
+    public void BackToAchievements3()
+    {
+
+    }
+
+    #region EndingsMenu
     public void Endings()
     {
         if (gameDataManager.EndingsUnlocked1.alien == true)
@@ -488,4 +591,5 @@ public class StatsEndingDisplay : MonoBehaviour
         wakeUpSimCanvas.enabled = false;
         endingsStatsCanvas.enabled = true;
     }
+    #endregion
 }
