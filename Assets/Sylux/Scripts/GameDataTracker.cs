@@ -23,7 +23,13 @@ public class GameDataTracker : MonoBehaviour
 
     public void CheckIsAchievement()
     {
+        /*
         //S rank, max out education card, 10 status effects at once, old age card
+        if (StatusEnum.Equals(StatusEnum.EducatedIII))
+        {
+            // do stuff
+        }
+        */
     }
 
     public void CheckIsDeathCard()
