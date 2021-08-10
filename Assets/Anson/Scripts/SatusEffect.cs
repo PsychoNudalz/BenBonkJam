@@ -13,7 +13,10 @@ public class StatusEffect
     [SerializeField] int healthNeg;
     [SerializeField] int buxNeg;
     [SerializeField] int moodNeg;
-
+    [Header("Passive")]
+    [SerializeField] float healthPassive;
+    [SerializeField] float buxPassive;
+    [SerializeField] float moodPassive;
     [Header("UI Display")]
     public Sprite icon;
     public string description;
@@ -24,8 +27,13 @@ public class StatusEffect
     public int HealthNeg { get => healthNeg; set => healthNeg = value; }
     public int BuxNeg { get => buxNeg; set => buxNeg = value; }
     public int MoodNeg { get => moodNeg; set => moodNeg = value; }
+    public float HealthPassive { get => healthPassive; set => healthPassive = value; }
+    public float BuxPassive { get => buxPassive; set => buxPassive = value; }
+    public float MoodPassive { get => moodPassive; set => moodPassive = value; }
 
-    public StatusEffect(StatusEnum status, int healthPos, int buxPos, int moodPos, int healthNeg, int buxNeg, int moodNeg, Sprite icon, string description)
+
+
+    public StatusEffect(StatusEnum status, int healthPos, int buxPos, int moodPos, int healthNeg, int buxNeg, int moodNeg, float healthPassive, float buxPassive, float moodPassive, Sprite icon, string description)
     {
         this.status = status;
         this.healthPos = healthPos;
@@ -34,6 +42,9 @@ public class StatusEffect
         this.healthNeg = healthNeg;
         this.buxNeg = buxNeg;
         this.moodNeg = moodNeg;
+        this.healthPassive = healthPassive;
+        this.buxPassive = buxPassive;
+        this.moodPassive = moodPassive;
         this.icon = icon;
         this.description = description;
     }
@@ -66,7 +77,7 @@ public class StatusEffect
 
     public override string ToString()
     {
-        return ($"{status.ToString()},{healthPos},{buxPos},{moodPos},{HealthNeg},{buxNeg},{MoodNeg},{description}");
+        return ($"{status.ToString()},{healthPos},{buxPos},{moodPos},{HealthNeg},{buxNeg},{MoodNeg},{healthPassive},{BuxPassive},{MoodPassive} {description}");
     }
 }
 

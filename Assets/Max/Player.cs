@@ -27,6 +27,11 @@ public class Player : MonoBehaviour
     [SerializeField] int buxModNeg = 0;
     [SerializeField] int moodModNeg = 0;
 
+    [Header("Passive Gain/ Lost")]
+    [SerializeField] float healthPassive = 0;
+    [SerializeField] float buxPassive = 0;
+    [SerializeField] float moodPassive = 0;
+
 
     public void Older()
     {
@@ -179,6 +184,9 @@ public class Player : MonoBehaviour
         healthModNeg += statusEffect.HealthNeg;
         buxModNeg += statusEffect.BuxNeg;
         moodModNeg += statusEffect.MoodNeg;
+        healthPassive += statusEffect.HealthPassive;
+        buxPassive += statusEffect.BuxPassive;
+        moodPassive += statusEffect.MoodPassive;
     }
 
     public void RemoveStatus(StatusEnum statusEnum)
@@ -195,6 +203,9 @@ public class Player : MonoBehaviour
         healthModNeg -= statusEffect.HealthNeg;
         buxModNeg -= statusEffect.BuxNeg;
         moodModNeg -= statusEffect.MoodNeg;
+        healthPassive -= statusEffect.HealthPassive;
+        buxPassive -= statusEffect.BuxPassive;
+        moodPassive -= statusEffect.MoodPassive;
     }
 
     public bool HasSatus(StatusEnum statusEnum)
@@ -229,6 +240,16 @@ public class Player : MonoBehaviour
     public float GetTotalStats()
     {
         return HealthPoints + BuxPoint + MoodPoint;
+    }
+
+
+    public float[] PassiveGain()
+    {
+        GainHealth(healthPassive);
+        GainBux(buxPassive);
+        GainMood(moodPassive);
+        float[] returnArray = new float[] { healthPassive, buxPassive, moodPassive };
+        return returnArray;
     }
 
 
