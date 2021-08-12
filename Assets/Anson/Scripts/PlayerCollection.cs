@@ -27,3 +27,13 @@ public class AchievementCollection : PlayerCollection
 
     public AchievementEnum AchievementEnum { get => achievementEnum; set => achievementEnum = value; }
 }
+
+[System.Serializable]
+
+public class EndingCollection : PlayerCollection
+{
+    [Header("Achievement")]
+    [SerializeField] EndingEnum endingEnum;
+
+    public EndingEnum EndingEnum { get => endingEnum; set => endingEnum = value; }
+}

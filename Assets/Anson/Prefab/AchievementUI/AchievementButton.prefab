@@ -350,7 +350,7 @@ MonoBehaviour:
     details: 
     isUnlocked: 0
   unlockedColour: {r: 1, g: 1, b: 1, a: 1}
-  lockedColour: {r: 1, g: 1, b: 1, a: 1}
+  lockedColour: {r: 1, g: 1, b: 1, a: 0}
   lockSprite: {fileID: 759847627987825786}
   button: {fileID: 3414423396207562197}
   buttonImage: {fileID: 1362594254310989725}

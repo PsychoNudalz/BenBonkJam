@@ -37,7 +37,7 @@ public class PlayerCollectionButton : MonoBehaviour
     {
         currentPC = pc;
         buttonImage.sprite = pc.Sprite;
-        text.text = pc.Details;
+        text.text = pc.CollectionName;
         SetIsUnloack(pc.IsUnlocked);
     }
 
