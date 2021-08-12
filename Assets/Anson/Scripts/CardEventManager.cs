@@ -55,6 +55,8 @@ public class CardEventManager : MonoBehaviour
     public void LoadNewCard()
     {
         UpdatePlayerStatsUI();
+
+
         if (currentCard != null && currentCard.AgeNeeded.Contains(AgeEnum.DEAD))
         {
             FindObjectOfType<GameManagerScript>().setGameOver(currentCard.CardID);
@@ -100,6 +102,8 @@ public class CardEventManager : MonoBehaviour
         }
 
         SetNewCard(newCard);
+        //PlayerPassiveGain();
+
         //PlayCardSound(CardSoundEnum.PLAY);
     }
 
@@ -295,6 +299,8 @@ public class CardEventManager : MonoBehaviour
 
     private void ModifyPlayerStats(float[] values)
     {
+        print("Modify Stats");
+
         if (playerScript.GainHealth(values[0]) || playerScript.GainBux(values[1]) || playerScript.GainMood(values[2]))
         {
             //if player DEAD
@@ -304,7 +310,18 @@ public class CardEventManager : MonoBehaviour
         uIHandler.PlayStatsParticles(StatsType.HEALTH, values[0]);
         uIHandler.PlayStatsParticles(StatsType.BUX, values[1]);
         uIHandler.PlayStatsParticles(StatsType.MOOD, values[2]);
+        PlayerPassiveGain();
     }
+
+    void PlayerPassiveGain()
+    {
+        print("Passive Gain");
+        float[] passiveArray = playerScript.PassiveGain();
+        uIHandler.PlayStatsParticles(StatsType.HEALTH, passiveArray[0]);
+        uIHandler.PlayStatsParticles(StatsType.BUX, passiveArray[1]);
+        uIHandler.PlayStatsParticles(StatsType.MOOD, passiveArray[2]);
+    }
+
 
     public void Play_Heads()
     {

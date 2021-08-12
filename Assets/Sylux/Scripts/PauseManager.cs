@@ -11,43 +11,45 @@ public class PauseManager : MonoBehaviour
     public Button yesButton;
     public Button noButton;
 
-    public Canvas pauseCanvas;
-    public Canvas areYouSureCanvas;
-    public Canvas mainPauseCanvas;
+    public GameObject pauseCanvas;
+    public GameObject areYouSureCanvas;
+    public GameObject mainPauseCanvas;
 
     void Start()
     {
-        pauseCanvas.enabled = false;
-        areYouSureCanvas.enabled = false;
+        pauseCanvas.SetActive(false);
+        areYouSureCanvas.SetActive(false);
+
+        
     }
 
     public void PauseButton()
     {
-        pauseCanvas.enabled = true;
-        mainPauseCanvas.enabled = true;
+        pauseCanvas.SetActive(true);
+        mainPauseCanvas.SetActive(true);
     }
 
     public void ResumeButton()
     {
-        pauseCanvas.enabled = false;
+        pauseCanvas.SetActive(false);
     }
 
     public void MainMenuButton()
     {
-        mainPauseCanvas.enabled = false;
-        areYouSureCanvas.enabled = true;
+        mainPauseCanvas.SetActive(false);
+        areYouSureCanvas.SetActive(true);
     }
 
     public void NoButton()
     {
-        mainPauseCanvas.enabled = true;
-        areYouSureCanvas.enabled = false;
+        mainPauseCanvas.SetActive(true);
+        areYouSureCanvas.SetActive(false);
     }
 
     public void YesButton()
     {
-        pauseCanvas.enabled = false;
-        areYouSureCanvas.enabled = false;
+        pauseCanvas.SetActive(false);
+        areYouSureCanvas.SetActive(false);
         SceneManager.LoadScene("MainMenu");
 
     }
