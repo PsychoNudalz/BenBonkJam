@@ -24,4 +24,6 @@ public class AchievementCollection : PlayerCollection
 {
     [Header("Achievement")]
     [SerializeField] AchievementEnum achievementEnum;
+
+    public AchievementEnum AchievementEnum { get => achievementEnum; set => achievementEnum = value; }
 }

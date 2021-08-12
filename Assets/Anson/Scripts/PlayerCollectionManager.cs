@@ -8,7 +8,7 @@ using TMPro;
 public class PlayerCollectionManager : MonoBehaviour
 {
     [SerializeField] GameObject buttonScreen;
-    [SerializeField] List<Button> buttons;
+    [SerializeField] List<PlayerCollectionButton> buttons;
     [SerializeField] int pageNumber;
     int maxButtonsPerPage = 6;
     protected List<PlayerCollection> playerCollections = new List<PlayerCollection>();
@@ -27,7 +27,7 @@ public class PlayerCollectionManager : MonoBehaviour
     {
         //for (int i = pageNumber*maxButtonsPerPage;i< pageNumber * (maxButtonsPerPage+1)
         int i = pageNumber * maxButtonsPerPage;
-        foreach (Button b in buttons)
+        foreach (PlayerCollectionButton b in buttons)
         {
             if (i < playerCollections.Count)
             {
@@ -42,16 +42,14 @@ public class PlayerCollectionManager : MonoBehaviour
     }
 
 
-    void UpdateButton(Button b, PlayerCollection pc)
+    void UpdateButton(PlayerCollectionButton b, PlayerCollection pc)
     {
         b.gameObject.SetActive(true);
 
-        b.GetComponent<Image>().sprite = pc.Sprite;
-        b.GetComponentInChildren<TextMeshProUGUI>().text = pc.Details;
-
+        b.SetButton(pc);
     }
 
-    void UpdateButton(Button b)
+    void UpdateButton(PlayerCollectionButton b)
     {
         b.gameObject.SetActive(false);
 
@@ -85,5 +83,10 @@ public class PlayerCollectionManager : MonoBehaviour
         pageNumber--;
         pageNumber = Mathf.Clamp(pageNumber, 0, playerCollections.Count / maxButtonsPerPage + 1);
         LoadButtons();
+    }
+
+    protected virtual void LoadIsUnlocked()
+    {
+
     }
 }

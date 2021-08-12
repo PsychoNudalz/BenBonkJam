@@ -25,6 +25,7 @@ public class GameDataManager : MonoBehaviour
     {
         //WriteToSave();
         ReadFromSave();
+        gameDataManagerInstance = this;
     }
 
     private void ReadFromSave()
@@ -165,13 +166,6 @@ public class GameDataManager : MonoBehaviour
         public  bool voidEnding;
         public  bool wakeUpSim;
 
-        public void Update()
-        {
-            if (dieYoung == true)
-            {
-                Debug.Log("DIED YOUNG");
-            }
-        }
 
         public EndingsUnlocked(bool alien, bool athlete, bool borderAwake, bool dieYoung, bool friendGhost, bool hamDogAdventure,
                 bool hell, bool paradise, bool purgatory, bool reincarnation, bool sick, bool voidEnding, bool wakeUpSim)
