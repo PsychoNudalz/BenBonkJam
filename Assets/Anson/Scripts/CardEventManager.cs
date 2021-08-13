@@ -50,6 +50,8 @@ public class CardEventManager : MonoBehaviour
         {
             RunCardConversion();
         }
+        AgeChangeAnimationHandler.current.PlayAnimation(playerScript.age);
+
     }
 
     public void LoadNewCard()
@@ -111,6 +113,7 @@ public class CardEventManager : MonoBehaviour
     private bool AgePlayer()
     {
         playerScript.Older();
+        AgeChangeAnimationHandler.current.PlayAnimation(playerScript.age);
         cardCounter = 0;
         UpdatePlayerStatsUI();
 
