@@ -5228,37 +5228,6 @@ PrefabInstance:
       objectReference: {fileID: 729838224}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
---- !u!1 &649584075
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 649584076}
-  m_Layer: 0
-  m_Name: AgeUpAnimation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &649584076
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649584075}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 820873760}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &729838224
 Material:
   serializedVersion: 6
@@ -5505,7 +5474,7 @@ GameObject:
   - component: {fileID: 820873762}
   - component: {fileID: 820873761}
   m_Layer: 0
-  m_Name: Square
+  m_Name: AgeUpAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5518,12 +5487,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820873759}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.46, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 649584076}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &820873761
 MonoBehaviour:
@@ -29970,6 +29939,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1906904589}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: cardPerAge
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7480651368630108165, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: m_RootOrder
       value: 9
