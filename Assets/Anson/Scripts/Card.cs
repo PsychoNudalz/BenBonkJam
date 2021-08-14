@@ -145,6 +145,8 @@ public class Card : MonoBehaviour
     [Header("Condition")]
     [SerializeField] List<AgeEnum> ageNeeded;
     [SerializeField] List<StatusEnum> statusNeeded;
+    [SerializeField] bool isEnding;
+
     [Header("Card Components")]
     [SerializeField] TextMeshPro cardDescriptionTMPro;
     [SerializeField] TextMeshPro headsDescriptionTMPro;
@@ -165,6 +167,7 @@ public class Card : MonoBehaviour
     public string TailsDescriptionText { get => tailsDescriptionText; set => tailsDescriptionText = value; }
     public SpriteRenderer CardSprite { get => cardSprite; set => cardSprite = value; }
     public string CardDetails { get => cardDetails; set => cardDetails = value; }
+    public bool IsEnding { get => isEnding; set => isEnding = value; }
 
     // Start is called before the first frame update
 

@@ -29941,7 +29941,7 @@ PrefabInstance:
       objectReference: {fileID: 1906904589}
     - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: cardPerAge
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7480651368630108165, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: m_RootOrder
