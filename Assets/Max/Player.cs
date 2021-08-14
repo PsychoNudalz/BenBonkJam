@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public enum StatsType
 {
@@ -177,6 +178,9 @@ public class Player : MonoBehaviour
 
     public void AddStatus(StatusEnum statusEnum)
     {
+        Vector3 cardPos = Mouse.current.position.ReadValue();
+        StatusEffect se = FindObjectOfType<StatusEffectManager>().GetStatusEffect(statusEnum);
+        FindObjectOfType<StatusEffectIconSpawner>().SpawnStatusEffectIcon(se);
         AddStatus(StatusEffectManager.current.GetStatusEffect(statusEnum));
     }
 
