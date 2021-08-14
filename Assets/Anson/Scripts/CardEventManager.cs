@@ -236,6 +236,7 @@ public class CardEventManager : MonoBehaviour
             foreach (StatusEnum addS in AddStatus)
             {
                 playerScript.AddStatus(addS);
+                
             }
         }
         if (RemoveStatus.Count > 0)

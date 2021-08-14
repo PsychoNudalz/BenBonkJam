@@ -1,25 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
-public class UIStatusEffect : MonoBehaviour
+public class UIStatusEffect : MonoBehaviour//, IPointerEnterHandler, IPointerExitHandler
 {
     public StatusEffect status;
     [SerializeField] Image spriteRenderer;
     [SerializeField] TextMeshProUGUI textMeshProUGUI;
-    // Start is called before the first frame update
-    void Awake()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     private void OnEnable()
     {
         if (status!=null)
@@ -32,7 +24,16 @@ public class UIStatusEffect : MonoBehaviour
     {
         status = s;
         spriteRenderer.sprite = s.icon;
-        textMeshProUGUI.text = s.status.ToString();
-
     }
+
+    /*
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Tooltip.ShowTooltip_Static(status);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Tooltip.HideTooltip_Static();
+    }*/
 }
