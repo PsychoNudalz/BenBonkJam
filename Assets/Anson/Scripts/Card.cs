@@ -78,7 +78,7 @@ public struct CardOption
         }
     }
 
-    public CardOption(CardOptionSave cos)
+    public CardOption(CardOptionSave cos, List<Card> sequenceCardsToAdd, List<Card> sequenceCardsToRemove)
     {
         health = cos.health;
         bux = cos.bux;
@@ -99,32 +99,36 @@ public struct CardOption
             statusRemove.Add((StatusEnum)i);
         }
 
-        Card tempCard;
-        sequenceCardsAdd = new List<Card>();
-        foreach (string s in cos.sequenceCardsAdd)
-        {
-            if (!s.Equals(""))
-            {
-                tempCard = UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s);
-                if (tempCard != null)
-                {
-                    sequenceCardsAdd.Add(tempCard);
-                }
-            }
-        }
+        sequenceCardsAdd = new List<Card>(sequenceCardsToAdd);
+        sequenceCardsRemove = new List<Card>(sequenceCardsToRemove);
 
-        sequenceCardsRemove = new List<Card>();
-        foreach (string s in cos.sequenceCardsRemove)
-        {
-            if (!s.Equals(""))
-            {
-                tempCard = UnityEditor.MonoScript.FindObjectOfType<CardHandler>().GetCardByID(s);
-                if (tempCard != null)
-                {
-                    sequenceCardsRemove.Add(tempCard);
-                }
-            }
-        }
+        //Card tempCard;
+        //sequenceCardsAdd = new List<Card>();
+
+        //foreach (string s in cos.sequenceCardsAdd)
+        //{
+        //    if (!s.Equals(""))
+        //    {
+        //        tempCard = GameObject.FindObjectOfType<CardHandler>().GetCardByID(s);
+        //        if (tempCard != null)
+        //        {
+        //            sequenceCardsAdd.Add(tempCard);
+        //        }
+        //    }
+        //}
+
+        //sequenceCardsRemove = new List<Card>();
+        //foreach (string s in cos.sequenceCardsRemove)
+        //{
+        //    if (!s.Equals(""))
+        //    {
+        //        tempCard = GameObject.FindObjectOfType<CardHandler>().GetCardByID(s);
+        //        if (tempCard != null)
+        //        {
+        //            sequenceCardsRemove.Add(tempCard);
+        //        }
+        //    }
+        //}
     }
 }
 
@@ -256,7 +260,8 @@ public class Card : MonoBehaviour
         return base.GetHashCode();
     }
 
-    public bool UpdateCard(CardSave cs)
+
+    public bool UpdateCard(CardSave cs, List<Card> sequenceCardsToAdd_Heads, List<Card> sequenceCardsToAdd_Tails, List<Card> sequenceCardsToRemove_Heads, List<Card> sequenceCardsToRemove_Tails)
     {
         try
         {
@@ -264,8 +269,8 @@ public class Card : MonoBehaviour
             cardDescriptionText = cs.cardDes;
             headsDescriptionText = cs.headsDes;
             tailsDescriptionText = cs.tailsDes;
-            headsOption = new CardOption(cs.headsOption);
-            tailsOption = new CardOption(cs.tailsOption);
+            headsOption = new CardOption(cs.headsOption, sequenceCardsToAdd_Heads, sequenceCardsToRemove_Heads);
+            tailsOption = new CardOption(cs.tailsOption, sequenceCardsToAdd_Tails, sequenceCardsToRemove_Tails);
             ageNeeded = new List<AgeEnum>();
             foreach (int i in cs.ageNeeded)
             {

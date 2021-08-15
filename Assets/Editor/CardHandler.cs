@@ -1,11 +1,10 @@
+#if (UNITY_EDITOR)
 using System;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using UnityEngine.SceneManagement;
-using UnityEditor.SceneManagement;
 
 public class CardHandler : MonoBehaviour
 {
@@ -97,7 +96,7 @@ public class CardHandler : MonoBehaviour
             if (currentCard != null)
             {
                 Debug.Log("Updating card: " + cs.cardID);
-                currentCard.UpdateCard(cs);
+                currentCard.UpdateCard(cs,GetCardsFromIDs(cs.headsOption.sequenceCardsAdd), GetCardsFromIDs(cs.headsOption.sequenceCardsRemove), GetCardsFromIDs(cs.tailsOption.sequenceCardsAdd), GetCardsFromIDs(cs.tailsOption.sequenceCardsRemove));
                 CardManager.UpdateCounter(cs.cardID);
             }
             else
@@ -182,11 +181,11 @@ public class CardHandler : MonoBehaviour
         return temp;
     }
 
-    public GameObject CreateNewCard(CardSave sc, string cardName = null)
+    public GameObject CreateNewCard(CardSave cs, string cardName = null)
     {
         GameObject instanceRoot = (GameObject)PrefabUtility.InstantiatePrefab(baseCard);
         Card newCard = instanceRoot.GetComponent<Card>();
-        newCard.UpdateCard(sc);
+        newCard.UpdateCard(cs, GetCardsFromIDs(cs.headsOption.sequenceCardsAdd), GetCardsFromIDs(cs.headsOption.sequenceCardsRemove), GetCardsFromIDs(cs.tailsOption.sequenceCardsAdd), GetCardsFromIDs(cs.tailsOption.sequenceCardsRemove));
         newCard.CardID = CardManager.GetIDValue(newCard);
         if (cardName == null)
         {
@@ -203,7 +202,7 @@ public class CardHandler : MonoBehaviour
         {
             instanceRoot.name = "Card_" + cardName;
         }
-        GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)sc.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
+        GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)cs.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
         DestroyImmediate(instanceRoot);
         return pVariant;
     }
@@ -267,4 +266,24 @@ public class CardHandler : MonoBehaviour
         }
     }
 
+    List<Card> GetCardsFromIDs(string[] stringList)
+    {
+        Card tempCard;
+        List<Card> sequenceCardsAdd = new List<Card>();
+
+        foreach (string s in stringList)
+        {
+            if (!s.Equals(""))
+            {
+                tempCard = GameObject.FindObjectOfType<CardHandler>().GetCardByID(s);
+                if (tempCard != null)
+                {
+                    sequenceCardsAdd.Add(tempCard);
+                }
+            }
+        }
+        return sequenceCardsAdd;
+    }
+
 }
+#endif
