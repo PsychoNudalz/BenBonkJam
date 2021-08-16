@@ -12,7 +12,7 @@ public class SoundManager : MonoBehaviour
     public float musicSliderValueFloat;
     public float SFXsliderValueFloat;
 
-    [SerializeField] SavedSettings savedSettings = new SavedSettings();
+    [SerializeField] SavedSettings savedSettings;
     public SavedSettings SavedSettings1 { get => savedSettings; set => savedSettings = value; }
 
     private void Awake()
@@ -46,6 +46,8 @@ public class SoundManager : MonoBehaviour
 
     private void WriteToSave()
     {
+        savedSettings = new SavedSettings(musicSliderValueFloat, SFXsliderValueFloat);
+
         Debug.Log("Writing Save");
         string json = JsonUtility.ToJson(savedSettings);
 
@@ -55,9 +57,6 @@ public class SoundManager : MonoBehaviour
 
         Debug.Log("Saved settings.");
 
-
-        //  Achievements loadedAchievements = JsonUtility.FromJson<Achievements>(json);
-        //  EndingsUnlocked loadedEndingsUnlocked = JsonUtility.FromJson<EndingsUnlocked>(json);
     }
 
     public void SetMusicLevel(float musicSliderValue)
@@ -71,10 +70,23 @@ public class SoundManager : MonoBehaviour
         audioMixer.SetFloat("SFX", Mathf.Log10(SFXsliderValue) * 20);
         SFXsliderValueFloat = SFXsliderValue;
     }
+
+    public void OnApplicationQuit()
+    {
+        WriteToSave();
+    }
 }
 
 public class SavedSettings
 {
-    public float musicSliderValue;
+    public float musicSliderValueFloat;
+    public float SFXsliderValueFloat;
+
+    public SavedSettings(float musicSliderValueFloat, float SFXsliderValueFloat)
+    {
+        this.musicSliderValueFloat = musicSliderValueFloat;
+        this.SFXsliderValueFloat = SFXsliderValueFloat;
+    }
+
 
 }
