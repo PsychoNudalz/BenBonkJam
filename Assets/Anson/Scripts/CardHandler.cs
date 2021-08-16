@@ -1,10 +1,8 @@
-#if (UNITY_EDITOR)
 using System;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 public class CardHandler : MonoBehaviour
 {
@@ -96,7 +94,7 @@ public class CardHandler : MonoBehaviour
             if (currentCard != null)
             {
                 Debug.Log("Updating card: " + cs.cardID);
-                currentCard.UpdateCard(cs,GetCardsFromIDs(cs.headsOption.sequenceCardsAdd), GetCardsFromIDs(cs.headsOption.sequenceCardsRemove), GetCardsFromIDs(cs.tailsOption.sequenceCardsAdd), GetCardsFromIDs(cs.tailsOption.sequenceCardsRemove));
+                currentCard.UpdateCard(cs, GetCardsFromIDs(cs.headsOption.sequenceCardsAdd), GetCardsFromIDs(cs.headsOption.sequenceCardsRemove), GetCardsFromIDs(cs.tailsOption.sequenceCardsAdd), GetCardsFromIDs(cs.tailsOption.sequenceCardsRemove));
                 CardManager.UpdateCounter(cs.cardID);
             }
             else
@@ -183,28 +181,33 @@ public class CardHandler : MonoBehaviour
 
     public GameObject CreateNewCard(CardSave cs, string cardName = null)
     {
-        GameObject instanceRoot = (GameObject)PrefabUtility.InstantiatePrefab(baseCard);
-        Card newCard = instanceRoot.GetComponent<Card>();
-        newCard.UpdateCard(cs, GetCardsFromIDs(cs.headsOption.sequenceCardsAdd), GetCardsFromIDs(cs.headsOption.sequenceCardsRemove), GetCardsFromIDs(cs.tailsOption.sequenceCardsAdd), GetCardsFromIDs(cs.tailsOption.sequenceCardsRemove));
-        newCard.CardID = CardManager.GetIDValue(newCard);
-        if (cardName == null)
-        {
-            if (newCard.CardDetails!= "")
-            {
-                instanceRoot.name = "Card_" + newCard.CardDetails;
-            }
-            else
-            {
-            instanceRoot.name = "Card_" + newCard.CardDescriptionText;
-            }
-        }
-        else
-        {
-            instanceRoot.name = "Card_" + cardName;
-        }
-        GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)cs.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
-        DestroyImmediate(instanceRoot);
-        return pVariant;
+        GameObject[] returnCards = CreateNewCards.CreateNewCard(this,baseCard,cs,cardName);
+        DestroyImmediate(returnCards[0]);
+
+        return returnCards[1];
+
+    //    GameObject instanceRoot = (GameObject)PrefabUtility.InstantiatePrefab(baseCard);
+    //    Card newCard = instanceRoot.GetComponent<Card>();
+    //    newCard.UpdateCard(cs, GetCardsFromIDs(cs.headsOption.sequenceCardsAdd), GetCardsFromIDs(cs.headsOption.sequenceCardsRemove), GetCardsFromIDs(cs.tailsOption.sequenceCardsAdd), GetCardsFromIDs(cs.tailsOption.sequenceCardsRemove));
+    //    newCard.CardID = CardManager.GetIDValue(newCard);
+    //    if (cardName == null)
+    //    {
+    //        if (newCard.CardDetails != "")
+    //        {
+    //            instanceRoot.name = "Card_" + newCard.CardDetails;
+    //        }
+    //        else
+    //        {
+    //            instanceRoot.name = "Card_" + newCard.CardDescriptionText;
+    //        }
+    //    }
+    //    else
+    //    {
+    //        instanceRoot.name = "Card_" + cardName;
+    //    }
+    //    GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)cs.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
+    //    DestroyImmediate(instanceRoot);
+    //    return pVariant;
     }
 
     public void SortCards()
@@ -212,7 +215,7 @@ public class CardHandler : MonoBehaviour
         Card[] sortedCards = allCards.ToArray();
         SortMethod(sortedCards, 0, allCards.Count - 1);
         List<Card> tempCards = new List<Card>();
-        foreach(Card c in sortedCards)
+        foreach (Card c in sortedCards)
         {
             if (!tempCards.Contains(c))
             {
@@ -228,28 +231,29 @@ public class CardHandler : MonoBehaviour
         try
         {
 
-        Card[] temp = new Card[numbers.Length];
-        int i, left_end, num_elements, tmp_pos;
-        left_end = (mid - 1);
-        tmp_pos = left;
-        num_elements = (right - left + 1);
-        while ((left <= left_end) && (mid <= right))
-        {
-            if (string.Compare(numbers[left].CardID, numbers[mid].CardID) <= 0)
+            Card[] temp = new Card[numbers.Length];
+            int i, left_end, num_elements, tmp_pos;
+            left_end = (mid - 1);
+            tmp_pos = left;
+            num_elements = (right - left + 1);
+            while ((left <= left_end) && (mid <= right))
+            {
+                if (string.Compare(numbers[left].CardID, numbers[mid].CardID) <= 0)
+                    temp[tmp_pos++] = numbers[left++];
+                else
+                    temp[tmp_pos++] = numbers[mid++];
+            }
+            while (left <= left_end)
                 temp[tmp_pos++] = numbers[left++];
-            else
+            while (mid <= right)
                 temp[tmp_pos++] = numbers[mid++];
+            for (i = 0; i < num_elements; i++)
+            {
+                numbers[right] = temp[right];
+                right--;
+            }
         }
-        while (left <= left_end)
-            temp[tmp_pos++] = numbers[left++];
-        while (mid <= right)
-            temp[tmp_pos++] = numbers[mid++];
-        for (i = 0; i < num_elements; i++)
-        {
-            numbers[right] = temp[right];
-            right--;
-        }
-        } catch(IndexOutOfRangeException e)
+        catch (IndexOutOfRangeException e)
         {
             Debug.LogError($"Index Out of Range {left}, {right}, {mid}, {numbers.Length}");
         }
@@ -266,7 +270,7 @@ public class CardHandler : MonoBehaviour
         }
     }
 
-    List<Card> GetCardsFromIDs(string[] stringList)
+    public List<Card> GetCardsFromIDs(string[] stringList)
     {
         Card tempCard;
         List<Card> sequenceCardsAdd = new List<Card>();
@@ -286,4 +290,3 @@ public class CardHandler : MonoBehaviour
     }
 
 }
-#endif
