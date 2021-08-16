@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 using System;
 using System.IO;
 
@@ -12,12 +13,18 @@ public class SoundManager : MonoBehaviour
     public float musicSliderValueFloat;
     public float SFXsliderValueFloat;
 
+    public Slider musicSlider;
+    public Slider sfxSlider;
+
     [SerializeField] SavedSettings savedSettings;
     public SavedSettings SavedSettings1 { get => savedSettings; set => savedSettings = value; }
 
-    private void Awake()
+    private void Start()
     {
         ReadFromSave();
+        musicSlider.value = musicSliderValueFloat;
+        sfxSlider.value = SFXsliderValueFloat;
+
     }
 
     private void ReadFromSave()
@@ -40,8 +47,10 @@ public class SoundManager : MonoBehaviour
         }
 
         savedSettings = JsonUtility.FromJson<SavedSettings>(json);
-
-
+        musicSliderValueFloat = savedSettings.musicSliderValueFloat;
+        SFXsliderValueFloat = savedSettings.SFXsliderValueFloat;
+        SetMusicLevel(musicSliderValueFloat);
+        SetSFXLevel(SFXsliderValueFloat);
     }
 
     private void WriteToSave()
