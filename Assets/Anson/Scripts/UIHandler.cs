@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
-
+using UnityEngine.EventSystems;
+using UnityEngine.PlayerLoop;
+using UnityEngine.InputSystem;
 
 public class UIHandler : MonoBehaviour
 {
@@ -36,6 +38,11 @@ public class UIHandler : MonoBehaviour
     [SerializeField] ParticleSystem mood_Gain;
     [SerializeField] ParticleSystem mood_Lose;
 
+
+    GraphicRaycaster m_Raycaster;
+    PointerEventData m_PointerEventData;
+    EventSystem m_EventSystem;
+
     public ParticleSystem Health_Gain { get => health_Gain; set => health_Gain = value; }
     public ParticleSystem Health_Lose { get => health_Lose; set => health_Lose = value; }
     public ParticleSystem Bux_Gain { get => bux_Gain; set => bux_Gain = value; }
@@ -49,7 +56,39 @@ public class UIHandler : MonoBehaviour
         {
             cardEventManager = FindObjectOfType<CardEventManager>();
         }
+        //Fetch the Raycaster from the GameObject (the Canvas)
+        m_Raycaster = GetComponent<GraphicRaycaster>();
+        //Fetch the Event System from the Scene
+        m_EventSystem = GetComponent<EventSystem>();
     }
+
+    void FixedUpdate()
+    {
+        //Set up the new Pointer Event
+        m_PointerEventData = new PointerEventData(m_EventSystem);
+        //Set the Pointer Event Position to that of the mouse position
+        m_PointerEventData.position = Mouse.current.position.ReadValue();
+
+        //Create a list of Raycast Results
+        List<RaycastResult> results = new List<RaycastResult>();
+
+        //Raycast using the Graphics Raycaster and mouse click position
+        m_Raycaster.Raycast(m_PointerEventData, results);
+        
+        //For every result returned, output the name of the GameObject on the Canvas hit by the Ray
+        foreach (RaycastResult result in results)
+        {
+            if (result.gameObject.CompareTag("Status Effect Icon"))
+            {
+                Tooltip.ShowTooltip_Static(result.gameObject.GetComponentInParent<UIStatusEffect>().status);
+            }
+            else
+            {
+                Tooltip.HideTooltip_Static();
+            }
+        }
+    }
+
     public void UpdateStats(float h, float b, float m)
     {
         healthValue.value = h;
@@ -66,7 +105,7 @@ public class UIHandler : MonoBehaviour
         {
             tempStatus += s.ToString() + "\n";
         }
-        UpdateStatusDisplay(p);
+        //UpdateStatusDisplay(p);
     }
 
     public void UpdateStatusDisplay(Player p)

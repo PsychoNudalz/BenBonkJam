@@ -26,6 +26,9 @@ public class CardEventManager : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] ParticleSystem headsPS;
     [SerializeField] ParticleSystem tailsPS;
+    [Header("Private")]
+    [SerializeField] bool isDeathStage = false;
+
     [Header("Debug")]
     [SerializeField] bool runConverter;
 
@@ -42,75 +45,111 @@ public class CardEventManager : MonoBehaviour
         }
 
         UpdatePlayerStatsUI();
+        randomPickTry = allCards.Count * 2;
         LoadNewCard();
         currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
-        randomPickTry = allCards.Count * 2;
 
+        AgeChangeAnimationHandler.current.PlayAnimation(playerScript.age);
+
+        //Running conversion from old to new Card System
         if (runConverter)
         {
             RunCardConversion();
         }
+
     }
 
     public void LoadNewCard()
     {
         UpdatePlayerStatsUI();
-        if (currentCard != null && currentCard.AgeNeeded.Contains(AgeEnum.DEAD))
-        {
-            FindObjectOfType<GameManagerScript>().setGameOver(currentCard.CardID);
-        }
-        if (cardCounter >= cardPerAge && cardBuffer.Count == 0)
-        {
-            AgePlayer();
-        }
+
         Card newCard = null;
 
-        //Death Card
-        if (playerScript.age.Equals(AgeEnum.DEAD))
+        if (currentCard && currentCard.IsEnding)
         {
-            tempCards = new List<Card>();
-            cardBuffer = new List<Card>(deathCards);
+            CallGameOver();
+            return;
         }
 
 
+        isDeathStage = isDeathStage || playerScript.age.Equals(AgeEnum.DEAD);
+
+        if (cardCounter >= cardPerAge || isDeathStage)
+        {
+            if (AgePlayer() && !isDeathStage)
+            {
+                Debug.LogError("Tried to age player but reach maximum age");
+                CallGameOver();
+                return;
+            }
+            else
+            {
+                print("Age player");
+                if (isDeathStage)
+                {
+                    newCard = LoadGameOverCard();
+                    SetNewCard(newCard);
+                    return;
+                }
+                else
+                {
+                    LoadNewCard();
+                    return;
+                }
+            }
+        }
+
+
+        //Sequence Cards
         if (cardBuffer.Count > 0)
         {
             newCard = NextBufferCard();
         }
-        else if (tempCards.Count == 0 && playerScript.age.Equals(AgeEnum.DEAD))
-        {
-            FindObjectOfType<GameManagerScript>().setGameOver(currentCard.CardID);
-        }
+
+
+        //
         if (newCard == null)
         {
             newCard = NewRandomCard();
+
+            //fail safe if it can't play any new cards
             if (!newCard)
             {
-                if (AgePlayer())
+                if (!playerScript.age.Equals(AgeEnum.DEAD))
                 {
+                    cardCounter = cardPerAge + 1;
                     LoadNewCard();
-
+                    return;
                 }
-                return;
-            }
-            if (playerScript.age.Equals(AgeEnum.DEAD))
-            {
-                tempCards = new List<Card>();
             }
         }
 
         SetNewCard(newCard);
-        //PlayCardSound(CardSoundEnum.PLAY);
     }
 
 
+    Card LoadGameOverCard()
+    {
+        tempCards = new List<Card>();
+        cardBuffer = new List<Card>(deathCards);
+        Card returnCard = NextBufferCard();
+        cardBuffer = new List<Card>();
+        return returnCard;
+    }
+
+    private void CallGameOver()
+    {
+        FindObjectOfType<GameManagerScript>().setGameOver(currentCard.CardID);
+    }
+
     private bool AgePlayer()
     {
-        playerScript.Older();
+        bool maxedAge = playerScript.Older();
+        AgeChangeAnimationHandler.current.PlayAnimation(playerScript.age);
         cardCounter = 0;
         UpdatePlayerStatsUI();
 
-        return !playerScript.age.Equals(AgeEnum.DEAD);
+        return maxedAge;
     }
     private Card NextBufferCard()
     {
@@ -199,53 +238,68 @@ public class CardEventManager : MonoBehaviour
             previousCard.transform.position = previousCardTransform.position;
             animator.SetTrigger("Next");
         }
+        if (!newCard)
+        {
+            Debug.LogError("New card to be set is Null");
+        }
+        else
+        {
+            tempCards.Remove(newCard);
+            currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity, cardSpawnPoint).GetComponent<Card>();
+        }
 
-        tempCards.Remove(newCard);
-        currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity, cardSpawnPoint).GetComponent<Card>();
 
     }
 
-    void PlayCard(float[] values, List<Card> sequence, List<Card> removeSequence, List<StatusEnum> AddStatus, List<StatusEnum> RemoveStatus, List<StatusEnum> requiredStatus)
-    {
-        foreach (StatusEnum se in requiredStatus)
-        {
-            if (!playerScript.status.currentstatus.Contains(se))
-            {
-                return;
-            }
-        }
 
-        ModifyPlayerStats(values);
-        if (sequence.Count > 0)
-        {
-            WipeBuffer();
-            cardBuffer.AddRange(sequence);
-        }
+    //void PlayCard(float[] values, List<Card> sequence, List<Card> removeSequence, List<StatusEnum> AddStatus, List<StatusEnum> RemoveStatus, List<StatusEnum> requiredStatus)
+    //{
+    //    foreach (StatusEnum se in requiredStatus)
+    //    {
+    //        if (!playerScript.status.currentstatus.Contains(se))
+    //        {
+    //            return;
+    //        }
+    //    }
 
-        if (removeSequence.Count > 0)
-        {
-            RemoveFromBuffer(removeSequence);
-        }
+    //    ModifyPlayerStats(values);
+    //    if (sequence.Count > 0)
+    //    {
+    //        WipeBuffer();
+    //        cardBuffer.AddRange(sequence);
+    //    }
 
-        if (AddStatus.Count > 0)
-        {
-            foreach (StatusEnum addS in AddStatus)
-            {
-                playerScript.AddStatus(addS);
-            }
-        }
-        if (RemoveStatus.Count > 0)
-        {
-            foreach (StatusEnum remS in RemoveStatus)
-            {
-                playerScript.RemoveStatus(remS);
-            }
-        }
-        lastPressTime = Time.time;
+    //    if (removeSequence.Count > 0)
+    //    {
+    //        RemoveFromBuffer(removeSequence);
+    //    }
 
-    }
+    //    if (AddStatus.Count > 0)
+    //    {
+    //        foreach (StatusEnum addS in AddStatus)
+    //        {
+    //            playerScript.AddStatus(addS);
+    //        }
+    //    }
+    //    if (RemoveStatus.Count > 0)
+    //    {
+    //        foreach (StatusEnum remS in RemoveStatus)
+    //        {
+    //            playerScript.RemoveStatus(remS);
+    //        }
+    //    }
+    //    lastPressTime = Time.time;
 
-    void PlayCard(CardOption cardOption)
+    //}
+
+
+    /// <summary>
+    /// plays the card option
+    /// true if player dies
+    /// </summary>
+    /// <param name="cardOption"></param>
+    /// <returns>true if player dies</returns>
+    bool PlayCard(CardOption cardOption)
     {
         float[] values = cardOption.GetStatsResults();
         List<Card> sequence = cardOption.SequenceCardsAdd;
@@ -260,11 +314,11 @@ public class CardEventManager : MonoBehaviour
         {
             if (!playerScript.status.currentstatus.Contains(se))
             {
-                return;
+                return false;
             }
         }
 
-        ModifyPlayerStats(values);
+        isDeathStage = ModifyPlayerStats(values);
         if (sequence.Count > 0)
         {
             WipeBuffer();
@@ -291,20 +345,42 @@ public class CardEventManager : MonoBehaviour
             }
         }
         lastPressTime = Time.time;
+        return true;
     }
 
-    private void ModifyPlayerStats(float[] values)
+    /// <summary>
+    /// Modify the player stats
+    /// return true if the player dies
+    /// </summary>
+    /// <param name="values"></param>
+    /// <returns></returns>
+    private bool ModifyPlayerStats(float[] values)
     {
+        print("Modify Stats");
+        uIHandler.PlayStatsParticles(StatsType.HEALTH, values[0]);
+        uIHandler.PlayStatsParticles(StatsType.BUX, values[1]);
+        uIHandler.PlayStatsParticles(StatsType.MOOD, values[2]);
+
         if (playerScript.GainHealth(values[0]) || playerScript.GainBux(values[1]) || playerScript.GainMood(values[2]))
         {
             //if player DEAD
             playerScript.SetAge((int)AgeEnum.DEAD);
             FindObjectOfType<CameraShake>().PlayShake(.3f, .4f);
+            return true;
         }
-        uIHandler.PlayStatsParticles(StatsType.HEALTH, values[0]);
-        uIHandler.PlayStatsParticles(StatsType.BUX, values[1]);
-        uIHandler.PlayStatsParticles(StatsType.MOOD, values[2]);
+        PlayerPassiveGain();
+        return false;
     }
+
+    void PlayerPassiveGain()
+    {
+        print("Passive Gain");
+        float[] passiveArray = playerScript.PassiveGain();
+        uIHandler.PlayStatsParticles(StatsType.HEALTH, passiveArray[0]);
+        uIHandler.PlayStatsParticles(StatsType.BUX, passiveArray[1]);
+        uIHandler.PlayStatsParticles(StatsType.MOOD, passiveArray[2]);
+    }
+
 
     public void Play_Heads()
     {

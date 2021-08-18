@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public enum StatsType
 {
@@ -27,19 +28,30 @@ public class Player : MonoBehaviour
     [SerializeField] int buxModNeg = 0;
     [SerializeField] int moodModNeg = 0;
 
+    [Header("Passive Gain/ Lost")]
+    [SerializeField] float healthPassive = 0;
+    [SerializeField] float buxPassive = 0;
+    [SerializeField] float moodPassive = 0;
 
-    public void Older()
+
+    /// <summary>
+    /// Ages the player by one age
+    /// returns true if the player can not be aged
+    /// </summary>
+    /// <returns>true if the player can not be aged</returns>
+    public bool Older()
     {
         int temp = (int)age;
         temp++;
-        age = (AgeEnum)temp;
-        if ((int)age > 5)
+        if (temp > 5)
         {
             age = (AgeEnum)5;
+            return true;
         }
         else
         {
             age = (AgeEnum)temp;
+            return false;
         }
     }
 
@@ -166,6 +178,9 @@ public class Player : MonoBehaviour
 
     public void AddStatus(StatusEnum statusEnum)
     {
+        Vector3 cardPos = Mouse.current.position.ReadValue();
+        StatusEffect se = FindObjectOfType<StatusEffectManager>().GetStatusEffect(statusEnum);
+        FindObjectOfType<StatusEffectIconSpawner>().SpawnStatusEffectIcon(se);
         AddStatus(StatusEffectManager.current.GetStatusEffect(statusEnum));
     }
 
@@ -179,6 +194,9 @@ public class Player : MonoBehaviour
         healthModNeg += statusEffect.HealthNeg;
         buxModNeg += statusEffect.BuxNeg;
         moodModNeg += statusEffect.MoodNeg;
+        healthPassive += statusEffect.HealthPassive;
+        buxPassive += statusEffect.BuxPassive;
+        moodPassive += statusEffect.MoodPassive;
     }
 
     public void RemoveStatus(StatusEnum statusEnum)
@@ -195,6 +213,9 @@ public class Player : MonoBehaviour
         healthModNeg -= statusEffect.HealthNeg;
         buxModNeg -= statusEffect.BuxNeg;
         moodModNeg -= statusEffect.MoodNeg;
+        healthPassive -= statusEffect.HealthPassive;
+        buxPassive -= statusEffect.BuxPassive;
+        moodPassive -= statusEffect.MoodPassive;
     }
 
     public bool HasSatus(StatusEnum statusEnum)
@@ -229,6 +250,16 @@ public class Player : MonoBehaviour
     public float GetTotalStats()
     {
         return HealthPoints + BuxPoint + MoodPoint;
+    }
+
+
+    public float[] PassiveGain()
+    {
+        GainHealth(healthPassive);
+        GainBux(buxPassive);
+        GainMood(moodPassive);
+        float[] returnArray = new float[] { healthPassive, buxPassive, moodPassive };
+        return returnArray;
     }
 
 

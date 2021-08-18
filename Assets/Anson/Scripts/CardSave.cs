@@ -200,7 +200,7 @@ public class CardSave
         }
         catch (System.NullReferenceException e)
         {
-            Debug.LogError($"{cardID} missing sprite");
+            Debug.LogWarning($"{cardID} missing sprite");
         }
     }
 

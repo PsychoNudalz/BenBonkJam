@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class StatusEffectManager : MonoBehaviour
 {
-    static string headerFormat = "Status Effect,Heath Gain,Bux Gain,Mood Gain,Health Lost,Bux Lost,Mood Lost";
+    static string headerFormat = "Status Effect,Heath Gain,Bux Gain,Mood Gain,Health Lost,Bux Lost,Mood Lost,Health Passive,Bux Passive,Mood Passive";
 
     [SerializeField] List<StatusEffect> allSatusEffect;
 
@@ -27,7 +27,7 @@ public class StatusEffectManager : MonoBehaviour
         {
             if (!AllSEContains(e))
             {
-                allSatusEffect.Add(new StatusEffect(e, 0, 0, 0, 0, 0, 0, null, ""));
+                allSatusEffect.Add(new StatusEffect(e, 0, 0, 0, 0, 0, 0, 0, 0, 0, null, ""));
             }
         }
 
@@ -113,6 +113,10 @@ public class StatusEffectManager : MonoBehaviour
                     getSE.HealthNeg = int.Parse(stringSplit[4]);
                     getSE.BuxNeg = int.Parse(stringSplit[5]);
                     getSE.MoodNeg = int.Parse(stringSplit[6]);
+                    getSE.HealthPassive = float.Parse(stringSplit[7]);
+                    getSE.BuxPassive = float.Parse(stringSplit[8]);
+                    getSE.MoodPassive = float.Parse(stringSplit[9]);
+                    //getSE.description = stringSplit[10];
                 }
             }
 
