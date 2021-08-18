@@ -199,7 +199,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1735538945765634356, guid: 601b5790ad53f7b4fa6bba7a95db4b23, type: 3}
       propertyPath: m_Name
-      value: SoundManager
+      value: VolumnManager
       objectReference: {fileID: 0}
     - target: {fileID: 1735538945765634358, guid: 601b5790ad53f7b4fa6bba7a95db4b23, type: 3}
       propertyPath: m_RootOrder
@@ -306,6 +306,10 @@ PrefabInstance:
     - target: {fileID: 4379163752723092414, guid: 7450ae890bc52294c953e17c35dc959d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379163752723092415, guid: 7450ae890bc52294c953e17c35dc959d, type: 3}
+      propertyPath: cardPerAge
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4379163752723092415, guid: 7450ae890bc52294c953e17c35dc959d, type: 3}
       propertyPath: runConverter
