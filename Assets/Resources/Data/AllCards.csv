@@ -1,117 +1,117 @@
-Card ID,Card Details,Ages Neede,Status Needed,Card Sprite Name,Card Description,Heads Description,Heads Health,Heads Bux,Heads Mood,Heads Required Status,Heads Sequence Cards Add,Heads Sequence Cards Remove,Heads Status Add,Heads Status Remove,Tails Description,Tails Health,Tails Bux,Tails Mood,Tails Required Status,Tails Sequence Cards Add,Tails Sequence Cards Remove,Tails Status Add,Tails Status Remove,END,Rules: Age and stats must be in integer.  Set a card detail if description contains special characters
-ADU_000_,,3/,,nigerian prince,A Nigerian Prince needs your help!,Help this fine man,0,-40,-20,,,,2/,,Move to SPAM,0,0,0,,,,,,END,
-ADU_001_,,3/,,dogo,Adopt a dog?,Adopt,0,-5,30,,,,3/,,Nah..,0,0,0,,,,,,END,
-ADU_002_,,3/,12/,plumber,Plumber,Yes!,0,20,-15,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END,
-ADU_003_,,3/,,ice_cream_truck,Ice cream truck comes after you,Shout at it,0,0,0,,,,,,Run!,0,0,0,,,,,,END,
-ADU_004_,,3/,11/,sysadmin,Software Developer,Yes!,-20,100,-50,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END,
-ADU_005_,,3/,1/,divorce,In your relationship  conflicts do happen  but divorce is not a joke. ,I am done  File the papers. ,0,-20,-40,,,,,1/,Love is to give  try to accept that you need to be sacrifical. Things may get better hopefully... ,0,0,30,,,,,,END,
-ADU_006_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/,15/,16/,No,0,0,0,,,,,,END,
-ADU_007_,,3/,,telemarketer,Telemarketer,Yes!,0,20,-15,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END,
-ADU_008_,,3/,7/,TV,Televangelist,Yes!,0,50,-10,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END,
-ADU_009_,,3/,,harambe,Event!  Harambe,,0,0,0,,,,,,,0,0,0,,,,,,END,
-ADU_010_,,3/,18/,truck,Truck Driver,Yes!,0,20,-20,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END,
-ADU_011_,,3/,,catfish,Catfish on social media (image of catfish),,0,0,0,,,,,,,0,0,0,,,,,,END,
-ADU_012_,Stonk_Good,3/,,doge,Meme stocks are available to buy...,Buy!,0,20,20,,,,,,Ignore,0,0,-5,,,,,,END,
-ADU_013_,,3/,9/,ufo,UFOlogist,Yes!,20,20,20,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END,
-ADU_014_,,3/,,,Streamer,Hell yeah!,0,0,0,,,ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/,15/,16/,Nah,0,0,0,,,,,,END,
-ADU_015_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No,0,0,0,,,,,,END,
-ADU_016_, streaming speciality,3/,23/,streamer,What is my streaming speciality?,,0,0,0,,,,,,,0,0,0,,,,,,END,
-ADU_017_,,3/,11/,,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not?,-30,-30,-30,,,,24/,11/10/,No! It will be too much!,0,0,0,,,,,,END,
-ADU_018_,,3/,,,You are accepted into university... but your research needs money.,Beg for a grant,0,0,0,,,,,,I'm rich and can fund it,0,0,0,,,,,,END,
-ADU_019_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,Nah,0,0,0,,,,,,END,
-ADU_020_,,3/,,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No,0,0,0,,,,,,END,
-ADU_021_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/,,,,I refuse,-10,-50,20,,,,16/,,END,
-ADU_022_,,3/,,evil_scientist,Evil scientist,Yes,0,0,0,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,25/15/,16/,No,0,0,0,,,,,,END,
-ADU_023_,,3/,,middle east,A soul seeking vacation to the Middle East?,Time for a trip!,0,-40,40,,,,7/,,Nah,0,0,0,,,,,,END,
-ADU_024_,,3/,,,Being alone makes everything difficult.  You really need help in your... sinister scientific advances.,Create some minions.,0,0,0,,,,,,Work for an evil corp.,0,0,0,,,,,,END,
-ADU_025_,,3/,,,You are asked to build a rocket for your master.,,0,0,0,,,,,,FORGET THIS I'M OUT,0,0,0,,,,,,END,
-ADU_026_,How do you respond on TV,3/,,,Someone calls your station and asks... How do you respond on TV?,,0,0,0,,,,,,,0,0,0,,,,,,END,
-ADU_027_,Play the lottery,3/,,lotttery,Play the lottery?,Let's see my luck,0,0,0,,,,,,Forget it,0,0,0,,,,,,END,
-ADU_028_,,3/,,,Tech support.  Does not seem legit though,Accept their help,0,0,0,,,,,,IT'S A TRAP,0,0,0,,,,,,END,
-ADU_029_,Olympics,3/,,olympics,You are being invited to take part in the Olympics (starts a sequence),I shall accept the oppertunity of a lifetime,0,0,0,,,,,,Nah.  Too much effort.,0,0,0,,,,,,END,
-ADU_030_,Rob a bank,3/,,rob bank,Rob a bank?,Hell yeah!,0,0,0,,,,,,No.  Too risky.,0,0,0,,,,,,END,
-ADU_031_,,3/,,rob bank,You were caught robbing a bank,I'm innocent!,0,0,0,,,,,,Yes it was me,0,0,0,,,,,,END,
-ADU_032_,Milf_False,3/,,milf,69 HOT MILFs in your area are bored!,Investigate,-10,-25,-10,,,,,,Ignore,0,0,0,,,,,,END,
-ADU_033_,,3/,,bunny,A bunny runs on the road.,Slam the breaks,0,0,0,,,,,,Run over the bunny,0,0,0,,,,,,END,
-ADU_034_,,3/,,doge,Invest in Index Funds or Dogecoin?,Index Funds,0,30,15,,,,,,DOGECOIN to the moon!,0,15,30,,,,,,END,
-ADU_035_,pet cat,3/,,cat_pet_status,Get a pet cat?,Yes.  aww,0,0,0,,,,,,No they poop everywhere,0,0,0,,,,,,END,
-ADU_036_,Milf_True,3/,,milf,69 HOT MILFs are bored in your area!,Investigate,0,0,40,,,,,7/,Ignore,0,0,0,,,,,,END,
-ADU_037_,,3/,20/,have a child stork,Perhap havng kids makes a better family... though the cost could be high... but the profit... ,Use your own ways to have one ,-10,-50,30,,,,13/,,No kids,0,0,0,,,,,,END,
-ADU_038_,,3/,20/,marriage,People say marriage is a big investment. What about me? ,Propose marriage sincerely,0,-30,40,,,,1/,,I can have a partner without needing to marry  you know...,0,0,0,,,,,,END,
-ADU_039_,,3/,,dice,Maybe I can get more money by gambling?,Gamble!,0,-15,20,,,,5/,,Don't Gamble..,0,0,0,,,,,,END,
-ADU_040_,Stonk_Bad,3/,,doge,Meme stonks are available to buy...,BUY!,0,-20,-20,,,,,,Ignore,0,0,5,,,,,,END,
-ADU_041_,,3/,,telemarketer,Someone on behalf of tech support says your computer have some issues and need a fix. ,Oh yeah the computer is slow  just let them help,-5,-50,-40,,,,,,Thats not legit  what nonsense! Ignore them.,0,0,0,,,,,,END,
-ADU_042_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END,
-ADU_043_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END,
-ADU_044_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END,
-ADU_045_,,3/,,nade,Military,Yes!,-10,20,-10,,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END,
-BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END,
-BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END,
-BAB_002_,,0/,,babyannoiyin,...,Googoo,5,0,5,,,,,,Gaagaa,-5,0,5,,,,,,END,
-BAB_003_,,0/,,baby scream noise,Make a Noise,AWWWW LOOOUUD,0,0,10,,,,,,Mild,0,0,-15,,,,,,END,
-BAB_004_,,0/,,babyannoiyin,...,Mommy,0,0,20,,,,,,Daddy,0,20,-10,,,,,,END,
-BAB_005_,,0/,,socket,Play with a mysterious fissure in the wall...,Insert a coin...,-100,0,-50,,,,22/,,Look for something else,0,0,0,,,,,,END,
-BAB_006_,,0/,,poop,RELEASE THE FLOOD GATES!,Sweet relief!,0,0,10,,,,,,HOLD IT!!!,-10,0,-10,,,,,,END,
-BAB_007_,,0/,,sus noise,You hear squeaking noises from the ceiling,Investigate,0,0,10,,,,,,Ignore,0,0,0,,,,,,END,
-BAB_008_,,0/,,vase,Push the vase off the table?,YES! Muhahaa I am the destroyer,0,0,10,,,,,,Nah mommy will be sad,0,0,0,,,,,,END,
-CHI_000_,,1/,,Choices,What do you want for your birthday?,Action Figure,0,0,20,,,,,,Firetruck,20,0,0,,,,,,END,
-CHI_001_,,1/,,note,You find a strange note in class...,Prepare cheat notes for the test,0,0,10,,CHI_004_/,,,,Make a neat airplane,0,5,-10,,,,,,END,
-CHI_002_,,1/,,telescope,You got a telescope for Christmas,They are so sparkly and pretty!,0,0,20,,,,,,Is that a glowing light?,0,0,10,,,,9/,,END,
-CHI_003_,,1/,,note,How do you cheat?,Use notes during test ,0,5,5,,,,,,scribble on the notes,-30,50,-10,,GEN_007_/,,0/,,END,
-CHI_004_,,1/,,studytest,Oh no! A test!,Work fairly,0,10,-10,,,,,,Cheat hehe,0,0,0,,CHI_003_/,,,,END,
-CHI_005_,dragon for christmas,1/,,pet_dragon,Do you want a dragon for christmas?,yes please mommy,0,0,0,,,,,,NOOOOOO,0,0,0,,,,,,END,
-CHI_006_,,1/,,studytest,Sigh... Homework,Do,0,5,-10,,,,,,Feed to doggo,0,-5,5,,,,,,END,
-CHI_007_,,1/,,gaming,Play games for how long?,Play for an hour,0,0,5,,,,,,JUST ONE MORE GAME!,0,-10,10,,,,,,END,
-CHI_008_,unicorn for christmas,1/,,unicorn_pet,Do you want a unicorn for christmas?,PLEASE YES PLEASE,0,0,0,,,,,,they don't exist,0,0,0,,,,,,END,
-CHI_009_,,1/,,team sport,You play some team sports,Impress your crush,0,0,10,,,,,,Tackle the school bully,-20,0,-5,,,,,,END,
-CHI_010_,,1/,,ouja_board,You found a Ouija board in your parents room,Read the instructions and try to use it,0,0,0,,,,,,mommy will be sad if I touch things,0,0,0,,,,,,END,
-CHI_011_,,1/,,sloth vs ant,Pretend to be...,A sloth (Lazy),0,-10,10,,,,,,An ant (Hard working),0,20,0,,,,,,END,
-CHI_012_,,1/,,schoolskip,Skip school today?,Yes school SUX,0,-5,10,,,,,,No,0,0,-10,,,,,,END,
-DEA_000_,,5/,9/,alien,After your death  you become an alien,Be an ordinary resident in an other galaxy,0,0,0,,,,,,Be a space traveller in your spaceship,0,0,0,,,,,,END,
-DEA_001_,,5/,17/,champ,You earned eternal fame as an honourable athlete in heaven.,Yes I deserved it ,0,0,0,,,,,,No I walk away from those honors,0,0,0,,,,,,END,
-DEA_002_,,5/,2/,bluelight,You entered Paradise. ,Be an enlightened soul ,0,0,0,,,,,,Be an Angel,0,0,0,,,,,,END,
-DEA_003_,,5/,7/5/4/,purgatory,You entered Purgatory ,Let your soul stuck between world matters ,0,0,0,,,,,,Let your soul attach between people,0,0,0,,,,,,END,
-DEA_004_,,5/,15/1/,reincarnation,You can reincarnate with a new destiny... ,Reincarnate ,0,0,0,,,,,,Rather Rest In Peace,0,0,0,,,,,,END,
-DEA_005_,,5/,8/,sick,Your body fails  you feel so ill… and die in sick pain.,So sick in cantonese sounds like Su Shi the poet,0,0,0,,,,,,Ok next time I will take more care to my body,0,0,0,,,,,,END,
-DEA_006_,,5/,0/4/,void,You Entered the Void. ,Meditate permanently,0,0,0,,,,,,Reflect on your countless sins,0,0,0,,,,,,END,
-DEA_007_,,5/,,enlighteneed,Congratulations  you have escaped the simulation. Welcome to the real world.,Yay!,0,0,0,,,,,,Huh?,0,0,0,,,,,,END,
-DEA_008_,,5/,7/,ending,Hey  you. You're finally awake. You were trying to cross the border  right? Walked right into that Imperial ambush  same as us  and that thief over there.,Staying safe I hope?,0,0,0,,,,,,What? Dragons?,0,0,0,,,,,,END,
-DEA_009_,,5/,22/,dead baby,You died as a baby….. Somehow…..,(Regret...) ,0,0,0,,,,,,Accept fate,0,0,0,,,,,,END,
-DEA_010_,,5/,21/,ghost friend,After you died you become friends with ghosts,Spook other people,0,0,0,,,,,,Dance with them,0,0,0,,,,,,END,
-DEA_011_,,5/,3/19/,pett adventure,Your pet Hamster and Dog decided to go on an adventure together,Wish them good luck,0,0,0,,,,,,Join them,0,0,0,,,,,,END,
-DEA_012_,,5/,0/,death,You entered HELL,Be a prisoner ,0,0,0,,,,,,Be the Hell Lord,0,0,0,,,,,,END,
-GEN_000_,,,,food,A delicious burger has appeared on the table!,Eat! ,-10,0,10,,,,,,No junk food  don't eat,20,0,0,,,,,,END,
-GEN_001_,,,3/,rippet,Pet doggo has passed away...,Bury it in the garden,0,0,-20,,,,,3/,Give it a Viking send off,0,-10,-10,,,,2/,3/,END,
-GEN_002_,,,19/,rippet,Pet Hamster passed away...,Yeet it in to the trash,0,0,0,3/,,,,19/,Burry it in the garden,0,0,-5,,,,,19/,END,
-GEN_003_,,,,bamboozle,Saving Game...,Okay I’ll wait,10,0,0,,,,,,No it’s not  the game’s a troll,0,0,10,,,,,,END,
-GEN_004_,,,,silica,You are eating snacks - you find a small mysterious bag inside saying “DO NOT EAT”,Eat anyway,-80,0,100,,,,,,Ignore and toss,0,0,0,,,,,,END,
-GEN_005_,,,11/,fail drop out,You are expelled by the University.,Argue with the school ,-20,-20,-5,,,,,,Accept the  fate,0,0,-5,,,,,11/,END,
-GEN_006_,,,12/,fail drop out,You are expelled by the Vocational Training college.,Argue with the school,-10,-20,0,,,,,,Accept the fate,0,0,-15,,,,,12/,END,
-GEN_007_,,,,devil,As your scribbles take shape  a pentagram glows amongst your doodles and a demonic voice answers your call - I guess a demon is going to suggest your test’s answers?,...,0,0,0,,,,,,...,0,0,0,,,,,,END,
-GEN_008_,,,,exam,Eeek! Cramming for the final exam!,Study Hard! Make your parents proud,-10,30,-10,,,,11/,,Do something fun instead,0,-10,10,,,,,,END,
-OLD_000_,,4/,,AD,You have been diagnosed with Alzheimer’s disease.,Guess I’ll die ¯\_(ツ)_/¯,-75,0,-50,,,,8/,,Buy and take medicine,-30,-10,5,,,,,,END,
-OLD_001_,,4/,,bird,There are birds in your garden.,Feed them food,0,0,10,,,,,,Catch them... MUHAHAA!,-100,0,10,,,,,,END,
-OLD_002_,,4/,,truck,Crossing a busy road  an angry truck rushed at you with high speed… ,use your mighty walking stick to stop the truck and scold the driver,-50,0,-25,,,,,,HURRY up to evade!,-100,0,0,,,,,,END,
-OLD_003_,,4/,0/,death,You fall asleep and dream... then you see an evil spirit spinning its body and saying “DIE  DIE  DIE!”,Submit to the spirit peacefully,-100,0,10,,,,0/,,Try to Resist and wake yourself up,-100,0,-50,,,,,,END,
-OLD_004_,,4/,13/,fail drop out,Suddenly  you have fallen on the ground.,...Still can't GET UP...,-100,-5,0,,,,,,Phone nephew for help,-40,-5,5,,,,,,END,
-OLD_005_,,4/,,sail off happy,You have lots of free time  what do you do? ,Build a boat and sail off to happiness,10,-10,20,,,,,,Complain about family,-10,10,-10,,,,,,END,
-OLD_006_,,4/,,TV,I need an enjoyable hobby at home to pass the time away...,Complaining on news website comments,0,0,-15,,,,,,Watching TV,-10,0,15,,,,,,END,
-OLD_007_,,4/,,martial art,A Chinese martial art class is out  maybe I can join and make new friends?,Join! ,15,-5,30,,,,,,Nah  I just want to sleep,-5,0,-5,,,,,,END,
-OLD_008_,,4/,13/,will,Time to write a will,Give to children,-30,30,30,13/,,,,,Donate to charity,-10,-5,5,,,,,,END,
-TEE_000_,,2/,,bird poop,A bird poops on you,Curse at it,0,0,0,,,,,,Maybe it's a sign of luck,0,0,0,,,,,,END,
-TEE_001_,Pineapple on pizza,2/,,pineapple_pizza,Pineapple on pizza?,Yes!,0,0,0,,,,,,This should be a crime,0,0,0,,,,,,END,
-TEE_002_,,2/,,soulmate,Dating...,Find Soulmate,0,0,20,,,,20/,,Find Others,0,0,5,,,,,,END,
-TEE_003_,,2/,,truck,Driving test soon  practice?,Practice,0,-10,0,,,,18/,,Don't practice,0,0,0,,,,,,END,
-TEE_004_,,2/,10/,education 2,Education 2  Electric Boogaloo,University,0,-10,-10,,GEN_008_/,,,,Vocational Training,0,-10,-5,,,,12/,,END,
-TEE_005_,,2/,,education 2,Do I continue high school?,Highschool,0,-10,-10,,,,10/,,Dropout,0,0,0,,,,16/,,END,
-TEE_006_,,2/,,console xbox,The newest games console has released!,SHUT UP AND TAKE MY MONEY,0,-30,30,,,,,,don’t buy and save up,0,10,0,,,,,,END,
-TEE_007_,,2/,,hamster,Get a pet hamster?,Yes! So cute!,0,-10,20,,,,19/,,No they poop too much,0,0,0,,,,,,END,
-TEE_008_,,2/,,pc bang,Going out  where to go?,PC Bang,-5,-5,20,,,,,,Pub,-10,-5,20,,,,,,END,
-TEE_009_,,2/,,manor spooky,Do you go to the spooky abandoned Manor?,Let’s explore these haunted halls,0,0,0,,,,21/,,I don’t want to risk it,0,0,0,,,,,,END,
-TEE_010_,,2/,,truck,You get hit by a car,Cry for help,15,0,-20,,,,,,Find strength in your spirit,-35,0,20,,,,7/,,END,
-TEE_011_,,2/,,invest money,Sigh… Need money,Part-time Job,0,25,-10,,,,15/,,ShopLifting,0,10,0,,,,4/,,END,
-TEE_012_,,2/,,bluelight,A weird blue light appears...,Must be a display...(Ignore and sleep),10,0,0,,,,,,investigate this fascinating phenomenon,0,0,10,,,,9/,,END,
-TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event!,Eat well  stay fit,20,0,0,,,,17/,,Eat delicious junk food,0,0,20,,,,,,END,
-TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,,,,Force yourself to train,-25,0,0,,TEE_015_/,,,,END,
-TEE_015_,,2/,,health gain,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament! Keep going!,-100,0,-25,,,,8/,,END,
-TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,TEE_014_/,,,,Get Steroids,-15,-5,5,,,,,,END,
+Card ID,Card Details,Ages Neede,Status Needed,Card Sprite Name,Card Description,Heads Description,Heads Health,Heads Bux,Heads Mood,Heads Required Status,Heads Sequence Cards Add,Heads Sequence Cards Remove,Heads Status Add,Heads Status Remove,Tails Description,Tails Health,Tails Bux,Tails Mood,Tails Required Status,Tails Sequence Cards Add,Tails Sequence Cards Remove,Tails Status Add,Tails Status Remove,END,Rules: Age and stats must be in integer.  Set a card detail if description contains special characters,
+ADU_000_,,3/,,nigerian prince,A Nigerian Prince needs your help!,Help this fine man,0,-40,-20,,,,2/,,Move to SPAM,0,0,0,,,,,,END
+ADU_001_,,3/,,dogo,Adopt a dog?,Adopt,0,-5,30,,,,3/,,Nah..,0,0,0,,,,,,END
+ADU_002_,,3/,12/,plumber,Plumber,Yes!,0,20,-15,,,,15/,16/,No... Next Job,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,16/,15/,END
+ADU_003_,,3/,,ice_cream_truck,Ice cream truck comes after you,Shout at it,-5,0,10,,,,,,Run!,5,0,-3,,,,,,END
+ADU_004_,,3/,11/,sysadmin,Software Developer,Yes!,-20,100,-50,,,,15/,16/,No... Next Job,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,16/,15/,END
+ADU_005_,,3/,1/,divorce,In your relationship  conflicts do happen  but divorce is not a joke. ,I am done  File the papers. ,0,-20,-40,,,,,1/,Love is to give  try to accept that you need to be sacrifical. Things may get better hopefully... ,0,0,30,,,,,,END
+ADU_006_,,3/,,zookeeper,Zookeeper,Yes,5,5,5,,,ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/,15/,16/,No,0,0,0,,,,,,END
+ADU_007_,,3/,,telemarketer,Telemarketer,Yes!,0,20,-15,,,,15/,16/,No... Next Job,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,16/,15/,END
+ADU_008_,,3/,7/,TV,Televangelist,Yes!,0,50,-10,,,,15/,16/,No... Next Job,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,16/,15/,END
+ADU_009_,,3/,,harambe, Harambe has gone rogue! What do you do?,Tranquillise Harambe,0,0,10,,,,,,SHOOT THE GORILLA,-5,0,-50,,,,,,END
+ADU_010_,,3/,18/,truck,Truck Driver,Yes!,0,20,-20,,,,15/,16/,No... Next Job,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,16/,15/,END
+ADU_011_,,3/,,catfish,Catfish on social media (image of catfish),,0,0,0,,,,,,,0,0,0,,,,,,END
+ADU_012_,Stonk_Good,3/,,doge,Meme stocks are available to buy...,Buy!,0,20,20,,,,,,Ignore,0,0,-5,,,,,,END
+ADU_013_,,3/,9/,ufo,UFOlogist,Yes!,20,20,20,,,,15/,16/,No... Next Job,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,16/,15/,END
+ADU_014_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,,15/,16/,Nah,0,0,0,,ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/,,,,END
+ADU_015_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,,15/,16/,No,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,,,END
+ADU_016_, streaming speciality,3/,23/,stream cattegory,What is my streaming speciality?,Just Chatting/IRL,5,5,30,,,,,,Competitive Gaming!,-5,10,-5,,,,,,END
+ADU_017_,,3/,11/,,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not?,-30,-30,-30,,,,24/,11/10/,No! It will be too much!,0,0,0,,,,,,END
+ADU_018_,,3/,,,You are accepted into university... but your research needs money.,Beg for a grant,0,0,0,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
+ADU_019_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,,15/,16/,Nah,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,,,END
+ADU_020_,,3/,,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,,15/,16/,No,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,,,END
+ADU_021_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/,,,,I refuse,-10,-50,20,,,,16/,,END
+ADU_022_,,3/,,evil_scientist,Evil scientist,Yes,0,0,0,,,,25/15/,16/,No,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,,,END
+ADU_023_,,3/,,middle east,A soul seeking vacation to the Middle East?,Time for a trip!,0,-40,40,,,,7/,,Nah,0,0,0,,,,,,END
+ADU_024_,,3/,,minion_help,Being alone makes everything difficult.  You really need help in your... sinister scientific advances.,Hire some minions.,5,5,5,,,,,,Work for an evil corp.,-10,30,-10,,,,,,END
+ADU_025_,,3/,,rocket,You are asked to build a rocket for your master.,Yes  my liege,-20,50,-25,,,,,,FORGET THIS I'M OUT,-5,-10,-10,,,,,,END
+ADU_026_,How do you respond on TV,3/,,,Someone calls your station and asks... How do you respond on TV?,,0,0,0,,,,,,,0,0,0,,,,,,END
+ADU_027_,Play the lottery,3/,,lotttery,Play the lottery?,Let's see my luck,0,75,-10,,,,,,Forget it,0,0,0,,,,,,END
+ADU_028_,,3/,,,Tech support.  Does not seem legit though,Accept their help,0,0,0,,,,,,IT'S A TRAP,0,0,0,,,,,,END
+ADU_029_,Olympics,3/,,olympics,You are being invited to take part in the Olympics (starts a sequence),I shall accept the oppertunity of a lifetime,25,15,30,,,,,,Nah.  Too much effort.,-12,0,-30,,,,,,END
+ADU_030_,Rob a bank,3/,,rob bank,Rob a bank?,Hell yeah!,-10,80,-25,,,,,,No.  Too risky.,0,0,-10,,,,,,END
+ADU_031_,,3/,,rob bank,You were caught robbing a bank,I'm innocent!,0,0,0,,,,,,Yes it was me,0,0,0,,,,,,END
+ADU_032_,Milf_False,3/,,milf,69 HOT MILFs in your area are bored!,Investigate,-10,-25,-10,,,,,,Ignore,0,0,0,,,,,,END
+ADU_033_,,3/,,bunny,A bunny runs on the road.,Slam the breaks,-5,0,10,,,,,,Run over the bunny,-10,0,-30,,,,,,END
+ADU_034_,,3/,,doge,Invest in Index Funds or Dogecoin?,Index Funds,0,30,15,,,,,,DOGECOIN to the moon!,0,15,30,,,,,,END
+ADU_035_,pet cat,3/,,cat_pet_status,Get a pet cat?,Yes.  aww,-5,-25,25,,,,,,No they shed fur everywhere,0,-25,-3,,,,,,END
+ADU_036_,Milf_True,3/,,milf,69 HOT MILFs are bored in your area!,Investigate,0,0,40,,,,,7/,Ignore,0,0,0,,,,,,END
+ADU_037_,,3/,20/,have a child stork,Perhap havng kids makes a better family... though the cost could be high... but the profit... ,Use your own ways to have one ,-10,-50,30,,,,13/,,No kids,0,0,0,,,,,,END
+ADU_038_,,3/,20/,marriage,People say marriage is a big investment. What about me? ,Propose marriage sincerely,0,-30,40,,,,1/,,I can have a partner without needing to marry  you know...,0,0,0,,,,,,END
+ADU_039_,,3/,,dice,Maybe I can get more money by gambling?,Gamble!,0,-15,20,,,,5/,,Don't Gamble..,0,0,0,,,,,,END
+ADU_040_,Stonk_Bad,3/,,doge,Meme stonks are available to buy...,BUY!,0,-20,-20,,,,,,Ignore,0,0,5,,,,,,END
+ADU_041_,,3/,,telemarketer,Someone on behalf of tech support says your computer have some issues and need a fix. ,Oh yeah the computer is slow  just let them help,-5,-50,-40,,,,,,Thats not legit  what nonsense! Ignore them.,0,0,0,,,,,,END
+ADU_042_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,,15/,16/,No... Next Job,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,16/,15/,END
+ADU_043_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,,15/,16/,No... Next Job,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,16/,15/,END
+ADU_044_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,,15/,16/,No... Next Job,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,16/,15/,END
+ADU_045_,,3/,,nade,Military,Yes!,-10,20,-10,,,,15/,16/,No... Next Job,0,0,0,,ADU_015_/ADU_022_/ADU_020_/ADU_042_/ADU_043_/ADU_044_/ADU_045_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_019_/,,16/,15/,END
+BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END
+BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END
+BAB_002_,,0/,,babyannoiyin,...,Googoo,5,0,5,,,,,,Gaagaa,-5,0,5,,,,,,END
+BAB_003_,,0/,,baby scream noise,Make a Noise,AWWWW LOOOUUD,0,0,10,,,,,,Mild,0,0,-15,,,,,,END
+BAB_004_,,0/,,babyannoiyin,...,Mommy,0,0,20,,,,,,Daddy,0,20,-10,,,,,,END
+BAB_005_,,0/,,socket,Play with a mysterious fissure in the wall...,Insert a coin...,-100,0,-50,,,,22/,,Look for something else,0,0,0,,,,,,END
+BAB_006_,,0/,,poop,RELEASE THE FLOOD GATES!,Sweet relief!,0,0,10,,,,,,HOLD IT!!!,-10,0,-10,,,,,,END
+BAB_007_,,0/,,sus noise,You hear squeaking noises from the ceiling,Investigate,0,0,10,,,,,,Ignore,0,0,0,,,,,,END
+BAB_008_,,0/,,vase,Push the vase off the table?,YES! Muhahaa I am the destroyer,0,0,10,,,,,,Nah mommy will be sad,0,0,0,,,,,,END
+CHI_000_,,1/,,Choices,What do you want for your birthday?,Action Figure,0,0,20,,,,,,Firetruck,20,0,0,,,,,,END
+CHI_001_,,1/,,note,You find a strange note in class...,Prepare cheat notes for the test,0,0,10,,CHI_004_/,,,,Make a neat airplane,0,5,-10,,,,,,END
+CHI_002_,,1/,,telescope,You got a telescope for Christmas,They are so sparkly and pretty!,0,0,20,,,,,,Is that a glowing light?,0,0,10,,,,9/,,END
+CHI_003_,,1/,,note,How do you cheat?,Use notes during test ,0,5,5,,,GEN_007_/,,,scribble on the notes,-30,50,-10,,,,0/,,END
+CHI_004_,,1/,,studytest,Oh no! A test!,Work fairly,0,10,-10,,,CHI_003_/,,,Cheat hehe,0,0,0,,,,,,END
+CHI_005_,dragon for christmas,1/,,pet_dragon,Do you want a dragon for christmas?,yes please mommy,5,0,25,,,,,,NOOOOOO,0,0,-15,,,,,,END
+CHI_006_,,1/,,studytest,Sigh... Homework,Do,0,5,-10,,,,,,Feed to doggo,0,-5,5,,,,,,END
+CHI_007_,,1/,,gaming,Play games for how long?,Play for an hour,0,0,5,,,,,,JUST ONE MORE GAME!,0,-10,10,,,,,,END
+CHI_008_,unicorn for christmas,1/,,unicorn_pet,Do you want a unicorn for christmas?,PLEASE YES PLEASE,10,0,10,,,,,,they don't exist,-2,0,-7,,,,,,END
+CHI_009_,,1/,,team sport,You play some team sports,Impress your crush,0,0,10,,,,,,Tackle the school bully,-20,0,-5,,,,,,END
+CHI_010_,,1/,,ouja_board,You found a Ouija board in your parents room,Read the instructions and try to use it,-5,0,5,,,,,,I am too scared of the occult :(,-5,0,-5,,,,,,END
+CHI_011_,,1/,,sloth vs ant,Pretend to be...,A sloth (Lazy),0,-10,10,,,,,,An ant (Hard working),0,20,0,,,,,,END
+CHI_012_,,1/,,schoolskip,Skip school today?,Yes school SUX,0,-5,10,,,,,,No,0,0,-10,,,,,,END
+DEA_000_,,5/,9/,alien,After your death  you become an alien,Be an ordinary resident in an other galaxy,0,0,0,,,,,,Be a space traveller in your spaceship,0,0,0,,,,,,END
+DEA_001_,,5/,17/,champ,You earned eternal fame as an honourable athlete in heaven.,Yes I deserved it ,0,0,0,,,,,,No I walk away from those honors,0,0,0,,,,,,END
+DEA_002_,,5/,2/,bluelight,You entered Paradise. ,Be an enlightened soul ,0,0,0,,,,,,Be an Angel,0,0,0,,,,,,END
+DEA_003_,,5/,7/5/4/,purgatory,You entered Purgatory ,Let your soul stuck between world matters ,0,0,0,,,,,,Let your soul attach between people,0,0,0,,,,,,END
+DEA_004_,,5/,15/1/,reincarnation,You can reincarnate with a new destiny... ,Reincarnate ,0,0,0,,,,,,Rather Rest In Peace,0,0,0,,,,,,END
+DEA_005_,,5/,8/,sick,Your body fails  you feel so ill… and die in sick pain.,So sick in cantonese sounds like Su Shi the poet,0,0,0,,,,,,Ok next time I will take more care to my body,0,0,0,,,,,,END
+DEA_006_,,5/,0/4/,void,You Entered the Void. ,Meditate permanently,0,0,0,,,,,,Reflect on your countless sins,0,0,0,,,,,,END
+DEA_007_,,5/,,enlighteneed,Congratulations  you have escaped the simulation. Welcome to the real world.,Yay!,0,0,0,,,,,,Huh?,0,0,0,,,,,,END
+DEA_008_,,5/,7/,ending,Hey  you. You're finally awake. You were trying to cross the border  right? Walked right into that Imperial ambush  same as us  and that thief over there.,Staying safe I hope?,0,0,0,,,,,,What? Dragons?,0,0,0,,,,,,END
+DEA_009_,,5/,22/,dead baby,You died as a baby….. Somehow…..,(Regret...) ,0,0,0,,,,,,Accept fate,0,0,0,,,,,,END
+DEA_010_,,5/,21/,ghost friend,After you died you become friends with ghosts,Spook other people,0,0,0,,,,,,Dance with them,0,0,0,,,,,,END
+DEA_011_,,5/,3/19/,pett adventure,Your pet Hamster and Dog decided to go on an adventure together,Wish them good luck,0,0,0,,,,,,Join them,0,0,0,,,,,,END
+DEA_012_,,5/,0/,death,You entered HELL,Be a prisoner ,0,0,0,,,,,,Be the Hell Lord,0,0,0,,,,,,END
+GEN_000_,,,,food,A delicious burger has appeared on the table!,Eat! ,-10,0,10,,,,,,No junk food  don't eat,20,0,0,,,,,,END
+GEN_001_,,,3/,rippet,Pet doggo has passed away...,Bury it in the garden,0,0,-20,,,,,3/,Give it a Viking send off,0,-10,-10,,,,2/,3/,END
+GEN_002_,,,19/,rippet,Pet Hamster passed away...,Yeet it in to the trash,0,0,0,3/,,,,19/,Burry it in the garden,0,0,-5,,,,,19/,END
+GEN_003_,,,,bamboozle,Saving Game...,Okay I’ll wait,10,0,0,,,,,,No it’s not  the game’s a troll,0,0,10,,,,,,END
+GEN_004_,,,,silica,You are eating snacks - you find a small mysterious bag inside saying “DO NOT EAT”,Eat anyway,-80,0,100,,,,,,Ignore and toss,0,0,0,,,,,,END
+GEN_005_,,,11/,fail drop out,You are expelled by the University.,Argue with the school ,-20,-20,-5,,,,,,Accept the  fate,0,0,-5,,,,,11/,END
+GEN_006_,,,12/,fail drop out,You are expelled by the Vocational Training college.,Argue with the school,-10,-20,0,,,,,,Accept the fate,0,0,-15,,,,,12/,END
+GEN_007_,,,,devil,As your scribbles take shape  a pentagram glows amongst your doodles and a demonic voice answers your call - I guess a demon is going to suggest your test’s answers?,...,0,0,0,,,,,,...,0,0,0,,,,,,END
+GEN_008_,,,,exam,Eeek! Cramming for the final exam!,Study Hard! Make your parents proud,-10,30,-10,,,,11/,,Do something fun instead,0,-10,10,,,,,,END
+OLD_000_,,4/,,AD,You have been diagnosed with Alzheimer’s disease.,Guess I’ll die ¯\_(ツ)_/¯,-75,0,-50,,,,8/,,Buy and take medicine,-30,-10,5,,,,,,END
+OLD_001_,,4/,,bird,There are birds in your garden.,Feed them food,0,0,10,,,,,,Catch them... MUHAHAA!,-100,0,10,,,,,,END
+OLD_002_,,4/,,truck,Crossing a busy road  an angry truck rushed at you with high speed… ,use your mighty walking stick to stop the truck and scold the driver,-50,0,-25,,,,,,HURRY up to evade!,-100,0,0,,,,,,END
+OLD_003_,,4/,0/,death,You fall asleep and dream... then you see an evil spirit spinning its body and saying “DIE  DIE  DIE!”,Submit to the spirit peacefully,-100,0,10,,,,0/,,Try to Resist and wake yourself up,-100,0,-50,,,,,,END
+OLD_004_,,4/,13/,fail drop out,Suddenly  you have fallen on the ground.,...Still can't GET UP...,-100,-5,0,,,,,,Phone nephew for help,-40,-5,5,,,,,,END
+OLD_005_,,4/,,sail off happy,You have lots of free time  what do you do? ,Build a boat and sail off to happiness,10,-10,20,,,,,,Complain about family,-10,10,-10,,,,,,END
+OLD_006_,,4/,,TV,I need an enjoyable hobby at home to pass the time away...,Complaining on news website comments,0,0,-15,,,,,,Watching TV,-10,0,15,,,,,,END
+OLD_007_,,4/,,martial art,A Chinese martial art class is out  maybe I can join and make new friends?,Join! ,15,-5,30,,,,,,Nah  I just want to sleep,-5,0,-5,,,,,,END
+OLD_008_,,4/,13/,will,Time to write a will,Give to children,-30,30,30,13/,,,,,Donate to charity,-10,-5,5,,,,,,END
+TEE_000_,,2/,,bird poop,A bird poops on you,Curse at it,0,0,0,,,,,,Maybe it's a sign of luck,0,0,0,,,,,,END
+TEE_001_,Pineapple on pizza,2/,,pineapple_pizza,Pineapple on pizza?,Yes!,0,0,0,,,,,,This should be a crime,0,0,0,,,,,,END
+TEE_002_,,2/,,soulmate,Dating...,Find Soulmate,0,0,20,,,,20/,,Find Others,0,0,5,,,,,,END
+TEE_003_,,2/,,truck,Driving test soon  practice?,Practice,0,-10,0,,,,18/,,Don't practice,0,0,0,,,,,,END
+TEE_004_,,2/,10/,education 2,Education 2  Electric Boogaloo,University,0,-10,-10,,GEN_008_/,,,,Vocational Training,0,-10,-5,,,,12/,,END
+TEE_005_,,2/,,education 2,Do I continue high school?,Highschool,0,-10,-10,,,,10/,,Dropout,0,0,0,,,,16/,,END
+TEE_006_,,2/,,console xbox,The newest games console has released!,SHUT UP AND TAKE MY MONEY,0,-30,30,,,,,,don’t buy and save up,0,10,0,,,,,,END
+TEE_007_,,2/,,hamster,Get a pet hamster?,Yes! So cute!,0,-10,20,,,,19/,,No they poop too much,0,0,0,,,,,,END
+TEE_008_,,2/,,pc bang,Going out  where to go?,PC Bang,-5,-5,20,,,,,,Pub,-10,-5,20,,,,,,END
+TEE_009_,,2/,,manor spooky,Do you go to the spooky abandoned Manor?,Let’s explore these haunted halls,0,0,0,,,,21/,,I don’t want to risk it,0,0,0,,,,,,END
+TEE_010_,,2/,,truck,You get hit by a car,Cry for help,15,0,-20,,,,,,Find strength in your spirit,-35,0,20,,,,7/,,END
+TEE_011_,,2/,,invest money,Sigh… Need money,Part-time Job,0,25,-10,,,,15/,,ShopLifting,0,10,0,,,,4/,,END
+TEE_012_,,2/,,bluelight,A weird blue light appears...,Must be a display...(Ignore and sleep),10,0,0,,,,,,investigate this fascinating phenomenon,0,0,10,,,,9/,,END
+TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event!,Eat well  stay fit,20,0,0,,,,17/,,Eat delicious junk food,0,0,20,,,,,,END
+TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,TEE_015_/,,,Force yourself to train,-25,0,0,,,,,,END
+TEE_015_,,2/,,health gain,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament! Keep going!,-100,0,-25,,,,8/,,END
+TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,TEE_014_/,,,,Get Steroids,-15,-5,5,,,,,,END
