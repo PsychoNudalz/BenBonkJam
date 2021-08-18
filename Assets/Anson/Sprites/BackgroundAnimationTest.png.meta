@@ -1,0 +1,1332 @@
+fileFormatVersion: 2
+guid: fa3652f79b871154183fbb11e1ec4c0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4087925470241339327
+    second: BackgroundAnimationTest_0
+  - first:
+      213: -6080827975414190326
+    second: BackgroundAnimationTest_1
+  - first:
+      213: 4133135762818679554
+    second: BackgroundAnimationTest_2
+  - first:
+      213: -3816656587056576478
+    second: BackgroundAnimationTest_3
+  - first:
+      213: 4261671977761672465
+    second: BackgroundAnimationTest_4
+  - first:
+      213: -7444844855968455845
+    second: BackgroundAnimationTest_5
+  - first:
+      213: -777464707955443924
+    second: BackgroundAnimationTest_6
+  - first:
+      213: 3103100392252963536
+    second: BackgroundAnimationTest_7
+  - first:
+      213: -1185926942827153468
+    second: BackgroundAnimationTest_8
+  - first:
+      213: 3038585663306639843
+    second: BackgroundAnimationTest_9
+  - first:
+      213: -4238532120298086433
+    second: BackgroundAnimationTest_10
+  - first:
+      213: -4674219425690039757
+    second: BackgroundAnimationTest_11
+  - first:
+      213: 6606485580613741761
+    second: BackgroundAnimationTest_12
+  - first:
+      213: -4184948421158747769
+    second: BackgroundAnimationTest_13
+  - first:
+      213: 7423208200222262032
+    second: BackgroundAnimationTest_14
+  - first:
+      213: -7165886259275088280
+    second: BackgroundAnimationTest_15
+  - first:
+      213: 522975342918368087
+    second: BackgroundAnimationTest_16
+  - first:
+      213: -7275051766960788091
+    second: BackgroundAnimationTest_17
+  - first:
+      213: -8179136236813534433
+    second: BackgroundAnimationTest_18
+  - first:
+      213: -2253231938506052769
+    second: BackgroundAnimationTest_19
+  - first:
+      213: -7894854509415646083
+    second: BackgroundAnimationTest_20
+  - first:
+      213: -2042719449767493122
+    second: BackgroundAnimationTest_21
+  - first:
+      213: -2444957793046737985
+    second: BackgroundAnimationTest_22
+  - first:
+      213: -3063572561846507788
+    second: BackgroundAnimationTest_23
+  - first:
+      213: 6508457647056136492
+    second: BackgroundAnimationTest_24
+  - first:
+      213: -3569385610678373096
+    second: BackgroundAnimationTest_25
+  - first:
+      213: -5704050262115694236
+    second: BackgroundAnimationTest_26
+  - first:
+      213: 3779615816113312630
+    second: BackgroundAnimationTest_27
+  - first:
+      213: -4253116605739596134
+    second: BackgroundAnimationTest_28
+  - first:
+      213: 1935003147957777967
+    second: BackgroundAnimationTest_29
+  - first:
+      213: 2612971724074373635
+    second: BackgroundAnimationTest_30
+  - first:
+      213: 6737035104430639508
+    second: BackgroundAnimationTest_31
+  - first:
+      213: -1079754232075690733
+    second: BackgroundAnimationTest_32
+  - first:
+      213: 7694485419945519417
+    second: BackgroundAnimationTest_33
+  - first:
+      213: 3969215901696307155
+    second: BackgroundAnimationTest_34
+  - first:
+      213: 8598966768036077777
+    second: BackgroundAnimationTest_35
+  - first:
+      213: 1311193771577381206
+    second: BackgroundAnimationTest_36
+  - first:
+      213: -9032535155131388302
+    second: BackgroundAnimationTest_37
+  - first:
+      213: -5573885342576773659
+    second: BackgroundAnimationTest_38
+  - first:
+      213: 501819920865355378
+    second: BackgroundAnimationTest_39
+  - first:
+      213: -3405413435067561720
+    second: BackgroundAnimationTest_40
+  - first:
+      213: 8911994993558465320
+    second: BackgroundAnimationTest_41
+  - first:
+      213: 6982701328532669328
+    second: BackgroundAnimationTest_42
+  - first:
+      213: 5115552829673794427
+    second: BackgroundAnimationTest_43
+  - first:
+      213: -1178033685130387132
+    second: BackgroundAnimationTest_44
+  - first:
+      213: -8800936837179365490
+    second: BackgroundAnimationTest_45
+  - first:
+      213: 325352890322826011
+    second: BackgroundAnimationTest_46
+  - first:
+      213: 8939853664954390000
+    second: BackgroundAnimationTest_47
+  - first:
+      213: 921987897638723994
+    second: BackgroundAnimationTest_48
+  - first:
+      213: -1713008042865636080
+    second: BackgroundAnimationTest_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 720
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3207.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7b1027e8a3bb830800000000000000
+      internalID: 4087925470241339327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_1
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 3207.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fed298c2f8c9ba0800000000000000
+      internalID: -6080827975414190326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_2
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 3207.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2034547f319db5930800000000000000
+      internalID: 4133135762818679554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_3
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 3207.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22886da3e03880bc0800000000000000
+      internalID: -3816656587056576478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_4
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 3207.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d88bf9510842b30800000000000000
+      internalID: 4261671977761672465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2851.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b532b184c099ea890800000000000000
+      internalID: -7444844855968455845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_6
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 2851.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27b9e0a7f3e535f0800000000000000
+      internalID: -777464707955443924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_7
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 2851.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dafc96ad5d601b20800000000000000
+      internalID: 3103100392252963536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_8
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 2851.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7f8339abdba8fe0800000000000000
+      internalID: -1185926942827153468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_9
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 2851.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9acf8cf893b2a20800000000000000
+      internalID: 3038585663306639843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2495.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf9c884e75bd25c0800000000000000
+      internalID: -4238532120298086433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_11
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 2495.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ac3898236d12fb0800000000000000
+      internalID: -4674219425690039757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_12
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 2495.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cce83602a3feab50800000000000000
+      internalID: 6606485580613741761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_13
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 2495.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781408175931ce5c0800000000000000
+      internalID: -4184948421158747769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_14
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 2495.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013c30c3788840760800000000000000
+      internalID: 7423208200222262032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2139.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e3e07e968ad8c90800000000000000
+      internalID: -7165886259275088280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_16
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 2139.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bffe4bd4bf14700800000000000000
+      internalID: 522975342918368087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_17
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 2139.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d69bb76f2d90b90800000000000000
+      internalID: -7275051766960788091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_18
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 2139.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b34337deedd7e80800000000000000
+      internalID: -8179136236813534433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_19
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 2139.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b28c47d79eab0e0800000000000000
+      internalID: -2253231938506052769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1783.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7cb3e407a7df6290800000000000000
+      internalID: -7894854509415646083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_21
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1783.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1c3d4bb7dc6a3e0800000000000000
+      internalID: -2042719449767493122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_22
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1783.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb40a657d3c11ed0800000000000000
+      internalID: -2444957793046737985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_23
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 1783.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6618b8cf00c75d0800000000000000
+      internalID: -3063572561846507788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_24
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 1783.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29a4782fbfa25a50800000000000000
+      internalID: 6508457647056136492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1427.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815ff11d2bef67ec0800000000000000
+      internalID: -3569385610678373096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_26
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1427.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469ce99028427d0b0800000000000000
+      internalID: -5704050262115694236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_27
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1427.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673d1ea3f84e37430800000000000000
+      internalID: 3779615816113312630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_28
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 1427.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9683962bf4e9f4c0800000000000000
+      internalID: -4253116605739596134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_29
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 1427.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2639496c138ada10800000000000000
+      internalID: 1935003147957777967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1071.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302d79d50f3234420800000000000000
+      internalID: 2612971724074373635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_31
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1071.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499cceeabb1ce7d50800000000000000
+      internalID: 6737035104430639508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_32
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1071.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d57682f31f301f0800000000000000
+      internalID: -1079754232075690733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_33
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 1071.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9396649e8bd48ca60800000000000000
+      internalID: 7694485419945519417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_34
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 1071.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfa07135dc751730800000000000000
+      internalID: 3969215901696307155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 715.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0ed2c57baa55770800000000000000
+      internalID: 8598966768036077777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_36
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 715.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651139ac9cb423210800000000000000
+      internalID: 1311193771577381206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_37
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 715.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e6a21022df5a280800000000000000
+      internalID: -9032535155131388302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_38
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 715.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e574f800d495a2b0800000000000000
+      internalID: -5573885342576773659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_39
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 715.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276e46c2f82d6f600800000000000000
+      internalID: 501819920865355378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 359.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8098471068a8db0d0800000000000000
+      internalID: -3405413435067561720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_41
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 359.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bac179a34cdab70800000000000000
+      internalID: 8911994993558465320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_42
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 359.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09386d3ccd987e060800000000000000
+      internalID: 6982701328532669328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_43
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 359.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b637af1381ef640800000000000000
+      internalID: 5115552829673794427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_44
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 359.6
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441eb58da98c6afe0800000000000000
+      internalID: -1178033685130387132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.600006
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e872641739accd580800000000000000
+      internalID: -8800936837179365490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_46
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 3.600006
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13b65edab2e38400800000000000000
+      internalID: 325352890322826011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_47
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 3.600006
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5949bfa8db01c70800000000000000
+      internalID: 8939853664954390000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_48
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 3.600006
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9127f5ab1f8bcc00800000000000000
+      internalID: 921987897638723994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundAnimationTest_49
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 3.600006
+        width: 633.6
+        height: 356.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d4b9bc24c2a38e0800000000000000
+      internalID: -1713008042865636080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

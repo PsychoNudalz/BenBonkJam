@@ -1100,6 +1100,7 @@ MonoBehaviour:
   playCardSound: {fileID: 8408579004432548936}
   headsSound: {fileID: 8279266555296958886}
   tailsSound: {fileID: 7777152403300026144}
+  audioMixerGroup: {fileID: 8079827809003392416, guid: a018d84c05efe3149b78d0052c55d6ea, type: 2}
 --- !u!114 &-2587406193006211280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1113,6 +1114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardID: 
+  cardDetails: 
   cardDescriptionText: 
   headsDescriptionText: 
   headsOption:

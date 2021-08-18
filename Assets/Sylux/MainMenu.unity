@@ -1183,7 +1183,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: HellButton
         m_Mode: 1
@@ -2122,7 +2122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage1
         m_Mode: 1
@@ -2254,7 +2254,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: WakeUpSimButton
         m_Mode: 1
@@ -2519,7 +2519,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: SickButton
         m_Mode: 1
@@ -2651,7 +2651,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: BorderAwakeButton
         m_Mode: 1
@@ -4187,7 +4187,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage2
         m_Mode: 1
@@ -4693,7 +4693,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage2
         m_Mode: 1
@@ -5568,7 +5568,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 459327298}
-  - component: {fileID: 459327297}
   m_Layer: 0
   m_Name: StatsEndingDisplay
   m_TagString: Untagged
@@ -5576,77 +5575,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &459327297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459327296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73f0cae93fe404442a3055b700c04cef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timesDiedText: {fileID: 1366915480}
-  gameDataManager: {fileID: 1679239962}
-  achievementsPage1Canvas: {fileID: 918382056}
-  achievementsPage2Canvas: {fileID: 738015730}
-  achievementsPage3Canvas: {fileID: 550605004}
-  endingsPage1StatsCanvas: {fileID: 2079159757}
-  endingsPage2StatsCanvas: {fileID: 1665736610}
-  endingsPage3StatsCanvas: {fileID: 1265392584}
-  endingsStatsCanvas: {fileID: 581790978}
-  statisticsCanvas: {fileID: 1749625096}
-  alienCanvas: {fileID: 256377972}
-  athleteCanvas: {fileID: 1424224298}
-  borderAwakeCanvas: {fileID: 1852015911}
-  dieYoungCanvas: {fileID: 1537886215}
-  ghostFriendCanvas: {fileID: 773797559}
-  petAdventureCanvas: {fileID: 120821854}
-  hellCanvas: {fileID: 1056825140}
-  paradiseCanvas: {fileID: 270319785}
-  purgatoryCanvas: {fileID: 837152505}
-  reincarnationCanvas: {fileID: 1313347476}
-  sickCanvas: {fileID: 1052931962}
-  voidCanvas: {fileID: 629383939}
-  wakeUpSimCanvas: {fileID: 1953618172}
-  endingsButton: {fileID: 596586645}
-  achievementsButton: {fileID: 2114668340}
-  statisticsButton: {fileID: 361496971}
-  alienEnding: {fileID: 666333568}
-  athleteEnding: {fileID: 2101801550}
-  borderAwakeEnding: {fileID: 154806905}
-  dieYoungEnding: {fileID: 1324495945}
-  ghostFriendEnding: {fileID: 1398306749}
-  petAdventureEnding: {fileID: 1729837863}
-  hellEnding: {fileID: 76539868}
-  paradiseEnding: {fileID: 1019910956}
-  purgatoryEnding: {fileID: 760424974}
-  reincarnationEnding: {fileID: 1136795207}
-  sickEnding: {fileID: 152016597}
-  voidEnding: {fileID: 1175117743}
-  wakeUpSimEnding: {fileID: 145134191}
-  die50TimesButton: {fileID: 652535933}
-  gradeSObtainedButton: {fileID: 790349628}
-  statusEffects10ObtainedButton: {fileID: 1047958852}
-  educationMaxedOutObtainedButton: {fileID: 1291758586}
-  oldAgeObtainedButton: {fileID: 130089065}
-  die50TimesCanvas: {fileID: 135996731}
-  alien: {fileID: 21300000, guid: dba92a5a837c8754ebba436c64965731, type: 3}
-  athlete: {fileID: 21300000, guid: 6f73e04460175aa4d92485dae9db1cf0, type: 3}
-  borderAwake: {fileID: 21300000, guid: 527d7da5ab3953040ad1bc1c98669c2d, type: 3}
-  dieYoung: {fileID: 21300000, guid: 4f0950b2450a28d47988669569154010, type: 3}
-  friendGhost: {fileID: 21300000, guid: b0d77b0ec0e36a94fb3fb7daae3b393e, type: 3}
-  hamDogAdventure: {fileID: 21300000, guid: 78eae531bb5189648b51e74291eddfa4, type: 3}
-  hell: {fileID: 21300000, guid: ff449d99131f049419044552a3719831, type: 3}
-  paradise: {fileID: 21300000, guid: 9d2c7a8ece505b9448aaa5644d19c4b5, type: 3}
-  purgatory: {fileID: 21300000, guid: 79eba9b0444d1e147b89fe0a65eeede4, type: 3}
-  reincarnation: {fileID: 21300000, guid: f7f1e207b7c604b40af81772818cd9d8, type: 3}
-  sick: {fileID: 21300000, guid: b03146edd9153c5468a3d1677b547848, type: 3}
-  voidE: {fileID: 21300000, guid: dfe4808336512524b8ae8e7462ccc7e6, type: 3}
-  wakeUpSim: {fileID: 21300000, guid: 35ae9e39de023bd479c53c1918a641e5, type: 3}
-  basic: {fileID: 21300000, guid: eb53dcce0d99f1444acbc6696226102b, type: 3}
 --- !u!4 &459327298
 Transform:
   m_ObjectHideFlags: 0
@@ -6116,7 +6044,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage1
         m_Mode: 1
@@ -8098,7 +8026,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: die50Times
         m_Mode: 1
@@ -8559,7 +8487,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: AlienButton
         m_Mode: 1
@@ -8850,7 +8778,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage2
         m_Mode: 1
@@ -9206,7 +9134,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: PurgatoryButton
         m_Mode: 1
@@ -9637,7 +9565,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage1
         m_Mode: 1
@@ -11862,7 +11790,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: ParadiseButton
         m_Mode: 1
@@ -12933,7 +12861,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage1
         m_Mode: 1
@@ -13275,7 +13203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage2
         m_Mode: 1
@@ -13482,7 +13410,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: ReincarnationButton
         m_Mode: 1
@@ -13562,7 +13490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b3f208a2da662458198e1637fc5502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timesDiedText: {fileID: 0}
   mainCanvas: {fileID: 1259058909}
   helpCanvas: {fileID: 863868686}
   creditsCanvas: {fileID: 1912530210}
@@ -13904,7 +13831,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: BackToAchievements1
         m_Mode: 1
@@ -14704,7 +14631,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: VoidEButton
         m_Mode: 1
@@ -16257,7 +16184,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: DieYoungButton
         m_Mode: 1
@@ -16507,7 +16434,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingsBackPage3
         m_Mode: 1
@@ -16773,7 +16700,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: GhostFriendButton
         m_Mode: 1
@@ -17630,7 +17557,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage2
         m_Mode: 1
@@ -18055,7 +17982,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage1
         m_Mode: 1
@@ -19031,7 +18958,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679239961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3b16ee88fbca1648a09372d2d80dd12, type: 3}
+  m_Script: {fileID: 11500000, guid: 649f579222971bb41805cdce8c025fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   achievements:
@@ -19349,7 +19276,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: PetAdventureButton
         m_Mode: 1
@@ -20219,7 +20146,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage2
         m_Mode: 1
@@ -20871,6 +20798,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864515231}
   m_CullTransparentMesh: 1
+--- !u!1 &1880080758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1880080760}
+  - component: {fileID: 1880080759}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1880080759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880080758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6576f087f2e464a4c845b53e3f6ad9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 0}
+  sFXVolume: 0
+  musicVolume: 0
+--- !u!4 &1880080760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880080758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 378.0483, y: 128.63208, z: -30.292227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900374381
 GameObject:
   m_ObjectHideFlags: 0
@@ -21138,7 +21111,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: EndingBackPage1
         m_Mode: 1
@@ -23110,7 +23083,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 459327297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatsEndingDisplay, Assembly-CSharp
         m_MethodName: AthleteButton
         m_Mode: 1

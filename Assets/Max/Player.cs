@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public enum StatsType
 {
@@ -33,18 +34,24 @@ public class Player : MonoBehaviour
     [SerializeField] float moodPassive = 0;
 
 
-    public void Older()
+    /// <summary>
+    /// Ages the player by one age
+    /// returns true if the player can not be aged
+    /// </summary>
+    /// <returns>true if the player can not be aged</returns>
+    public bool Older()
     {
         int temp = (int)age;
         temp++;
-        age = (AgeEnum)temp;
-        if ((int)age > 5)
+        if (temp > 5)
         {
             age = (AgeEnum)5;
+            return true;
         }
         else
         {
             age = (AgeEnum)temp;
+            return false;
         }
     }
 
@@ -171,6 +178,9 @@ public class Player : MonoBehaviour
 
     public void AddStatus(StatusEnum statusEnum)
     {
+        Vector3 cardPos = Mouse.current.position.ReadValue();
+        StatusEffect se = FindObjectOfType<StatusEffectManager>().GetStatusEffect(statusEnum);
+        FindObjectOfType<StatusEffectIconSpawner>().SpawnStatusEffectIcon(se);
         AddStatus(StatusEffectManager.current.GetStatusEffect(statusEnum));
     }
 

@@ -1,6 +1,6 @@
 Status Effect,Heath Gain,Bux Gain,Mood Gain,Health Lost,Bux Lost,Mood Lost,Health Passive,Bux Passive,Mood Passive
-DemonicKinship,0,0,0,0,0,0,0,0,0
-Married,0,0,0,0,0,0,0,0,0
+DemonicKinship,10,0,10,0,10,0,10,0,10
+Married,0,10,0,10,0,10,0,10,0
 AngelicBoon,0,0,0,0,0,0,0,0,0
 PetDog,0,0,0,0,0,0,0,0,0
 Criminal,0,0,0,0,0,0,0,0,0
