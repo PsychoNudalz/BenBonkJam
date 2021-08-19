@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AgeChangeAnimationHandler : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class AgeChangeAnimationHandler : MonoBehaviour
         }
         if (!material)
         {
-            material = GetComponent<SpriteRenderer>().material;
+            material = GetComponent<Image>().material;
         }
         current = this;
     }
@@ -45,6 +46,7 @@ public class AgeChangeAnimationHandler : MonoBehaviour
         material.SetVector("_TileSize", GetTiling(ageEnum));
 
         animator.Play($"AgeChange_{ageEnum.ToString()}");
+        StartBackground();
     }
 
     Vector2 GetTiling(AgeEnum ageEnum)
@@ -57,6 +59,16 @@ public class AgeChangeAnimationHandler : MonoBehaviour
             }
         }
         return tilingPair[0].tiling;
+    }
+
+    public void StartBackground()
+    {
+        AgeChangeAnimationBackgroundHandler.current.PlayStart();
+    }
+
+    public void EndBackground()
+    {
+        AgeChangeAnimationBackgroundHandler.current.PlayEnd();
     }
 
 }

@@ -33,7 +33,22 @@ public enum StatusEnum
     Evil, 
     Magic,
     Deserter,
-    Jailed
+    Jailed,
+    PetDragon,
+    RedDragonPet,
+    BlueDragonPet,
+    Unicorn,
+    Dishonest,
+    PetCat,
+    Heartless,
+    ProGamer,
+    Hedgie,
+    Networked,
+    Weeb,
+    ECommerce,
+    StudentDebt,
+    Mortgage
+
 }
 
 public static class StatusEnumName
