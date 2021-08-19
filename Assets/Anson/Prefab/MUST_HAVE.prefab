@@ -123,10 +123,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7480651368630108165}
     m_Modifications:
-    - target: {fileID: 275986649, guid: e5e6f3eaa35e5cf44bcfadcb4076e1a6, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 4598223252174895048, guid: a018d84c05efe3149b78d0052c55d6ea, type: 2}
     - target: {fileID: 1141794141327645830, guid: e5e6f3eaa35e5cf44bcfadcb4076e1a6, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -174,14 +170,6 @@ PrefabInstance:
     - target: {fileID: 1141794141327645832, guid: e5e6f3eaa35e5cf44bcfadcb4076e1a6, type: 3}
       propertyPath: m_Name
       value: GameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 6724168961227974405, guid: e5e6f3eaa35e5cf44bcfadcb4076e1a6, type: 3}
-      propertyPath: updateCSV
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6748441795238032248, guid: e5e6f3eaa35e5cf44bcfadcb4076e1a6, type: 3}
-      propertyPath: player
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5e6f3eaa35e5cf44bcfadcb4076e1a6, type: 3}
