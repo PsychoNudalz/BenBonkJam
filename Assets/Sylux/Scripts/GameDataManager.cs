@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Runtime.Serialization.Formatters.Binary;
 
 [System.Serializable]
 
@@ -30,7 +31,38 @@ public class GameDataManager : MonoBehaviour
 
     private void ReadFromSave()
     {
-        string json = JsonUtility.ToJson(achievements);
+        //Load achievments
+        string filePath = $"{Application.persistentDataPath}/Save/achievements.save";
+        if (File.Exists(filePath))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(filePath, FileMode.Open);
+
+            achievements = (Achievements)formatter.Deserialize(stream);
+            stream.Close();
+        }
+        else
+        {
+            Debug.LogWarning($"Achievments File not found");
+            achievements = new Achievements();
+        }
+
+        //Load endings
+        filePath = $"{Application.persistentDataPath}/Save/endings.save";
+        if (File.Exists(filePath))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(filePath, FileMode.Open);
+
+            endingsUnlocked = (EndingsUnlocked)formatter.Deserialize(stream);
+            stream.Close();
+        }
+        else
+        {
+            Debug.LogWarning($"Endings sav file not found!");
+            achievements = new Achievements();
+        }
+       /* string json = JsonUtility.ToJson(achievements);
         string json2 = JsonUtility.ToJson(endingsUnlocked);
         try
         {
@@ -67,12 +99,28 @@ public class GameDataManager : MonoBehaviour
         achievements = JsonUtility.FromJson<Achievements>(json);
         endingsUnlocked = JsonUtility.FromJson<EndingsUnlocked>(json2);
 
-
+        */
     }
 
     private void WriteToSave()
     {
         Debug.Log("Writing Save");
+        
+        BinaryFormatter formatter = new BinaryFormatter();
+        /*CreateSaveDirectoryPaths();*/
+        string filePath = $"{Application.persistentDataPath}/Save/achievements.save";
+        FileStream stream = new FileStream(filePath, FileMode.Create);
+        formatter.Serialize(stream,achievements);
+        stream.Close();
+        Debug.Log("Saved Ach.");
+        
+        filePath = $"{Application.persistentDataPath}/Save/endings.save";
+        stream = new FileStream(filePath, FileMode.Create);
+        formatter.Serialize(stream,endingsUnlocked);
+        stream.Close();
+        Debug.Log("Saved End.");
+
+        /*Debug.Log("Writing Save");
         string json = JsonUtility.ToJson(achievements);
         string json2 = JsonUtility.ToJson(endingsUnlocked);
 
@@ -89,7 +137,7 @@ public class GameDataManager : MonoBehaviour
         Debug.Log(json2);
         
 
-        Debug.Log("Saved End.");
+        Debug.Log("Saved End.");*/
 
 
         //  Achievements loadedAchievements = JsonUtility.FromJson<Achievements>(json);
