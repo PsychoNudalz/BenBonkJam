@@ -59,8 +59,8 @@ public class GameDataManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"Endings sav file not found!");
-            achievements = new Achievements();
+            Debug.LogWarning($"Endings save file not found!");
+            endingsUnlocked = new EndingsUnlocked();
         }
        /* string json = JsonUtility.ToJson(achievements);
         string json2 = JsonUtility.ToJson(endingsUnlocked);
