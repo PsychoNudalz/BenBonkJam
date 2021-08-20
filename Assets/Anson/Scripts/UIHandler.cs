@@ -25,6 +25,8 @@ public class UIHandler : MonoBehaviour
     [SerializeField] CardOLD currentCard;
     [SerializeField] CardEventManager cardEventManager;
     [Header("Game Over")]
+    [SerializeField] GameOverController gameOverController;
+
     [SerializeField] GameObject gameOverScreen;
     [SerializeField] TextMeshProUGUI gradeText;
     [SerializeField] TextMeshProUGUI extraMessage;
@@ -60,6 +62,10 @@ public class UIHandler : MonoBehaviour
         m_Raycaster = GetComponent<GraphicRaycaster>();
         //Fetch the Event System from the Scene
         m_EventSystem = GetComponent<EventSystem>();
+        if (!playerStats)
+        {
+            playerStats = FindObjectOfType<Player>();
+        }
     }
 
     void FixedUpdate()
@@ -187,7 +193,8 @@ public class UIHandler : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
         gradeText.text = grade;
-        extraMessage.text = s;
-        statusDisplay.transform.parent = gameOverScreen.transform;
+        //extraMessage.text = s;
+        //statusDisplay.transform.parent = gameOverScreen.transform;
+        gameOverController.Initialise(playerStats);
     }
 }
