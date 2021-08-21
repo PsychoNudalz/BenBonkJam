@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
     [Header("Base States")]
     public Status status;
-    public List<StatusEffect> allCurrentStatusEffects;
+    //public List<StatusEffect> allCurrentStatusEffects;
     public float StartingHealth = 100.0f;
     public float StartingBux = 20f;
     public float StartingMood = 50f;
@@ -189,7 +189,7 @@ public class Player : MonoBehaviour
     public void AddStatus(StatusEffect statusEffect)
     {
         status.AddStatus(statusEffect.status);
-        allCurrentStatusEffects.Add(statusEffect);
+        //allCurrentStatusEffects.Add(statusEffect);
         healthModPos += statusEffect.HealthPos;
         buxModPos += statusEffect.BuxPos;
         moodModPos += statusEffect.MoodPos;
@@ -209,7 +209,7 @@ public class Player : MonoBehaviour
     public void RemoveStatus(StatusEffect statusEffect)
     {
         status.RemoveStatus(statusEffect.status);
-        allCurrentStatusEffects.Remove(statusEffect);
+        //allCurrentStatusEffects.Remove(statusEffect);
         healthModPos -= statusEffect.HealthPos;
         buxModPos -= statusEffect.BuxPos;
         moodModPos -= statusEffect.MoodPos;

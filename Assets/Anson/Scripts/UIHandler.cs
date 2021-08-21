@@ -189,12 +189,12 @@ public class UIHandler : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void DisplayGameOver(string grade, string s = "")
+    public void DisplayGameOver(string grade, float score, string s = "")
     {
         gameOverScreen.SetActive(true);
         gradeText.text = grade;
         //extraMessage.text = s;
         //statusDisplay.transform.parent = gameOverScreen.transform;
-        gameOverController.Initialise(playerStats);
+        gameOverController.Initialise(playerStats,grade,score);
     }
 }

@@ -1,25 +1,25 @@
 Card ID,Card Details,Ages Neede,Status Needed,Card Sprite Name,Card Description,Heads Description,Heads Health,Heads Bux,Heads Mood,Heads Required Status,Heads Sequence Cards Add,Heads Sequence Cards Remove,Heads Status Add,Heads Status Remove,Tails Description,Tails Health,Tails Bux,Tails Mood,Tails Required Status,Tails Sequence Cards Add,Tails Sequence Cards Remove,Tails Status Add,Tails Status Remove,END,Rules: Age and stats must be in integer.  Set a card detail if description contains special characters,
 ADU_000_,,3/,,nigerian prince,A Nigerian Prince needs your help!,Help this fine man,0,-40,-20,,,,2/,,Move to SPAM,0,0,0,,,,,,END
 ADU_001_,,3/,,dogo,Adopt a dog?,Adopt,0,-5,30,,,,3/,,Nah..,0,0,0,,,,,,END
-ADU_002_,,3/,12/,plumber,Plumber,Yes!,0,20,-15,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+ADU_002_,,3/,12/,plumber,Plumber,Yes!,0,20,-15,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 ADU_003_,,3/,,ice_cream_truck,Ice cream truck comes after you,Shout at it,-5,0,10,,,,,,Run!,5,0,-3,,,,,,END
-ADU_004_,,3/,11/,sysadmin,Software Developer,Yes!,-20,100,-50,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+ADU_004_,,3/,11/,sysadmin,Software Developer,Yes!,-20,100,-50,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 ADU_005_,,3/,1/,divorce,In your relationship  conflicts do happen  but divorce is not a joke. ,I am done  File the papers. ,0,-20,-40,,,,,1/,Love is to give  try to accept that you need to be sacrifical. Things may get better hopefully... ,0,0,30,,,,,,END
-ADU_007_,,3/,,telemarketer,Telemarketer,Yes!,0,20,-15,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_008_,,3/,7/,TV,Televangelist,Yes!,0,50,-10,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+ADU_007_,,3/,,telemarketer,Telemarketer,Yes!,0,20,-15,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
+ADU_008_,,3/,7/,TV,Televangelist,Yes!,0,50,-10,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 ADU_009_,,3/,,harambe, Harambe has gone rogue! What do you do?,Tranquillise Harambe,0,0,10,,,,,,SHOOT THE GORILLA,-5,0,-50,,,,,,END
-ADU_010_,,3/,18/,truck,Truck Driver,Yes!,0,20,-20,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+ADU_010_,,3/,18/,truck,Truck Driver,Yes!,0,20,-20,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 ADU_011_,,3/,,catfish,Catfish on social media (image of catfish),,0,0,0,,,,,,,0,0,0,,,,,,END
 ADU_012_,Stonk_Good,3/,,doge,Meme stocks are available to buy...,Buy!,0,20,20,,,,,,Ignore,0,0,-5,,,,,,END
-ADU_013_,,3/,9/,ufo,UFOlogist,Yes!,20,20,20,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_014_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No,0,0,0,,,,,,END
+ADU_013_,,3/,9/,ufo,UFOlogist,Yes!,20,20,20,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
+ADU_014_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,,15/,16/,No,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,,,END
 ADU_015_, streaming speciality,3/,23/,stream cattegory,What is my streaming speciality?,Just Chatting/IRL,5,5,30,,,,,,Competitive Gaming!,-5,10,-5,,,,,,END
 ADU_016_,,3/,11/,,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not?,-30,-30,-30,,,,24/,11/10/,No! It will be too much!,0,0,0,,,,,,END
 ADU_017_,,3/,,,You are accepted into university... but your research needs money.,Beg for a grant,0,0,0,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
-ADU_018_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,Nah,0,0,0,,,,,,END
-ADU_019_,,3/,,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No,0,0,0,,,,,,END
+ADU_018_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,,15/,16/,Nah,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,,,END
+ADU_019_,,3/,,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,,15/,16/,No,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,,,END
 ADU_020_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/ADU_014_/,,,,I refuse,-10,-50,20,,,,16/,,END
-ADU_021_,,3/,,evil_scientist,Evil scientist,Yes,0,0,0,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,25/15/,16/,No,0,0,0,,,,,,END
+ADU_021_,,3/,,evil_scientist,Evil scientist,Yes,0,0,0,,,,25/15/,16/,No,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,,,END
 ADU_022_,,3/,,middle east,A soul seeking vacation to the Middle East?,Time for a trip!,0,-40,40,,,,7/,,Nah,0,0,0,,,,,,END
 ADU_023_,,3/,,minion_help,Being alone makes everything difficult.  You really need help in your... sinister scientific advances.,Hire some minions.,5,5,5,,,,,,Work for an evil corp.,-10,30,-10,,,,,,END
 ADU_024_,,3/,,rocket,You are asked to build a rocket for your master.,Yes  my liege,-20,50,-25,,,,,,FORGET THIS I'M OUT,-5,-10,-10,,,,,,END
@@ -32,17 +32,17 @@ ADU_030_,,3/,,rob bank,You were caught robbing a bank,I'm innocent!,0,0,0,,,,,,Y
 ADU_031_,Milf_False,3/,,milf,69 HOT MILFs in your area are bored!,Investigate,-10,-25,-10,,,,,,Ignore,0,0,0,,,,,,END
 ADU_032_,,3/,,bunny,A bunny runs on the road.,Slam the breaks,-5,0,10,,,,,,Run over the bunny,-10,0,-30,,,,,,END
 ADU_033_,,3/,,doge,Invest in Index Funds or Dogecoin?,Index Funds,0,30,15,,,,,,DOGECOIN to the moon!,0,15,30,,,,,,END
-ADU_034_,pet cat,3/,,cat_pet_status,Get a pet cat?,Yes.  aww,-5,-25,25,,,,,,No they shed fur everywhere,0,-25,-3,,,,,,END
+ADU_034_,pet cat,3/,,,Get a pet cat?,Yes.  aww,-5,-25,25,,,,,,No they shed fur everywhere,0,-25,-3,,,,,,END
 ADU_035_,Milf_True,3/,,milf,69 HOT MILFs are bored in your area!,Investigate,0,0,40,,,,,7/,Ignore,0,0,0,,,,,,END
 ADU_036_,,3/,20/,have a child stork,Perhap havng kids makes a better family... though the cost could be high... but the profit... ,Use your own ways to have one ,-10,-50,30,,,,13/,,No kids,0,0,0,,,,,,END
 ADU_037_,,3/,20/,marriage,People say marriage is a big investment. What about me? ,Propose marriage sincerely,0,-30,40,,,,1/,,I can have a partner without needing to marry  you know...,0,0,0,,,,,,END
 ADU_038_,,3/,,dice,Maybe I can get more money by gambling?,Gamble!,0,-15,20,,,,5/,,Don't Gamble..,0,0,0,,,,,,END
 ADU_039_,Stonk_Bad,3/,,doge,Meme stonks are available to buy...,BUY!,0,-20,-20,,,,,,Ignore,0,0,5,,,,,,END
 ADU_040_,,3/,,telemarketer,Someone on behalf of tech support says your computer have some issues and need a fix. ,Oh yeah the computer is slow  just let them help,-5,-50,-40,,,,,,Thats not legit  what nonsense! Ignore them.,0,0,0,,,,,,END
-ADU_041_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_042_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_043_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_044_,,3/,,nade,Military,Yes!,-10,20,-10,,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+ADU_041_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
+ADU_042_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
+ADU_043_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
+ADU_044_,,3/,,nade,Military,Yes!,-10,20,-10,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END
 BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END
 BAB_002_,,0/,,babyannoiyin,...,Googoo,5,0,5,,,,,,Gaagaa,-5,0,5,,,,,,END
@@ -55,8 +55,8 @@ BAB_008_,,0/,,vase,Push the vase off the table?,YES! Muhahaa I am the destroyer,
 CHI_000_,,1/,,Choices,What do you want for your birthday?,Action Figure,0,0,20,,,,,,Firetruck,20,0,0,,,,,,END
 CHI_001_,,1/,,note,You find a strange note in class...,Prepare cheat notes for the test,0,0,10,,CHI_004_/,,,,Make a neat airplane,0,5,-10,,,,,,END
 CHI_002_,,1/,,telescope,You got a telescope for Christmas,They are so sparkly and pretty!,0,0,20,,,,,,Is that a glowing light?,0,0,10,,,,9/,,END
-CHI_003_,,1/,,note,How do you cheat?,Use notes during test ,0,5,5,,,,,,scribble on the notes,-30,50,-10,,GEN_007_/,,0/,,END
-CHI_004_,,1/,,studytest,Oh no! A test!,Work fairly,0,10,-10,,,,,,Cheat hehe,0,0,0,,CHI_003_/,,,,END
+CHI_003_,,1/,,note,How do you cheat?,Use notes during test ,0,5,5,,,GEN_007_/,,,scribble on the notes,-30,50,-10,,,,0/,,END
+CHI_004_,,1/,,studytest,Oh no! A test!,Work fairly,0,10,-10,,,CHI_003_/,,,Cheat hehe,0,0,0,,,,,,END
 CHI_005_,dragon for christmas,1/,,pet_dragon,Do you want a dragon for christmas?,yes please mommy,5,0,25,,,,,,NOOOOOO,0,0,-15,,,,,,END
 CHI_006_,,1/,,studytest,Sigh... Homework,Do,0,5,-10,,,,,,Feed to doggo,0,-5,5,,,,,,END
 CHI_007_,,1/,,gaming,Play games for how long?,Play for an hour,0,0,5,,,,,,JUST ONE MORE GAME!,0,-10,10,,,,,,END
@@ -110,6 +110,6 @@ TEE_010_,,2/,,truck,You get hit by a car,Cry for help,15,0,-20,,,,,,Find strengt
 TEE_011_,,2/,,invest money,Sigh… Need money,Part-time Job,0,25,-10,,,,15/,,ShopLifting,0,10,0,,,,4/,,END
 TEE_012_,,2/,,bluelight,A weird blue light appears...,Must be a display...(Ignore and sleep),10,0,0,,,,,,investigate this fascinating phenomenon,0,0,10,,,,9/,,END
 TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event!,Eat well  stay fit,20,0,0,,,,17/,,Eat delicious junk food,0,0,20,,,,,,END
-TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,,,,Force yourself to train,-25,0,0,,TEE_015_/,,,,END
+TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,TEE_015_/,,,Force yourself to train,-25,0,0,,,,,,END
 TEE_015_,,2/,,health gain,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament! Keep going!,-100,0,-25,,,,8/,,END
 TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,TEE_014_/,,,,Get Steroids,-15,-5,5,,,,,,END

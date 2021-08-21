@@ -11,12 +11,20 @@ public class GameOver_StatusDisplay : MonoBehaviour
     [SerializeField] float timeBetweenStatuses = 0.5f;
     [SerializeField] Scrollbar verticalBar;
 
-    public void Initialise(StatusEffect[] statusEffects)
+    public void Initialise(List<StatusEffect> statusEffects)
     {
         savedStatuses.AddRange(statusEffects);
         StartCoroutine(DisplayStatus());
     }
-
+    public void Initialise(StatusEnum[] statusEnums)
+    {
+        List<StatusEffect> statusEffects = new List<StatusEffect>();
+        foreach(StatusEnum se in statusEnums)
+        {
+            statusEffects.Add(StatusEffectManager.current.GetStatusEffect(se));
+        }
+        Initialise(statusEffects);
+    }
 
 
 
@@ -26,7 +34,7 @@ public class GameOver_StatusDisplay : MonoBehaviour
         newSS.Initialise(se);
         RectTransform rt = scrollViewContent.GetComponent<RectTransform>();
         rt.sizeDelta = new Vector2(rt.sizeDelta.x, baseGO.GetComponent<RectTransform>().rect.height * scrollViewContent.childCount);
-        verticalBar.value = 1f;
+        StartCoroutine (ShiftScrollView());
         return newSS;
     }
 
@@ -40,6 +48,13 @@ public class GameOver_StatusDisplay : MonoBehaviour
         {
             StartCoroutine(DisplayStatus());
         }
+    }
+
+    IEnumerator ShiftScrollView()
+    {
+        yield return new WaitForEndOfFrame();
+        verticalBar.value = 0f;
+
     }
 
 }

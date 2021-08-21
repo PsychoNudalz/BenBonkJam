@@ -200,7 +200,7 @@ MonoBehaviour:
   previousCard: {fileID: 0}
   cardBuffer: []
   playerScript: {fileID: 0}
-  randomPickTry: 50
+  randomPickTry: 150
   cardCounter: 0
   cardPerAge: 6
   cardSpawnPoint: {fileID: 3149122795622043081}

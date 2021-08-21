@@ -295,14 +295,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4379163752723092415, guid: 7450ae890bc52294c953e17c35dc959d, type: 3}
-      propertyPath: cardPerAge
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379163752723092415, guid: 7450ae890bc52294c953e17c35dc959d, type: 3}
-      propertyPath: runConverter
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7450ae890bc52294c953e17c35dc959d, type: 3}
 --- !u!4 &5130095086612330752 stripped

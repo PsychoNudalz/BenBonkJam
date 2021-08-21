@@ -14,6 +14,9 @@ public class GameOverController : MonoBehaviour
     [Header("Status Effect")]
     [SerializeField] GameOver_StatusDisplay statusDisplay;
 
+    [Header("Score")]
+    [SerializeField] GameOver_ScoreAndGrade scoreAndGrading;
+
     [Header("Grade")]
     [SerializeField] TextMeshProUGUI gradeText;
 
@@ -31,7 +34,7 @@ public class GameOverController : MonoBehaviour
         
     }
 
-    public void Initialise(Player player)
+    public void Initialise(Player player, string grade, float totalScore)
     {
         //Stats Bar
         health.Initialise(player.HealthPoints);
@@ -39,7 +42,10 @@ public class GameOverController : MonoBehaviour
         mood.Initialise(player.MoodPoint);
 
         //Status Display
-        statusDisplay.Initialise(player.allCurrentStatusEffects.ToArray());
+        statusDisplay.Initialise(player.status.currentstatus.ToArray());
+
+        //Score
+        scoreAndGrading.Initialise(grade, totalScore);
     }
 
     private void OnEnable()

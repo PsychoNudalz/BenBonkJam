@@ -15,6 +15,10 @@ public class GameOver_StatusStatus : MonoBehaviour
     [SerializeField] bool playAnimation;
     [SerializeField] float animationTime = 1f;
 
+    private void Awake()
+    {
+        PlayAnimation();
+    }
 
     public void Initialise(StatusEffect se)
     {
@@ -25,21 +29,22 @@ public class GameOver_StatusStatus : MonoBehaviour
 
     private void Update()
     {
-        PlayAnimation();
+        if (playAnimation)
+        {
+            PlayAnimation();
+        }
     }
 
     private void PlayAnimation()
     {
-        if (playAnimation)
+
+        image.color = ScaleColour(image.color);
+        statsText.color = ScaleColour(statsText.color);
+        score.color = ScaleColour(score.color);
+        rangeValue += animationTime * Time.deltaTime;
+        if (rangeValue >= 1f)
         {
-            image.color = ScaleColour(image.color);
-            statsText.color = ScaleColour(statsText.color);
-            score.color = ScaleColour(score.color);
-            rangeValue += animationTime * Time.deltaTime;
-            if (rangeValue >= 1f)
-            {
-                playAnimation = false;
-            }
+            playAnimation = false;
         }
     }
 

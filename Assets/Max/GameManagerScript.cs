@@ -94,46 +94,50 @@ public class GameManagerScript : MonoBehaviour
         {
             uIHandler = FindObjectOfType<UIHandler>();
         }
-        uIHandler.DisplayGameOver(GetGrade());
+        uIHandler.DisplayGameOver(GetGrade().Item1,GetGrade().Item2);
     }
 
-    public string GetGrade()
+    public System.Tuple<string, float> GetGrade()
     {
         float s = player.GetTotalStats();
 
-        foreach(StatusEnum se in player.status.currentstatus)
+        foreach (StatusEnum se in player.status.currentstatus)
         {
             s += StatusToScore.GetScore(se);
         }
+        System.Tuple<string, float> returnTuple = new System.Tuple<string, float>("", s);
 
         if (s > 250f)
         {
-            return "S";
+            returnTuple = new System.Tuple<string, float>("S", s);
         }
         else if (s > 250f)
         {
-            return "A";
+            returnTuple = new System.Tuple<string, float>("A", s);
+
         }
         else if (s > 200f)
         {
-            return "B";
+            returnTuple = new System.Tuple<string, float>("B", s);
+
         }
         else if (s > 160f)
         {
-            return "C";
+            returnTuple = new System.Tuple<string, float>("C", s);
         }
         else if (s > 100f)
         {
-            return "D";
+            returnTuple = new System.Tuple<string, float>("D", s);
         }
         else if (s > 70f)
         {
-            return "E";
+            returnTuple = new System.Tuple<string, float>("E", s);
         }
         else
         {
-            return "F";
+            returnTuple = new System.Tuple<string, float>("F", s);
         }
+        return returnTuple;
     }
 
     // Start is called before the first frame update
