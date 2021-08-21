@@ -30277,7 +30277,7 @@ RectTransform:
   m_Father: {fileID: 4161128782963768468}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.03333336}
+  m_AnchorMin: {x: 0, y: 0.03333342}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000061035156}
   m_SizeDelta: {x: 20, y: 20}
@@ -31105,8 +31105,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4779346396659047836}
   m_HandleRect: {fileID: 8522984974664641069}
   m_Direction: 2
-  m_Value: 1.0000305
-  m_Size: 0.96666664
+  m_Value: 1.0000336
+  m_Size: 0.9666666
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -31203,9 +31203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 6683184848395431915}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -31512,7 +31512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000044822693, y: -0.000309617}
+  m_AnchoredPosition: {x: 0.000044822693, y: -0.00033569336}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3040196617758303300
@@ -33087,6 +33087,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseGO: {fileID: 8037426637473881431, guid: 71cbd3638d20f1f4fb6a1d7c555ffea9, type: 3}
   scrollViewContent: {fileID: 6683184848395431915}
+  savedStatuses: []
+  timeBetweenStatuses: 0.5
+  verticalBar: {fileID: 5694778105636661614}
 --- !u!1 &8915344960151758110
 GameObject:
   m_ObjectHideFlags: 0
