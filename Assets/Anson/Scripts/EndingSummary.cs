@@ -37,7 +37,7 @@ public class EndingSummaryConditions
 
     public bool IsMatched(Player player)
     {
-        if (IsMatchValueRange(player.HealthPoints,healthRange)&& IsMatchValueRange(player.BuxPoint, buxRange)&& IsMatchValueRange(player.MoodPoint, moodRange))
+        if (IsMatchValueRange(player.HealthPoints, healthRange) && IsMatchValueRange(player.BuxPoint, buxRange) && IsMatchValueRange(player.MoodPoint, moodRange))
         {
             return true;
         }
@@ -46,7 +46,7 @@ public class EndingSummaryConditions
 
     bool IsMatchValueRange(float value, Vector2 range)
     {
-        return (value >= range.x&& value <= range.y);
+        return (value >= range.x && value <= range.y);
     }
 
 }
@@ -58,7 +58,7 @@ public class EndingSummary : MonoBehaviour
     [Space(10)]
     [Header("Connected Components")]
     [SerializeField] TextMeshProUGUI summaryText;
-    
+
     class EndingSummaryList
     {
         public EndingSummaryConditions[] endingSummaries;
@@ -78,16 +78,16 @@ public class EndingSummary : MonoBehaviour
 
     public List<EndingSummaryConditions> EndingSummaries { get => endingSummaries; set => endingSummaries = value; }
 
-    
+
     public void SaveEndingSummaryConditions()
     {
         print(endingSummaries.Count);
-        FileLoader.SaveToFile(Application.dataPath + "/Resources/Data/","EndingSummaries.json",new EndingSummaryList( endingSummaries));
+        FileLoader.SaveToFile(Application.dataPath + "/Resources/Data/", "EndingSummaries.json", new EndingSummaryList(endingSummaries));
     }
 
     public void LoadEndingSummaryConditions()
     {
-        endingSummaries = new List<EndingSummaryConditions>( FileLoader.LoadFromFile< EndingSummaryList > (Application.dataPath + "/Resources/Data/EndingSummaries.json").endingSummaries);
+        endingSummaries = new List<EndingSummaryConditions>(FileLoader.LoadFromFile<EndingSummaryList>(Application.dataPath + "/Resources/Data/EndingSummaries.json").endingSummaries);
     }
 
     public void UpdateSummaryText()
@@ -102,11 +102,15 @@ public class EndingSummary : MonoBehaviour
 
     EndingSummaryConditions GetEndingSummary()
     {
-        EndingSummaryConditions returnEnding = null;
+        EndingSummaryConditions returnEnding = endingSummaries[endingSummaries.Count-1];
 
-        foreach(EndingSummaryConditions esc in endingSummaries)
+        foreach (EndingSummaryConditions esc in endingSummaries)
         {
-            return esc;
+            if (esc.IsMatched(Player.current))
+            {
+                return esc;
+
+            }
         }
 
 
