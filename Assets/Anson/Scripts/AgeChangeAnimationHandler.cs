@@ -12,6 +12,7 @@ public class AgeChangeAnimationHandler : MonoBehaviour
 
     [Header("Components")]
     [SerializeField] Animator animator;
+    //[SerializeField] Image image;
     [SerializeField] Material material;
     public static AgeChangeAnimationHandler current;
 

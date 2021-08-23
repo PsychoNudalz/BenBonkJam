@@ -69,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: No they poop everywhere
+      value: No they shed fur everywhere
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
@@ -136,12 +136,8 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: efb102675650f0448815f9ccbd813c26, type: 3}
-    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
