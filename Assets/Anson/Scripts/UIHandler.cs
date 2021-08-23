@@ -87,10 +87,27 @@ public class UIHandler : MonoBehaviour
             if (result.gameObject.CompareTag("Status Effect Icon"))
             {
                 Tooltip.ShowTooltip_Static(result.gameObject.GetComponentInParent<UIStatusEffect>().status);
+                SummaryTooltip.HideTooltip_Static();
             }
             else
             {
                 Tooltip.HideTooltip_Static();
+                if(result.gameObject.CompareTag("HP Bar"))
+                {
+                    SummaryTooltip.ShowTooltip_Static(SummaryType.HP);
+                }
+                else if(result.gameObject.CompareTag("Bux Bar"))
+                {
+                    SummaryTooltip.ShowTooltip_Static(SummaryType.Bux);
+                }
+                else if(result.gameObject.CompareTag("Mood Bar"))
+                {
+                    SummaryTooltip.ShowTooltip_Static(SummaryType.Mood);
+                }
+                else
+                {
+                    SummaryTooltip.HideTooltip_Static();
+                }
             }
         }
     }

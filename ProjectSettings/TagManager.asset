@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Status Effect Icon
+  - HP Bar
+  - Bux Bar
+  - Mood Bar
   layers:
   - Default
   - TransparentFX
