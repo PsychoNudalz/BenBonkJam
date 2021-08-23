@@ -66,6 +66,8 @@ public class UIHandler : MonoBehaviour
         {
             playerStats = FindObjectOfType<Player>();
         }
+
+        gameOverController.gameObject.SetActive(false);
     }
 
     void FixedUpdate()

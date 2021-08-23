@@ -19,6 +19,8 @@ public class GameOverController : MonoBehaviour
 
     [Header("Grade")]
     [SerializeField] TextMeshProUGUI gradeText;
+    [Header("Summary")]
+    [SerializeField] EndingSummary endingSummary;
 
 
 
@@ -46,6 +48,9 @@ public class GameOverController : MonoBehaviour
 
         //Score
         scoreAndGrading.Initialise(grade, totalScore);
+
+        //Ending
+        endingSummary.UpdateSummaryText();
     }
 
     private void OnEnable()

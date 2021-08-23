@@ -30253,6 +30253,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3066728746322120709, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3066728746322120709, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 590
+      objectReference: {fileID: 0}
+    - target: {fileID: 3066728746322120709, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3066728746322120709, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3066728746322120709, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 130
+      objectReference: {fileID: 0}
     - target: {fileID: 3196218083623024687, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -30639,11 +30659,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6683184848395431915, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6683184848395431915, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000060666353
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6845715684314233376, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -31216,6 +31236,114 @@ PrefabInstance:
     - target: {fileID: 8090768579763066726, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[0].buxRange.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[0].buxRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[1].buxRange.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[1].buxRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[2].buxRange.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[2].buxRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[3].buxRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[0].moodRange.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[0].moodRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[0].summaryText
+      value: You lived a great life. There were good days and bad days, but you always
+        managed to see the brighter side of every situation and lived your best life.
+        How corny.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[1].moodRange.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[1].moodRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[1].summaryText
+      value: This was a good life. There were some less enjoyable time, but you still
+        managed well. But you secretly resent those who had a better time than you...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[2].moodRange.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[2].moodRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[2].summaryText
+      value: An above average existance. Nothing major to celebrate and nothing major
+        to mourn. You could have been so much more... if only you had applied yourself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[3].moodRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[3].summaryText
+      value: What a disappointment. You had SUCH potential!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[0].healthRange.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[0].healthRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[1].healthRange.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[1].healthRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[2].healthRange.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[2].healthRange.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177138672138291442, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
+      propertyPath: endingSummaries.Array.data[3].healthRange.y
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8359612669163857664, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
       propertyPath: m_AnchorMax.y

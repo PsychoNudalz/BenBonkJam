@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     //Init age
     public AgeEnum age;
 
+    public static Player current;
+
     [Header("Modifiers (In percentage)")]
     [SerializeField] int healthModPos = 0;
     [SerializeField] int buxModPos = 0;
@@ -242,6 +244,7 @@ public class Player : MonoBehaviour
         BuxPoint = StartingBux;
         MoodPoint = StartingMood;
         //SetAge(0);
+        current = this;
     }
 
     // Update is called once per frame
