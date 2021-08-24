@@ -113,4 +113,7 @@ TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event!,
 TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,TEE_015_/,,,Force yourself to train,-25,0,0,,,,,,END
 TEE_015_,,2/,,health gain,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament! Keep going!,-100,0,-25,,,,8/,,END
 TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,TEE_014_/,,,,Get Steroids,-15,-5,5,,,,,,END
-ADU_045_,Crime Syndicate,3/,4/,,Join a crime syndicate?,Yes,0,0,0,,,,,,No  I'm a solo mastermind,0,0,0,,,,,,END
+ADU_047_,Crime Syndicate,3/,4/,,Join a crime syndicate?,Yes,0,0,0,,,,,,No  I'm a solo mastermind,0,0,0,,,,,,END
+TEE_019_,chat ask question,2/,,,Chat asks you a question. ,Hi Chat. Lets chat!,0,0,0,,,,,,No chat.,0,0,0,,,,,,END
+TEE_020_,follower ask question,2/,0/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
+ADU_048_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
