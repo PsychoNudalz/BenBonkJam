@@ -44,31 +44,58 @@ public class CardHandlerWindow : EditorWindow
 
         if (GUILayout.Button("Full Add New Cards From Excel"))
         {
-            CSVHandler.FromExcelToJSON(cardHandler);
-            cardHandler.GenerateCardsFromJson();
-            cardHandler.SaveCardsToJson();
-            cardHandler.LoadCardsFromJson();
-            cardHandler.SaveCardsToJson();
-            CSVHandler.FromJSON(cardHandler);
+            try
+            {
+                CSVHandler.FromExcelToJSON(cardHandler);
+                cardHandler.GenerateCardsFromJson();
+                cardHandler.SaveCardsToJson();
+                cardHandler.LoadCardsFromJson();
+                cardHandler.SaveCardsToJson();
+                CSVHandler.FromJSON(cardHandler);
+            }
+            catch(System.Exception e)
+            {
+                Debug.LogError("WARNING! failed to complete");
+                Debug.LogError(e.Message);
+                Debug.LogError(e.StackTrace);
+
+            }
 
         }
         GUILayout.Space(10);
 
         if (GUILayout.Button("Full Save"))
         {
-            cardHandler.SaveCardsToJson();
-            CSVHandler.FromJSON(cardHandler);
-
+            try
+            {
+                cardHandler.SaveCardsToJson();
+                CSVHandler.FromJSON(cardHandler);
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("WARNING! failed to complete");
+                Debug.LogError(e.Message);
+                Debug.LogError(e.StackTrace);
+            }
         }
         GUILayout.Space(10);
 
         if (GUILayout.Button("Full Load"))
         {
-            CSVHandler.FromExcelToJSON(cardHandler);
-            cardHandler.LoadCardsFromJson();
-            cardHandler.SaveCardsToJson();
-            CSVHandler.FromJSON(cardHandler);
+            try
+            {
+                CSVHandler.FromExcelToJSON(cardHandler);
+                cardHandler.LoadCardsFromJson();
+                cardHandler.SaveCardsToJson();
+                CSVHandler.FromJSON(cardHandler);
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("WARNING! failed to complete");
+                Debug.LogError(e.Message);
+                Debug.LogError(e.StackTrace);
 
+            }
         }
 
         GUILayout.Space(20);
