@@ -48,7 +48,8 @@ public enum StatusEnum
     ECommerce,
     StudentDebt,
     Mortgage,
-    Televangelist
+    Televangelist,
+    TechBiz
 
 }
 

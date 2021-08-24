@@ -8,7 +8,13 @@ public enum AchievementEnum
     statusEffects10Obtained,
     educationMaxedOut,
     oldAgeObtained, 
-    die50Times
+    die50Times,
+    adoptAllPossibleAnimals,
+    dieAsABaby,
+    dieAtOldAgeWith100Mood,
+    dieAtOldAgeWith100Bux,
+    haveChildren,
+    getScammed
 }
 
 

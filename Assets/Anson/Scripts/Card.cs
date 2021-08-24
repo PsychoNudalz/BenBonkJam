@@ -261,7 +261,7 @@ public class Card : MonoBehaviour
     }
 
 
-    public bool UpdateCard(CardSave cs, List<Card> sequenceCardsToAdd_Heads, List<Card> sequenceCardsToAdd_Tails, List<Card> sequenceCardsToRemove_Heads, List<Card> sequenceCardsToRemove_Tails)
+    public bool UpdateCard(CardSave cs, List<Card> sequenceCardsToAdd_Heads,  List<Card> sequenceCardsToRemove_Heads, List<Card> sequenceCardsToAdd_Tails, List<Card> sequenceCardsToRemove_Tails)
     {
         try
         {

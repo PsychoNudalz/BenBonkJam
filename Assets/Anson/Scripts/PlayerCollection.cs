@@ -7,6 +7,7 @@ public class PlayerCollection
 {
     [SerializeField] string collectionName;
     [SerializeField] Sprite sprite;
+    [TextArea]
     [SerializeField] string details;
     [SerializeField] bool isUnlocked;
 

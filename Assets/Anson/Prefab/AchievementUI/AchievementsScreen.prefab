@@ -818,46 +818,61 @@ MonoBehaviour:
   detailsImage: {fileID: 1070473302670836981}
   detailsDetails: {fileID: 1070473304371963257}
   achievementCollections:
-  - collectionName: Achievement 1
+  - collectionName: Oww!
     sprite: {fileID: 21300000, guid: adc2f11e3aab9e14b918070152adef22, type: 3}
-    details: 1
+    details: Die 50 times
     isUnlocked: 0
-    achievementEnum: 0
-  - collectionName: Achievement 2
+    achievementEnum: 4
+  - collectionName: Studious
     sprite: {fileID: 21300000, guid: dba92a5a837c8754ebba436c64965731, type: 3}
-    details: 2
+    details: Max out education
     isUnlocked: 0
-    achievementEnum: 1
-  - collectionName: Achievement 3
+    achievementEnum: 2
+  - collectionName: Chaotic Collector
     sprite: {fileID: 21300000, guid: 1031f365b77b55b4ba0b48feaf1424b1, type: 3}
     details: 3
     isUnlocked: 0
-    achievementEnum: 2
-  - collectionName: Achievement 4
+    achievementEnum: 1
+  - collectionName: "Kids these days\u2026"
     sprite: {fileID: 21300000, guid: 3f8b1929cfeb2534d8bcaa5d3206b5bc, type: 3}
-    details: 4
+    details: Make it to old age
     isUnlocked: 0
     achievementEnum: 3
-  - collectionName: Achievement 5
+  - collectionName: Perfectionist
     sprite: {fileID: 21300000, guid: e6294b5580889364d819a923d685e759, type: 3}
-    details: 5
+    details: Gain a grade S
     isUnlocked: 0
-    achievementEnum: 4
-  - collectionName: Achievement 6
+    achievementEnum: 0
+  - collectionName: Animal Lover
     sprite: {fileID: 21300000, guid: 118a36cd0c0c65e4d95e36adbdc3c9a0, type: 3}
-    details: 6
+    details: Adopt all possible animals
     isUnlocked: 0
-    achievementEnum: 0
-  - collectionName: Achievement 7
+    achievementEnum: 5
+  - collectionName: Goo Goo Gaa Gaa  DEAD
     sprite: {fileID: 21300000, guid: fde58eb6d510e89428eaa7df1734dffb, type: 3}
-    details: 7
+    details: Die as a baby
     isUnlocked: 0
-    achievementEnum: 0
-  - collectionName: Achievement 8
+    achievementEnum: 6
+  - collectionName: '[Happy Go Lucky'
     sprite: {fileID: 21300000, guid: 6f73e04460175aa4d92485dae9db1cf0, type: 3}
-    details: 8
+    details: Die at old age with 100% mood
     isUnlocked: 0
-    achievementEnum: 0
+    achievementEnum: 7
+  - collectionName: Bling Bling
+    sprite: {fileID: 21300000, guid: 6f73e04460175aa4d92485dae9db1cf0, type: 3}
+    details: Die at old age with 100% bux
+    isUnlocked: 0
+    achievementEnum: 8
+  - collectionName: ParentHood
+    sprite: {fileID: 21300000, guid: 6f73e04460175aa4d92485dae9db1cf0, type: 3}
+    details: Have children
+    isUnlocked: 0
+    achievementEnum: 9
+  - collectionName: "Damnit\u2026"
+    sprite: {fileID: 21300000, guid: 6f73e04460175aa4d92485dae9db1cf0, type: 3}
+    details: Get scammed
+    isUnlocked: 0
+    achievementEnum: 10
 --- !u!1 &1070473303315720762
 GameObject:
   m_ObjectHideFlags: 0
