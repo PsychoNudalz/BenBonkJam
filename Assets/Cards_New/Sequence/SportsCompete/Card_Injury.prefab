@@ -49,14 +49,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.sequenceCardsAdd.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: headsOption.sequenceCardsAdd.Array.data[0]
       value: 
       objectReference: {fileID: 480051339490037989, guid: fae4bd8004edba24a9257e7f7f26ebc9, type: 3}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsOption.sequenceCardsRemove.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.sequenceCardsAdd.Array.data[0]
+      value: 
+      objectReference: {fileID: 8035747554750965618, guid: 1e868904a692be14f8adfa35e9ccee69, type: 3}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsOption.sequenceCardsRemove.Array.data[0]
       value: 
       objectReference: {fileID: 8035747554750965618, guid: 1e868904a692be14f8adfa35e9ccee69, type: 3}
     - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}

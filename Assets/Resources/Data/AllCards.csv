@@ -6,16 +6,16 @@ ADU_003_,,3/,,ice_cream_truck,Ice cream truck comes after you,Shout at it,-5,0,1
 ADU_004_,,3/,11/,sysadmin,Software Developer,Yes!,-20,100,-50,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 ADU_005_,,3/,1/,divorce,In your relationship  conflicts do happen  but divorce is not a joke. ,I am done  File the papers. ,0,-20,-40,,,,,1/,Love is to give  try to accept that you need to be sacrifical. Things may get better hopefully... ,0,0,30,,,,,,END
 ADU_007_,,3/,,telemarketer,Telemarketer,Yes!,0,20,-15,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
-ADU_008_,,3/,7/,TV,Televangelist,Yes!,0,50,-10,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
+ADU_008_,,3/,7/,TV,Televangelist,Yes!,0,50,-10,,,,15/43/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 ADU_009_,,3/,,harambe, Harambe has gone rogue! What do you do?,Tranquillise Harambe,0,0,10,,,,,,SHOOT THE GORILLA,-5,0,-50,,,,,,END
 ADU_010_,,3/,18/,truck,Truck Driver,Yes!,0,20,-20,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 ADU_011_,,3/,,catfish,Catfish on social media (image of catfish),,0,0,0,,,,,,,0,0,0,,,,,,END
 ADU_012_,Stonk_Good,3/,,doge,Meme stocks are available to buy...,Buy!,0,20,20,,,,,,Ignore,0,0,-5,,,,,,END
 ADU_013_,,3/,9/,ufo,UFOlogist,Yes!,20,20,20,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 ADU_014_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,,15/,16/,No,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,,,END
-ADU_015_, streaming speciality,3/,23/,stream cattegory,What is my streaming speciality?,Just Chatting/IRL,5,5,30,,,,,,Competitive Gaming!,-5,10,-5,,,,,,END
-ADU_016_,,3/,11/,,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not?,-30,-30,-30,,,,24/,11/10/,No! It will be too much!,0,0,0,,,,,,END
-ADU_017_,,3/,,,You are accepted into university... but your research needs money.,Beg for a grant,0,0,0,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
+ADU_015_,,3/,11/,,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not?,-30,-30,-30,,,,24/,11/10/,No! It will be too much!,0,0,0,,,,,,END
+ADU_015_,,3/,11/,,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not?,-30,-30,-30,,,,24/,11/10/,No! It will be too much!,0,0,0,,,,,,END
+ADU_016_,,3/,,,You are accepted into university... but your research needs money.,Beg for a grant,0,0,0,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
 ADU_018_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,,15/,16/,Nah,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,,,END
 ADU_019_,,3/,,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,,15/,16/,No,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,,,END
 ADU_020_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/ADU_014_/,,,,I refuse,-10,-50,20,,,,16/,,END
@@ -42,7 +42,7 @@ ADU_040_,,3/,,telemarketer,Someone on behalf of tech support says your computer 
 ADU_041_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 ADU_042_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
 ADU_043_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
-ADU_044_,,3/,,nade,Military,Yes!,-10,20,-10,,,,15/,16/,No... Next Job,0,0,0,,ADU_014_/ADU_021_/ADU_019_/ADU_041_/ADU_042_/ADU_043_/ADU_044_/ADU_002_/ADU_004_/ADU_007_/ADU_008_/ADU_010_/ADU_013_/ADU_018_/,,16/,15/,END
+ADU_044_,Crime Syndicate,3/,4/,,Join a crime syndicate?,Yes,0,0,0,,,,,,No  I'm a solo mastermind,0,0,0,,,,,,END
 BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END
 BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END
 BAB_002_,,0/,,babyannoiyin,...,Googoo,5,0,5,,,,,,Gaagaa,-5,0,5,,,,,,END
@@ -113,7 +113,8 @@ TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event!,
 TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,TEE_015_/,,,Force yourself to train,-25,0,0,,,,,,END
 TEE_015_,,2/,,health gain,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament! Keep going!,-100,0,-25,,,,8/,,END
 TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,TEE_014_/,,,,Get Steroids,-15,-5,5,,,,,,END
-ADU_047_,Crime Syndicate,3/,4/,,Join a crime syndicate?,Yes,0,0,0,,,,,,No  I'm a solo mastermind,0,0,0,,,,,,END
-TEE_019_,chat ask question,2/,,,Chat asks you a question. ,Hi Chat. Lets chat!,0,0,0,,,,,,No chat.,0,0,0,,,,,,END
-TEE_020_,follower ask question,2/,0/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
-ADU_048_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
+ADU_044_,Crime Syndicate,3/,4/,,Join a crime syndicate?,Yes,0,0,0,,,,,,No  I'm a solo mastermind,0,0,0,,,,,,END
+ADU_045_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
+ADU_046_,follower ask question,3/,43/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
+ADU_045_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
+ADU_047_,,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END

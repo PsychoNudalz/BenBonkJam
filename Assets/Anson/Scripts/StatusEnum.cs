@@ -47,7 +47,8 @@ public enum StatusEnum
     Weeb,
     ECommerce,
     StudentDebt,
-    Mortgage
+    Mortgage,
+    Televangelist
 
 }
 

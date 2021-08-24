@@ -159,4 +159,8 @@ MonoBehaviour:
   - {fileID: 7835196420059900005, guid: af4724fbbafb9674db39051e34a7c40d, type: 3}
   - {fileID: 8035747554750965618, guid: 1e868904a692be14f8adfa35e9ccee69, type: 3}
   - {fileID: 5058825612876133997, guid: ca02f74af0ebb28408d566552d1dc0c0, type: 3}
-  runUpdateCardID: 1
+  - {fileID: 2646879349707582999, guid: bf45db176a1f5804db0d287c07cc463d, type: 3}
+  - {fileID: 2950237302407310807, guid: 48f7b4913a1ec164290c821c6e69eddc, type: 3}
+  - {fileID: 7234667916708527867, guid: ed8983c6f0994324e81e06e3e6793d5e, type: 3}
+  - {fileID: 1253416360561863697, guid: ac1f938c65f6ec14c87b03d0357f1ee5, type: 3}
+  runUpdateCardID: 0

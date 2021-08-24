@@ -45,10 +45,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.sequenceCardsAdd.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsOption.sequenceCardsRemove.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.sequenceCardsAdd.Array.data[0]
+      value: 
+      objectReference: {fileID: 908983832815790734, guid: 7e61e5cda3df2654798e46b2d5eb6b66, type: 3}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsOption.sequenceCardsRemove.Array.data[0]
       value: 
       objectReference: {fileID: 908983832815790734, guid: 7e61e5cda3df2654798e46b2d5eb6b66, type: 3}
     - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}

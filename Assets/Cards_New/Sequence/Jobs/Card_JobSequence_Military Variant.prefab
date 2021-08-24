@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardID
-      value: ADU_044_
+      value: ADU_043_
+      objectReference: {fileID: 0}
+    - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: cardDetails
+      value: Crime Syndicate
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardDescription
@@ -17,19 +21,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.bux
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.mood
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.health
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: cardDescriptionText
-      value: Military
+      value: Join a crime syndicate?
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: ageNeeded.Array.size
@@ -37,23 +41,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsDescriptionText
-      value: Yes!
+      value: Yes
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: tailsDescriptionText
-      value: No... Next Job
+      value: No  I'm a solo mastermind
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: ageNeeded.Array.data[0]
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
-      propertyPath: headsOption.statusAdd.Array.size
+      propertyPath: statusNeeded.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: statusNeeded.Array.data[0]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: headsOption.statusAdd.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: tailsOption.statusAdd.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.statusAdd.Array.data[0]
@@ -61,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.statusRemove.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: tailsOption.statusAdd.Array.data[0]
@@ -69,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: tailsOption.statusRemove.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.statusRemove.Array.data[0]
@@ -81,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.size
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[0]
@@ -264,14 +276,14 @@ PrefabInstance:
     - target: {fileID: 7669844761642333534, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 641cf22363e44f54093b39908f46a8ff, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7669844761642333534, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7669844761854057291, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_text
-      value: Military
+      value: Join a crime syndicate?
       objectReference: {fileID: 0}
     - target: {fileID: 7669844762209004677, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_RootOrder
@@ -323,12 +335,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7669844762256043072, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_text
-      value: No... Next Job
+      value: No  I'm a solo mastermind
       objectReference: {fileID: 0}
     - target: {fileID: 7669844762303681719, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
+    - target: {fileID: 7669844762303681736, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
+      propertyPath: m_text
+      value: Yes
+      objectReference: {fileID: 0}
     - target: {fileID: 7669844762303681736, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: m_renderer
       value: 

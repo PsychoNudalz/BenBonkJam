@@ -191,36 +191,36 @@ MonoBehaviour:
   - status: 0
     healthPos: 10
     buxPos: 0
-    moodPos: 10
+    moodPos: 0
     healthNeg: 0
-    buxNeg: 10
-    moodNeg: 0
-    healthPassive: 10
+    buxNeg: 0
+    moodNeg: 10
+    healthPassive: 0
     buxPassive: 0
-    moodPassive: 10
+    moodPassive: 5
     icon: {fileID: 21300000, guid: deaa8e232ebf0bb419c563331005ac8c, type: 3}
     description: 
   - status: 1
     healthPos: 0
     buxPos: 10
     moodPos: 0
-    healthNeg: 10
-    buxNeg: 0
-    moodNeg: 10
+    healthNeg: 0
+    buxNeg: 10
+    moodNeg: 0
     healthPassive: 0
-    buxPassive: 10
+    buxPassive: 0
     moodPassive: 0
     icon: {fileID: 21300000, guid: 6a166739552a21e42b54a007e03b8e1f, type: 3}
     description: 
   - status: 2
     healthPos: 0
     buxPos: 0
-    moodPos: 0
-    healthNeg: 0
+    moodPos: 10
+    healthNeg: 10
     buxNeg: 0
     moodNeg: 0
     healthPassive: 0
-    buxPassive: 0
+    buxPassive: 10
     moodPassive: 0
     icon: {fileID: 21300000, guid: 1031f365b77b55b4ba0b48feaf1424b1, type: 3}
     description: 
@@ -228,7 +228,7 @@ MonoBehaviour:
     healthPos: 0
     buxPos: 0
     moodPos: 0
-    healthNeg: 0
+    healthNeg: 5
     buxNeg: 0
     moodNeg: 0
     healthPassive: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
     description: 
   - status: 4
     healthPos: 0
-    buxPos: 0
+    buxPos: 5
     moodPos: 0
     healthNeg: 0
     buxNeg: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
     moodNeg: 0
     healthPassive: 0
     buxPassive: 0
-    moodPassive: 0
+    moodPassive: 5
     icon: {fileID: 21300000, guid: 10abe3ab4aaf2ed4badd2b12d8c01416, type: 3}
     description: 
   - status: 6
@@ -693,6 +693,18 @@ MonoBehaviour:
     icon: {fileID: 0}
     description: 
   - status: 42
+    healthPos: 0
+    buxPos: 0
+    moodPos: 0
+    healthNeg: 0
+    buxNeg: 0
+    moodNeg: 0
+    healthPassive: 0
+    buxPassive: 0
+    moodPassive: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 43
     healthPos: 0
     buxPos: 0
     moodPos: 0

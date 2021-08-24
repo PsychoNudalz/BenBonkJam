@@ -74,7 +74,7 @@ public class CardEventManager : MonoBehaviour
 
         isDeathStage = isDeathStage || playerScript.age.Equals(AgeEnum.DEAD);
 
-        if (cardCounter >= cardPerAge || isDeathStage)
+        if (cardBuffer.Count == 0 && (cardCounter >= cardPerAge || isDeathStage))
         {
             if (AgePlayer() && !isDeathStage)
             {
@@ -84,7 +84,7 @@ public class CardEventManager : MonoBehaviour
             }
             else
             {
-                print("Age player");
+                print($"Age player: {playerScript.age}");
                 if (isDeathStage)
                 {
                     newCard = LoadGameOverCard();
