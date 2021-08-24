@@ -61,7 +61,7 @@ public class VolumnManager : MonoBehaviour
         string json = JsonUtility.ToJson(savedSettings);
 
         File.WriteAllText(Application.persistentDataPath + "/Save/savedSettings.json", json);
-        Debug.Log(Application.persistentDataPath);
+        //Debug.Log(Application.persistentDataPath);
         Debug.Log(json);
 
         Debug.Log("Saved settings.");

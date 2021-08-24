@@ -121,6 +121,7 @@ public class StatsEndingDisplay : MonoBehaviour
 
     public void Statistics()
     {
+        /*
         timesDiedText.text = gameDataManager.Achievements1.timesDied.ToString();
         if (gameDataManager.Achievements1.timesDied >= 50 && gameDataManager.Achievements1.die50Times == false)
         {
@@ -131,6 +132,7 @@ public class StatsEndingDisplay : MonoBehaviour
         {
             return;
         }
+        */
     }
     public void Update()
     {
@@ -191,6 +193,7 @@ public class StatsEndingDisplay : MonoBehaviour
 
     public void Achievements()
     {
+        /*
         if (gameDataManager.Achievements1.die50Times == true)
         {
             die50TimesButton.image.sprite = dieYoung;
@@ -245,6 +248,7 @@ public class StatsEndingDisplay : MonoBehaviour
             oldAgeObtainedButton.image.sprite = basic;
             oldAgeObtainedButton.interactable = false;
         }
+        */
     }
     public void die50Times()
     {

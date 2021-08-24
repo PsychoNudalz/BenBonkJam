@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public static class StatusToScore
 {
@@ -75,10 +76,16 @@ public static class StatusToScore
 
 public class GameManagerScript : MonoBehaviour
 {
+    public static GameManagerScript current;
+
     public bool gameOver;
     public Player player;
+    [SerializeField] System.Tuple<string, float> score;
+    
     [Header("Game Over")]
     public UIHandler uIHandler;
+
+    public Tuple<string, float> Score { get => score; set => score = value; }
 
     //if health is 0 -> gameover (Redundant)
     /*public void CheckHealth() {
@@ -137,13 +144,14 @@ public class GameManagerScript : MonoBehaviour
         {
             returnTuple = new System.Tuple<string, float>("F", s);
         }
+        score = returnTuple;
         return returnTuple;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        current = this;
     }
 
     // Update is called once per frame

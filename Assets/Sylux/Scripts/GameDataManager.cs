@@ -17,6 +17,9 @@ public class GameDataManager : MonoBehaviour
     */
     [SerializeField] Achievements achievements = new Achievements();
     [SerializeField] EndingsUnlocked endingsUnlocked = new EndingsUnlocked();
+    [SerializeField] List<StatusEffect> statusesGained = new List<StatusEffect>();
+
+
     public static GameDataManager gameDataManagerInstance;
 
     public Achievements Achievements1 { get => achievements; set => achievements = value; }
@@ -38,7 +41,9 @@ public class GameDataManager : MonoBehaviour
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(filePath, FileMode.Open);
 
-            achievements = (Achievements)formatter.Deserialize(stream);
+            string json = (string)formatter.Deserialize(stream);
+            achievements = JsonUtility.FromJson<Achievements>(json);
+            
             stream.Close();
         }
         else
@@ -54,75 +59,77 @@ public class GameDataManager : MonoBehaviour
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(filePath, FileMode.Open);
 
-            endingsUnlocked = (EndingsUnlocked)formatter.Deserialize(stream);
+            string json2 = (string)formatter.Deserialize(stream);
+            endingsUnlocked = JsonUtility.FromJson<EndingsUnlocked>(json2);
             stream.Close();
+            Debug.Log("Load player Save clear");
         }
         else
         {
             Debug.LogWarning($"Endings save file not found!");
             endingsUnlocked = new EndingsUnlocked();
         }
-       /* string json = JsonUtility.ToJson(achievements);
-        string json2 = JsonUtility.ToJson(endingsUnlocked);
-        try
-        {
-            Debug.Log("Loading save progress");
-            json = File.ReadAllText(Application.persistentDataPath + "/Save/achievements.json");
-        }
-        catch (System.Exception)
-        {
-            Debug.Log("Whoops");
-            Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
-            File.WriteAllText(Application.persistentDataPath + "/Save/achievements.json", json);
+        /* string json = JsonUtility.ToJson(achievements);
+         string json2 = JsonUtility.ToJson(endingsUnlocked);
+         try
+         {
+             Debug.Log("Loading save progress");
+             json = File.ReadAllText(Application.persistentDataPath + "/Save/achievements.json");
+         }
+         catch (System.Exception)
+         {
+             Debug.Log("Whoops");
+             Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+             File.WriteAllText(Application.persistentDataPath + "/Save/achievements.json", json);
 
-            Debug.LogError("Save file error");
-         //   Debug.LogError(Exception.StackTrace);
+             Debug.LogError("Save file error");
+          //   Debug.LogError(Exception.StackTrace);
 
-        }
+         }
 
-        try
-        {
-            Debug.Log("Loading endings progress");
-            json2 = File.ReadAllText(Application.persistentDataPath + "/Save/saveEndings.json");
-        }
-        catch (System.Exception)
-        {
+         try
+         {
+             Debug.Log("Loading endings progress");
+             json2 = File.ReadAllText(Application.persistentDataPath + "/Save/saveEndings.json");
+         }
+         catch (System.Exception)
+         {
 
-            Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
-            File.WriteAllText(Application.persistentDataPath + "/Save/saveEndings.json", json2);
-            json2 = JsonUtility.ToJson(endingsUnlocked);
+             Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+             File.WriteAllText(Application.persistentDataPath + "/Save/saveEndings.json", json2);
+             json2 = JsonUtility.ToJson(endingsUnlocked);
 
-            Debug.LogError("Save file error");
-          //  Debug.LogError(e.StackTrace);
-        }
+             Debug.LogError("Save file error");
+           //  Debug.LogError(e.StackTrace);
+         }
 
-        achievements = JsonUtility.FromJson<Achievements>(json);
-        endingsUnlocked = JsonUtility.FromJson<EndingsUnlocked>(json2);
+         achievements = JsonUtility.FromJson<Achievements>(json);
+         endingsUnlocked = JsonUtility.FromJson<EndingsUnlocked>(json2);
 
-        */
+         */
     }
 
     private void WriteToSave()
     {
-        Debug.Log("Writing Save");
-        
+        Debug.Log("Writing Player Save");
+
         BinaryFormatter formatter = new BinaryFormatter();
         /*CreateSaveDirectoryPaths();*/
         string filePath = $"{Application.persistentDataPath}/Save/achievements.save";
         FileStream stream = new FileStream(filePath, FileMode.Create);
-        formatter.Serialize(stream,achievements);
+        string json = JsonUtility.ToJson(achievements);
+        formatter.Serialize(stream, json);
         stream.Close();
         Debug.Log("Saved Ach.");
-        
+
         filePath = $"{Application.persistentDataPath}/Save/endings.save";
         stream = new FileStream(filePath, FileMode.Create);
-        formatter.Serialize(stream,endingsUnlocked);
+        string json2 = JsonUtility.ToJson(endingsUnlocked);
+        formatter.Serialize(stream, json2);
         stream.Close();
         Debug.Log("Saved End.");
 
         /*Debug.Log("Writing Save");
-        string json = JsonUtility.ToJson(achievements);
-        string json2 = JsonUtility.ToJson(endingsUnlocked);
 
         File.WriteAllText(Application.persistentDataPath + "/Save/achievements.json", json);
         Debug.Log(Application.persistentDataPath);
@@ -156,11 +163,22 @@ public class GameDataManager : MonoBehaviour
     public class Achievements
     {
         // achievements
-        public bool die50Times;
-        public bool gradeSObtained;
-        public bool statusEffects10Obtained;
-        public bool educationMaxedOut;
-        public bool oldAgeObtained;
+        /*
+        public bool die50Times = false;
+        public bool gradeSObtained = false;
+        public bool statusEffects10Obtained = false;
+        public bool educationMaxedOut = false;
+        public bool oldAgeObtained = false;
+        public bool adoptAllPossibleAnimals = false;
+        public bool dieAsABaby = false;
+        public bool dieAtOldAgeWith100Mood = false;
+        public bool dieAtOldAgeWith100Bux = false;
+        public bool haveChildren = false;
+        public bool getScammed = false;
+
+        */
+
+        public List<AchievementEnum> earnedAchievements;
 
         // stats
         public int timesDied;
@@ -168,18 +186,20 @@ public class GameDataManager : MonoBehaviour
         public int endingsFound;
         public int uniqueCardsDiscovered;
 
-        public Achievements(int timesDied, int easterEggsFound, int endingsFound, int uniqueCardsDiscovered, 
+        public Achievements(int timesDied, int easterEggsFound, int endingsFound, int uniqueCardsDiscovered,
             bool gradeSObtained, bool statusEffects10Obtained, bool educationMaxedOut, bool oldAgeObtained, bool die50Times)
         {
             this.timesDied = timesDied;
             this.easterEggsFound = easterEggsFound;
             this.endingsFound = endingsFound;
             this.uniqueCardsDiscovered = uniqueCardsDiscovered;
+            /*
             this.gradeSObtained = gradeSObtained;
             this.statusEffects10Obtained = statusEffects10Obtained;
             this.educationMaxedOut = educationMaxedOut;
             this.oldAgeObtained = oldAgeObtained;
             this.die50Times = die50Times;
+            */
         }
 
         public Achievements()
@@ -188,11 +208,13 @@ public class GameDataManager : MonoBehaviour
             this.easterEggsFound = 0;
             this.endingsFound = 0;
             this.uniqueCardsDiscovered = 0;
+            /*
             this.gradeSObtained = false;
             this.statusEffects10Obtained = false;
             this.educationMaxedOut = false;
             this.oldAgeObtained = false;
             this.die50Times = false;
+            */
         }
     }
 
@@ -200,20 +222,19 @@ public class GameDataManager : MonoBehaviour
 
     public class EndingsUnlocked
     {
-        public  bool alien;
-        public  bool athlete;
-        public  bool borderAwake;
-        public  bool dieYoung;
-        public  bool friendGhost;
-        public  bool hamDogAdventure;
-        public  bool hell;
-        public  bool paradise;
-        public  bool purgatory;
-        public  bool reincarnation;
-        public  bool sick;
-        public  bool voidEnding;
-        public  bool wakeUpSim;
-
+        public bool alien;
+        public bool athlete;
+        public bool borderAwake;
+        public bool dieYoung;
+        public bool friendGhost;
+        public bool hamDogAdventure;
+        public bool hell;
+        public bool paradise;
+        public bool purgatory;
+        public bool reincarnation;
+        public bool sick;
+        public bool voidEnding;
+        public bool wakeUpSim;
 
         public EndingsUnlocked(bool alien, bool athlete, bool borderAwake, bool dieYoung, bool friendGhost, bool hamDogAdventure,
                 bool hell, bool paradise, bool purgatory, bool reincarnation, bool sick, bool voidEnding, bool wakeUpSim)
@@ -231,13 +252,9 @@ public class GameDataManager : MonoBehaviour
             this.sick = sick;
             this.voidEnding = voidEnding;
             this.wakeUpSim = wakeUpSim;
-
-
         }
-
         public EndingsUnlocked()
         {
-            
             alien = false;
             athlete = false;
             borderAwake = false;
@@ -251,9 +268,7 @@ public class GameDataManager : MonoBehaviour
             sick = false;
             voidEnding = false;
             wakeUpSim = false;
-            
         }
-
     }
 
 }

@@ -21,7 +21,7 @@ public enum AchievementEnum
 public class AchievementsManager : PlayerCollectionManager
 {
     [Header("Achiements")]
-    [SerializeField] List<AchievementCollection> achievementCollections;
+    [SerializeField] AchievementCollection[] achievementCollections;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +65,7 @@ public class AchievementsManager : PlayerCollectionManager
 
     private static void CardIsUnlocked(GameDataManager gameDataManager, AchievementCollection ac)
     {
+        /*
         switch (ac.AchievementEnum)
         {
             case AchievementEnum.gradeSObtained:
@@ -86,6 +87,26 @@ public class AchievementsManager : PlayerCollectionManager
                 ac.IsUnlocked = gameDataManager.Achievements1.die50Times;
 
                 break;
+            case AchievementEnum.adoptAllPossibleAnimals:
+                ac.IsUnlocked = gameDataManager.Achievements1.adoptAllPossibleAnimals;
+
+                break;
+            case AchievementEnum.dieAsABaby:
+                ac.IsUnlocked = gameDataManager.Achievements1.dieAsABaby;
+                break;
+            case AchievementEnum.dieAtOldAgeWith100Mood:
+                ac.IsUnlocked = gameDataManager.Achievements1.dieAtOldAgeWith100Mood;
+                break;
+            case AchievementEnum.dieAtOldAgeWith100Bux:
+                ac.IsUnlocked = gameDataManager.Achievements1.dieAtOldAgeWith100Bux;
+                break;
+            case AchievementEnum.haveChildren:
+                ac.IsUnlocked = gameDataManager.Achievements1.haveChildren;
+                break;
+            case AchievementEnum.getScammed:
+                ac.IsUnlocked = gameDataManager.Achievements1.getScammed;
+                break;
         }
+        */
     }
 }

@@ -139,6 +139,7 @@ public class CardEventManager : MonoBehaviour
 
     private void CallGameOver()
     {
+        GameDataTracker.current.PostGame();
         FindObjectOfType<GameManagerScript>().setGameOver(currentCard.CardID);
     }
 
