@@ -21,7 +21,7 @@ public class GameDataTracker : MonoBehaviour
         //CheckIsDeathCard();
     }
 
-    public void CheckIsAchievement()
+    public void CheckIsAchievementPostGame()
     {
         /*
         //S rank, max out education card, 10 status effects at once, old age card
@@ -31,17 +31,83 @@ public class GameDataTracker : MonoBehaviour
         }
         */
         //Grade S
+        GameManagerScript.current.GetGrade();
         if (GameManagerScript.current.Score.Item1.Equals("S"))
         {
             //gameDataManager.Achievements1.gradeSObtained = true;
+            AddAchievement(AchievementEnum.gradeSObtained);
+        }
+
+        //StatusEffects10Obtained
+        if (Player.current.status.currentstatus.Count >= 10)
+        {
+            AddAchievement(AchievementEnum.statusEffects10Obtained);
+        }
+
+        //Education Maxed Out
+        if (Player.current.status.HasSatus(StatusEnum.EducatedIII))
+        {
+            AddAchievement(AchievementEnum.educationMaxedOut);
         }
 
 
+        //die 50 Times
+        if (gameDataManager.Achievements1.timesDied >= 50)
+        {
+            AddAchievement(AchievementEnum.die50Times);
+        }
+
+        //adopt All possible Animals
+        if (Player.current.status.HasSatus(StatusEnum.PetCat) && Player.current.status.HasSatus(StatusEnum.PetDog) && Player.current.status.HasSatus(StatusEnum.PetDragon) && (Player.current.status.HasSatus(StatusEnum.PetDragon) || Player.current.status.HasSatus(StatusEnum.BlueDragonPet) || Player.current.status.HasSatus(StatusEnum.RedDragonPet)))
+        {
+            AddAchievement(AchievementEnum.adoptAllPossibleAnimals);
+        }
+
+        //die as a baby
+        if (Player.current.HasSatus(StatusEnum.DieYoung))
+        {
+            AddAchievement(AchievementEnum.dieAsABaby);
+        }
+
+        //die at old age with 100 Mood
+        if (!Player.current.IsGameOver() && Player.current.MoodPoint >= 100)
+        {
+            AddAchievement(AchievementEnum.dieAtOldAgeWith100Mood);
+        }
+
+        //die at old age with 100 Bux
+        if (!Player.current.IsGameOver() && Player.current.BuxPoint >= 100)
+        {
+            AddAchievement(AchievementEnum.dieAtOldAgeWith100Bux);
+        }
+
+        //Have children
+        if (Player.current.HasSatus(StatusEnum.ParentHood))
+        {
+            AddAchievement(AchievementEnum.haveChildren);
+        }
+
+        
+    }
+
+    public void CheckIsAchievementPerTurn()
+    {
+        //Old Age
+        if (Player.current.age.Equals(AgeEnum.OLD))
+        {
+            AddAchievement(AchievementEnum.oldAgeObtained);
+        }
+    }
+
+    void AddAchievement(AchievementEnum ae)
+    {
+        gameDataManager.Achievements1.AddAchievement(ae);
     }
 
     public void PostGame()
     {
         gameDataManager.Achievements1.timesDied++;
+        CheckIsAchievementPostGame();
         gameDataManager.SaveGame();
         //CheckIsDeathCard();
     }

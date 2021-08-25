@@ -140,6 +140,7 @@ public class CardEventManager : MonoBehaviour
     private void CallGameOver()
     {
         GameDataTracker.current.PostGame();
+        
         FindObjectOfType<GameManagerScript>().setGameOver(currentCard.CardID);
     }
 
@@ -310,6 +311,7 @@ public class CardEventManager : MonoBehaviour
         List<StatusEnum> requiredStatus = cardOption.RequiredStatus;
 
         GameDataTracker.current.CheckIsDeathCard();
+        GameDataTracker.current.CheckIsAchievementPerTurn();
 
         foreach (StatusEnum se in requiredStatus)
         {

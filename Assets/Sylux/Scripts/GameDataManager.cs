@@ -178,7 +178,7 @@ public class GameDataManager : MonoBehaviour
 
         */
 
-        public List<AchievementEnum> earnedAchievements;
+        public List<AchievementEnum> earnedAchievements = new List<AchievementEnum>();
 
         // stats
         public int timesDied;
@@ -215,6 +215,14 @@ public class GameDataManager : MonoBehaviour
             this.oldAgeObtained = false;
             this.die50Times = false;
             */
+        }
+
+        public void AddAchievement(AchievementEnum ae)
+        {
+            if (!earnedAchievements.Contains(ae))
+            {
+                earnedAchievements.Add(ae);
+            }
         }
     }
 

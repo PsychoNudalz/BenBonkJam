@@ -43,10 +43,6 @@ ADU_040_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,ADU_013_/ADU_020_/AD
 ADU_041_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,ADU_013_/ADU_020_/ADU_018_/ADU_040_/ADU_041_/ADU_042_/ADU_043_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_017_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_042_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,ADU_013_/ADU_020_/ADU_018_/ADU_040_/ADU_041_/ADU_042_/ADU_043_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_017_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_043_,Crime Syndicate,3/,4/,,Join a crime syndicate?,Yes,0,0,0,,,,,,No  I'm a solo mastermind,0,0,0,,,,,,END
-ADU_044_,Crime Syndicate,3/,4/,,Join a crime syndicate?,Yes,0,0,0,,,,,,No  I'm a solo mastermind,0,0,0,,,,,,END
-ADU_045_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
-ADU_046_,follower ask question,3/,43/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
-ADU_047_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
 BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END
 BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END
 BAB_002_,,0/,,babyannoiyin,...,Googoo,5,0,5,,,,,,Gaagaa,-5,0,5,,,,,,END
@@ -117,3 +113,7 @@ TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event!,
 TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,,,,Force yourself to train,-25,0,0,,TEE_015_/,,,,END
 TEE_015_,,2/,,health gain,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament! Keep going!,-100,0,-25,,,,8/,,END
 TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,TEE_014_/,,,,Get Steroids,-15,-5,5,,,,,,END
+ADU_044_,Crime Syndicate,3/,4/,,Join a crime syndicate?,Yes,0,0,0,,,,,,No  I'm a solo mastermind,0,0,0,,,,,,END
+ADU_045_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
+ADU_046_,follower ask question,3/,43/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
+ADU_047_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END

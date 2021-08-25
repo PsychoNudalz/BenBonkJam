@@ -65,6 +65,12 @@ public class AchievementsManager : PlayerCollectionManager
 
     private static void CardIsUnlocked(GameDataManager gameDataManager, AchievementCollection ac)
     {
+
+        if (gameDataManager.Achievements1.earnedAchievements.Contains(ac.AchievementEnum))
+        {
+            ac.IsUnlocked = true;
+        }
+
         /*
         switch (ac.AchievementEnum)
         {
