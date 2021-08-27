@@ -56,7 +56,7 @@ public class CardEventManager : MonoBehaviour
         {
             RunCardConversion();
         }
-
+        BackgroundMusicBlender.current.PlayAgeMusic(playerScript.age);
     }
 
     public void LoadNewCard()
@@ -150,6 +150,7 @@ public class CardEventManager : MonoBehaviour
         AgeChangeAnimationHandler.current.PlayAnimation(playerScript.age);
         cardCounter = 0;
         UpdatePlayerStatsUI();
+        BackgroundMusicBlender.current.PlayAgeMusic(playerScript.age);
 
         return maxedAge;
     }
