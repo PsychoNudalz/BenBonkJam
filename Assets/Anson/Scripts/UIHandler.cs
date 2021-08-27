@@ -205,7 +205,7 @@ public class UIHandler : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu 1");
     }
 
     public void DisplayGameOver(string grade, float score, string s = "")

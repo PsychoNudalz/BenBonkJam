@@ -46,14 +46,20 @@ public class CardOptionSave
         List<string> tempString = new List<string>();
         foreach (Card c in o.SequenceCardsAdd)
         {
+            if (c)
+            {
             tempString.Add(c.CardID);
+            }
         }
         sequenceCardsAdd = tempString.ToArray();
 
         tempString = new List<string>();
         foreach (Card c in o.SequenceCardsRemove)
         {
-            tempString.Add(c.CardID);
+            if (c)
+            {
+                tempString.Add(c.CardID);
+            }
         }
         sequenceCardsRemove = tempString.ToArray();
 

@@ -33,7 +33,7 @@ public class AchievementCollection : PlayerCollection
 
 public class EndingCollection : PlayerCollection
 {
-    [Header("Achievement")]
+    [Header("Ending")]
     [SerializeField] EndingEnum endingEnum;
 
     public EndingEnum EndingEnum { get => endingEnum; set => endingEnum = value; }

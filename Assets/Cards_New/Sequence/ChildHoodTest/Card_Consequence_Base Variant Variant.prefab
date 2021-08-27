@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: tailsDescriptionText
       value: ...
       objectReference: {fileID: 0}
+    - target: {fileID: 6811611999412386708, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f417118d5d58f7347b808b763f9ad175, type: 2}
     - target: {fileID: 7172463096149028096, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
       propertyPath: cardID
       value: 0
