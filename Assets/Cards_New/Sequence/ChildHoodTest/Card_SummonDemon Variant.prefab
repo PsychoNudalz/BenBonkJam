@@ -137,6 +137,10 @@ PrefabInstance:
       propertyPath: tailsOption.sequenceCardsAdd.Array.data[0]
       value: 
       objectReference: {fileID: 8527839589392539924, guid: 161b6c1f9dc666941b1f82b5fd52286b, type: 3}
+    - target: {fileID: 971698056301366891, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f417118d5d58f7347b808b763f9ad175, type: 2}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
       value: How do you cheat?
@@ -229,6 +233,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1cc6df4f45dec83418be8266d05fd2ca, type: 2}
+    - target: {fileID: 5935477582836794347, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f417118d5d58f7347b808b763f9ad175, type: 2}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}

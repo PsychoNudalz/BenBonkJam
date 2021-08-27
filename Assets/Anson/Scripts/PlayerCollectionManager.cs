@@ -75,13 +75,13 @@ public class PlayerCollectionManager : MonoBehaviour
     public void NextPage()
     {
         pageNumber++;
-        pageNumber = Mathf.Clamp(pageNumber, 0, playerCollections.Count / maxButtonsPerPage + 1);
+        pageNumber = Mathf.Clamp(pageNumber, 0, playerCollections.Count / maxButtonsPerPage);
         LoadButtons();
     }
     public void PrevPage()
     {
         pageNumber--;
-        pageNumber = Mathf.Clamp(pageNumber, 0, playerCollections.Count / maxButtonsPerPage + 1);
+        pageNumber = Mathf.Clamp(pageNumber, 0, playerCollections.Count / maxButtonsPerPage);
         LoadButtons();
     }
 

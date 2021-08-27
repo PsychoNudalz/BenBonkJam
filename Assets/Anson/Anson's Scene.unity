@@ -29850,7 +29850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: allCards.Array.size
-      value: 28
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: allCards.Array.data[0]

@@ -24,8 +24,8 @@ public class CardEventManager : MonoBehaviour
     [Header("Other Components")]
     [SerializeField] UIHandler uIHandler;
     [SerializeField] Animator animator;
-    [SerializeField] ParticleSystem headsPS;
-    [SerializeField] ParticleSystem tailsPS;
+    //[SerializeField] ParticleSystem headsPS;
+    //[SerializeField] ParticleSystem tailsPS;
     [Header("Private")]
     [SerializeField] bool isDeathStage = false;
 
@@ -394,9 +394,8 @@ public class CardEventManager : MonoBehaviour
 
         //PlayCard(currentCard.GetHeadsResults(), currentCard.SequenceCardsHeads, currentCard.RemoveSequenceCardsHeads, currentCard.AddStatusHeads, currentCard.RemoveStatusHeads, currentCard.RequoredStatusHeads);
         PlayCard(currentCard.HeadsOption);
-        PlayCardSound(CardSoundEnum.HEADS);
-        headsPS.Stop();
-        headsPS.Play();
+        //PlayCardSound(CardSoundEnum.HEADS);
+        currentCard.CardEffectScript.PlayHeads();
         UpdatePlayerStatsUI();
         LoadNewCard();
     }
@@ -408,9 +407,8 @@ public class CardEventManager : MonoBehaviour
         }
         //PlayCard(currentCard.GetTailsResults(), currentCard.SequenceCardsTails, currentCard.RemoveSequenceCardsTails, currentCard.AddStatusTails, currentCard.RemoveStatusTails, currentCard.RequoredStatusTails);
         PlayCard(currentCard.TailsOption);
-        PlayCardSound(CardSoundEnum.TAILS);
-        tailsPS.Stop();
-        tailsPS.Play();
+        //PlayCardSound(CardSoundEnum.TAILS);
+        currentCard.CardEffectScript.PlayTails();
         UpdatePlayerStatsUI();
         LoadNewCard();
     }
@@ -447,20 +445,6 @@ public class CardEventManager : MonoBehaviour
     {
         cardBuffer = new List<Card>();
     }
-
-    void PlayCardSound(CardSoundEnum c)
-    {
-        try
-        {
-            currentCard.CardEffectScript.PlaySound(c);
-        }
-        catch (System.Exception e)
-        {
-            Debug.LogError("Failed to play card sound");
-        }
-    }
-
-
     //CARD CONVERSION
     Card RunCardConversion(CardOLD oldC, Card newC)
     {
