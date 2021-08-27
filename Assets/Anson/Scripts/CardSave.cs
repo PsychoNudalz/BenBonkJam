@@ -177,6 +177,7 @@ public class CardSave
         this.cardID = c.CardID;
         this.cardDetails = c.CardDetails;
         this.cardDes = c.CardDescriptionText;
+        Debug.Log($"Loading card save for {cardID} {cardDetails} {cardDes}");
         this.headsDes = c.HeadsDescriptionText;
         this.tailsDes = c.TailsDescriptionText;
         this.headsOption = new CardOptionSave(c.HeadsOption);
