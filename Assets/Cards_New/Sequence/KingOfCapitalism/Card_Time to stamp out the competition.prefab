@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardID
-      value: ADU_057_
+      value: ADU_058_
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardDescriptionText
@@ -50,7 +50,7 @@ PrefabInstance:
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.sequenceCardsAdd.Array.data[1]
       value: 
-      objectReference: {fileID: 5466332894981882116, guid: 25c436dbf8acaa040ba911b981b2debb, type: 3}
+      objectReference: {fileID: 4106053827060315649, guid: deb2c0684a2cece4892b05d26d2959a8, type: 3}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
       value: Time to stamp out the competition
