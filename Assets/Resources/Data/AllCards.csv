@@ -43,7 +43,6 @@ ADU_040_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,ADU_018_/ADU_040_/AD
 ADU_041_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,ADU_041_/ADU_017_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_042_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,ADU_020_/ADU_018_/ADU_040_/ADU_041_/ADU_042_/ADU_043_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_017_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_043_,Crime Syndicate,3/,4/,,Join a crime syndicate?,Yes,0,0,0,,,ADU_041_/ADU_043_/ADU_017_/,,,No  I'm a solo mastermind,0,0,0,,,,,,END
-ADU_044_,Crime Syndicate,3/,4/,,Join a crime syndicate?,Yes,0,0,0,,,,,,No  I'm a solo mastermind,0,0,0,,,,,,END
 ADU_045_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
 ADU_046_,follower ask question,3/,43/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
 ADU_047_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
