@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 
-public class CardHandlerWindow : EditorWindow
+public class CardHandlerWindow : EditorWindow 
 {
     Vector2 scrollPos;
     CardHandler cardHandler { get => FindObjectOfType<CardHandler>(); }
@@ -32,37 +33,54 @@ public class CardHandlerWindow : EditorWindow
         }
 
         GUILayout.Label("Remeber to save ctrl+s", EditorStyles.boldLabel);
+        GUILayout.Label("And also Uncheck and Check the card handler and apply the prefab", EditorStyles.boldLabel);
+        GUILayout.Label("And apply the prefab", EditorStyles.boldLabel);
         GUILayout.Space(10);
 
         GUILayout.Label("Card Handler", EditorStyles.boldLabel);
         if (GUILayout.Button("Sort Cards"))
         {
+            MarkDirty();
             cardHandler.SortCards();
         }
 
         if (GUILayout.Button("Set Card ID"))
         {
+            MarkDirty();
             cardHandler.UpdateCardIDs();
         }
 
         if (GUILayout.Button("Check CSV duplicate"))
         {
+            MarkDirty();
             CSVHandler.CheckCSVDuplicate(cardHandler.DupFlagRange);
+        }
+
+        if (GUILayout.Button("Check Illegal Character"))
+        {
+            MarkDirty();
+            if (!CSVHandler.CheckIllegalCharacter())
+            {
+                Debug.Log("No Issues found");
+            }
         }
 
         if (GUILayout.Button("Find All Cards"))
         {
+            MarkDirty();
             cardHandler.FindAllCards();
         }
         if (cardHandler.TempAutoFoundCards.Count > 0)
         {
             if (GUILayout.Button("Apply Found Cards"))
             {
+            MarkDirty();
                 cardHandler.ApplyFoundCards();
             }
 
             if (GUILayout.Button("Clear Found Cards"))
             {
+            MarkDirty();
                 cardHandler.ClearFoundCards();
             }
         }
@@ -73,14 +91,23 @@ public class CardHandlerWindow : EditorWindow
 
         if (GUILayout.Button("Full Add New Cards From Excel"))
         {
+            MarkDirty();
             try
             {
-                CSVHandler.FromExcelToJSON(cardHandler);
-                cardHandler.GenerateCardsFromJson();
-                cardHandler.SaveCardsToJson();
-                cardHandler.LoadCardsFromJson();
-                cardHandler.SaveCardsToJson();
-                CSVHandler.FromJSON(cardHandler);
+                if (CSVHandler.CheckIllegalCharacter())
+                {
+                    Debug.LogError("Check failed, terminating.  Please Fix the csv first for commas and illegal character.  Might need to open the csv in Notepad to check FULLY");
+                    throw new System.Exception("Check failed");
+                }
+                else
+                {
+                    CSVHandler.FromExcelToJSON(cardHandler);
+                    cardHandler.GenerateCardsFromJson();
+                    cardHandler.SaveCardsToJson();
+                    cardHandler.LoadCardsFromJson();
+                    cardHandler.SaveCardsToJson();
+                    CSVHandler.FromJSON(cardHandler);
+                }
             }
             catch (System.Exception e)
             {
@@ -95,6 +122,7 @@ public class CardHandlerWindow : EditorWindow
 
         if (GUILayout.Button("Full Save"))
         {
+            MarkDirty();
             try
             {
                 cardHandler.SaveCardsToJson();
@@ -111,6 +139,7 @@ public class CardHandlerWindow : EditorWindow
 
         if (GUILayout.Button("Full Load"))
         {
+            MarkDirty();
             try
             {
                 CSVHandler.FromExcelToJSON(cardHandler);
@@ -165,7 +194,23 @@ public class CardHandlerWindow : EditorWindow
     }
 
 
+    private void MarkDirty()
+    {
+            EditorUtility.SetDirty(cardHandler);
+            EditorSceneManager.MarkSceneDirty(cardHandler.gameObject.scene);
+    }
 
+}
 
+public class CardHandlerWindowInspector: Editor
+{
+    public override void OnInspectorGUI()
+    {
+        if (GUI.changed)
+        {
+            EditorUtility.SetDirty(FindObjectOfType<CardHandler>());
+            EditorSceneManager.MarkSceneDirty(FindObjectOfType<CardHandler>().gameObject.scene);
+        }
+    }
 }
 #endif

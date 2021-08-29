@@ -14,6 +14,8 @@ public static class CSVHandler
         "END", "Rules: Age and stats must be in integer.  Set a card detail if description contains special characters"
     };
 
+    static string[] illegalCharacter = {"\""};
+
 
     public static void FromJSON(CardHandler cardHandler)
     {
@@ -66,6 +68,7 @@ public static class CSVHandler
         List<CardSave> cardSaves = new List<CardSave>();
         foreach (string s in loadedArray)
         {
+            //Debug.Log($"Card size: {s.Split(',').Length}");
             cardSaves.Add(new CardSave(s.Split(',')));
         }
 
@@ -167,6 +170,32 @@ public static class CSVHandler
         }
         maxSize = Mathf.Max(lhs.Length, rhs.Length);
         return (float)counter / (float)maxSize;
+    }
+
+    public static bool CheckIllegalCharacter()
+    {
+        bool errorFlag = false;
+        int i = 0;
+        List<string> loadedArray = LoadFromCSVToString();
+        foreach (string s in loadedArray)
+        {
+            i++;
+            if (s.Split(',').Length!=25)
+            {
+                Debug.Log($"Miss match length {s.Split(',').Length} on Row: {i} on Card: {s}");
+                errorFlag = true;
+            }
+            foreach(string c in illegalCharacter)
+            {
+                if (s.Contains(c))
+                {
+                    errorFlag = true;
+                    Debug.Log($"Illegal character on Row: {i} on Card: {s}");
+
+                }
+            }
+        }
+        return errorFlag;
     }
 
 }
