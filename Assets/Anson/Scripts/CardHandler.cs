@@ -16,8 +16,13 @@ public class CardHandler : MonoBehaviour
     [SerializeField] List<Card> whiteList;
     [SerializeField] List<Card> blackList;
 
+    [Header("Duplicate Card Checker")]
+    [Range(0f, 1f)]
+    [SerializeField] float dupFlagRange = 0.8f;
+
     public List<Card> AllCards { get => allCards; }
     public List<Card> TempAutoFoundCards { get => tempAutoFoundCards; set => tempAutoFoundCards = value; }
+    public float DupFlagRange { get => dupFlagRange; set => dupFlagRange = value; }
 
     private void Awake()
     {
@@ -296,7 +301,7 @@ public class CardHandler : MonoBehaviour
     }
 
 
-    public void LoadAllCards()
+    public void FindAllCards()
     {
         List<Card> allFoundCards = FileLoader.GetAllFilesFromResources<Card>("Cards_New/", "*.prefab");
 
@@ -320,4 +325,10 @@ public class CardHandler : MonoBehaviour
         tempAutoFoundCards = new List<Card>();
         SortCards();
     }
+
+    public void ClearFoundCards()
+    {
+        tempAutoFoundCards = new List<Card>();
+    }
+
 }

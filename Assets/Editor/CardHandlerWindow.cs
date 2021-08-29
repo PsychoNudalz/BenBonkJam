@@ -6,6 +6,7 @@ using UnityEditor;
 
 public class CardHandlerWindow : EditorWindow
 {
+    Vector2 scrollPos;
     CardHandler cardHandler { get => FindObjectOfType<CardHandler>(); }
 
     [MenuItem("Window/Card Handler")]
@@ -16,6 +17,8 @@ public class CardHandlerWindow : EditorWindow
 
     private void OnGUI()
     {
+        GUILayout.BeginVertical();
+        scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
         GUILayout.Label("There must be a card handler in the scene", EditorStyles.boldLabel);
         if (cardHandler)
         {
@@ -42,15 +45,25 @@ public class CardHandlerWindow : EditorWindow
             cardHandler.UpdateCardIDs();
         }
 
+        if (GUILayout.Button("Check CSV duplicate"))
+        {
+            CSVHandler.CheckCSVDuplicate(cardHandler.DupFlagRange);
+        }
+
         if (GUILayout.Button("Find All Cards"))
         {
-            cardHandler.LoadAllCards();
+            cardHandler.FindAllCards();
         }
         if (cardHandler.TempAutoFoundCards.Count > 0)
         {
             if (GUILayout.Button("Apply Found Cards"))
             {
                 cardHandler.ApplyFoundCards();
+            }
+
+            if (GUILayout.Button("Clear Found Cards"))
+            {
+                cardHandler.ClearFoundCards();
             }
         }
 
@@ -145,6 +158,9 @@ public class CardHandlerWindow : EditorWindow
         {
             CSVHandler.FromExcelToJSON(cardHandler);
         }
+
+
+        GUILayout.EndScrollView();
 
     }
 
