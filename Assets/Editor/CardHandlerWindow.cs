@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 
-public class CardHandlerWindow : EditorWindow 
+public class CardHandlerWindow : EditorWindow
 {
     Vector2 scrollPos;
     CardHandler cardHandler { get => FindObjectOfType<CardHandler>(); }
@@ -74,13 +74,13 @@ public class CardHandlerWindow : EditorWindow
         {
             if (GUILayout.Button("Apply Found Cards"))
             {
-            MarkDirty();
+                MarkDirty();
                 cardHandler.ApplyFoundCards();
             }
 
             if (GUILayout.Button("Clear Found Cards"))
             {
-            MarkDirty();
+                MarkDirty();
                 cardHandler.ClearFoundCards();
             }
         }
@@ -196,13 +196,29 @@ public class CardHandlerWindow : EditorWindow
 
     private void MarkDirty()
     {
-            EditorUtility.SetDirty(cardHandler);
-            EditorSceneManager.MarkSceneDirty(cardHandler.gameObject.scene);
+        EditorUtility.SetDirty(cardHandler);
+        EditorSceneManager.MarkSceneDirty(cardHandler.gameObject.scene);
+        foreach (Card c in cardHandler.AllCards)
+        {
+            EditorUtility.SetDirty(c.gameObject);
+
+        }
     }
+
+
 
 }
 
-public class CardHandlerWindowInspector: Editor
+public static class CardHandlerStatic
+{
+    public static void MarkDirty(GameObject p)
+    {
+        EditorUtility.SetDirty(p);
+        EditorSceneManager.MarkSceneDirty(p.gameObject.scene);
+    }
+}
+
+public class CardHandlerWindowInspector : Editor
 {
     public override void OnInspectorGUI()
     {

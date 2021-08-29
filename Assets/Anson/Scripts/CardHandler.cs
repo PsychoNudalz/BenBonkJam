@@ -192,33 +192,33 @@ public class CardHandler : MonoBehaviour
 
     public GameObject CreateNewCard(CardSave cs, string cardName = null)
     {
-        GameObject[] returnCards = CreateNewCards.CreateNewCard(this,baseCard,cs,cardName);
+        GameObject[] returnCards = CreateNewCards.CreateNewCard(this, baseCard, cs, cardName);
         DestroyImmediate(returnCards[0]);
 
         return returnCards[1];
 
-    //    GameObject instanceRoot = (GameObject)PrefabUtility.InstantiatePrefab(baseCard);
-    //    Card newCard = instanceRoot.GetComponent<Card>();
-    //    newCard.UpdateCard(cs, GetCardsFromIDs(cs.headsOption.sequenceCardsAdd), GetCardsFromIDs(cs.headsOption.sequenceCardsRemove), GetCardsFromIDs(cs.tailsOption.sequenceCardsAdd), GetCardsFromIDs(cs.tailsOption.sequenceCardsRemove));
-    //    newCard.CardID = CardManager.GetIDValue(newCard);
-    //    if (cardName == null)
-    //    {
-    //        if (newCard.CardDetails != "")
-    //        {
-    //            instanceRoot.name = "Card_" + newCard.CardDetails;
-    //        }
-    //        else
-    //        {
-    //            instanceRoot.name = "Card_" + newCard.CardDescriptionText;
-    //        }
-    //    }
-    //    else
-    //    {
-    //        instanceRoot.name = "Card_" + cardName;
-    //    }
-    //    GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)cs.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
-    //    DestroyImmediate(instanceRoot);
-    //    return pVariant;
+        //    GameObject instanceRoot = (GameObject)PrefabUtility.InstantiatePrefab(baseCard);
+        //    Card newCard = instanceRoot.GetComponent<Card>();
+        //    newCard.UpdateCard(cs, GetCardsFromIDs(cs.headsOption.sequenceCardsAdd), GetCardsFromIDs(cs.headsOption.sequenceCardsRemove), GetCardsFromIDs(cs.tailsOption.sequenceCardsAdd), GetCardsFromIDs(cs.tailsOption.sequenceCardsRemove));
+        //    newCard.CardID = CardManager.GetIDValue(newCard);
+        //    if (cardName == null)
+        //    {
+        //        if (newCard.CardDetails != "")
+        //        {
+        //            instanceRoot.name = "Card_" + newCard.CardDetails;
+        //        }
+        //        else
+        //        {
+        //            instanceRoot.name = "Card_" + newCard.CardDescriptionText;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        instanceRoot.name = "Card_" + cardName;
+        //    }
+        //    GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)cs.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
+        //    DestroyImmediate(instanceRoot);
+        //    return pVariant;
     }
 
     public void SortCards()
