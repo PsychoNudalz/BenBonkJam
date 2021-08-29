@@ -29,6 +29,7 @@ public class CardHandlerWindow : EditorWindow
         }
 
         GUILayout.Label("Remeber to save ctrl+s", EditorStyles.boldLabel);
+        GUILayout.Space(10);
 
         GUILayout.Label("Card Handler", EditorStyles.boldLabel);
         if (GUILayout.Button("Sort Cards"))
@@ -40,7 +41,22 @@ public class CardHandlerWindow : EditorWindow
         {
             cardHandler.UpdateCardIDs();
         }
+
+        if (GUILayout.Button("Find All Cards"))
+        {
+            cardHandler.LoadAllCards();
+        }
+        if (cardHandler.TempAutoFoundCards.Count > 0)
+        {
+            if (GUILayout.Button("Apply Found Cards"))
+            {
+                cardHandler.ApplyFoundCards();
+            }
+        }
+
         GUILayout.Space(10);
+
+        GUILayout.Label("Save/ Load controls", EditorStyles.boldLabel);
 
         if (GUILayout.Button("Full Add New Cards From Excel"))
         {
@@ -53,7 +69,7 @@ public class CardHandlerWindow : EditorWindow
                 cardHandler.SaveCardsToJson();
                 CSVHandler.FromJSON(cardHandler);
             }
-            catch(System.Exception e)
+            catch (System.Exception e)
             {
                 Debug.LogError("WARNING! failed to complete");
                 Debug.LogError(e.Message);
@@ -99,6 +115,8 @@ public class CardHandlerWindow : EditorWindow
         }
 
         GUILayout.Space(20);
+        GUILayout.Label("Singular controls", EditorStyles.boldLabel);
+
         GUILayout.Label("Save/ Load Buttons", EditorStyles.boldLabel);
 
         if (GUILayout.Button("Save Cards to JSON"))

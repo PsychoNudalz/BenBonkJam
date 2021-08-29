@@ -7,11 +7,17 @@ using UnityEngine;
 public class CardHandler : MonoBehaviour
 {
     [SerializeField] GameObject baseCard;
+    [Space(10)]
     [SerializeField] List<Card> allCards;
-    [Header("Start Controls")]
-    [SerializeField] bool runUpdateCardID;
+    [Space(10)]
+    [SerializeField] List<Card> tempAutoFoundCards;
+
+    [Header("White/ Black List")]
+    [SerializeField] List<Card> whiteList;
+    [SerializeField] List<Card> blackList;
 
     public List<Card> AllCards { get => allCards; }
+    public List<Card> TempAutoFoundCards { get => tempAutoFoundCards; set => tempAutoFoundCards = value; }
 
     private void Awake()
     {
@@ -289,4 +295,29 @@ public class CardHandler : MonoBehaviour
         return sequenceCardsAdd;
     }
 
+
+    public void LoadAllCards()
+    {
+        List<Card> allFoundCards = FileLoader.GetAllFilesFromResources<Card>("Cards_New/", "*.prefab");
+
+        allFoundCards.AddRange(whiteList);
+
+        foreach (Card blackCard in blackList)
+        {
+            if (allFoundCards.Contains(blackCard))
+            {
+                allFoundCards.Remove(blackCard);
+            }
+        }
+
+        Debug.Log($"Loaded: {allFoundCards.Count} cards");
+        tempAutoFoundCards = allFoundCards;
+    }
+
+    public void ApplyFoundCards()
+    {
+        allCards = tempAutoFoundCards;
+        tempAutoFoundCards = new List<Card>();
+        SortCards();
+    }
 }

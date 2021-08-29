@@ -178,4 +178,9 @@ MonoBehaviour:
   - {fileID: 7835196420059900005, guid: af4724fbbafb9674db39051e34a7c40d, type: 3}
   - {fileID: 8035747554750965618, guid: 1e868904a692be14f8adfa35e9ccee69, type: 3}
   - {fileID: 5058825612876133997, guid: ca02f74af0ebb28408d566552d1dc0c0, type: 3}
-  runUpdateCardID: 0
+  tempAutoFoundCards: []
+  whiteList: []
+  blackList:
+  - {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+  - {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+  - {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
