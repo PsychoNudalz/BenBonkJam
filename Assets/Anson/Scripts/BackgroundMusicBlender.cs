@@ -9,6 +9,7 @@ public class BackgroundMusicBlender : MonoBehaviour
     [SerializeField] AudioSource currentMusic;
     [SerializeField] AudioSource previousMusic;
     [SerializeField] float blendSpeed = 1f;
+    [SerializeField] bool playFirstMusic;
 
     public static BackgroundMusicBlender current;
     // Start is called before the first frame update
@@ -20,6 +21,10 @@ public class BackgroundMusicBlender : MonoBehaviour
         foreach (AudioSource bgm in musics)
         {
             bgm.volume = 0;
+        }
+        if (playFirstMusic)
+        {
+            currentMusic.Play();
         }
     }
 
@@ -62,6 +67,30 @@ public class BackgroundMusicBlender : MonoBehaviour
         catch (System.IndexOutOfRangeException e)
         {
             Debug.LogError($"Age {ageEnum.ToString()} not in range of music size");
+        }
+    }
+
+    public void PlayAgeMusic(int musicIndex)
+    {
+        if (previousMusic)
+        {
+            previousMusic.Stop();
+        }
+        Debug.Log("Music change");
+        previousMusic = currentMusic;
+        try
+        {
+            currentMusic = musics[musicIndex];
+            if (currentMusic.Equals(previousMusic))
+            {
+                previousMusic = null;
+            }
+            currentMusic.Play();
+
+        }
+        catch (System.IndexOutOfRangeException e)
+        {
+            Debug.LogError($"music index {musicIndex} is out of range");
         }
     }
 }
