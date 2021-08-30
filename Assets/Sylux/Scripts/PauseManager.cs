@@ -50,7 +50,14 @@ public class PauseManager : MonoBehaviour
     {
         pauseCanvas.SetActive(false);
         areYouSureCanvas.SetActive(false);
-        SceneManager.LoadScene("MainMenu");
-
+        
+        if(SceneTransition.Instance != null)
+        {
+            SceneTransition.Instance.FadeToScene(0);
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

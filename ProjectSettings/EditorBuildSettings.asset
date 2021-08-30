@@ -14,5 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Anson/Anson's Scene.unity
     guid: 219fd7cff4be18a46a86059797bd19bb
+  - enabled: 0
+    path: Assets/Danny/Scenes/Main_Menu_Danny.unity
+    guid: 1986700cf547e854c84490e88e672842
+  - enabled: 0
+    path: Assets/Danny/Scenes/Game_Scene_Danny.unity
+    guid: db65fabc1af1fbf439a8438cf32b69e5
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 52f0f6eb3dad297409f695ddfaafa148, type: 2}
