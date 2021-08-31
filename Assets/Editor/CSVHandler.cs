@@ -19,6 +19,7 @@ public static class CSVHandler
 
     public static void FromJSON(CardHandler cardHandler)
     {
+        FileLoader.BackupFile(Application.dataPath + "/Resources/Data/", "AllCards.csv", Application.dataPath + "/Resources/Data/BackUp/AllCard/");
         WriteToCSV(cardHandler.LoadAllCardsSave());
     }
 
