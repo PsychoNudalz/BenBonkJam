@@ -45,7 +45,10 @@ public class CardEventManager : MonoBehaviour
         }
 
         UpdatePlayerStatsUI();
+        if (randomPickTry== 0)
+        {
         randomPickTry = allCards.Count * 2;
+        }
         LoadNewCard();
         currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
 
