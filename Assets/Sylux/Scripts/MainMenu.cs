@@ -47,8 +47,14 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        Debug.Log("Loading Game");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if(SceneTransition.Instance != null)
+        {
+            SceneTransition.Instance.FadeToScene(1);
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 
     public void Stats()
