@@ -11,11 +11,12 @@ public static class CSVHandler
     static string[] headerFormat = { "Card ID", "Card Details", "Ages Neede", "Status Needed", "Card Sprite Name", "Card Description",
         "Heads Description","Heads Health","Heads Bux","Heads Mood", "Heads Required Status","Heads Sequence Cards Add","Heads Sequence Cards Remove", "Heads Status Add","Heads Status Remove",
         "Tails Description","Tails Health","Tails Bux","Tails Mood", "Tails Required Status","Tails Sequence Cards Add","Tails Sequence Cards Remove", "Tails Status Add","Tails Status Remove",
-        "END", "Rules: Age and stats must be in integer.  Set a card detail if description contains special characters"
+        "END  Rules: Age and stats must be in integer.  Set a card detail if description contains special characters"
     };
 
     static string[] illegalCharacter = {"\""};
 
+    public static char cellSeperator = ',';
 
     public static void FromJSON(CardHandler cardHandler)
     {
@@ -50,7 +51,7 @@ public static class CSVHandler
         string retString = "";
         foreach (string s in headerFormat)
         {
-            retString += s + ",";
+            retString += s + cellSeperator;
         }
         retString += "\n";
 
@@ -69,8 +70,8 @@ public static class CSVHandler
         List<CardSave> cardSaves = new List<CardSave>();
         foreach (string s in loadedArray)
         {
-            //Debug.Log($"Card size: {s.Split(',').Length}");
-            cardSaves.Add(new CardSave(s.Split(',')));
+            //Debug.Log($"Card size: {s.Split(cellSeperator).Length}");
+            cardSaves.Add(new CardSave(s.Split(cellSeperator)));
         }
 
         return new AllCardsSave(cardSaves.ToArray());
@@ -113,8 +114,8 @@ public static class CSVHandler
                     results = CompareRow(a, b);
                     if (results >= matchThresshold)
                     {
-                        outputString += $"{a.Split(',')[0]} & {b.Split(',')[0]}: {results}";
-                        Debug.Log($"{a.Split(',')[0]} & {b.Split(',')[0]}: {results}");
+                        outputString += $"{a.Split(cellSeperator)[0]} & {b.Split(cellSeperator)[0]}: {results}";
+                        Debug.Log($"{a.Split(cellSeperator)[0]} & {b.Split(cellSeperator)[0]}: {results}");
                     }
                 }
             }
@@ -125,8 +126,8 @@ public static class CSVHandler
 
     static float CompareRow(string lhs, string rhs)
     {
-        string[] leftSplit = lhs.Split(',');
-        string[] rightSplit = rhs.Split(',');
+        string[] leftSplit = lhs.Split(cellSeperator);
+        string[] rightSplit = rhs.Split(cellSeperator);
         float total = 0;
         int times = 0;
         if (leftSplit.Length.Equals(rightSplit.Length))
@@ -172,18 +173,26 @@ public static class CSVHandler
         maxSize = Mathf.Max(lhs.Length, rhs.Length);
         return (float)counter / (float)maxSize;
     }
-
-    public static bool CheckIllegalCharacter()
+    /// <summary>
+    /// Check for issues
+    /// true if issues found
+    /// </summary>
+    /// <param name="rowSize"></param>
+    /// <returns></returns>
+    public static bool CheckIllegalCharacter(int rowSize)
     {
+        Debug.Log($"Running check for characters, row size: {rowSize}");
         bool errorFlag = false;
+        bool missMatchFlag = false;
+        bool illegalFlag = false;
         int i = 0;
         List<string> loadedArray = LoadFromCSVToString();
         foreach (string s in loadedArray)
         {
             i++;
-            if (s.Split(',').Length!=25)
+            if (s.Split(cellSeperator).Length!=rowSize)
             {
-                Debug.Log($"Miss match length {s.Split(',').Length} on Row: {i} on Card: {s}");
+                Debug.LogWarning($"Miss match length {s.Split(cellSeperator).Length} on Row: {i} on Card: {s}");
                 errorFlag = true;
             }
             foreach(string c in illegalCharacter)
@@ -191,12 +200,35 @@ public static class CSVHandler
                 if (s.Contains(c))
                 {
                     errorFlag = true;
-                    Debug.Log($"Illegal character on Row: {i} on Card: {s}");
+                    Debug.LogWarning($"Illegal character on Row: {i+1} on Card: {s}");
 
                 }
             }
         }
+        if (missMatchFlag)
+        {
+            Debug.LogError($"There is a row(s) with the wrong size, there must be an extra , somewhere");
+        }
+        if (illegalFlag)
+        {
+            Debug.LogError($"There is a row(s) with illegal characters, open the CSV in Notepad and check and remove it"); ;
+
+        }
+
         return errorFlag;
+    }
+
+    public static bool CheckIllegalCharacter()
+    {
+        if (CheckIllegalCharacter(25))
+        {
+                return true;
+
+            //if (CheckIllegalCharacter(26))
+            //{
+            //}
+        }
+        return false;
     }
 
 }

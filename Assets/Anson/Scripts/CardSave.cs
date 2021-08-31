@@ -106,34 +106,34 @@ public class CardOptionSave
     public override string ToString()
     {
         string retString = "";
-        retString += health + ",";
-        retString += bux + ",";
-        retString += mood + ",";
+        retString += health + CardHandler.cellSeperator;
+        retString += bux + CardHandler.cellSeperator;
+        retString += mood + CardHandler.cellSeperator;
         foreach (int i in requiredStatus)
         {
             retString += i + "/";
         }
-        retString += ",";
+        retString += CardHandler.cellSeperator;
         foreach (string i in sequenceCardsAdd)
         {
             retString += i + "/";
         }
-        retString += ",";
+        retString += CardHandler.cellSeperator;
         foreach (string i in sequenceCardsRemove)
         {
             retString += i + "/";
         }
-        retString += ",";
+        retString += CardHandler.cellSeperator;
         foreach (int i in statusAdd)
         {
             retString += i + "/";
         }
-        retString += ",";
+        retString += CardHandler.cellSeperator;
         foreach (int i in statusRemove)
         {
             retString += i + "/";
         }
-        retString += ",";
+        retString += CardHandler.cellSeperator;
         return retString;
     }
 
@@ -220,7 +220,7 @@ public class CardSave
         string loadString = "";
         foreach (string x in s)
         {
-            loadString += x + ",";
+            loadString += x + CardHandler.cellSeperator;
         }
         //Debug.Log("loading string: "+loadString);
 
@@ -247,25 +247,25 @@ public class CardSave
     public override string ToString()
     {
         string retString = "";
-        retString += cardID + ",";
-        retString += cardDetails + ",";
+        retString += cardID + CardHandler.cellSeperator;
+        retString += cardDetails + CardHandler.cellSeperator;
         foreach (int i in ageNeeded)
         {
             retString += i + "/";
         }
-        retString += ",";
+        retString += CardHandler.cellSeperator;
         foreach (int i in statusNeeded)
         {
             retString += i + "/";
         }
-        retString += ",";
-        retString += cardSpriteName + ",";
+        retString += CardHandler.cellSeperator;
+        retString += cardSpriteName + CardHandler.cellSeperator;
 
 
-        retString += cardDes.Replace("\n", " ").Replace("\r", " ").Replace(",", " ") + ",";
-        retString += headsDes.Replace("\n", " ").Replace("\r", " ").Replace(",", " ") + ",";
+        retString += cardDes.Replace("\n", " ").Replace("\r", " ").Replace(CardHandler.cellSeperator, " ") + CardHandler.cellSeperator;
+        retString += headsDes.Replace("\n", " ").Replace("\r", " ").Replace(CardHandler.cellSeperator, " ") + CardHandler.cellSeperator;
         retString += headsOption.ToString();
-        retString += tailsDes.Replace("\n", " ").Replace("\r", " ").Replace(",", " ") + ",";
+        retString += tailsDes.Replace("\n", " ").Replace("\r", " ").Replace(CardHandler.cellSeperator, " ") + CardHandler.cellSeperator;
         retString += tailsOption.ToString();
         retString = retString.Replace("\n", " ").Replace("\r", " ");
         if (retString.Contains("\n"))

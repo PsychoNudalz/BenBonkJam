@@ -24,6 +24,10 @@ public class CardHandler : MonoBehaviour
     public List<Card> TempAutoFoundCards { get => tempAutoFoundCards; set => tempAutoFoundCards = value; }
     public float DupFlagRange { get => dupFlagRange; set => dupFlagRange = value; }
 
+    //CSV stuff
+    public static string cellSeperator = ",";
+
+
     private void Awake()
     {
         //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());

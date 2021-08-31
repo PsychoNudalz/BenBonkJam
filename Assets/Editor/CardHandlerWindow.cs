@@ -63,6 +63,7 @@ public class CardHandlerWindow : EditorWindow
             {
                 Debug.Log("No Issues found");
             }
+
         }
 
         if (GUILayout.Button("Find All Cards"))
@@ -70,7 +71,7 @@ public class CardHandlerWindow : EditorWindow
             MarkDirty();
             cardHandler.FindAllCards();
         }
-        if (cardHandler.TempAutoFoundCards.Count > 0)
+        if (cardHandler && cardHandler.TempAutoFoundCards.Count > 0)
         {
             if (GUILayout.Button("Apply Found Cards"))
             {
@@ -107,6 +108,7 @@ public class CardHandlerWindow : EditorWindow
                     cardHandler.LoadCardsFromJson();
                     cardHandler.SaveCardsToJson();
                     CSVHandler.FromJSON(cardHandler);
+                    Debug.Log("Operation Successful");
                 }
             }
             catch (System.Exception e)
@@ -127,6 +129,8 @@ public class CardHandlerWindow : EditorWindow
             {
                 cardHandler.SaveCardsToJson();
                 CSVHandler.FromJSON(cardHandler);
+                Debug.Log("Operation Successful");
+
             }
             catch (System.Exception e)
             {
@@ -142,10 +146,20 @@ public class CardHandlerWindow : EditorWindow
             MarkDirty();
             try
             {
-                CSVHandler.FromExcelToJSON(cardHandler);
-                cardHandler.LoadCardsFromJson();
-                cardHandler.SaveCardsToJson();
-                CSVHandler.FromJSON(cardHandler);
+                if (CSVHandler.CheckIllegalCharacter())
+                {
+                    Debug.LogError("Check failed, terminating.  Please Fix the csv first for commas and illegal character.  Might need to open the csv in Notepad to check FULLY");
+                    throw new System.Exception("Check failed");
+                }
+                else
+                {
+                    CSVHandler.FromExcelToJSON(cardHandler);
+                    cardHandler.LoadCardsFromJson();
+                    cardHandler.SaveCardsToJson();
+                    CSVHandler.FromJSON(cardHandler);
+                    Debug.Log("Operation Successful");
+
+                }
             }
             catch (System.Exception e)
             {
