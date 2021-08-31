@@ -104,7 +104,6 @@ public class CardHandlerWindow : EditorWindow
                 {
                     CSVHandler.FromExcelToJSON(cardHandler);
                     cardHandler.GenerateCardsFromJson();
-                    cardHandler.SaveCardsToJson();
                     cardHandler.LoadCardsFromJson();
                     cardHandler.SaveCardsToJson();
                     CSVHandler.FromJSON(cardHandler);
