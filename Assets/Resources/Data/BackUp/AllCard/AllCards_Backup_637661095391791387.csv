@@ -3,22 +3,22 @@ ADU_000_,,3/,,nigerian prince,A Nigerian Prince needs your help!,Help this fine 
 ADU_001_,,3/,,dogo,Adopt a dog?,Adopt,0,-5,30,,,,3/,,Nah..,0,0,0,,,,,,END
 ADU_002_,,3/,12/,plumber,Plumber,Yes!,0,20,-15,,,ADU_017_/ADU_039_/ADU_040_/ADU_042_/ADU_002_/ADU_006_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_003_,,3/,,ice_cream_truck,Ice cream truck comes after you,Shout at it,-5,0,10,,,,,,Run!,5,0,-3,,,,,,END
-ADU_004_,,3/,11/,sysadmin,Software Developer,Yes!,-20,100,-50,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+ADU_004_,,3/,11/,sysadmin,Software Developer,Yes!,-20,100,-50,,,ADU_013_/ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_005_,,3/,1/,divorce,In your relationship  conflicts do happen  but divorce is not a joke. ,I am done  File the papers. ,0,-20,-40,,,,,1/,Love is to give  try to accept that you need to be sacrifical. Things may get better hopefully... ,0,0,30,,,,,,END
 ADU_006_,,3/,,telemarketer,Telemarketer,Yes!,0,20,-15,,,ADU_017_/ADU_040_/ADU_042_/ADU_006_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_007_,,3/,7/,TV,Televangelist,Yes!,0,50,-10,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,15/43/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+ADU_007_,,3/,7/,TV,Televangelist,Yes!,0,50,-10,,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/,15/43/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_008_,,3/,,harambe,Harambe has gone rogue! What do you do?,Tranquillise Harambe,0,0,10,,,,,,SHOOT THE GORILLA,-5,0,-50,,,,,,END
 ADU_009_,,3/,18/,truck,Truck Driver,Yes!,0,20,-20,,,ADU_017_/ADU_039_/ADU_040_/ADU_042_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_010_,,3/,,catfish,Catfish on social media (image of catfish),,0,0,0,,,,,,,0,0,0,,,,,,END
 ADU_011_,Stonk_Good,3/,,doge,Meme stocks are available to buy...,Buy!,0,20,20,,,,,,Ignore,0,0,-5,,,,,,END
 ADU_012_,,3/,9/,ufo,UFOlogist,Yes!,20,20,20,,,ADU_017_/ADU_040_/ADU_042_/ADU_006_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_013_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No,0,0,0,,,,,,END
+ADU_013_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,ADU_013_/ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/,15/,16/,No,0,0,0,,,,,,END
 ADU_014_,,3/,11/,,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not?,-30,-30,-30,,,,24/,11/10/,No! It will be too much!,0,0,0,,,,,,END
 ADU_015_,,3/,,,You are accepted into university... but your research needs money.,Beg for a grant,0,0,0,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
 ADU_016_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,ADU_016_/,15/,16/,Nah,0,0,0,,,,,,END
 ADU_017_,,3/,,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,ADU_017_/ADU_040_/ADU_042_/ADU_016_/,15/,16/,No,0,0,0,,,,,,END
 ADU_018_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/,,,,I refuse,-10,-50,20,,,,16/,,END
-ADU_019_,,3/,24/,evil_scientist,Evil scientist,Yes,0,0,0,,ADU_021_/ADU_022_/,ADU_017_/ADU_039_/ADU_040_/ADU_042_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,25/15/,16/,No,0,0,0,,,,,,END
+ADU_019_,,3/,24/,evil_scientist,Evil scientist,Yes,0,0,0,,ADU_021_/ADU_022_/,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_042_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/,25/15/,16/,No,0,0,0,,,,,,END
 ADU_020_,,3/,,middle east,A soul seeking vacation to the Middle East?,Time for a trip!,0,-40,40,,,,7/,,Nah,0,0,0,,,,,,END
 ADU_021_,,3/,,minion_help,Being alone makes everything difficult.  You really need help in your... sinister scientific advances.,Hire some minions.,5,5,5,,,,,,Work for an evil corp.,-10,30,-10,,,,,,END
 ADU_022_,,3/,,rocket,You are asked to build a rocket for your master.,Yes  my liege,-20,50,-25,,,,,,FORGET THIS I'M OUT,-5,-10,-10,,,,,,END
@@ -40,8 +40,8 @@ ADU_037_,Stonk_Bad,3/,,doge,Meme stonks are available to buy...,BUY!,0,-20,-20,,
 ADU_038_,,3/,,telemarketer,Someone on behalf of tech support says your computer have some issues and need a fix. ,Oh yeah the computer is slow  just let them help,-5,-50,-40,,,,,,Thats not legit  what nonsense! Ignore them.,0,0,0,,,,,,END
 ADU_039_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,ADU_017_/ADU_039_/ADU_040_/ADU_042_/ADU_006_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_040_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,ADU_040_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_041_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_042_,,,,,blank,a,0,0,0,,,ADU_040_/ADU_042_/ADU_016_/,,,b,0,0,0,,,,,,END
+ADU_041_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+ADU_042_,,,,,blank,a,0,0,0,,,,,,b,0,0,0,,,,,,END
 ADU_043_,Chat ask question,3/,,,Chat asks you a question. ,Hi Chat. Lets chat,0,0,0,,,,,,No chat,0,0,0,,,,,,END
 ADU_044_,follower ask question,3/,43/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
 ADU_045_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
@@ -102,33 +102,26 @@ DEA_009_,,5/,22/,dead baby,You died as a baby….. Somehow…..,(Regret...) ,0,0
 DEA_010_,,5/,21/,ghost friend,After you died you become friends with ghosts,Spook other people,0,0,0,,,,,,Dance with them,0,0,0,,,,,,END
 DEA_011_,,5/,3/19/,pett adventure,Your pet Hamster and Dog decided to go on an adventure together,Wish them good luck,0,0,0,,,,,,Join them,0,0,0,,,,,,END
 DEA_012_,,5/,0/,death,You entered HELL,Be a prisoner ,0,0,0,,,,,,Be the Hell Lord,0,0,0,,,,,,END
-DEA_013_,,5/,2/20/,,The angels appreciate the virtue you showed in life. You now have an exclusive spot in heaven.,Express gratitude,0,0,0,,DEA_014_/,,,,Look smug leave me alone! ,0,0,0,,DEA_019_/,,,,END
-DEA_014_,,5/,2/20/,,You are now before the angel council. You are spectating a heated debate,Ask what is going on,0,0,0,,DEA_018_/,,,,This is not your problem. go chill elsewhere,0,0,0,,DEA_015_/,,,,END
-DEA_015_,,5/,2/20/,,This haven place is pretty neat.  There are many places where you can relax,Go drink from a radiant fountain,0,0,0,,DEA_017_/,,,,Eat a shiny apple,0,0,0,,DEA_016_/,,,,END
-DEA_016_,,5/,2/20/,,Consuming havenly foods has some odd effects. You start feeling odd and lightheaded,What...,0,0,-5,,,,,,Huh,0,0,-5,,,,,,END
-DEA_017_,,5/,2/20/,,Your conciousness fades into nothingness and your existance fuses with the universe. ,Reincarnate and live again,0,0,0,,,,,,Chill out in the void,0,0,0,,,,,,END
-DEA_018_,,5/,2/20/,,The angel council is voting on humanity's destiny. Many are arguing that humanity should be exterminated for being evil,Plea for humanity salvation,0,0,0,,DEA_024_/,,,,Do nothing,0,0,0,,DEA_021_/,,,,END
-DEA_019_,,5/,2/20/,,This does not affect you. However. guilt shall haunt you for the rest of eternity. Do you truly deserve heaven?,Yes,0,0,0,,,,,,Maybe yes,0,0,0,,,,,,END
-DEA_020_,,5/,2/20/,,A compassionate angel feels sorry for you and your kind and tries to convince the council to show mercy.,Thank the angel,0,0,0,,DEA_022_/,,,,Shout.Make humanity great again !,0,0,0,,DEA_022_/,,,,END
-DEA_021_,,5/,2/20/,,An irritated angel looks at you. then asserts that you have just proven that humanity is indeed unsalvageable,No we human really tried to avoid evilness but sadly sometimes we just can't control ourselves. I am sorry,0,0,0,,DEA_020_/,,,,I am not afraid of you. I am right and you are wrong! (Fight),0,0,0,,DEA_023_/,,,,END
-DEA_022_,,5/,2/20/,,You manage to convince a couple of angels. And there are enough votes to prevent the destruction of humankind.,yay,0,0,0,,DEA_024_/,,,,BOW BEFORE ME,0,0,0,,DEA_023_/,,,,END
-DEA_023_,,5/,2/20/,,You are kicked from heaven for being too proud. You shall be escorted to hell,Let it be,0,0,0,,,,,,Please No,0,0,0,,,,,,END
-DEA_024_,,5/,2/20/,,You are in heaven and saved humanity. What more could you ask for,I need nothing,0,0,0,,,,,,I need everything,0,0,10,,,,,,END
-DEA_025_,,5/,0/25/,,You relied on the power of demons in your life... now its time to pay this debt with your soul,Submit to the Overlord of hell,0,0,0,,DEA_027_/,,,,Try to protest,0,0,-5,,DEA_026_/,,,,END
-DEA_026_,,5/,0/25/,,The overlord of hell seems amused by your futile struggling. Perhaps you could get on his good side,Dance for his amusement,0,0,0,,DEA_029_/,,,,Show him the finger,0,0,0,,DEA_032_/,,,,END
-DEA_027_,,5/,0/25/,,The Mighty Overlord is in a good mood today. You shall be his foot rest for the rest of eternity,Yes my lord ,0,0,0,,,,,,Yes my Overlord,0,0,0,,,,,,END
-DEA_028_,,5/,0/25/,,How dare you. You are executed on the spot for disrespecting the Overlord,I lived the way I liked,0,0,0,,,,,,Rules are meant to be broken,0,0,0,,,,,,END
-DEA_029_,,5/,0/25/,,Your dance was great entertainment. The demons are excited and ask you about entertainment on the surface...,Tell them about video games,0,0,0,,DEA_031_/,,,,Tell them about memes,0,0,0,,DEA_030_/,,,,END
-DEA_030_,,5/,0/25/,,The demons are very impressed by your incredible tales. You are granted great powers to bring Earth entertainment to hell,Have fun and hang out in hell,0,0,0,,,,,,Gain the support of other lesser demons,0,0,0,,DEA_031_/,,,,END
-DEA_031_,,5/,0/25/,,The lesser demons admire you and would like to elect you as their new Overlord,Bribe some extra votes,0,0,0,,,,,,Let the elections take their course,0,0,0,,,,,,END
-DEA_032_,,5/,0/25/,,You have angered the Mighty Overlord. Terrible punishment awaits you in the torture chambers of hell,Beg for forgiveness,0,0,0,,,,,,Accept your fate,0,0,0,,,,,,END
-DEA_033_,,5/,9/,,You thought you were about to die but the alien mothership has come to your place to collect and preserve your body.,Let them take you,0,0,0,,DEA_034_/,,,,Try to complain with your last remaining strength,0,0,0,,DEA_035_/,,,,END
-DEA_034_,,5/,9/,,you are finally awakened from cryogenic sleep. How do you greet the aliens,let me go. I want to go back home and die on Earth,0,0,0,,,,,,thank you for saving me,0,0,0,,DEA_036_/,,,,END
-DEA_035_,,5/,9/,,After waking up you notice that you are feeling odd,check if your body is ok,0,0,0,,DEA_037_/,,,,it must be the shock,0,0,-5,,DEA_037_/,,,,END
-DEA_036_,,5/,9/,,Your new alien family likes you but is very confused about your odd attachment to bux. What do you do with your now obsolete currency,build a comfy bed,0,0,0,,DEA_039_/,,,,use it as toilet paper,0,0,0,,,,,,END
-DEA_037_,,5/,9/,,You brought some bacteria and viruses on board with you. They are harmless to humans but the aliens are very sick and have no cure...,help treating the sick,0,0,0,,DEA_038_/,,,,leave them to their fate,0,0,-10,,DEA_038_/,,,,END
-DEA_038_,,5/,9/,,You are the last one left on this barren planet... there are plenty of resources for you to live in comfort for your last few years of life,Become the Lone Emperor of Planet X,0,0,0,,,,,,Live in regret and shame and die in solitude,0,0,-5,,,,,,END
-DEA_039_,,5/,9/,,After a few weeks your alien family has managed to teach you telepathic communication,join the colony as a citizen,0,0,0,,,,,,stay with your family as a pet,0,0,0,,,,,,END
+DEA_013_,,5/,2/,,The angels appreciate the virtue you showed in life. You now have an exclusive spot in heaven.,Express gratitude,0,0,0,,DEA_014_/,,,,Look smug leave me alone! ,0,0,0,,DEA_019_/,,,,END
+DEA_014_,,5/,,,You are now before the angel council. You are spectating a heated debate,Ask what is going on,0,0,0,,DEA_018_/,,,,This is not your problem. go chill elsewhere,0,0,0,,DEA_015_/,,,,END
+DEA_015_,,5/,,,This haven place is pretty neat.  There are many places where you can relax,Go drink from a radiant fountain,0,0,0,,DEA_017_/,,,,Eat a shiny apple,0,0,0,,DEA_016_/,,,,END
+DEA_016_,,5/,,,Consuming havenly foods has some odd effects. You start feeling odd and lightheaded,What...,0,0,-5,,,,,,Huh,0,0,-5,,,,,,END
+DEA_017_,,5/,,,Your conciousness fades into nothingness and your existance fuses with the universe. ,Reincarnate and live again,0,0,0,,,,,,Chill out in the void,0,0,0,,,,,,END
+DEA_018_,,5/,,,The angel council is voting on humanity's destiny. Many are arguing that humanity should be exterminated for being evil,Plea for humanity salvation,0,0,0,,DEA_024_/,,,,Do nothing,0,0,0,,DEA_021_/,,,,END
+DEA_019_,,5/,,,This does not affect you. However. guilt shall haunt you for the rest of eternity. Do you truly deserve heaven?,Yes,0,0,0,,,,,,Maybe yes,0,0,0,,,,,,END
+DEA_020_,,5/,,,A compassionate angel feels sorry for you and your kind and tries to convince the council to show mercy.,Thank the angel,0,0,0,,DEA_022_/,,,,Shout.Make humanity great again !,0,0,0,,DEA_022_/,,,,END
+DEA_021_,,5/,,,An irritated angel looks at you. then asserts that you have just proven that humanity is indeed unsalvageable,No we human really tried to avoid evilness but sadly sometimes we just can't control ourselves. I am sorry,0,0,0,,DEA_020_/,,,,I am not afraid of you. I am right and you are wrong! (Fight),0,0,0,,DEA_023_/,,,,END
+DEA_022_,,5/,,,You manage to convince a couple of angels. And there are enough votes to prevent the destruction of humankind.,yay,0,0,0,,DEA_024_/,,,,BOW BEFORE ME,0,0,0,,DEA_023_/,,,,END
+DEA_023_,,5/,,,You are kicked from heaven for being too proud. You shall be escorted to hell,Let it be,0,0,0,,,,,,Please No,0,0,0,,,,,,END
+DEA_024_,,5/,,,You are in heaven and saved humanity. What more could you ask for,I need nothing,0,0,0,,,,,,I need everything,0,0,10,,,,,,END
+DEA_025_,,5/,,,You relied on the power of demons in your life... now its time to pay this debt with your soul,Submit to the Overlord of hell,0,0,0,,DEA_027_/,,,,Try to protest,0,0,-5,,DEA_026_/,,,,END
+DEA_026_,,5/,,,The overlord of hell seems amused by your futile struggling. Perhaps you could get on his good side,Dance for his amusement,0,0,0,,DEA_029_/,,,,Show him the finger,0,0,0,,DEA_032_/,,,,END
+DEA_027_,,5/,,,The Mighty Overlord is in a good mood today. You shall be his foot rest for the rest of eternity,Yes my lord ,0,0,0,,,,,,Yes my Overlord,0,0,0,,,,,,END
+DEA_028_,,5/,,,How dare you. You are executed on the spot for disrespecting the Overlord,I lived the way I liked,0,0,0,,,,,,Rules are meant to be broken,0,0,0,,,,,,END
+DEA_029_,,5/,,,Your dance was great entertainment. The demons are excited and ask you about entertainment on the surface...,Tell them about video games,0,0,0,,DEA_031_/,,,,Tell them about memes,0,0,0,,DEA_030_/,,,,END
+DEA_030_,,5/,,,The demons are very impressed by your incredible tales. You are granted great powers to bring Earth entertainment to hell,Have fun and hang out in hell,0,0,0,,,,,,Gain the support of other lesser demons,0,0,0,,,,,,END
+DEA_031_,,5/,,,The lesser demons admire you and would like to elect you as their new Overlord,Bribe some extra votes,0,0,0,,,,,,Let the elections take their course,0,0,0,,,,,,END
+DEA_032_,,5/,,,You have angered the Mighty Overlord. Terrible punishment awaits you in the torture chambers of hell,Beg for forgiveness,0,0,0,,,,,,Accept your fate,0,0,0,,,,,,END
 GEN_000_,,,,food,A delicious burger has appeared on the table!,Eat! ,-10,0,10,,,,,,No junk food  don't eat,20,0,0,,,,,,END
 GEN_001_,,,3/,rippet,Pet doggo has passed away...,Bury it in the garden,0,0,-20,,,,,3/,Give it a Viking send off,0,-10,-10,,,,2/,3/,END
 GEN_002_,,,19/,rippet,Pet Hamster passed away...,Yeet it in to the trash,0,0,0,3/,,,,19/,Burry it in the garden,0,0,-5,,,,,19/,END
@@ -164,3 +157,10 @@ TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event!,
 TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,TEE_015_/,,,Force yourself to train,-25,0,0,,,,,,END
 TEE_015_,,2/,,health gain,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament! Keep going!,-100,0,-25,,,,8/,,END
 TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,TEE_014_/,,,,Get Steroids,-15,-5,5,,,,,,END
+DEA_033_,,5/,9/,,You thought you were about to die but the alien mothership has come to your place to collect and preserve your body.,Let them take you,0,0,0,,,,,,Try to complain with your last remaining strength,0,0,0,,,,,,END
+DEA_034_,,5/,9/,,you are finally awakened from cryogenic sleep. How do you greet the aliens,let me go. I want to go back home and die on Earth,0,0,0,,,,,,thank you for saving me,0,0,0,,,,,,END
+DEA_035_,,5/,9/,,After waking up you notice that you are feeling odd,check if your body is ok,0,0,0,,,,,,it must be the shock,0,0,0,,,,,,END
+DEA_036_,,5/,9/,,Your new alien family likes you but is very confused about your odd attachment to bux. What do you do with your now obsolete currency,build a comfy bed,0,0,0,,,,,,use it as toilet paper,0,0,0,,,,,,END
+DEA_037_,,5/,9/,,You brought some bacteria and viruses on board with you. They are harmless to humans but the aliens are very sick and have no cure...,help treating the sick,0,0,0,,,,,,leave them to their fate,0,0,0,,,,,,END
+DEA_038_,,5/,9/,,You are the last one left on this barren planet... there are plenty of resources for you to live in comfort for your last few years of life,Become the Lone Emperor of Planet X,0,0,0,,,,,,Live in regret and shame and die in solitude,0,0,0,,,,,,END
+DEA_039_,,5/,9/,,After a few weeks your alien family has managed to teach you telepathic communication,join the colony as a citizen,0,0,0,,,,,,stay with your family as a pet,0,0,0,,,,,,END
