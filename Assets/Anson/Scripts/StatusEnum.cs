@@ -49,7 +49,10 @@ public enum StatusEnum
     StudentDebt,
     Mortgage,
     Televangelist,
-    TechBiz
+    TechBiz,
+    OldAge,
+    Princes,
+    Zookeeper
 
 }
 
