@@ -7,6 +7,7 @@ public class PlayerCollection
 {
     [SerializeField] string collectionName;
     [SerializeField] Sprite sprite;
+    [TextArea]
     [SerializeField] string details;
     [SerializeField] bool isUnlocked;
 
@@ -32,7 +33,7 @@ public class AchievementCollection : PlayerCollection
 
 public class EndingCollection : PlayerCollection
 {
-    [Header("Achievement")]
+    [Header("Ending")]
     [SerializeField] EndingEnum endingEnum;
 
     public EndingEnum EndingEnum { get => endingEnum; set => endingEnum = value; }

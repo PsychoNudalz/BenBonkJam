@@ -109,7 +109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allCards:
-  - {fileID: 556412454624753732, guid: b0aa83684e8d1b44bb3b4ce18e65e721, type: 3}
   - {fileID: 8242558863881656828, guid: 446bf367c268c6a45a8a7ae4d1575be9, type: 3}
   - {fileID: 1310310316835573203, guid: 21805c56a4da24f42a1f0b1183c750bb, type: 3}
   - {fileID: 2177641751372329771, guid: 7a6332ba8f7eeeb498068535bd2eb54f, type: 3}
@@ -139,7 +138,6 @@ MonoBehaviour:
   - {fileID: 3979497201100092191, guid: d4ec4ccc59b41a44dab09627c02918b0, type: 3}
   - {fileID: 1721293068188361024, guid: 9c338f020bcacbe4fab51d90b173eec8, type: 3}
   - {fileID: 7804262470170058217, guid: aab98391ad62db74a9ef59f0eae57fec, type: 3}
-  - {fileID: 2124562354762735929, guid: e7b89462956b77f489c92f0ec4ae7e54, type: 3}
   - {fileID: 4076300190096302070, guid: 189e98d1efe36104e9059d1ee3fc4ef3, type: 3}
   - {fileID: 6545234556546074107, guid: 7097ac1d992f5054e876ec6f35999101, type: 3}
   - {fileID: 2024429659104041125, guid: 9c7da73fa4c09694aaecf8a2ec1522d8, type: 3}
@@ -200,7 +198,7 @@ MonoBehaviour:
   previousCard: {fileID: 0}
   cardBuffer: []
   playerScript: {fileID: 0}
-  randomPickTry: 150
+  randomPickTry: 400
   cardCounter: 0
   cardPerAge: 6
   cardSpawnPoint: {fileID: 3149122795622043081}
@@ -209,8 +207,6 @@ MonoBehaviour:
   pressCooldown: 1.5
   uIHandler: {fileID: 0}
   animator: {fileID: 4379163752723092413}
-  headsPS: {fileID: 4589058755587404897}
-  tailsPS: {fileID: 4666246477075006934}
   isDeathStage: 0
   runConverter: 0
 --- !u!95 &4379163752723092413
@@ -298,11 +294,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3936954750956434732, guid: f897e45a7db270f44b145dc1819d0822, type: 3}
   m_PrefabInstance: {fileID: 3084043802693992805}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &4666246477075006934 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7641886244731569331, guid: f897e45a7db270f44b145dc1819d0822, type: 3}
-  m_PrefabInstance: {fileID: 3084043802693992805}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6734578528852359477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -367,10 +358,5 @@ PrefabInstance:
 --- !u!4 &55902134432325675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6751069342759246110, guid: d0147e6bbe93f4c4dadceb14a0051cad, type: 3}
-  m_PrefabInstance: {fileID: 6734578528852359477}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &4589058755587404897 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7122895681837682004, guid: d0147e6bbe93f4c4dadceb14a0051cad, type: 3}
   m_PrefabInstance: {fileID: 6734578528852359477}
   m_PrefabAsset: {fileID: 0}

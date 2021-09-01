@@ -7,22 +7,70 @@ using UnityEngine;
 public static class FileLoader
 {
 
-    public static void SaveToFile<T>(string path,string filename, T objectToBeSaved)
+    public static void SaveToFile<T>(string path, string filename, T objectToBeSaved)
     {
         string saveString = JsonUtility.ToJson(objectToBeSaved);
         Debug.Log("Saving all cards");
         Debug.Log(saveString);
+        if (CreateFile(path, filename, saveString))
+        {
+            Debug.Log($"Save {filename} complete");
+        }
+        else
+        {
+            Debug.LogError($"Save {filename} Failed");
+        }
+    }
+
+    /// <summary>
+    /// create file at path
+    /// false if failed
+    /// </summary>
+    /// <param name="path"></param>
+    /// <param name="filename"></param>
+    /// <param name="saveString"></param>
+    /// <returns></returns>
+    public static bool CreateFile(string path, string filename, string saveString)
+    {
+
         try
         {
-            File.WriteAllText(path+filename, saveString);
+            File.WriteAllText(path + filename, saveString);
+            return true;
         }
         catch (DirectoryNotFoundException e)
         {
             Directory.CreateDirectory(path);
             File.WriteAllText(path + filename, saveString);
+            return false;
 
         }
-        Debug.Log("Save complete");
+    }
+
+    public static bool BackupFile(string path, string filename, string backupPath)
+    {
+        string loadString = "";
+        string[] filenameSplit = filename.Split('.');
+        string backupFileName = filenameSplit[0] + "_Backup_" + DateTime.Now.Ticks + "." + filenameSplit[1];
+        Debug.Log($"Backing up File: {backupFileName}");
+        try
+        {
+            loadString = File.ReadAllText(path + filename);
+            if (CreateFile(backupPath, backupFileName, loadString))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        catch (FileNotFoundException e)
+        {
+            Debug.LogWarning($"Failed to find {path + filename}");
+
+            return false;
+        }
     }
 
     public static T LoadFromFile<T>(string pathWithName)
@@ -86,7 +134,7 @@ public static class FileLoader
     {
         s = s.ToLower();
 
-        foreach(int i in Enum.GetValues(typeof(AgeEnum)))
+        foreach (int i in Enum.GetValues(typeof(AgeEnum)))
         {
             if (s.Equals(((AgeEnum)i).ToString().ToLower()))
             {
@@ -121,4 +169,41 @@ public static class FileLoader
         }
 
     }
+
+    /// <summary>
+    /// Get and loads file of a certain type from Resources
+    /// </summary>
+    /// <typeparam name="T"> type of return component</typeparam>
+    /// <param name="path"> path to file</param>
+    /// <param name="fileType">type of file, in regular expressions, eg *.prefab</param>
+    /// <returns> list of components specified </returns>
+    public static List<T> GetAllFilesFromResources<T>(string path, string fileType)
+    {
+        List<T> fileList = new List<T>();
+
+        string[] filePaths = Directory.GetFiles(Application.dataPath + "/Resources/" + path, fileType, SearchOption.AllDirectories);
+        GameObject loadGO;
+        string temp;
+        foreach (string filePath in filePaths)
+        {
+            temp = filePath;
+            temp = temp.Replace(Application.dataPath + "/Resources/", "");
+            temp = temp.Replace(fileType.Substring(1), "");
+            loadGO = Resources.Load<GameObject>(temp) as GameObject;
+
+            if (!loadGO)
+            {
+                Debug.LogError($"Fail to load from resource {temp}");
+            }
+            else if (loadGO.TryGetComponent<T>(out T component))
+            {
+                fileList.Add(component);
+            }
+        }
+
+        Debug.Log($"Found all files of type {fileType}, containing: {fileList.Count} files return");
+        return fileList;
+    }
+
+
 }

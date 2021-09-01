@@ -7,11 +7,26 @@ using UnityEngine;
 public class CardHandler : MonoBehaviour
 {
     [SerializeField] GameObject baseCard;
+    [Space(10)]
     [SerializeField] List<Card> allCards;
-    [Header("Start Controls")]
-    [SerializeField] bool runUpdateCardID;
+    [Space(10)]
+    [SerializeField] List<Card> tempAutoFoundCards;
+
+    [Header("White/ Black List")]
+    [SerializeField] List<Card> whiteList;
+    [SerializeField] List<Card> blackList;
+
+    [Header("Duplicate Card Checker")]
+    [Range(0f, 1f)]
+    [SerializeField] float dupFlagRange = 0.8f;
 
     public List<Card> AllCards { get => allCards; }
+    public List<Card> TempAutoFoundCards { get => tempAutoFoundCards; set => tempAutoFoundCards = value; }
+    public float DupFlagRange { get => dupFlagRange; set => dupFlagRange = value; }
+
+    //CSV stuff
+    public static string cellSeperator = ",";
+
 
     private void Awake()
     {
@@ -181,33 +196,33 @@ public class CardHandler : MonoBehaviour
 
     public GameObject CreateNewCard(CardSave cs, string cardName = null)
     {
-        GameObject[] returnCards = CreateNewCards.CreateNewCard(this,baseCard,cs,cardName);
+        GameObject[] returnCards = CreateNewCards.CreateNewCard(this, baseCard, cs, cardName);
         DestroyImmediate(returnCards[0]);
 
         return returnCards[1];
 
-    //    GameObject instanceRoot = (GameObject)PrefabUtility.InstantiatePrefab(baseCard);
-    //    Card newCard = instanceRoot.GetComponent<Card>();
-    //    newCard.UpdateCard(cs, GetCardsFromIDs(cs.headsOption.sequenceCardsAdd), GetCardsFromIDs(cs.headsOption.sequenceCardsRemove), GetCardsFromIDs(cs.tailsOption.sequenceCardsAdd), GetCardsFromIDs(cs.tailsOption.sequenceCardsRemove));
-    //    newCard.CardID = CardManager.GetIDValue(newCard);
-    //    if (cardName == null)
-    //    {
-    //        if (newCard.CardDetails != "")
-    //        {
-    //            instanceRoot.name = "Card_" + newCard.CardDetails;
-    //        }
-    //        else
-    //        {
-    //            instanceRoot.name = "Card_" + newCard.CardDescriptionText;
-    //        }
-    //    }
-    //    else
-    //    {
-    //        instanceRoot.name = "Card_" + cardName;
-    //    }
-    //    GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)cs.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
-    //    DestroyImmediate(instanceRoot);
-    //    return pVariant;
+        //    GameObject instanceRoot = (GameObject)PrefabUtility.InstantiatePrefab(baseCard);
+        //    Card newCard = instanceRoot.GetComponent<Card>();
+        //    newCard.UpdateCard(cs, GetCardsFromIDs(cs.headsOption.sequenceCardsAdd), GetCardsFromIDs(cs.headsOption.sequenceCardsRemove), GetCardsFromIDs(cs.tailsOption.sequenceCardsAdd), GetCardsFromIDs(cs.tailsOption.sequenceCardsRemove));
+        //    newCard.CardID = CardManager.GetIDValue(newCard);
+        //    if (cardName == null)
+        //    {
+        //        if (newCard.CardDetails != "")
+        //        {
+        //            instanceRoot.name = "Card_" + newCard.CardDetails;
+        //        }
+        //        else
+        //        {
+        //            instanceRoot.name = "Card_" + newCard.CardDescriptionText;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        instanceRoot.name = "Card_" + cardName;
+        //    }
+        //    GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)cs.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
+        //    DestroyImmediate(instanceRoot);
+        //    return pVariant;
     }
 
     public void SortCards()
@@ -287,6 +302,37 @@ public class CardHandler : MonoBehaviour
             }
         }
         return sequenceCardsAdd;
+    }
+
+
+    public void FindAllCards()
+    {
+        List<Card> allFoundCards = FileLoader.GetAllFilesFromResources<Card>("Cards_New/", "*.prefab");
+
+        allFoundCards.AddRange(whiteList);
+
+        foreach (Card blackCard in blackList)
+        {
+            if (allFoundCards.Contains(blackCard))
+            {
+                allFoundCards.Remove(blackCard);
+            }
+        }
+
+        Debug.Log($"Loaded: {allFoundCards.Count} cards");
+        tempAutoFoundCards = allFoundCards;
+    }
+
+    public void ApplyFoundCards()
+    {
+        allCards = tempAutoFoundCards;
+        tempAutoFoundCards = new List<Card>();
+        SortCards();
+    }
+
+    public void ClearFoundCards()
+    {
+        tempAutoFoundCards = new List<Card>();
     }
 
 }

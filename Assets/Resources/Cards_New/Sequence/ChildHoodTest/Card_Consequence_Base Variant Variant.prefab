@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5495502850648355304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4186951640261364006, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ff449d99131f049419044552a3719831, type: 3}
+    - target: {fileID: 4186951640261364006, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640261364006, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1cc6df4f45dec83418be8266d05fd2ca, type: 2}
+    - target: {fileID: 4186951640590575411, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_text
+      value: "As your scribbles take shape  a pentagram glows amongst your doodles
+        and a demonic voice answers your call - I guess a demon is going to suggest
+        your test\u2019s answers?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640590575411, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_fontSize
+      value: 3.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640590575411, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.04150939
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640590575411, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.04150939
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640590575411, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640590575411, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278914047
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640590575412, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 7.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640590575412, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640726179896, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640740276400, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740540, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: ageEnum.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740541, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740542, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_Name
+      value: Card_Consequence_Base Variant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186951640777740542, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: cardID
+      value: GEN_007_
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: cardDescription
+      value: this is a test card
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: cardDescriptionText
+      value: "As your scribbles take shape  a pentagram glows amongst your doodles
+        and a demonic voice answers your call - I guess a demon is going to suggest
+        your test\u2019s answers?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: headsDescriptionText
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822898864636786511, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: tailsDescriptionText
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811611999412386708, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f417118d5d58f7347b808b763f9ad175, type: 2}
+    - target: {fileID: 7172463096149028096, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: cardID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172463096149028096, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: cardDescription
+      value: this is a test card
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172463096149028096, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: cardDescriptionText
+      value: "As your scribbles take shape, a pentagram glows amongst your doodles
+        and a demonic voice answers your call - I guess a demon is going to suggest
+        your test\u2019s answers?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172463096149028096, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: headsDescriptionText
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172463096149028096, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+      propertyPath: tailsDescriptionText
+      value: ...
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4186951640777740540, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 6d6d2008984b74745ac81a23dd5ff32e, type: 3}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Events;
 
 public enum CardSoundEnum
 {
@@ -20,6 +21,10 @@ public class CardEffectScript : MonoBehaviour
 
     [Header("Mixer")]
     [SerializeField] AudioMixerGroup audioMixerGroup;
+
+    [Header("Effects")]
+    [SerializeField] UnityEvent headsEffect;
+    [SerializeField] UnityEvent tailsEffect;
 
     public AudioSource PlayCardSound { get => playCardSound; }
     public AudioSource HeadsSound { get => headsSound; }
@@ -56,5 +61,18 @@ public class CardEffectScript : MonoBehaviour
         {
 
         }
+    }
+
+    public void PlayHeads()
+    {
+        headsEffect.Invoke();
+        PlaySound(CardSoundEnum.HEADS);
+    }
+
+    public void PlayTails()
+    {
+        tailsEffect.Invoke();
+        PlaySound(CardSoundEnum.TAILS);
+
     }
 }

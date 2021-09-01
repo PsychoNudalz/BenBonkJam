@@ -27,7 +27,7 @@ public static class CreateNewCards
         {
             instanceRoot.name = "Card_" + cardName;
         }
-        GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Cards_New/" + CardManager.GetAgeFolderString((int)cs.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
+        GameObject pVariant = PrefabUtility.SaveAsPrefabAsset(instanceRoot, "Assets/Resources/Cards_New/" + CardManager.GetAgeFolderString((int)cs.ageNeeded[0]) + "/" + instanceRoot.name + ".prefab");
        // DestroyImmediate(instanceRoot);
         return new GameObject[] {instanceRoot,pVariant};
     }
