@@ -5,7 +5,7 @@ ADU_002_,,3/,12/,plumber,Plumber,Yes!,0,20,-15,,,ADU_017_/ADU_039_/ADU_040_/ADU_
 ADU_003_,,3/,,ice_cream_truck,Ice cream truck comes after you,Shout at it,-5,0,10,,,,,,Run!,5,0,-3,,,,,,END
 ADU_004_,,3/,11/,sysadmin,Software Developer,Yes!,-20,100,-50,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_005_,,3/,1/,divorce,In your relationship  conflicts do happen  but divorce is not a joke. ,I am done  File the papers. ,0,-20,-40,,,,,1/,Love is to give  try to accept that you need to be sacrifical. Things may get better hopefully... ,0,0,30,,,,,,END
-ADU_006_,,3/,,telemarketer,Telemarketer,Yes!,0,20,-15,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+ADU_006_,,3/,,telemarketer,Telemarketer,Yes!,0,20,-15,,,ADU_017_/ADU_040_/ADU_042_/ADU_006_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_007_,,3/,7/,TV,Televangelist,Yes!,0,50,-10,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,15/43/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_008_,,3/,47/,harambe,Harambe has gone rogue! What do you do?,Tranquillise Harambe,0,0,10,,,,,,SHOOT THE GORILLA,-5,0,-50,,,,,,END
 ADU_009_,,3/,18/,truck,Truck Driver,Yes!,0,20,-20,,,ADU_017_/ADU_039_/ADU_040_/ADU_042_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
@@ -15,14 +15,14 @@ ADU_012_,,3/,9/,ufo,UFOlogist,Yes!,20,20,20,,,ADU_017_/ADU_040_/ADU_042_/ADU_006
 ADU_013_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/47/,16/,No,0,0,0,,,,,,END
 ADU_014_,,3/,11/,,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not?,-30,-30,-30,,,,24/,11/10/,No! It will be too much!,0,0,0,,,,,,END
 ADU_015_,,3/,11/,,You are accepted into university... but your research needs money.,Beg for a grant,0,0,0,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
-ADU_016_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_042_/ADU_002_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,15/,16/,Nah,0,0,0,,,,,,END
-ADU_017_,,3/,24/,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_042_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/,15/,16/,No,0,0,0,,,,,,END
+ADU_016_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,ADU_016_/,15/,16/,Nah,0,0,0,,,,,,END
+ADU_017_,,3/,,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,ADU_017_/ADU_040_/ADU_042_/ADU_016_/,15/,16/,No,0,0,0,,,,,,END
 ADU_018_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_042_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/,,,,I refuse,-10,-50,20,,,,16/,,END
 ADU_019_,,3/,24/,evil_scientist,Evil scientist,Yes,0,0,0,,ADU_021_/,ADU_017_/ADU_039_/ADU_040_/ADU_042_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,25/15/,16/,No,0,0,0,,,,,,END
 ADU_020_,,3/,,middle east,A soul seeking vacation to the Middle East?,Time for a trip!,0,-40,40,,,,7/,,Nah,0,0,0,,,,,,END
 ADU_021_,,3/,,minion_help,Being alone makes everything difficult.  You really need help in your... sinister scientific advances.,Hire some minions.,5,5,5,,,,,,Work for an evil corp.,-10,30,-10,,,,,,END
 ADU_022_,,3/,25/,rocket,You are asked to build a rocket for your master.,Yes  my liege,-20,50,-25,,,,,,FORGET THIS I'M OUT,-5,-10,-10,,,,,,END
-ADU_023_,How do you respond on TV,3/,43/,,Someone calls your station and asks... How do you respond on TV?,,0,0,0,,,,,,,0,0,0,,,,,,END
+ADU_023_,How do you respond on TV,3/,,,Someone calls your station and asks... How do you respond on TV?,,0,0,0,,,,,,,0,0,0,,,,,,END
 ADU_024_,Play the lottery,3/,,lotttery,Play the lottery?,Let's see my luck,0,75,-10,,,,,,Forget it,0,0,0,,,,,,END
 ADU_025_,,3/,,,Tech support.  Does not seem legit though,Accept their help,0,0,0,,,,,,IT'S A TRAP,0,0,0,,,,,,END
 ADU_026_,Olympics,3/,17/,olympics,You are being invited to take part in the Olympics (starts a sequence),I shall accept the oppertunity of a lifetime,25,15,30,,,,,,Nah.  Too much effort.,-12,0,-30,,,,,,END

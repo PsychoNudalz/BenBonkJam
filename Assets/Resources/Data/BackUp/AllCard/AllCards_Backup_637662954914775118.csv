@@ -22,7 +22,7 @@ ADU_019_,,3/,24/,evil_scientist,Evil scientist,Yes,0,0,0,,ADU_021_/,ADU_017_/ADU
 ADU_020_,,3/,,middle east,A soul seeking vacation to the Middle East?,Time for a trip!,0,-40,40,,,,7/,,Nah,0,0,0,,,,,,END
 ADU_021_,,3/,,minion_help,Being alone makes everything difficult.  You really need help in your... sinister scientific advances.,Hire some minions.,5,5,5,,,,,,Work for an evil corp.,-10,30,-10,,,,,,END
 ADU_022_,,3/,25/,rocket,You are asked to build a rocket for your master.,Yes  my liege,-20,50,-25,,,,,,FORGET THIS I'M OUT,-5,-10,-10,,,,,,END
-ADU_023_,How do you respond on TV,3/,43/,,Someone calls your station and asks... How do you respond on TV?,,0,0,0,,,,,,,0,0,0,,,,,,END
+ADU_023_,How do you respond on TV,3/,,,Someone calls your station and asks... How do you respond on TV?,,0,0,0,,,,,,,0,0,0,,,,,,END
 ADU_024_,Play the lottery,3/,,lotttery,Play the lottery?,Let's see my luck,0,75,-10,,,,,,Forget it,0,0,0,,,,,,END
 ADU_025_,,3/,,,Tech support.  Does not seem legit though,Accept their help,0,0,0,,,,,,IT'S A TRAP,0,0,0,,,,,,END
 ADU_026_,Olympics,3/,17/,olympics,You are being invited to take part in the Olympics (starts a sequence),I shall accept the oppertunity of a lifetime,25,15,30,,,,,,Nah.  Too much effort.,-12,0,-30,,,,,,END
