@@ -17,19 +17,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: headsOption.bux
-      value: -25
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.bux
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: headsOption.mood
-      value: 25
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.mood
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: headsOption.health
@@ -58,6 +58,14 @@ PrefabInstance:
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: ageNeeded.Array.data[0]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsOption.statusAdd.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsOption.statusAdd.Array.data[0]
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 1350933442539113009, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: shaderTypes

@@ -89,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.size
-      value: 14
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: tailsOption.sequenceCardsAdd.Array.data[0]
@@ -150,11 +150,11 @@ PrefabInstance:
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[0]
       value: 
-      objectReference: {fileID: 3480359045016101539, guid: 735987cd106517a43b677e0a9efe85d1, type: 3}
+      objectReference: {fileID: 5118071481035649361}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[1]
       value: 
-      objectReference: {fileID: 3345213397067803073, guid: 05450729627700d479770da9a1474474, type: 3}
+      objectReference: {fileID: 589086361448509104, guid: 402e0861231de11409b77f996c86c9fd, type: 3}
     - target: {fileID: 46406895478704951, guid: 40f3c5b797a4e7d44ba27d04a66e10c0, type: 3}
       propertyPath: headsOption.sequenceCardsRemove.Array.data[2]
       value: 
