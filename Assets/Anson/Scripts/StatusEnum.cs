@@ -52,8 +52,15 @@ public enum StatusEnum
     TechBiz,
     OldAge,
     Princes,
-    Zookeeper
-
+    Zookeeper,
+    SoftwareDeveloper,
+    TruckDriver,
+    UFOlogist,
+    Plumber,
+    GoodScientist,
+    Telemarketer,
+    Burgerflipper,
+    ProSportsPlayer
 }
 
 public static class StatusEnumName
