@@ -33,12 +33,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.sequenceCardsAdd.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.sequenceCardsAdd.Array.data[0]
       value: 
       objectReference: {fileID: 1253416360561863697, guid: ac1f938c65f6ec14c87b03d0357f1ee5, type: 3}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsOption.sequenceCardsRemove.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsOption.sequenceCardsRemove.Array.data[0]
+      value: 
+      objectReference: {fileID: 36523710092365081, guid: 0c7404f9d34a7534fa717fb9ff956c8b, type: 3}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
       value: You are asked to build a machine for your master.

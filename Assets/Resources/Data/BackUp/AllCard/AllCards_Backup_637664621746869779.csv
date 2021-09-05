@@ -20,8 +20,8 @@ ADU_017_,,3/,24/,mad_scientist,Good scientist - Use your education status for th
 ADU_018_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/,,,,I refuse,-10,-50,20,,,,16/,,END
 ADU_019_,,3/,24/,evil_scientist,Evil scientist,Yes,0,0,0,,ADU_021_/,ADU_017_/ADU_039_/ADU_040_/ADU_042_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,25/15/,16/,No,0,0,0,,,,,,END
 ADU_020_,,3/,,middle east,A soul seeking vacation to the Middle East?,Time for a trip!,0,-40,40,,,,7/,,Nah,0,0,0,,,,,,END
-ADU_021_,,3/,25/,minion_help,Being alone makes everything difficult.  You really need help in your... sinister scientific advances.,Hire some minions.,5,5,5,,,,,,Work for an evil corp.,-10,30,-10,,ADU_068_/ADU_022_/ADU_069_/ADU_070_/ADU_071_/ADU_072_/ADU_073_/,,,,END
-ADU_022_,,3/,25/,rocket,You are asked to build a rocket for your master.,Yes  my liege,-20,50,-25,,,,,,FORGET THIS I'M OUT,-5,-10,-10,,ADU_045_/,ADU_069_/ADU_070_/ADU_071_/ADU_072_/ADU_073_/,,,END
+ADU_021_,,3/,25/,minion_help,Being alone makes everything difficult.  You really need help in your... sinister scientific advances.,Hire some minions.,5,5,5,,,,,,Work for an evil corp.,-10,30,-10,,,,,,END
+ADU_022_,,3/,25/,rocket,You are asked to build a rocket for your master.,Yes  my liege,-20,50,-25,,,,,,FORGET THIS I'M OUT,-5,-10,-10,,,,,,END
 ADU_023_,How do you respond on TV,3/,43/,,Someone calls your station and asks... How do you respond on TV?,,0,0,0,,,,,,,0,0,0,,,,,,END
 ADU_024_,Play the lottery,3/,,lotttery,Play the lottery?,Let's see my luck,0,75,-10,,,,,,Forget it,0,0,0,,,,,,END
 ADU_025_,,3/,,,Tech support.  Does not seem legit though,Accept their help,0,0,0,,,,,,IT'S A TRAP,0,0,0,,,,,,END
@@ -61,12 +61,12 @@ ADU_058_,,3/,,,Your company is now traded publicly after an Initial Public Offer
 ADU_059_,,3/,44/,,Time to expand your business into an empire...,Build self driving cars,0,0,0,,,,,,Buy crypto,0,0,0,,,,,,END
 ADU_060_,,3/,,,Workers are complaining...,Improve conditions,0,0,0,,ADU_061_/,,,,Dismantle unions and fire them,0,0,0,,,,,,END
 ADU_061_,,3/,,,It's time for a new space race,Fly to the moon on a rocket,0,0,60,,,,,,Fly to Mars on a rocket,0,0,60,,,,,,END
-ADU_068_,,3/,,,You are asked to build a lair for your master,Yes master,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_045_/,ADU_022_/ADU_069_/ADU_070_/ADU_071_/ADU_072_/ADU_073_/,,,END
-ADU_069_,,3/,,,You are asked to clone your master,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_045_/,ADU_070_/ADU_071_/ADU_072_/ADU_073_/,,,END
-ADU_070_,,3/,,,You are asked to test an experimental serum on yourself,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_045_/,ADU_071_/ADU_072_/ADU_073_/,,,END
-ADU_071_,What even,3/,,,What even is this anyway? What ever happened to your choices?,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_045_/,ADU_072_/ADU_073_/,,,END
-ADU_072_,,3/,,,You are asked to build a machine for your master.,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_045_/,ADU_073_/,,,END
-ADU_073_,,3/,,,You are asked to power the machine with your soul.,Yes master.,-999,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_045_/,,,,END
+ADU_068_,,3/,,,You are asked to build a lair for your master,Yes master,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,,,,,END
+ADU_069_,,3/,,,You are asked to clone your master,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,,,,,END
+ADU_070_,,3/,,,You are asked to test an experimental serum on yourself,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,,,,,END
+ADU_071_,What even,3/,,,What even is this anyway? What ever happened to your choices?,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_045_/,,,,END
+ADU_072_,,3/,,,You are asked to build a machine for your master.,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,,,,,END
+ADU_073_,,3/,,,You are asked to power the machine with your soul.,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,,,,,END
 BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END
 BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END
 BAB_002_,,0/,,babyannoiyin,...,Googoo,5,0,5,,,,,,Gaagaa,-5,0,5,,,,,,END
