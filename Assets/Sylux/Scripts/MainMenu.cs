@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public Canvas mainCanvas;
     public Canvas helpCanvas;
     public Canvas creditsCanvas;
+    public Canvas optionsCanvas;
     public Canvas statsCanvas;
 
     // credits objects
@@ -43,6 +44,7 @@ public class MainMenu : MonoBehaviour
         statisticsCanvas.enabled = false;
         achievementsCanvas.enabled = false;
         endingsCanvas.enabled = false;
+        optionsCanvas.enabled = false;
     }
 
     public void Play()
@@ -67,6 +69,18 @@ public class MainMenu : MonoBehaviour
         endingsCanvas.enabled = false;
         endingsCanvas2.enabled = false;
         endingCanvas3.enabled = false;
+    }
+
+    public void Options()
+    {
+        optionsCanvas.enabled = true;
+        mainCanvas.enabled = false;
+    }
+
+    public void OptionsBack()
+    {
+        optionsCanvas.enabled = false;
+        mainCanvas.enabled = true;
     }
 
     public void Help()
