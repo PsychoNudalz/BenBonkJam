@@ -213,7 +213,10 @@ public class CardHandlerWindow : EditorWindow
         EditorSceneManager.MarkSceneDirty(cardHandler.gameObject.scene);
         foreach (Card c in cardHandler.AllCards)
         {
+            if (c)
+            {
             EditorUtility.SetDirty(c.gameObject);
+            }
 
         }
     }

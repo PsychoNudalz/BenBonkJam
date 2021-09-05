@@ -41,6 +41,7 @@ ADU_038_,,3/,,telemarketer,Someone on behalf of tech support says your computer 
 ADU_039_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,ADU_017_/ADU_039_/ADU_040_/GEN_000_/ADU_006_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_040_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,ADU_040_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_041_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+GEN_000_,,,4/5/6/7/8/9/10/11/12/13/,,blank (impossible to obtain),a,0,0,0,,,ADU_040_/GEN_000_/ADU_016_/,,,b,0,0,0,,,,,,END
 ADU_042_,Chat ask question,3/,,,Chat asks you a question. ,Hi Chat. Lets chat,0,0,0,,,,,,No chat,0,0,0,,,,,,END
 ADU_043_,follower ask question,3/,43/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
 ADU_044_,you were assassinated,3/,,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
@@ -88,7 +89,6 @@ CHI_009_,,1/,,team sport,You play some team sports,Impress your crush,0,0,10,,,,
 CHI_010_,,1/,,ouja_board,You found a Ouija board in your parents room,Read the instructions and try to use it,-5,0,5,,,,0/,,I am too scared of the occult :(,-5,0,-5,,,,,,END
 CHI_011_,,1/,,sloth vs ant,Pretend to be...,A sloth (Lazy),0,-10,10,,,,,,An ant (Hard working),0,20,0,,,,,,END
 CHI_012_,,1/,,schoolskip,Skip school today?,Yes school SUX,0,-5,10,,,,,,No,0,0,-10,,,,,,END
-CHI_013_,,1/2/3/4/,,food,A delicious burger has appeared on the table!,Eat! ,-10,0,10,,,,,,No junk food  don't eat,20,0,0,,,,,,END
 DEA_000_,,5/,9/,alien,After your death  you become an alien,Be an ordinary resident in an other galaxy,0,0,0,,,,,,Be a space traveller in your spaceship,0,0,0,,,,,,END
 DEA_001_,,5/,17/,champ,You earned eternal fame as an honourable athlete in heaven.,Yes I deserved it ,0,0,0,,,,,,No I walk away from those honors,0,0,0,,,,,,END
 DEA_002_,,5/,2/,bluelight,You entered Paradise. ,Be an enlightened soul ,0,0,0,,,,,,Be an Angel,0,0,0,,,,,,END
@@ -100,6 +100,7 @@ DEA_007_,,5/,,enlighteneed,Congratulations  you have escaped the simulation. Wel
 DEA_008_,,5/,7/,ending,Hey  you. You're finally awake. You were trying to cross the border  right? Walked right into that Imperial ambush  same as us  and that thief over there.,Staying safe I hope?,0,0,0,,,,,,What? Dragons?,0,0,0,,,,,,END
 DEA_009_,,5/,22/,dead baby,You died as a baby….. Somehow…..,(Regret...) ,0,0,0,,,,,,Accept fate,0,0,0,,,,,,END
 DEA_010_,,5/,21/,ghost friend,After you died you become friends with ghosts,Spook other people,0,0,0,,,,,,Dance with them,0,0,0,,,,,,END
+ADU_067_,,3/,3/19/,pett adventure,Your pet Hamster and Dog decided to go on an adventure together,Wish them good luck,0,0,0,,,,,,Join them,0,0,0,,,,,,END
 DEA_011_,,5/,0/,death,You entered HELL,Be a prisoner ,0,0,0,,,,,,Be the Hell Lord,0,0,0,,,,,,END
 DEA_012_,,5/,2/20/,,The angels appreciate the virtue you showed in life. You now have an exclusive spot in heaven.,Express gratitude,0,0,0,,DEA_013_/,,,,Look smug leave me alone! ,0,0,0,,DEA_018_/,,,,END
 DEA_013_,,5/,2/20/,,You are now before the angel council. You are spectating a heated debate,Ask what is going on,0,0,0,,DEA_017_/,,,,This is not your problem. go chill elsewhere,0,0,0,,DEA_014_/,,,,END
@@ -128,7 +129,7 @@ DEA_035_,,5/,9/,,Your new alien family likes you but is very confused about your
 DEA_036_,,5/,9/,,You brought some bacteria and viruses on board with you. They are harmless to humans but the aliens are very sick and have no cure...,help treating the sick,0,0,0,,DEA_037_/,,,,leave them to their fate,0,0,-10,,DEA_037_/,,,,END
 DEA_037_,,5/,9/,,You are the last one left on this barren planet... there are plenty of resources for you to live in comfort for your last few years of life,Become the Lone Emperor of Planet X,0,0,0,,,,,,Live in regret and shame and die in solitude,0,0,-5,,,,,,END
 DEA_038_,,5/,9/,,After a few weeks your alien family has managed to teach you telepathic communication,join the colony as a citizen,0,0,0,,,,,,stay with your family as a pet,0,0,0,,,,,,END
-GEN_000_,,,4/5/6/7/8/9/10/11/12/13/,,blank (impossible to obtain),a,0,0,0,,,ADU_040_/GEN_000_/ADU_016_/,,,b,0,0,0,,,,,,END
+CHI_013_,,1/2/3/4/,,food,A delicious burger has appeared on the table!,Eat! ,-10,0,10,,,,,,No junk food  don't eat,20,0,0,,,,,,END
 GEN_001_,,,3/,rippet,Pet doggo has passed away...,Bury it in the garden,0,0,-20,,,,,3/,Give it a Viking send off,0,-10,-10,,,,2/,3/,END
 GEN_002_,,,19/,rippet,Pet Hamster passed away...,Yeet it in to the trash,0,0,0,3/,,,,19/,Burry it in the garden,0,0,-5,,,,,19/,END
 GEN_003_,,,,bamboozle,Saving Game...,Okay I’ll wait,10,0,0,,,,,,No it’s not  the game’s a troll,0,0,10,,,,,,END
