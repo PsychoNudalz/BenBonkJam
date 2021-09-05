@@ -340,7 +340,7 @@ public class StatsEndingDisplay : MonoBehaviour
             ghostFriendEnding.interactable = false;
         }
 
-        if (gameDataManager.EndingsUnlocked1.hamDogAdventure == true)
+        if (gameDataManager.EndingsUnlocked1.NewEnding == true)
         {
             petAdventureEnding.image.sprite = hamDogAdventure;
             petAdventureEnding.interactable = true;

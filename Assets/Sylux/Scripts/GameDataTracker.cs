@@ -138,10 +138,11 @@ public class GameDataTracker : MonoBehaviour
 
         }
 
-        if (cardEventManager.currentCard.CardID == "DEA_011_")
-        {
-            gameDataManager.EndingsUnlocked1.hamDogAdventure = true;
-        }
+
+        //if (cardEventManager.currentCard.CardID == "DEA_011_")
+        //{
+        //    gameDataManager.EndingsUnlocked1.NewEnding = true;
+        //}
 
         if (cardEventManager.currentCard.CardID == "DEA_012_")
         {

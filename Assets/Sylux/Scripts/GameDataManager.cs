@@ -235,7 +235,7 @@ public class GameDataManager : MonoBehaviour
         public bool borderAwake;
         public bool dieYoung;
         public bool friendGhost;
-        public bool hamDogAdventure;
+        public bool NewEnding;
         public bool hell;
         public bool paradise;
         public bool purgatory;
@@ -252,7 +252,7 @@ public class GameDataManager : MonoBehaviour
             this.borderAwake = borderAwake;
             this.dieYoung = dieYoung;
             this.friendGhost = friendGhost;
-            this.hamDogAdventure = hamDogAdventure;
+            this.NewEnding = hamDogAdventure;
             this.hell = hell;
             this.paradise = paradise;
             this.purgatory = purgatory;
@@ -268,7 +268,7 @@ public class GameDataManager : MonoBehaviour
             borderAwake = false;
             dieYoung = false;
             friendGhost = false;
-            hamDogAdventure = false;
+            NewEnding = false;
             hell = false;
             paradise = false;
             purgatory = false;

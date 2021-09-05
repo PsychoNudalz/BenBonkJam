@@ -10,7 +10,7 @@ public enum EndingEnum
     BorderAwake,
     DieYoung,
     FriendGhost,
-    HamDogAdventure,
+    NewEnding, //Was Pet Adventure.  Replace this with a new Ending
     Hell,
     Paradise,
     Purgatory,
@@ -89,8 +89,8 @@ public class EndingsManager : PlayerCollectionManager
             case EndingEnum.FriendGhost:
                 ec.IsUnlocked = gameDataManager.EndingsUnlocked1.friendGhost;
                 break;
-            case EndingEnum.HamDogAdventure:
-                ec.IsUnlocked = gameDataManager.EndingsUnlocked1.hamDogAdventure;
+            case EndingEnum.NewEnding:
+                ec.IsUnlocked = gameDataManager.EndingsUnlocked1.NewEnding;
                 break;
             case EndingEnum.Hell:
                 ec.IsUnlocked = gameDataManager.EndingsUnlocked1.hell;
