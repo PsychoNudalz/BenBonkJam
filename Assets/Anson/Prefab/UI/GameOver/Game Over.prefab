@@ -828,25 +828,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endingSummaries:
-  - healthRange: {x: 75, y: 100}
-    buxRange: {x: 75, y: 100}
-    moodRange: {x: 75, y: 100}
+  - scoreRange: {x: 250, y: 3.4028235e+38}
+    healthRange: {x: 0, y: 100}
+    buxRange: {x: 0, y: 100}
+    moodRange: {x: 0, y: 100}
     summaryText: You lived a great life. There were good days and bad days, but you
       always managed to see the brighter side of every situation and lived your best
       life. How corny.
-  - healthRange: {x: 50, y: 100}
-    buxRange: {x: 50, y: 100}
-    moodRange: {x: 50, y: 100}
+  - scoreRange: {x: 200, y: 3.4028235e+38}
+    healthRange: {x: 0, y: 100}
+    buxRange: {x: 0, y: 100}
+    moodRange: {x: 0, y: 100}
     summaryText: This was a good life. There were some less enjoyable time, but you
       still managed well. But you secretly resent those who had a better time than
       you...
-  - healthRange: {x: 25, y: 100}
-    buxRange: {x: 25, y: 100}
-    moodRange: {x: 25, y: 100}
+  - scoreRange: {x: 150, y: 3.4028235e+38}
+    healthRange: {x: 0, y: 100}
+    buxRange: {x: 0, y: 100}
+    moodRange: {x: 0, y: 100}
     summaryText: An above average existance. Nothing major to celebrate and nothing
       major to mourn. You could have been so much more... if only you had applied
       yourself.
-  - healthRange: {x: 0, y: 100}
+  - scoreRange: {x: 0, y: 3.4028235e+38}
+    healthRange: {x: 0, y: 100}
     buxRange: {x: 0, y: 100}
     moodRange: {x: 0, y: 100}
     summaryText: What a disappointment. You had SUCH potential!

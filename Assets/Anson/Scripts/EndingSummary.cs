@@ -8,6 +8,8 @@ using TMPro;
 public class EndingSummaryConditions
 {
     [Header("Condition")]
+    [Tooltip("Set Overall Score Range")]
+    public Vector2 scoreRange = new Vector2(0, float.MaxValue);
     [Tooltip("Range value be between 0 - Max Value, Inclusive")]
     public Vector2 healthRange = new Vector2(0, 100f);
     [Tooltip("Range value be between 0 - Max Value, Inclusive")]
@@ -35,9 +37,9 @@ public class EndingSummaryConditions
         this.summaryText = "";
     }
 
-    public bool IsMatched(Player player)
+    public bool IsMatched(Player player, float score)
     {
-        if (IsMatchValueRange(player.HealthPoints, healthRange) && IsMatchValueRange(player.BuxPoint, buxRange) && IsMatchValueRange(player.MoodPoint, moodRange))
+        if (IsMatchValueRange(score, scoreRange) && IsMatchValueRange(player.HealthPoints, healthRange) && IsMatchValueRange(player.BuxPoint, buxRange) && IsMatchValueRange(player.MoodPoint, moodRange))
         {
             return true;
         }
@@ -90,23 +92,23 @@ public class EndingSummary : MonoBehaviour
         endingSummaries = new List<EndingSummaryConditions>(FileLoader.LoadFromFile<EndingSummaryList>(Application.dataPath + "/Resources/Data/EndingSummaries.json").endingSummaries);
     }
 
-    public void UpdateSummaryText()
+    public void UpdateSummaryText(float score)
     {
         if (!summaryText)
         {
             return;
         }
 
-        summaryText.text = GetEndingSummary().summaryText;
+        summaryText.text = GetEndingSummary(score).summaryText;
     }
 
-    EndingSummaryConditions GetEndingSummary()
+    EndingSummaryConditions GetEndingSummary(float score)
     {
         EndingSummaryConditions returnEnding = endingSummaries[endingSummaries.Count-1];
 
         foreach (EndingSummaryConditions esc in endingSummaries)
         {
-            if (esc.IsMatched(Player.current))
+            if (esc.IsMatched(Player.current,score))
             {
                 return esc;
 

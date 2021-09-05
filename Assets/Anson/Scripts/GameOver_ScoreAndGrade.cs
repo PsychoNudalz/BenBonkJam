@@ -49,7 +49,7 @@ public class GameOver_ScoreAndGrade : MonoBehaviour
     {
 
         //gradeText.color = ScaleColour(gradeText.color);
-        scoreText.text = (scoreRangeValue * score).ToString();
+        scoreText.text = Mathf.RoundToInt((scoreRangeValue * score)).ToString();
         //scoreRangeValue += scoreAnimationSpeed * Time.deltaTime;
         if (scoreRangeValue >= 1f)
         {
@@ -60,7 +60,7 @@ public class GameOver_ScoreAndGrade : MonoBehaviour
     private void PlayGradeAnimation()
     {
 
-        gradeText.color = ScaleColour(gradeText.color,gradeRangeValue);
+        gradeText.color = ScaleColour(gradeText.color, gradeRangeValue);
         if (gradeRangeValue >= 1f)
         {
             playGradeAnimation = false;

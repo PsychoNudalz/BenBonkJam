@@ -50,7 +50,7 @@ public class GameOverController : MonoBehaviour
         scoreAndGrading.Initialise(grade, totalScore);
 
         //Ending
-        endingSummary.UpdateSummaryText();
+        endingSummary.UpdateSummaryText(totalScore);
     }
 
     private void OnEnable()

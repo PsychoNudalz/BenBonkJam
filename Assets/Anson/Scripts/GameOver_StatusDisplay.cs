@@ -19,7 +19,7 @@ public class GameOver_StatusDisplay : MonoBehaviour
     public void Initialise(StatusEnum[] statusEnums)
     {
         List<StatusEffect> statusEffects = new List<StatusEffect>();
-        foreach(StatusEnum se in statusEnums)
+        foreach (StatusEnum se in statusEnums)
         {
             statusEffects.Add(StatusEffectManager.current.GetStatusEffect(se));
         }
@@ -34,15 +34,18 @@ public class GameOver_StatusDisplay : MonoBehaviour
         newSS.Initialise(se);
         RectTransform rt = scrollViewContent.GetComponent<RectTransform>();
         rt.sizeDelta = new Vector2(rt.sizeDelta.x, baseGO.GetComponent<RectTransform>().rect.height * scrollViewContent.childCount);
-        StartCoroutine (ShiftScrollView());
+        StartCoroutine(ShiftScrollView());
         return newSS;
     }
 
 
     IEnumerator DisplayStatus()
     {
-        InitialiseStatusEffect(savedStatuses[0]).StartAnimation();
-        savedStatuses.RemoveAt(0);
+        if (savedStatuses.Count > 0)
+        {
+            InitialiseStatusEffect(savedStatuses[0]).StartAnimation();
+            savedStatuses.RemoveAt(0);
+        }
         yield return new WaitForSeconds(timeBetweenStatuses);
         if (savedStatuses.Count > 0)
         {
