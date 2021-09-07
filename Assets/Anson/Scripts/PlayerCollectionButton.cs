@@ -38,6 +38,7 @@ public class PlayerCollectionButton : MonoBehaviour
         currentPC = pc;
         buttonImage.sprite = pc.Sprite;
         text.text = pc.CollectionName;
+        text.gameObject.SetActive(pc.IsUnlocked);
         SetIsUnloack(pc.IsUnlocked);
     }
 
