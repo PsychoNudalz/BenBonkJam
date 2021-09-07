@@ -19,9 +19,13 @@ public class VolumnManager : MonoBehaviour
     [SerializeField] SavedSettings savedSettings;
     public SavedSettings SavedSettings1 { get => savedSettings; set => savedSettings = value; }
 
-    private void Start()
+
+    private void Awake()
     {
         ReadFromSave();
+    }
+    private void Start()
+    {
         musicSlider.value = musicSliderValueFloat;
         sfxSlider.value = SFXsliderValueFloat;
 
@@ -72,12 +76,21 @@ public class VolumnManager : MonoBehaviour
     {
         audioMixer.SetFloat("Music", Mathf.Log10(musicSliderValue) * 20);
         musicSliderValueFloat = musicSliderValue;
+        WriteToSave();
     }
 
     public void SetSFXLevel(float SFXsliderValue)
     {
         audioMixer.SetFloat("SFX", Mathf.Log10(SFXsliderValue) * 20);
         SFXsliderValueFloat = SFXsliderValue;
+        WriteToSave();
+
+    }
+
+    private void OnDestroy()
+    {
+        WriteToSave();
+
     }
 
     public void OnApplicationQuit()
