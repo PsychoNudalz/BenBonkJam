@@ -29293,7 +29293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 400, y: 0}
   m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &143610388774822069
@@ -31076,7 +31076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 800, y: 0}
   m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &7395214322261472257
@@ -34209,6 +34209,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1909274867237890831}
     m_Modifications:
+    - target: {fileID: 1532360777379274703, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: HP Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824089749057655701, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: HP Bar
+      objectReference: {fileID: 0}
     - target: {fileID: 2897023521812230185, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -34220,6 +34228,14 @@ PrefabInstance:
     - target: {fileID: 6542016791338209529, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
       propertyPath: m_Name
       value: BarGroup
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542016791338209529, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: HP Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394895046458341654, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: HP Bar
       objectReference: {fileID: 0}
     - target: {fileID: 7814555248801733829, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
       propertyPath: m_Pivot.x
@@ -34330,6 +34346,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1909274867237890831}
     m_Modifications:
+    - target: {fileID: 1532360777379274703, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: Bux Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824089749057655701, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: Bux Bar
+      objectReference: {fileID: 0}
     - target: {fileID: 2897023521812230185, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -34361,6 +34385,14 @@ PrefabInstance:
     - target: {fileID: 6542016791338209529, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
       propertyPath: m_Name
       value: BarGroup (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542016791338209529, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: Bux Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394895046458341654, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: Bux Bar
       objectReference: {fileID: 0}
     - target: {fileID: 7814555248801733829, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
       propertyPath: m_Pivot.x
@@ -37213,6 +37245,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1909274867237890831}
     m_Modifications:
+    - target: {fileID: 1532360777379274703, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: Mood Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824089749057655701, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: Mood Bar
+      objectReference: {fileID: 0}
     - target: {fileID: 2897023521812230185, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -37264,6 +37304,14 @@ PrefabInstance:
     - target: {fileID: 6542016791338209529, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
       propertyPath: m_Name
       value: BarGroup (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542016791338209529, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: Mood Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394895046458341654, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
+      propertyPath: m_TagString
+      value: Mood Bar
       objectReference: {fileID: 0}
     - target: {fileID: 7814555248801733829, guid: 0c3b11a0c6fa6484792dae202262e96a, type: 3}
       propertyPath: m_Pivot.x
