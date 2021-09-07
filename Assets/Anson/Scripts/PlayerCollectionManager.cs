@@ -17,10 +17,13 @@ public class PlayerCollectionManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI detailsTitle;
     [SerializeField] Image detailsImage;
     [SerializeField] TextMeshProUGUI detailsDetails;
+    [SerializeField] TextMeshProUGUI pageNumberText;
 
 
     private void Awake()
     {
+        UpdatePageNumber();
+
     }
 
     public void LoadButtons()
@@ -77,13 +80,23 @@ public class PlayerCollectionManager : MonoBehaviour
         pageNumber++;
         pageNumber = Mathf.Clamp(pageNumber, 0, playerCollections.Count / maxButtonsPerPage);
         LoadButtons();
+        UpdatePageNumber();
     }
     public void PrevPage()
     {
         pageNumber--;
         pageNumber = Mathf.Clamp(pageNumber, 0, playerCollections.Count / maxButtonsPerPage);
         LoadButtons();
+        UpdatePageNumber();
+
     }
+
+
+    public void UpdatePageNumber()
+    {
+        pageNumberText.text = (pageNumber + 1).ToString();
+    }
+
 
     protected virtual void LoadIsUnlocked()
     {
