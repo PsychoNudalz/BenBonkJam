@@ -764,4 +764,100 @@ MonoBehaviour:
     moodPassive: 0
     icon: {fileID: 0}
     description: 
+  - status: 48
+    healthPos: 0
+    buxPos: 0
+    moodPos: 0
+    healthNeg: 0
+    buxNeg: 0
+    moodNeg: 0
+    healthPassive: 0
+    buxPassive: 0
+    moodPassive: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 49
+    healthPos: 0
+    buxPos: 0
+    moodPos: 0
+    healthNeg: 0
+    buxNeg: 0
+    moodNeg: 0
+    healthPassive: 0
+    buxPassive: 0
+    moodPassive: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 50
+    healthPos: 0
+    buxPos: 0
+    moodPos: 0
+    healthNeg: 0
+    buxNeg: 0
+    moodNeg: 0
+    healthPassive: 0
+    buxPassive: 0
+    moodPassive: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 51
+    healthPos: 0
+    buxPos: 0
+    moodPos: 0
+    healthNeg: 0
+    buxNeg: 0
+    moodNeg: 0
+    healthPassive: 0
+    buxPassive: 0
+    moodPassive: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 52
+    healthPos: 0
+    buxPos: 0
+    moodPos: 0
+    healthNeg: 0
+    buxNeg: 0
+    moodNeg: 0
+    healthPassive: 0
+    buxPassive: 0
+    moodPassive: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 53
+    healthPos: 0
+    buxPos: 0
+    moodPos: 0
+    healthNeg: 0
+    buxNeg: 0
+    moodNeg: 0
+    healthPassive: 0
+    buxPassive: 0
+    moodPassive: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 54
+    healthPos: 0
+    buxPos: 0
+    moodPos: 0
+    healthNeg: 0
+    buxNeg: 0
+    moodNeg: 0
+    healthPassive: 0
+    buxPassive: 0
+    moodPassive: 0
+    icon: {fileID: 0}
+    description: 
+  - status: 55
+    healthPos: 0
+    buxPos: 0
+    moodPos: 0
+    healthNeg: 0
+    buxNeg: 0
+    moodNeg: 0
+    healthPassive: 0
+    buxPassive: 0
+    moodPassive: 0
+    icon: {fileID: 0}
+    description: 
   updateCSV: 0
