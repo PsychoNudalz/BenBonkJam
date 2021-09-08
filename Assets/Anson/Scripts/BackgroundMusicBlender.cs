@@ -13,12 +13,18 @@ public class BackgroundMusic
 
     public void Play()
     {
-        music.Play();
+        if (music)
+        {
+            music.Play();
+        }
     }
 
     public void Stop()
     {
-        music.Stop();
+        if (music)
+        {
+            music.Stop();
+        }
     }
 
 

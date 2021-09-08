@@ -243,6 +243,7 @@ public class CardEventManager : MonoBehaviour
             previousCard.transform.parent = previousCardTransform;
             previousCard.transform.position = previousCardTransform.position;
             animator.SetTrigger("Next");
+
         }
         if (!newCard)
         {
@@ -252,6 +253,8 @@ public class CardEventManager : MonoBehaviour
         {
             tempCards.Remove(newCard);
             currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity, cardSpawnPoint).GetComponent<Card>();
+            //currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
+
             Debug.Log($"New Card: {currentCard.CardID}");
         }
 
@@ -482,5 +485,10 @@ public class CardEventManager : MonoBehaviour
         {
             Debug.LogError("Fail to port");
         }
+    }
+
+    public void Animation_PlaySound()
+    {
+        currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
     }
 }
