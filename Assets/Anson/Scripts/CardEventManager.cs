@@ -45,9 +45,9 @@ public class CardEventManager : MonoBehaviour
         }
 
         UpdatePlayerStatsUI();
-        if (randomPickTry== 0)
+        if (randomPickTry == 0)
         {
-        randomPickTry = allCards.Count * 2;
+            randomPickTry = allCards.Count * 2;
         }
         LoadNewCard();
         currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
@@ -143,7 +143,7 @@ public class CardEventManager : MonoBehaviour
     private void CallGameOver()
     {
         GameDataTracker.current.PostGame();
-        
+
         FindObjectOfType<GameManagerScript>().setGameOver(currentCard.CardID);
     }
 
@@ -246,12 +246,13 @@ public class CardEventManager : MonoBehaviour
         }
         if (!newCard)
         {
-            Debug.LogError("New card to be set is Null");
+            Debug.LogError("New card is Null");
         }
         else
         {
             tempCards.Remove(newCard);
             currentCard = Instantiate(newCard.gameObject, cardSpawnPoint.position, Quaternion.identity, cardSpawnPoint).GetComponent<Card>();
+            Debug.Log($"New Card: {currentCard.CardID}");
         }
 
 
@@ -352,6 +353,7 @@ public class CardEventManager : MonoBehaviour
             }
         }
         lastPressTime = Time.time;
+
         return true;
     }
 
@@ -363,7 +365,7 @@ public class CardEventManager : MonoBehaviour
     /// <returns></returns>
     private bool ModifyPlayerStats(float[] values)
     {
-        print("Modify Stats");
+        //print("Modify Stats");
         uIHandler.PlayStatsParticles(StatsType.HEALTH, values[0]);
         uIHandler.PlayStatsParticles(StatsType.BUX, values[1]);
         uIHandler.PlayStatsParticles(StatsType.MOOD, values[2]);
@@ -381,7 +383,7 @@ public class CardEventManager : MonoBehaviour
 
     void PlayerPassiveGain()
     {
-        print("Passive Gain");
+        //print("Passive Gain");
         float[] passiveArray = playerScript.PassiveGain();
         uIHandler.PlayStatsParticles(StatsType.HEALTH, passiveArray[0]);
         uIHandler.PlayStatsParticles(StatsType.BUX, passiveArray[1]);

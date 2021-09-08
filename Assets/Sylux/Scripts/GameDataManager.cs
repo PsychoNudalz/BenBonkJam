@@ -62,7 +62,7 @@ public class GameDataManager : MonoBehaviour
             string json2 = (string)formatter.Deserialize(stream);
             endingsUnlocked = JsonUtility.FromJson<EndingsUnlocked>(json2);
             stream.Close();
-            Debug.Log("Load player Save clear");
+            //Debug.Log("Load player Save clear");
         }
         else
         {

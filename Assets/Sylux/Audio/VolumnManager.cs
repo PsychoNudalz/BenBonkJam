@@ -36,7 +36,7 @@ public class VolumnManager : MonoBehaviour
         string json = JsonUtility.ToJson(savedSettings);
         try
         {
-            Debug.Log("Loading sound settings");
+            //Debug.Log("Loading sound settings");
             json = File.ReadAllText(Application.persistentDataPath + "/Save/savedSettings.json");
         }
         catch (System.Exception)
@@ -45,7 +45,7 @@ public class VolumnManager : MonoBehaviour
             Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
             File.WriteAllText(Application.persistentDataPath + "/Save/savedSettings.json", json);
 
-          //  Debug.LogError("Save file error");
+            //  Debug.LogError("Save file error");
             //   Debug.LogError(Exception.StackTrace);
 
         }
@@ -61,14 +61,14 @@ public class VolumnManager : MonoBehaviour
     {
         savedSettings = new SavedSettings(musicSliderValueFloat, SFXsliderValueFloat);
 
-        Debug.Log("Writing Save");
+        //Debug.Log("Writing Save");
         string json = JsonUtility.ToJson(savedSettings);
 
         File.WriteAllText(Application.persistentDataPath + "/Save/savedSettings.json", json);
         //Debug.Log(Application.persistentDataPath);
-        Debug.Log(json);
+        //Debug.Log(json);
 
-        Debug.Log("Saved settings.");
+        //Debug.Log("Saved settings.");
 
     }
 

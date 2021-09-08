@@ -92,11 +92,11 @@ public class BackgroundMusicBlender : MonoBehaviour
     {
         fadeInValue = 0;
         fadeOutValue = 0;
-        if (previousMusic != null&&previousMusic.music != null)
+        if (previousMusic != null && previousMusic.music != null)
         {
             previousMusic.Stop();
         }
-        Debug.Log("Music change");
+        //Debug.Log("Music change");
         previousMusic = currentMusic;
         try
         {
