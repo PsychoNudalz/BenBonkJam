@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -23,7 +24,10 @@ public class PlayerControlScript : MonoBehaviour
     [SerializeField] int Segments = 5;
     [Header("Fliper")]
     [SerializeField] CoinFlipScript coinFlipScript;
-     // Start is called before the first frame update
+
+    public bool ControlLock => controlLock;
+
+    // Start is called before the first frame update
     void Start()
     {
         if (!lineRenderer)
