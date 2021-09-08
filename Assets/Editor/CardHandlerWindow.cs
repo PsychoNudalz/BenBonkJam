@@ -121,7 +121,7 @@ public class CardHandlerWindow : EditorWindow
         }
         GUILayout.Space(10);
 
-        if (GUILayout.Button("Full Save"))
+        if (GUILayout.Button("Full Save To CSV"))
         {
             MarkDirty();
             try
@@ -140,7 +140,7 @@ public class CardHandlerWindow : EditorWindow
         }
         GUILayout.Space(10);
 
-        if (GUILayout.Button("Full Load"))
+        if (GUILayout.Button("Full Load From CSV"))
         {
             MarkDirty();
             try

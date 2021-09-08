@@ -12,6 +12,10 @@ PrefabInstance:
       value: DEA_030_
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: isEnding
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardDescriptionText
       value: The lesser demons admire you and would like to elect you as their new
         Overlord

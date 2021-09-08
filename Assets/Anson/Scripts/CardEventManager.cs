@@ -68,7 +68,7 @@ public class CardEventManager : MonoBehaviour
 
         Card newCard = null;
 
-        if (currentCard && currentCard.IsEnding)
+        if (currentCard && currentCard.IsEnding&& cardBuffer.Count == 0)
         {
             CallGameOver();
             return;
@@ -91,7 +91,14 @@ public class CardEventManager : MonoBehaviour
                 if (isDeathStage)
                 {
                     newCard = LoadGameOverCard();
-                    SetNewCard(newCard);
+                    if (currentCard.Equals(newCard))
+                    {
+                        CallGameOver();
+                    }
+                    else
+                    {
+                        SetNewCard(newCard);
+                    }
                     return;
                 }
                 else
