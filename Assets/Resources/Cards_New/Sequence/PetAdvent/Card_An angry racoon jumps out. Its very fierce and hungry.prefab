@@ -48,9 +48,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsOption.sequenceCardsAdd.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: headsOption.sequenceCardsAdd.Array.data[0]
       value: 
-      objectReference: {fileID: 8711732207600403514, guid: 6234fe32c32934040b6b8f6aae79ff8c, type: 3}
+      objectReference: {fileID: 6324158263375679595, guid: c9e51dd5a2da8b84599420895da15a2c, type: 3}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsOption.sequenceCardsAdd.Array.data[0]
+      value: 
+      objectReference: {fileID: 8109500454777796311, guid: fef766583371bb94da43c3ce1e135fa3, type: 3}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
       value: An angry racoon jumps out. Its very fierce and hungry

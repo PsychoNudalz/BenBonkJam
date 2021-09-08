@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &539567008913033428
+--- !u!1001 &3214748198146816487
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,11 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardID
-      value: ADU_048_
+      value: ADU_067_
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsOption.bux
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsOption.mood
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardDescriptionText
-      value: There is some rustling in the tall grass...
+      value: You failed the mission
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: ageNeeded.Array.size
@@ -21,11 +29,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: headsDescriptionText
-      value: investigate
+      value: body hurts
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsDescriptionText
-      value: stay safe and avoid it
+      value: soul hurts
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: ageNeeded.Array.data[0]
@@ -43,37 +51,21 @@ PrefabInstance:
       propertyPath: statusNeeded.Array.data[1]
       value: 19
       objectReference: {fileID: 0}
-    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: headsOption.sequenceCardsAdd.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: tailsOption.sequenceCardsAdd.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: headsOption.sequenceCardsAdd.Array.data[0]
-      value: 
-      objectReference: {fileID: 3423971867816228607, guid: 49baf5dd873e78e468e7133d8b3100c4, type: 3}
-    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
-      propertyPath: tailsOption.sequenceCardsAdd.Array.data[0]
-      value: 
-      objectReference: {fileID: 8109500454777796311, guid: fef766583371bb94da43c3ce1e135fa3, type: 3}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: There is some rustling in the tall grass...
+      value: You failed the mission!
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: stay safe and avoid it
+      value: soul hurts
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: investigate
+      value: body hurts
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Name
-      value: Card_There is some rustling in the tall grass...
+      value: Card_You failed to accomplish the mission
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_RootOrder
