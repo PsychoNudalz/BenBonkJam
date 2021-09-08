@@ -30046,6 +30046,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2030539311128359480, guid: 964cdcab5d2a82749902009117e43b9a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7357103195331062966, guid: 964cdcab5d2a82749902009117e43b9a, type: 3}
       propertyPath: OnCollisionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
