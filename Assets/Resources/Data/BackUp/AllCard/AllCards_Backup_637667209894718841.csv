@@ -106,7 +106,7 @@ DEA_013_,,5/,2/20/,,You are now before the angel council. You are spectating a h
 DEA_014_,,5/,2/20/,,This haven place is pretty neat.  There are many places where you can relax,Go drink from a radiant fountain,0,0,0,,DEA_016_/,,,,Eat a shiny apple,0,0,0,,DEA_015_/,,,,END
 DEA_015_,,5/,2/20/,,Consuming havenly foods has some odd effects. You start feeling odd and lightheaded,What...,0,0,-5,,,,,,Huh,0,0,-5,,,,,,END
 DEA_016_,,5/,2/20/,,Your conciousness fades into nothingness and your existance fuses with the universe. ,Reincarnate and live again,0,0,0,,,,,,Chill out in the void,0,0,0,,,,,,END
-DEA_017_,,5/,2/20/,,The angel council is voting on humanity's destiny. Many are arguing that humanity should be exterminated for being evil,Plea for humanity salvation,0,0,0,,DEA_021_/,,,,Do nothing,0,0,0,,DEA_020_/,,,,END
+DEA_017_,,5/,2/20/,,The angel council is voting on humanity's destiny. Many are arguing that humanity should be exterminated for being evil,Plea for humanity salvation,0,0,0,,DEA_023_/,,,,Do nothing,0,0,0,,DEA_020_/,,,,END
 DEA_018_,,5/,2/20/,,This does not affect you. However. guilt shall haunt you for the rest of eternity. Do you truly deserve heaven?,Yes,0,0,0,,,,,,Maybe yes,0,0,0,,,,,,END
 DEA_019_,,5/,2/20/,,A compassionate angel feels sorry for you and your kind and tries to convince the council to show mercy.,Thank the angel,0,0,0,,,,,,Shout.Make humanity great again !,0,0,0,,,,,,END
 DEA_020_,,5/,2/20/,,An irritated angel looks at you. then asserts that you have just proven that humanity is indeed unsalvageable,No we human really tried to avoid evilness but sadly sometimes we just can't control ourselves. I am sorry,0,0,0,,DEA_019_/,,,,I am not afraid of you. I am right and you are wrong! (Fight),0,0,0,,DEA_022_/,,,,END
