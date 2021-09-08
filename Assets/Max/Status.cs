@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Status : MonoBehaviour
 {
-   public List<StatusEnum> currentstatus;
+    public List<StatusEnum> currentstatus;
 
 
    public void AddStatus(StatusEnum status) {

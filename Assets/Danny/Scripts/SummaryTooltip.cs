@@ -15,7 +15,9 @@ public class SummaryTooltip : MonoBehaviour
     [SerializeField] Transform statusRows;
     [SerializeField] GameObject statusRowPrefab;
 
-    private Player player;
+    [SerializeField] private Player player;
+
+    private bool refreshing;
 
     void Awake()
     {
@@ -28,19 +30,26 @@ public class SummaryTooltip : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        player = FindObjectOfType<Player>();
+        //ShowTooltip(SummaryType.HP);
     }
 
     private void Start()
     {
-        player = FindObjectOfType<Player>();
+        SetTooltipValues(SummaryType.HP);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (gameObject.activeInHierarchy)
         {
-            transform.position = Mouse.current.position.ReadValue();
+            UpdatePosition();
         }
+    }
+
+    private void UpdatePosition()
+    {
+        transform.position = Mouse.current.position.ReadValue();
     }
 
     public static void ShowTooltip_Static(SummaryType type)
@@ -61,13 +70,19 @@ public class SummaryTooltip : MonoBehaviour
 
     public void ShowTooltip(SummaryType type)
     {
-        gameObject.SetActive(true);
-        SetTooltipValues(type);
-        
+        //StartCoroutine(RefreshLayout());
+        if (player.status.currentstatus != null)
+        {
+            if(player.status.currentstatus.Count == 0){return;}
+            UpdatePosition();
+            gameObject.SetActive(true);
+            SetTooltipValues(type);
+        }
     }
 
     public void HideTooltip()
     {
+        if(refreshing){return;}
         gameObject.SetActive(false);
     }
 
@@ -139,15 +154,18 @@ public class SummaryTooltip : MonoBehaviour
         SetStatColour(passiveTotalText,passiveTotal,true);
     }
 
-    public IEnumerator RefreshLayout() {
+    public IEnumerator RefreshLayout()
+    {
+        refreshing = true;
         GetComponent<VerticalLayoutGroup>().enabled = false;
         GetComponent<ContentSizeFitter>().enabled = false;
 
-        yield return new WaitForSeconds(0.1F);
+        yield return new WaitForSeconds(0.01F);
             
         GetComponent<ContentSizeFitter>().enabled = true;
         GetComponent<VerticalLayoutGroup>().enabled = true;
         LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)transform);
+        refreshing = false;
     }
 
     [ContextMenu("Test set statuses")]
