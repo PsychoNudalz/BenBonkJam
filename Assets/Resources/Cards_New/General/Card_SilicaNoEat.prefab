@@ -29,12 +29,32 @@ PrefabInstance:
         \u201CDO NOT EAT\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageNeeded.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: headsDescriptionText
       value: Eat anyway
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsDescriptionText
       value: Ignore and toss
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageNeeded.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageNeeded.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageNeeded.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: ageNeeded.Array.data[3]
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -1202165042388871809, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardID

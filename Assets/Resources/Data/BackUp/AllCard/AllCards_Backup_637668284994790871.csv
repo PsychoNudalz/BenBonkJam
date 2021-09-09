@@ -132,7 +132,7 @@ GEN_000_,,,4/5/6/7/8/9/10/11/12/13/,,blank (impossible to obtain),a,0,0,0,,,ADU_
 GEN_001_,,,3/,rippet,Pet doggo has passed away...,Bury it in the garden,0,0,-20,,,,,3/,Give it a Viking send off,0,-10,-10,,,,2/,3/,END
 GEN_002_,,,19/,rippet,Pet Hamster passed away...,Yeet it in to the trash,0,0,0,,,,,19/,Burry it in the garden,0,0,-5,,,,,19/,END
 GEN_003_,,,,bamboozle,Saving Game...,Okay I’ll wait,10,0,0,,,,,,No it’s not  the game’s a troll,0,0,10,,,,,,END
-GEN_004_,,1/2/3/4/,,silica,You are eating snacks - you find a small mysterious bag inside saying “DO NOT EAT”,Eat anyway,-80,0,100,,,,,,Ignore and toss,0,0,0,,,,,,END
+GEN_004_,,,,silica,You are eating snacks - you find a small mysterious bag inside saying “DO NOT EAT”,Eat anyway,-80,0,100,,,,,,Ignore and toss,0,0,0,,,,,,END
 GEN_005_,,,11/,fail drop out,You are expelled by the University.,Argue with the school ,-20,-20,-5,,,,,,Accept the  fate,0,0,-5,,,,,11/,END
 GEN_006_,,,12/,fail drop out,You are expelled by the Vocational Training college.,Argue with the school,-10,-20,0,,,,,,Accept the fate,0,0,-15,,,,,12/,END
 GEN_007_,,,,devil,As your scribbles take shape  a pentagram glows amongst your doodles and a demonic voice answers your call - I guess a demon is going to suggest your test’s answers?,...,0,0,0,,,,,,...,0,0,0,,,,,,END
