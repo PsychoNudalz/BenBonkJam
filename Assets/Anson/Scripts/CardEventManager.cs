@@ -363,6 +363,7 @@ public class CardEventManager : MonoBehaviour
             }
         }
         lastPressTime = Time.time;
+        UpdatePlayerStatsUI();
 
         return true;
     }
@@ -412,7 +413,6 @@ public class CardEventManager : MonoBehaviour
         PlayCard(currentCard.HeadsOption);
         //PlayCardSound(CardSoundEnum.HEADS);
         currentCard.CardEffectScript.PlayHeads();
-        UpdatePlayerStatsUI();
         LoadNewCard();
     }
     public void Play_Tails()
@@ -425,7 +425,6 @@ public class CardEventManager : MonoBehaviour
         PlayCard(currentCard.TailsOption);
         //PlayCardSound(CardSoundEnum.TAILS);
         currentCard.CardEffectScript.PlayTails();
-        UpdatePlayerStatsUI();
         LoadNewCard();
     }
     public void Play_Coin(CoinSide side)

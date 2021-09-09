@@ -130,7 +130,7 @@ public class UIHandler : MonoBehaviour
         {
             tempStatus += s.ToString() + "\n";
         }
-        //UpdateStatusDisplay(p);
+        UpdateStatusDisplay(p);
     }
 
     public void UpdateStatusDisplay(Player p)
