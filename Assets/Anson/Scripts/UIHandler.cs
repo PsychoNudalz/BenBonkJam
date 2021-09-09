@@ -130,7 +130,7 @@ public class UIHandler : MonoBehaviour
         {
             tempStatus += s.ToString() + "\n";
         }
-        UpdateStatusDisplay(p);
+        //UpdateStatusDisplay(p);
     }
 
     public void UpdateStatusDisplay(Player p)
@@ -146,10 +146,30 @@ public class UIHandler : MonoBehaviour
         foreach(StatusEnum se in p.status.currentstatus)
         {
             currentUI = Instantiate(UIStatusEffectGO, statusDisplay.transform).GetComponent<UIStatusEffect>();
-            currentUI.SetNewStatus(FindObjectOfType<StatusEffectManager>().GetStatusEffect(se));
+            currentUI.SetNewStatus(StatusEffectManager.current.GetStatusEffect(se));
         }
 
 
+    }
+
+    public void RemoveStatusFromDisplay(StatusEffect se)
+    {
+        foreach (Transform g in statusDisplay.transform.GetComponentsInChildren<Transform>())
+        {
+            if (g.TryGetComponent( out UIStatusEffect temp))
+            {
+                if (temp.status.Equals(se))
+                {
+                    Destroy(temp.gameObject);
+                    return;
+                }
+            }
+        }
+    }
+
+    public void RemoveStatusFromDisplay(StatusEnum se)
+    {
+        RemoveStatusFromDisplay(StatusEffectManager.current.GetStatusEffect(se));
     }
 
     public void Play_Heads()

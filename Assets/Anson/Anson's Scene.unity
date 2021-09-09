@@ -30010,22 +30010,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1906904589}
-    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
-      propertyPath: allCards.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
-      propertyPath: allCards.Array.data[0]
-      value: 
-      objectReference: {fileID: 3041470536073592550, guid: 4787e6cee0233ae428e5194270492fb0, type: 3}
-    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
-      propertyPath: allCards.Array.data[1]
-      value: 
-      objectReference: {fileID: 3934659568456329808, guid: 87c904cf8ba45b248b057904793702aa, type: 3}
-    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
-      propertyPath: allCards.Array.data[2]
-      value: 
-      objectReference: {fileID: 191091310811266305, guid: 1bbd50bfc013bcc4eb2fce0c8f51ae54, type: 3}
     - target: {fileID: 6855636646145679449, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: sfxSlider
       value: 

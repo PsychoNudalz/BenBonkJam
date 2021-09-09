@@ -206,6 +206,8 @@ public class Player : MonoBehaviour
     public void RemoveStatus(StatusEnum statusEnum)
     {
         RemoveStatus(StatusEffectManager.current.GetStatusEffect(statusEnum));
+        //FindObjectOfType<UIHandler>().UpdateStatusDisplay(this);
+        FindObjectOfType<UIHandler>().RemoveStatusFromDisplay(statusEnum);
     }
 
     public void RemoveStatus(StatusEffect statusEffect)
