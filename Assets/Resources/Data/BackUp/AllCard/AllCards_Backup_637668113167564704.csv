@@ -56,7 +56,7 @@ ADU_053_,,3/,40/,,Time to expand your business into an empire,Own lots of server
 ADU_054_,,3/,,,Expand your business ,Commerce and Service,0,0,0,,ADU_055_/,,40/,,Technology and Innovation,0,0,0,,ADU_055_/,,44/,,END
 ADU_055_,,3/,,,Time to stamp out the competition,Acquire them,0,0,0,,ADU_056_/,,,,Make a better product or service,0,0,0,,ADU_057_/,,,,END
 ADU_056_,,3/,,,Oh no. A competitor is suing you.,Fight back ,0,-30,0,,,,,,Your business is but a memory,0,0,0,,,,,,END
-ADU_057_,,3/,,,Your company is now traded publicly after an Initial Public Offering,Yes,0,5,0,,ADU_058_/,,,,Yes,0,5,0,,ADU_058_/,,,,END
+ADU_057_,,3/,,,Your company is now traded publicly after an Initial Public Offering,Yes,0,40,0,,ADU_058_/,,,,Yes,0,40,0,,ADU_058_/,,,,END
 ADU_058_,,3/,44/,,Time to expand your business into an empire...,Build self driving cars,0,0,0,,ADU_053_/,,,,Buy crypto,0,0,0,,ADU_053_/,,,,END
 ADU_059_,,3/,,,Workers are complaining...,Improve conditions,0,0,0,,ADU_060_/,,,,Dismantle unions and fire them,0,0,0,,,,,,END
 ADU_060_,,3/,,,It's time for a new space race,Fly to the moon on a rocket,0,0,60,,,,,,Fly to Mars on a rocket,0,0,60,,,,,,END
@@ -115,10 +115,10 @@ DEA_022_,,5/,2/20/,,You are kicked from heaven for being too proud. You shall be
 DEA_023_,,5/,2/20/,,You are in heaven and saved humanity. What more could you ask for,I need nothing,0,0,0,,,,,,I need everything,0,0,10,,,,,,END
 DEA_024_,,5/,0/25/,,You relied on the power of demons in your life... now its time to pay this debt with your soul,Submit to the Overlord of hell,0,0,0,,DEA_026_/,,,,Try to protest,0,0,-5,,DEA_025_/,,,,END
 DEA_025_,,5/,0/25/,,The overlord of hell seems amused by your futile struggling. Perhaps you could get on his good side,Dance for his amusement,0,0,0,,DEA_028_/,,,,Show him the finger,0,0,0,,DEA_031_/,,,,END
-DEA_026_,,5/,0/25/,,The Mighty Overlord is in a good mood today. You shall be his foot rest for the rest of eternity,Yes my lord ,0,0,0,,DEA_027_/,,,,Yes my Overlord,0,0,5,,,,,,END
+DEA_026_,,5/,0/25/,,The Mighty Overlord is in a good mood today. You shall be his foot rest for the rest of eternity,Yes my lord ,0,0,0,,,,,,Yes my Overlord,0,0,0,,,,,,END
 DEA_027_,,5/,0/25/,,How dare you. You are executed on the spot for disrespecting the Overlord,I lived the way I liked,0,0,0,,,,,,Rules are meant to be broken,0,0,0,,,,,,END
 DEA_028_,,5/,0/25/,,Your dance was great entertainment. The demons are excited and ask you about entertainment on the surface...,Tell them about video games,0,0,0,,DEA_030_/,,,,Tell them about memes,0,0,0,,DEA_029_/,,,,END
-DEA_029_,,5/,0/25/,,The demons are very impressed by your incredible tales. You are granted great powers to bring Earth entertainment to hell,Have fun and hang out in hell,0,0,5,,,,,,Gain the support of other lesser demons,0,0,0,,DEA_030_/,,,,END
+DEA_029_,,5/,0/25/,,The demons are very impressed by your incredible tales. You are granted great powers to bring Earth entertainment to hell,Have fun and hang out in hell,0,0,0,,,,,,Gain the support of other lesser demons,0,0,0,,DEA_030_/,,,,END
 DEA_030_,,5/,0/25/,,The lesser demons admire you and would like to elect you as their new Overlord,Bribe some extra votes,0,0,0,,,,,,Let the elections take their course,0,0,0,,,,,,END
 DEA_031_,,5/,0/25/,,You have angered the Mighty Overlord. Terrible punishment awaits you in the torture chambers of hell,Beg for forgiveness,0,0,0,,,,,,Accept your fate,0,0,0,,,,,,END
 DEA_032_,,5/,9/,,You thought you were about to die but the alien mothership has come to your place to collect and preserve your body.,Let them take you,0,0,0,,DEA_033_/,,,,Try to complain with your last remaining strength,0,0,0,,DEA_034_/,,,,END

@@ -41,20 +41,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: headsOption.sequenceCardsAdd.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.sequenceCardsAdd.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: headsOption.sequenceCardsAdd.Array.data[0]
       value: 
-      objectReference: {fileID: 6055510276814868576, guid: abf516d1d17630a46b73ced3426d5dbe, type: 3}
+      objectReference: {fileID: 5466332894981882116, guid: 25c436dbf8acaa040ba911b981b2debb, type: 3}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.sequenceCardsAdd.Array.data[0]
       value: 
-      objectReference: {fileID: 6055510276814868576, guid: abf516d1d17630a46b73ced3426d5dbe, type: 3}
+      objectReference: {fileID: 5466332894981882116, guid: 25c436dbf8acaa040ba911b981b2debb, type: 3}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
       value: Time to expand your business into an empire...
