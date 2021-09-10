@@ -1,3 +1,5 @@
+#if (UNITY_EDITOR)
+
 using System;
 using System.IO;
 using System.Collections;
@@ -24,8 +26,7 @@ public class CardHandler : MonoBehaviour
     public List<Card> TempAutoFoundCards { get => tempAutoFoundCards; set => tempAutoFoundCards = value; }
     public float DupFlagRange { get => dupFlagRange; set => dupFlagRange = value; }
 
-    //CSV stuff
-    public static string cellSeperator = ",";
+
 
 
     private void Awake()
@@ -336,3 +337,4 @@ public class CardHandler : MonoBehaviour
     }
 
 }
+#endif
