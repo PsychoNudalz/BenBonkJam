@@ -78,8 +78,12 @@ public class Player : MonoBehaviour
         age = (AgeEnum)temp;
     }
 
+    [Space(10)]
+    [Header("Current Stats")]
     //Init health
-    private float _HealthPoints = 100f;
+    [Range(0f, 100f)]
+
+    [SerializeField] float _HealthPoints = 100f;
     public float HealthPoints
     {
         get { return _HealthPoints; }
@@ -121,13 +125,15 @@ public class Player : MonoBehaviour
             }
         }
     }
-    private float _Bux = 1000f;
+    [Range(0f, 100f)]
+
+    [SerializeField] float _Bux = 100f;
 
     public bool GainBux(float Amount)
     {
         if (Amount > 0)
         {
-        BuxPoint += Amount * (1 + (buxModPos / 100f));
+            BuxPoint += Amount * (1 + (buxModPos / 100f));
         }
         else
         {
@@ -157,20 +163,21 @@ public class Player : MonoBehaviour
             }
         }
     }
-    private float _Mood = 100f;
+    [Range(0f, 100f)]
+    [SerializeField] float _Mood = 100f;
 
     public bool GainMood(float Amount)
     {
         if (Amount > 0)
         {
-        MoodPoint += Amount * (1 + (moodModPos / 100f));
+            MoodPoint += Amount * (1 + (moodModPos / 100f));
         }
         else
         {
             MoodPoint += Amount * (1 + (moodModNeg / 100f));
 
         }
-        return BuxPoint <= 0;
+        return MoodPoint <= 0;
 
     }
 

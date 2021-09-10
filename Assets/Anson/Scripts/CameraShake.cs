@@ -5,6 +5,12 @@ using UnityEngine;
 public class CameraShake : MonoBehaviour
 {
     [SerializeField] Coroutine shake;
+    public static CameraShake current;
+
+    private void Awake()
+    {
+        current = this;
+    }
 
     public void PlayShake(float duration, float magnitude)
     {

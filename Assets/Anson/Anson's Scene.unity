@@ -25081,6 +25081,9 @@ MonoBehaviour:
   healthPassive: 0
   buxPassive: 0
   moodPassive: 0
+  _HealthPoints: 100
+  _Bux: 100
+  _Mood: 100
 --- !u!4 &1906904590
 Transform:
   m_ObjectHideFlags: 0
@@ -25107,7 +25110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e90526fd855d84c8dd2cf2b178c018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startEffects: 1300000003000000280000000f000000
+  startEffects: 0a00000003000000280000000f000000
 --- !u!114 &1985600314 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5751716910500585729, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
@@ -30010,6 +30013,38 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1906904589}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: allCards.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: allCards.Array.data[0]
+      value: 
+      objectReference: {fileID: 6452187399125566214, guid: 7e63a19577428a743b4e1dd00c08f239, type: 3}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: allCards.Array.data[1]
+      value: 
+      objectReference: {fileID: 6452187399125566214, guid: 7e63a19577428a743b4e1dd00c08f239, type: 3}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: allCards.Array.data[2]
+      value: 
+      objectReference: {fileID: 6452187399125566214, guid: 7e63a19577428a743b4e1dd00c08f239, type: 3}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: allCards.Array.data[3]
+      value: 
+      objectReference: {fileID: 6452187399125566214, guid: 7e63a19577428a743b4e1dd00c08f239, type: 3}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: allCards.Array.data[4]
+      value: 
+      objectReference: {fileID: 6452187399125566214, guid: 7e63a19577428a743b4e1dd00c08f239, type: 3}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: allCards.Array.data[5]
+      value: 
+      objectReference: {fileID: -2587406193006211280, guid: 75144e92d5fb9dc43b1162f9c4af318b, type: 3}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: allCards.Array.data[6]
+      value: 
+      objectReference: {fileID: -2587406193006211280, guid: 75144e92d5fb9dc43b1162f9c4af318b, type: 3}
     - target: {fileID: 6855636646145679449, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: sfxSlider
       value: 

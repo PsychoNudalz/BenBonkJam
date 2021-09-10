@@ -67,9 +67,9 @@ Material:
     - Boolean_89b9807b21bb4d5abf0f1a903cef37f2: 1
     - Vector1_5809a665220a4211aff3b575a2bc4664: 0.25
     - Vector1_85d3ba1e337644179b98f9ad30939b3b: 0.306
-    - _Scale: 0
+    - _Scale: 1
     m_Colors:
     - Vector2_43a759b22100446d808a8284015b01b9: {r: 0, g: 1, b: 0, a: 0}
     - Vector2_6230853bbfd04db0b67ac4c8f5440615: {r: 0, g: 1, b: 0, a: 0}
-    - _TileSize: {r: 5, g: 5, b: 0, a: 0}
+    - _TileSize: {r: 6, g: 6, b: 0, a: 0}
   m_BuildTextureStacks: []

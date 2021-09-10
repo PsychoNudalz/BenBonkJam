@@ -3,7 +3,7 @@ ADU_000_,,3/,,nigerian prince,A Nigerian Prince needs your help!,Help this fine 
 ADU_001_,,3/,,dogo,Adopt a dog?,Adopt,0,-5,30,,,,3/,,Nah..,0,0,0,,,,,,END
 ADU_002_,,3/,12/,plumber,Plumber,Yes!,0,20,-15,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_003_,,3/,,ice_cream_truck,Ice cream truck comes after you,Shout at it,-5,0,10,,,,,,Run!,5,0,-3,,,,,,END
-ADU_004_,,3/,11/,sysadmin,Software Developer,Yes!,-20,100,-50,,,GEN_000_/ADU_004_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
+ADU_004_,,3/,11/,sysadmin,Software Developer,Yes!,-20,100,-50,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_005_,,3/,1/,divorce,In your relationship  conflicts do happen  but divorce is not a joke. ,I am done  File the papers. ,0,-20,-40,,,,,1/,Love is to give  try to accept that you need to be sacrifical. Things may get better hopefully... ,0,0,30,,,,,,END
 ADU_006_,,3/,,telemarketer,Telemarketer,Yes!,0,20,-15,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_007_,,3/,7/,TV,Televangelist,Yes!,0,50,-10,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/43/,16/,No... Next Job,0,0,0,,,,16/,15/,END
@@ -17,7 +17,7 @@ ADU_014_,,3/,11/,,More University. Maybe I don't want a life. But it will cost m
 ADU_015_,,3/,11/,,You are accepted into university... but your research needs money.,Beg for a grant,0,-10,-5,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
 ADU_016_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,Nah,0,0,0,,,,,,END
 ADU_017_,,3/,24/,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No,0,0,0,,,,,,END
-ADU_018_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,GEN_000_/ADU_004_/,,,,I refuse,-10,-50,20,,,,16/,,END
+ADU_018_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/,,,,I refuse,-10,-50,20,,,,16/,,END
 ADU_019_,,3/,24/,evil_scientist,Evil scientist,Yes,0,0,0,,ADU_021_/,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,25/15/,16/,No,0,0,0,,,,,,END
 ADU_020_,,3/,,middle east,A soul seeking vacation to the Middle East?,Time for a trip!,0,-40,40,,,,7/,,Nah,0,0,0,,,,,,END
 ADU_021_,,3/,25/,minion_help,Being alone makes everything difficult.  You really need help in your... sinister scientific advances.,Hire some minions.,5,5,5,,,,,,Work for an evil corp.,-10,30,-10,,ADU_061_/ADU_022_/ADU_062_/ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,,END
@@ -47,11 +47,11 @@ ADU_044_,you were assassinated,3/,25/,,You were assassinated. Maybe you should h
 ADU_045_,,3/,3/19/,,Your pets yearn for adventure and everlasting glory,fulfill their wish,0,0,0,,ADU_046_/,,,,nah,0,0,0,,,,,,END
 ADU_046_,,3/,3/19/,,what epic quest do you wish to tackle,rescue the distressed Princess (neighbour's tabby cat),0,0,0,,,,,,fight the invaders,0,0,0,,ADU_048_/,,,,END
 ADU_047_,,3/,3/19/,,Princess is rescured. What now?,let's adopt another cat,0,0,0,,,,46/,,return Princess to your neighbor,0,0,20,,,,,,END
-ADU_048_,,3/,3/19/,,There is some rustling in the tall grass...,investigate,0,0,0,,ADU_049_/,,,,stay safe and avoid it,0,0,0,,,,,,END
-ADU_049_,,3/,3/19/,,An angry racoon jumps out. Its very fierce and hungry,Fight,0,0,0,,ADU_050_/,,,,flee,0,0,0,,,,,,END
-ADU_050_,,3/,3/19/,,What do you do,badass shout,0,0,0,,,,,,intimidate with warrior dance,0,0,0,,ADU_051_/,,,,END
+ADU_048_,,3/,3/19/,,There is some rustling in the tall grass...,investigate,0,0,0,,ADU_049_/,,,,stay safe and avoid it,0,0,0,,ADU_067_/,,,,END
+ADU_049_,,3/,3/19/,,An angry racoon jumps out. Its very fierce and hungry,Fight,0,0,0,,ADU_050_/,,,,flee,0,0,0,,ADU_067_/,,,,END
+ADU_050_,,3/,3/19/,,What do you do,badass shout,0,0,0,,ADU_067_/,,,,intimidate with warrior dance,0,0,0,,ADU_051_/,,,,END
 ADU_051_,,3/,3/19/,,The raccoon flees.,glory to the pet squad,0,0,10,,,,,,teamwork makes the dreamwork.,0,0,10,,,,,,END
-ADU_052_,,3/,,,Start a business,Get started. Hustle hard.,0,0,0,,,,,,nah,0,0,0,,,,,,END
+ADU_052_,,3/,,,Start a business,Get started. Hustle hard.,0,0,0,,ADU_054_/,,,,nah,0,0,0,,,,,,END
 ADU_053_,,3/,40/,,Time to expand your business into an empire,Own lots of servers,0,0,0,,ADU_059_/,,,,develop AI,0,0,0,,ADU_059_/,,,,END
 ADU_054_,,3/,,,Expand your business ,Commerce and Service,0,0,0,,ADU_055_/,,40/,,Technology and Innovation,0,0,0,,ADU_055_/,,44/,,END
 ADU_055_,,3/,,,Time to stamp out the competition,Acquire them,0,0,0,,ADU_056_/,,,,Make a better product or service,0,0,0,,ADU_057_/,,,,END
@@ -60,7 +60,7 @@ ADU_057_,,3/,,,Your company is now traded publicly after an Initial Public Offer
 ADU_058_,,3/,44/,,Time to expand your business into an empire...,Build self driving cars,0,0,0,,ADU_053_/,,,,Buy crypto,0,0,0,,ADU_053_/,,,,END
 ADU_059_,,3/,,,Workers are complaining...,Improve conditions,0,0,0,,ADU_060_/,,,,Dismantle unions and fire them,0,0,0,,,,,,END
 ADU_060_,,3/,,,It's time for a new space race,Fly to the moon on a rocket,0,0,60,,,,,,Fly to Mars on a rocket,0,0,60,,,,,,END
-ADU_061_,,3/,25/,,You are asked to build a lair for your master,Yes master,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_062_/ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,END
+ADU_061_,,3/,25/,,You are asked to build a lair for your master,Yes master,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_022_/ADU_062_/ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,END
 ADU_062_,,3/,25/,,You are asked to clone your master,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,END
 ADU_063_,,3/,25/,,You are asked to test an experimental serum on yourself,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_064_/ADU_065_/ADU_066_/,,,END
 ADU_064_,What even,3/,25/,,What even is this anyway? What ever happened to your choices?,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_065_/ADU_066_/,,,END
@@ -113,11 +113,11 @@ DEA_020_,,5/,2/20/,,An irritated angel looks at you. then asserts that you have 
 DEA_021_,,5/,2/20/,,You manage to convince a couple of angels. And there are enough votes to prevent the destruction of humankind.,yay,0,0,0,,DEA_023_/,,,,BOW BEFORE ME,0,0,0,,DEA_022_/,,,,END
 DEA_022_,,5/,2/20/,,You are kicked from heaven for being too proud. You shall be escorted to hell,Let it be,0,0,0,,,,,,Please No,0,0,0,,,,,,END
 DEA_023_,,5/,2/20/,,You are in heaven and saved humanity. What more could you ask for,I need nothing,0,0,0,,,,,,I need everything,0,0,10,,,,,,END
-DEA_024_,,5/,0/25/,,You relied on the power of demons in your life... now its time to pay this debt with your soul,Submit to the Overlord of hell,0,0,0,,,,,,Try to protest,0,0,-5,,DEA_025_/,,,,END
+DEA_024_,,5/,0/25/,,You relied on the power of demons in your life... now its time to pay this debt with your soul,Submit to the Overlord of hell,0,0,0,,DEA_026_/,,,,Try to protest,0,0,-5,,DEA_025_/,,,,END
 DEA_025_,,5/,0/25/,,The overlord of hell seems amused by your futile struggling. Perhaps you could get on his good side,Dance for his amusement,0,0,0,,DEA_028_/,,,,Show him the finger,0,0,0,,DEA_031_/,,,,END
 DEA_026_,,5/,0/25/,,The Mighty Overlord is in a good mood today. You shall be his foot rest for the rest of eternity,Yes my lord ,0,0,0,,DEA_027_/,,,,Yes my Overlord,0,0,5,,,,,,END
 DEA_027_,,5/,0/25/,,How dare you. You are executed on the spot for disrespecting the Overlord,I lived the way I liked,0,0,0,,,,,,Rules are meant to be broken,0,0,0,,,,,,END
-DEA_028_,,5/,0/25/,,Your dance was great entertainment. The demons are excited and ask you about entertainment on the surface...,Tell them about video games,0,0,0,,DEA_030_/,,,,Tell them about memes,0,0,0,,,,,,END
+DEA_028_,,5/,0/25/,,Your dance was great entertainment. The demons are excited and ask you about entertainment on the surface...,Tell them about video games,0,0,0,,DEA_030_/,,,,Tell them about memes,0,0,0,,DEA_029_/,,,,END
 DEA_029_,,5/,0/25/,,The demons are very impressed by your incredible tales. You are granted great powers to bring Earth entertainment to hell,Have fun and hang out in hell,0,0,5,,,,,,Gain the support of other lesser demons,0,0,0,,DEA_030_/,,,,END
 DEA_030_,,5/,0/25/,,The lesser demons admire you and would like to elect you as their new Overlord,Bribe some extra votes,0,0,0,,,,,,Let the elections take their course,0,0,0,,,,,,END
 DEA_031_,,5/,0/25/,,You have angered the Mighty Overlord. Terrible punishment awaits you in the torture chambers of hell,Beg for forgiveness,0,0,0,,,,,,Accept your fate,0,0,0,,,,,,END
@@ -128,7 +128,7 @@ DEA_035_,,5/,9/,,Your new alien family likes you but is very confused about your
 DEA_036_,,5/,9/,,You brought some bacteria and viruses on board with you. They are harmless to humans but the aliens are very sick and have no cure...,help treating the sick,0,0,0,,DEA_037_/,,,,leave them to their fate,0,0,-10,,DEA_037_/,,,,END
 DEA_037_,,5/,9/,,You are the last one left on this barren planet... there are plenty of resources for you to live in comfort for your last few years of life,Become the Lone Emperor of Planet X,0,0,0,,,,,,Live in regret and shame and die in solitude,0,0,-5,,,,,,END
 DEA_038_,,5/,9/,,After a few weeks your alien family has managed to teach you telepathic communication,join the colony as a citizen,0,0,0,,,,,,stay with your family as a pet,0,0,0,,,,,,END
-GEN_000_,,,4/5/6/7/8/9/10/11/12/13/,,blank (impossible to obtain),a,0,0,0,,,GEN_000_/,,,b,0,0,0,,,,,,END
+GEN_000_,,,4/5/6/7/8/9/10/11/12/13/,,blank (impossible to obtain),a,0,0,0,,,ADU_040_/GEN_000_/ADU_016_/,,,b,0,0,0,,,,,,END
 GEN_001_,,,3/,rippet,Pet doggo has passed away...,Bury it in the garden,0,0,-20,,,,,3/,Give it a Viking send off,0,-10,-10,,,,2/,3/,END
 GEN_002_,,,19/,rippet,Pet Hamster passed away...,Yeet it in to the trash,0,0,0,,,,,19/,Burry it in the garden,0,0,-5,,,,,19/,END
 GEN_003_,,,,bamboozle,Saving Game...,Okay I’ll wait,10,0,0,,,,,,No it’s not  the game’s a troll,0,0,10,,,,,,END

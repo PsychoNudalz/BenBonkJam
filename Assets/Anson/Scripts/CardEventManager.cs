@@ -385,7 +385,10 @@ public class CardEventManager : MonoBehaviour
         {
             //if player DEAD
             playerScript.SetAge((int)AgeEnum.DEAD);
-            FindObjectOfType<CameraShake>().PlayShake(.3f, .4f);
+            if (!isDeathStage)
+            {
+           CameraShake.current.PlayShake(.3f, .4f);
+            }
             return true;
         }
         PlayerPassiveGain();
