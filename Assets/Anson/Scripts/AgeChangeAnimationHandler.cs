@@ -61,6 +61,11 @@ public class AgeChangeAnimationHandler : MonoBehaviour
         }
         return tilingPair[0].tiling;
     }
+    public void ResetMaterial()
+    {
+        material.SetFloat("_Scale", 0);
+
+    }
 
     public void StartBackground()
     {
@@ -72,4 +77,10 @@ public class AgeChangeAnimationHandler : MonoBehaviour
         AgeChangeAnimationBackgroundHandler.current.PlayEnd();
     }
 
+    private void OnApplicationQuit()
+    {
+        ResetMaterial();
+        AgeChangeAnimationBackgroundHandler.current.ResetMaterial();
+
+    }
 }

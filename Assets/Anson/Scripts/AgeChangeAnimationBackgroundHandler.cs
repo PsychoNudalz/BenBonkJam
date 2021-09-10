@@ -42,4 +42,10 @@ public class AgeChangeAnimationBackgroundHandler : MonoBehaviour
         animator.SetTrigger("Start");
     }
 
+    public void ResetMaterial()
+    {
+        material.SetFloat("_Scale", 0);
+
+    }
+
 }
