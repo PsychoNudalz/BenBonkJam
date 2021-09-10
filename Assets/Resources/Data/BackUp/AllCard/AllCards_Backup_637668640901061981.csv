@@ -14,7 +14,7 @@ ADU_011_,Stonk_Good,3/,,doge,Meme stocks are available to buy...,Buy!,0,20,20,,,
 ADU_012_,,3/,9/,ufo,UFOlogist,Yes!,20,20,20,,,ADU_017_/ADU_040_/GEN_000_/ADU_006_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_013_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/47/,16/,No,0,0,0,,,,,,END
 ADU_014_,,3/,11/,,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not?,-30,-30,-30,,,,24/,11/10/,No! It will be too much!,0,0,0,,,,,,END
-ADU_015_,,3/,11/,,You are accepted into university... but your research needs money.,Beg for a grant,0,-10,-5,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
+ADU_015_,,3/,11/,,You are accepted into university... but your research needs money.,Beg for a grant,0,0,0,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
 ADU_016_,,3/,,streamer,Streamer,Hell yeah!,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,15/,16/,Nah,0,0,0,,,,,,END
 ADU_017_,,3/,24/,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/GEN_000_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/,15/,16/,No,0,0,0,,,,,,END
 ADU_018_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/,,,,I refuse,-10,-50,20,,,,16/,,END
@@ -41,7 +41,7 @@ ADU_038_,,3/,,telemarketer,Someone on behalf of tech support says your computer 
 ADU_039_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,ADU_017_/ADU_039_/ADU_040_/GEN_000_/ADU_006_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_040_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,ADU_040_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_041_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_042_,Chat ask question,3/,23/,,Chat asks you a question. ,Hi Chat. Lets chat,0,0,0,,,,,,No chat,0,0,0,,,,,,END
+ADU_042_,Chat ask question,3/,,,Chat asks you a question. ,Hi Chat. Lets chat,0,0,0,,,,,,No chat,0,0,0,,,,,,END
 ADU_043_,follower ask question,3/,43/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
 ADU_044_,you were assassinated,3/,25/,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
 ADU_045_,,3/,3/19/,,Your pets yearn for adventure and everlasting glory,fulfill their wish,0,0,0,,ADU_046_/,,,,nah,0,0,0,,,,,,END
@@ -85,7 +85,7 @@ CHI_006_,,1/,,studytest,Sigh... Homework,Do,0,5,-10,,,,,,Feed to doggo,0,-5,5,,,
 CHI_007_,,1/,,gaming,Play games for how long?,Play for an hour,0,0,5,,,,,,JUST ONE MORE GAME!,0,-10,10,,,,,,END
 CHI_008_,unicorn for christmas,1/,,unicorn_pet,Do you want a unicorn for christmas?,PLEASE YES PLEASE,10,0,10,,,,,,they don't exist,-2,0,-7,,,,,,END
 CHI_009_,,1/,,team sport,You play some team sports,Impress your crush,0,0,10,,,,,,Tackle the school bully,-20,0,-5,,,,,,END
-CHI_010_,,1/,,ouja_board,You found a Ouija board in your parents room,Read the instructions and try to use it,-5,0,5,,,,21/,,I am too scared of the occult :(,-5,0,-5,,,,,,END
+CHI_010_,,1/,,ouja_board,You found a Ouija board in your parents room,Read the instructions and try to use it,-5,0,5,,,,0/,,I am too scared of the occult :(,-5,0,-5,,,,,,END
 CHI_011_,,1/,,sloth vs ant,Pretend to be...,A sloth (Lazy),0,-10,10,,,,,,An ant (Hard working),0,20,0,,,,,,END
 CHI_012_,,1/,,schoolskip,Skip school today?,Yes school SUX,0,-5,10,,,,,,No,0,0,-10,,,,,,END
 CHI_013_,,1/2/3/4/,,food,A delicious burger has appeared on the table!,Eat! ,-10,0,10,,,,,,No junk food  don't eat,20,0,0,,,,,,END

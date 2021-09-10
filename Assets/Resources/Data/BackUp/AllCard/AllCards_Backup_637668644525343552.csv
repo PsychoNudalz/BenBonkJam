@@ -41,7 +41,7 @@ ADU_038_,,3/,,telemarketer,Someone on behalf of tech support says your computer 
 ADU_039_,,3/,,burger flipper,Burger Flipper,Yes!,0,20,-20,,,ADU_017_/ADU_039_/ADU_040_/GEN_000_/ADU_006_/ADU_012_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_040_,,3/,17/,team sport,Professional Sports Player,Yes!,0,30,-10,,,ADU_040_/ADU_016_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_041_,,3/,4/,criminal,Criminal,Yes!,-10,40,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_006_/ADU_009_/ADU_012_/ADU_016_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_042_,Chat ask question,3/,23/,,Chat asks you a question. ,Hi Chat. Lets chat,0,0,0,,,,,,No chat,0,0,0,,,,,,END
+ADU_042_,Chat ask question,3/,,,Chat asks you a question. ,Hi Chat. Lets chat,0,0,0,,,,,,No chat,0,0,0,,,,,,END
 ADU_043_,follower ask question,3/,43/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
 ADU_044_,you were assassinated,3/,25/,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
 ADU_045_,,3/,3/19/,,Your pets yearn for adventure and everlasting glory,fulfill their wish,0,0,0,,ADU_046_/,,,,nah,0,0,0,,,,,,END

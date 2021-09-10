@@ -39,6 +39,10 @@ PrefabInstance:
       propertyPath: statusNeeded.Array.data[0]
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: statusNeeded.Array.data[1]
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
       value: You were caught robbing a bank
