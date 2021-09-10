@@ -282,6 +282,7 @@ public class StatsEndingDisplay : MonoBehaviour
     #region EndingsMenu
     public void Endings()
     {
+        /*
         if (gameDataManager.EndingsUnlocked1.alien == true)
         {
             alienEnding.image.sprite = alien;
@@ -427,7 +428,7 @@ public class StatsEndingDisplay : MonoBehaviour
             wakeUpSimEnding.image.sprite = basic;
             wakeUpSimEnding.interactable = false;
         }
-
+        */
 
     }
 

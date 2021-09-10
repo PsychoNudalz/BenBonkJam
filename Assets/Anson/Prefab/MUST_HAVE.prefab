@@ -51,19 +51,7 @@ MonoBehaviour:
     endingsFound: 0
     uniqueCardsDiscovered: 0
   endingsUnlocked:
-    alien: 0
-    athlete: 0
-    borderAwake: 0
-    dieYoung: 0
-    friendGhost: 0
-    NewEnding: 0
-    hell: 0
-    paradise: 0
-    purgatory: 0
-    reincarnation: 0
-    sick: 0
-    voidEnding: 0
-    wakeUpSim: 0
+    earnedEndings: 
   statusesGained: []
 --- !u!114 &5130095086973248282
 MonoBehaviour:
@@ -79,6 +67,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameDataManager: {fileID: 5130095086973248284}
   cardEventManager: {fileID: 5130095086612330753}
+  endingUnlocks:
+  - endingCard: {fileID: 7165739841528137619, guid: a1e645c1e1d009543810b2493dcba488, type: 3}
+    endingEnum: 1
+  - endingCard: {fileID: 2427102903410873866, guid: 6b217071cacb98940b68827a61e76bcc, type: 3}
+    endingEnum: 2
+  - endingCard: {fileID: 6424921297857703925, guid: c2d0a792d7e690b4f880cf13105ce3a6, type: 3}
+    endingEnum: 3
+  - endingCard: {fileID: 8189715773726643501, guid: 57c281885a86eee4e8e136fad55f77ce, type: 3}
+    endingEnum: 4
+  - endingCard: {fileID: 3921028258534320811, guid: bd369d61951f547469eb977e21301cb9, type: 3}
+    endingEnum: 7
+  - endingCard: {fileID: 4057482550637403037, guid: 86a94bdd4898cba408d810823337f244, type: 3}
+    endingEnum: 8
+  - endingCard: {fileID: 6860357747702853063, guid: a15941dfbfa7a7748aec6565a5b981ea, type: 3}
+    endingEnum: 9
+  - endingCard: {fileID: 2139005068034695082, guid: 1182b3c072975b142b837a145a495ff7, type: 3}
+    endingEnum: 10
+  - endingCard: {fileID: 1264870416951039333, guid: ef26a2ab8c703734d8bf744a24fb46fe, type: 3}
+    endingEnum: 13
+  - endingCard: {fileID: 2220503171981588819, guid: d1532565659650c44a247713112ffb48, type: 3}
+    endingEnum: 11
+  - endingCard: {fileID: 7516799133298634837, guid: ad4726ef01caf3f4ebfaddb3ab323eb0, type: 3}
+    endingEnum: 12
+  - endingCard: {fileID: 820017721035638163, guid: c8a83fab1be496d43948a445de03ed94, type: 3}
+    endingEnum: 6
+  - endingCard: {fileID: 4481667560047372792, guid: ee4e9893f3b9c3e49b51adf9442089c7, type: 3}
+    endingEnum: 0
 --- !u!1 &7735575033638762460
 GameObject:
   m_ObjectHideFlags: 0

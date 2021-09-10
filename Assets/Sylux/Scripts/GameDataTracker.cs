@@ -2,12 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class EndingUnlock
+{
+    public Card endingCard;
+    public EndingEnum endingEnum;
+
+}
+
 public class GameDataTracker : MonoBehaviour
 {
     public static GameDataTracker current;
 
+    [Header("Components")]
     public GameDataManager gameDataManager;
     public CardEventManager cardEventManager;
+
+    [Header("Ending Condition")]
+    [SerializeField] List<EndingUnlock> endingUnlocks;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,7 +100,7 @@ public class GameDataTracker : MonoBehaviour
             AddAchievement(AchievementEnum.haveChildren);
         }
 
-        
+
     }
 
     public void CheckIsAchievementPerTurn()
@@ -112,13 +125,22 @@ public class GameDataTracker : MonoBehaviour
         //CheckIsDeathCard();
     }
 
-    public void CheckIsDeathCard()
+    public void CheckIsDeathCard(Card c)
     {
+        foreach (EndingUnlock eu in endingUnlocks)
+        {
+            if (c.Equals(eu.endingCard))
+            {
+                gameDataManager.EndingsUnlocked1.AddEnding(eu.endingEnum);
+            }
+        }
+
+
         //if (cardEventManager.currentCard.CardID == "DEA_000_")
         //{
         //    Debug.Log("Alien ending triggered");
         //    gameDataManager.EndingsUnlocked1.alien = true;
-            
+
         //}
 
         //if (cardEventManager.currentCard.CardID == "DEA_008_")
@@ -175,7 +197,7 @@ public class GameDataTracker : MonoBehaviour
         //{
         //    Debug.Log("Alien ending triggered");
         //    gameDataManager.EndingsUnlocked1.alien = true;
-            
+
         //}
 
         //if (cardEventManager.currentCard.CardID == "DEA_008_")
@@ -231,3 +253,5 @@ public class GameDataTracker : MonoBehaviour
         //}
     }
 }
+
+

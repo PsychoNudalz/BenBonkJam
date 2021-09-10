@@ -25110,7 +25110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e90526fd855d84c8dd2cf2b178c018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startEffects: 0a00000003000000280000000f000000
+  startEffects: 0000000003000000280000000f00000019000000
 --- !u!114 &1985600314 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5751716910500585729, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
@@ -30014,21 +30014,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1906904589}
     - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: cardPerAge
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: allCards.Array.size
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: allCards.Array.data[0]
       value: 
-      objectReference: {fileID: 6452187399125566214, guid: 7e63a19577428a743b4e1dd00c08f239, type: 3}
+      objectReference: {fileID: 1310310316835573203, guid: 21805c56a4da24f42a1f0b1183c750bb, type: 3}
     - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: allCards.Array.data[1]
       value: 
-      objectReference: {fileID: 6452187399125566214, guid: 7e63a19577428a743b4e1dd00c08f239, type: 3}
+      objectReference: {fileID: 1310310316835573203, guid: 21805c56a4da24f42a1f0b1183c750bb, type: 3}
     - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: allCards.Array.data[2]
       value: 
-      objectReference: {fileID: 6452187399125566214, guid: 7e63a19577428a743b4e1dd00c08f239, type: 3}
+      objectReference: {fileID: 6070779953781700186, guid: 51d24f6906b425b4085ec8a7ed2385a3, type: 3}
     - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: allCards.Array.data[3]
       value: 
@@ -30045,6 +30049,110 @@ PrefabInstance:
       propertyPath: allCards.Array.data[6]
       value: 
       objectReference: {fileID: -2587406193006211280, guid: 75144e92d5fb9dc43b1162f9c4af318b, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[0].endingCard
+      value: 
+      objectReference: {fileID: 7165739841528137619, guid: a1e645c1e1d009543810b2493dcba488, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[0].endingEnum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[1].endingCard
+      value: 
+      objectReference: {fileID: 2427102903410873866, guid: 6b217071cacb98940b68827a61e76bcc, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[1].endingEnum
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[2].endingCard
+      value: 
+      objectReference: {fileID: 6424921297857703925, guid: c2d0a792d7e690b4f880cf13105ce3a6, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[2].endingEnum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[3].endingCard
+      value: 
+      objectReference: {fileID: 8189715773726643501, guid: 57c281885a86eee4e8e136fad55f77ce, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[3].endingEnum
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[4].endingCard
+      value: 
+      objectReference: {fileID: 3921028258534320811, guid: bd369d61951f547469eb977e21301cb9, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[4].endingEnum
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[5].endingCard
+      value: 
+      objectReference: {fileID: 4057482550637403037, guid: 86a94bdd4898cba408d810823337f244, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[5].endingEnum
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[6].endingCard
+      value: 
+      objectReference: {fileID: 6860357747702853063, guid: a15941dfbfa7a7748aec6565a5b981ea, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[6].endingEnum
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[7].endingCard
+      value: 
+      objectReference: {fileID: 2139005068034695082, guid: 1182b3c072975b142b837a145a495ff7, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[7].endingEnum
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[8].endingCard
+      value: 
+      objectReference: {fileID: 1264870416951039333, guid: ef26a2ab8c703734d8bf744a24fb46fe, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[8].endingEnum
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[9].endingCard
+      value: 
+      objectReference: {fileID: 2220503171981588819, guid: d1532565659650c44a247713112ffb48, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[9].endingEnum
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[10].endingCard
+      value: 
+      objectReference: {fileID: 7516799133298634837, guid: ad4726ef01caf3f4ebfaddb3ab323eb0, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[10].endingEnum
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[11].endingCard
+      value: 
+      objectReference: {fileID: 820017721035638163, guid: c8a83fab1be496d43948a445de03ed94, type: 3}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[11].endingEnum
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: EndingUnlocks.Array.data[12].endingCard
+      value: 
+      objectReference: {fileID: 4481667560047372792, guid: ee4e9893f3b9c3e49b51adf9442089c7, type: 3}
     - target: {fileID: 6855636646145679449, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: sfxSlider
       value: 

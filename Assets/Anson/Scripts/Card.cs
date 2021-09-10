@@ -178,6 +178,7 @@ public class Card : MonoBehaviour
 
     // Start is called before the first frame update
 
+
     public bool PortOldToNew(CardOLD old)
     {
         try
@@ -247,10 +248,16 @@ public class Card : MonoBehaviour
     }
     public override bool Equals(object other)
     {
+        if (other is Card)
+        {
+            return CardID.Equals((other as Card).CardID);
+        }
+        
         if (other is CardSave)
         {
             return IsCardSave(other as CardSave);
         }
+
         if (other is string)
         {
             return CardID.Equals(other as string);

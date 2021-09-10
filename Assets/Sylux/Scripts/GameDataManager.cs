@@ -16,6 +16,7 @@ public class GameDataManager : MonoBehaviour
     }
     */
     [SerializeField] Achievements achievements = new Achievements();
+    [Space(10)]
     [SerializeField] EndingsUnlocked endingsUnlocked = new EndingsUnlocked();
     [SerializeField] List<StatusEffect> statusesGained = new List<StatusEffect>();
 
@@ -43,7 +44,7 @@ public class GameDataManager : MonoBehaviour
 
             string json = (string)formatter.Deserialize(stream);
             achievements = JsonUtility.FromJson<Achievements>(json);
-            
+
             stream.Close();
         }
         else
@@ -230,6 +231,18 @@ public class GameDataManager : MonoBehaviour
 
     public class EndingsUnlocked
     {
+        public List<EndingEnum> earnedEndings = new List<EndingEnum>();
+        
+
+        public void AddEnding(EndingEnum ee)
+        {
+            if (!earnedEndings.Contains(ee))
+            {
+                earnedEndings.Add(ee);
+            }
+        }
+        
+        /*
         public bool alien;
         public bool athlete;
         public bool borderAwake;
@@ -244,6 +257,7 @@ public class GameDataManager : MonoBehaviour
         public bool voidEnding;
         public bool wakeUpSim;
 
+        
         public EndingsUnlocked(bool alien, bool athlete, bool borderAwake, bool dieYoung, bool friendGhost, bool hamDogAdventure,
                 bool hell, bool paradise, bool purgatory, bool reincarnation, bool sick, bool voidEnding, bool wakeUpSim)
         {
@@ -277,7 +291,9 @@ public class GameDataManager : MonoBehaviour
             voidEnding = false;
             wakeUpSim = false;
         }
+        */
     }
+
 
 }
 

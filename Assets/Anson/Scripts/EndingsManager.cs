@@ -17,7 +17,8 @@ public enum EndingEnum
     Reincarnation,
     Sick,
     VoidEnding,
-    WakeUpSim
+    WakeUpSim,
+    Angel
 }
 
 
@@ -63,14 +64,17 @@ public class EndingsManager : PlayerCollectionManager
 
         foreach (EndingCollection ec in endingCollections)
         {
-            CardIsUnlocked(gameDataManager, ec);
+            EndingIsUnlocked(gameDataManager, ec);
 
         }
 
     }
 
-    private static void CardIsUnlocked(GameDataManager gameDataManager, EndingCollection ec)
+    private static void EndingIsUnlocked(GameDataManager gameDataManager, EndingCollection ec)
     {
+
+        ec.IsUnlocked = gameDataManager.EndingsUnlocked1.earnedEndings.Contains(ec.EndingEnum);
+        /*
         switch (ec.EndingEnum)
         {
             case EndingEnum.Alien:
@@ -114,6 +118,7 @@ public class EndingsManager : PlayerCollectionManager
                 ec.IsUnlocked = gameDataManager.EndingsUnlocked1.wakeUpSim;
                 break;
         }
+        */
     }
 
 }
