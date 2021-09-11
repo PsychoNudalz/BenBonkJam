@@ -232,15 +232,15 @@ public class CardSave
         this.ageNeeded = FileLoader.StringSplitToInt(FileLoader.EmptyDataCheck(s[2], "") as string, '/');
         this.statusNeeded = FileLoader.StringSplitToInt(FileLoader.EmptyDataCheck(s[3], "") as string, '/');
         this.cardSpriteName = FileLoader.EmptyDataCheck(s[4], "") as string;
-        this.cardDes = FileLoader.EmptyDataCheck(s[5], "") as string;
+        this.cardDes =FileLoader.ConvertFromCSVSafe( FileLoader.EmptyDataCheck(s[5], "") as string);
 
         //Debug.Log("Loading Head");
-        this.headsDes = FileLoader.EmptyDataCheck(s[6], "") as string;
+        this.headsDes = FileLoader.ConvertFromCSVSafe(FileLoader.EmptyDataCheck(s[6], "") as string);
         List<string> subArray = new List<string>(s);
         this.headsOption = new CardOptionSave(subArray.GetRange(7, 8).ToArray());// 7,14
 
         //Debug.Log("Loading Tails");
-        this.tailsDes = FileLoader.EmptyDataCheck(s[15], "") as string;
+        this.tailsDes = FileLoader.ConvertFromCSVSafe(FileLoader.EmptyDataCheck(s[15], "") as string);
         this.tailsOption = new CardOptionSave(subArray.GetRange(16, 8).ToArray());
     }
 
@@ -262,10 +262,10 @@ public class CardSave
         retString += cardSpriteName + GlobalSettings.cellSeperator;
 
 
-        retString += cardDes.Replace("\n", " ").Replace("\r", " ").Replace(GlobalSettings.cellSeperator, " ") + GlobalSettings.cellSeperator;
-        retString += headsDes.Replace("\n", " ").Replace("\r", " ").Replace(GlobalSettings.cellSeperator, " ") + GlobalSettings.cellSeperator;
+        retString += FileLoader.ConvertToCSVSafe( cardDes) + GlobalSettings.cellSeperator;
+        retString += FileLoader.ConvertToCSVSafe(headsDes) + GlobalSettings.cellSeperator;
         retString += headsOption.ToString();
-        retString += tailsDes.Replace("\n", " ").Replace("\r", " ").Replace(GlobalSettings.cellSeperator, " ") + GlobalSettings.cellSeperator;
+        retString += FileLoader.ConvertToCSVSafe(tailsDes) + GlobalSettings.cellSeperator;
         retString += tailsOption.ToString();
         retString = retString.Replace("\n", " ").Replace("\r", " ");
         if (retString.Contains("\n"))
