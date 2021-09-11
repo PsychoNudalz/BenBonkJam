@@ -10,6 +10,13 @@ public class KeyboardInput : MonoBehaviour
 
     private PlayerControlScript playerControl;
     private UIHandler uiHandler;
+    private bool controlsLocked = false;
+
+    public bool ControlsLocked
+    {
+        get => controlsLocked;
+        set => controlsLocked = value;
+    }
 
     void Start()
     {
@@ -19,6 +26,7 @@ public class KeyboardInput : MonoBehaviour
 
     void OnFlipKeyboard()
     {
+        if(controlsLocked){return;}
         if (playerControl.ControlLock)
         {
             buttons.SetActive(false);
@@ -34,11 +42,27 @@ public class KeyboardInput : MonoBehaviour
 
     void OnHeads()
     {
+        if(controlsLocked){return;}
+
         uiHandler.Play_Heads();
     }
 
     void OnTails()
     {
+        if(controlsLocked){return;}
+
         uiHandler.Play_Tails();
+    }
+
+    [ContextMenu("Lock Controls")]
+    public void LockControls()
+    {
+        controlsLocked = true;
+    }
+    
+    [ContextMenu("Unlock Controls")]
+    public void UnlockControls()
+    {
+        controlsLocked = false;
     }
 }
