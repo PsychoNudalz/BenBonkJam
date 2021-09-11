@@ -31,14 +31,15 @@ public class StatusEffectManager : MonoBehaviour
             }
         }
 
-        if (updateCSV)
-        {
-            SaveModificationToCSV();
-        }
-        else
-        {
-            LoadModifiersFromCSV();
-        }
+
+        //if (updateCSV)
+        //{
+        //    SaveModificationToCSV();
+        //}
+        //else
+        //{
+        //    LoadModifiersFromCSV();
+        //}
     }
 
     public StatusEffect GetStatusEffect(StatusEnum e)
@@ -77,6 +78,7 @@ public class StatusEffectManager : MonoBehaviour
         return null;
     }
 
+    [ContextMenu("Load Modifiers from CSV")]
     void LoadModifiersFromCSV()
     {
         string loadString = "";
@@ -125,6 +127,8 @@ public class StatusEffectManager : MonoBehaviour
         return;
     }
 
+    [ContextMenu("Save Modifiers from CSV")]
+
     void SaveModificationToCSV()
     {
         try
@@ -143,10 +147,10 @@ public class StatusEffectManager : MonoBehaviour
 
     public override string ToString()
     {
-        string temp = headerFormat+"\n";
+        string temp = headerFormat + "\n";
         foreach (StatusEffect se in allSatusEffect)
         {
-            temp += se.ToString()+"\n";
+            temp += se.ToString() + "\n";
         }
 
         return temp;

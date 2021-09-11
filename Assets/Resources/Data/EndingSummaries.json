@@ -1,51 +1,67 @@
 {
   "endingSummaries": [
     {
+      "scoreRange": {
+        "x": 250.0,
+        "y": 3.4028234663852887e38
+      },
       "healthRange": {
-        "x": 75.0,
+        "x": 0.0,
         "y": 100.0
       },
       "buxRange": {
-        "x": 75.0,
+        "x": 0.0,
         "y": 100.0
       },
       "moodRange": {
-        "x": 75.0,
+        "x": 0.0,
         "y": 100.0
       },
       "summaryText": "You lived a great life. There were good days and bad days, but you always managed to see the brighter side of every situation and lived your best life. How corny."
     },
     {
+      "scoreRange": {
+        "x": 200.0,
+        "y": 3.4028234663852887e38
+      },
       "healthRange": {
-        "x": 50.0,
+        "x": 0.0,
         "y": 100.0
       },
       "buxRange": {
-        "x": 50.0,
+        "x": 0.0,
         "y": 100.0
       },
       "moodRange": {
-        "x": 50.0,
+        "x": 0.0,
         "y": 100.0
       },
       "summaryText": "This was a good life. There were some less enjoyable time, but you still managed well. But you secretly resent those who had a better time than you..."
     },
     {
+      "scoreRange": {
+        "x": 150.0,
+        "y": 3.4028234663852887e38
+      },
       "healthRange": {
-        "x": 25.0,
+        "x": 0.0,
         "y": 100.0
       },
       "buxRange": {
-        "x": 25.0,
+        "x": 0.0,
         "y": 100.0
       },
       "moodRange": {
-        "x": 25.0,
+        "x": 0.0,
         "y": 100.0
       },
       "summaryText": "An above average existance. Nothing major to celebrate and nothing major to mourn. You could have been so much more... if only you had applied yourself."
     },
     {
+      "scoreRange": {
+        "x": 0.0,
+        "y": 3.4028234663852887e38
+      },
       "healthRange": {
         "x": 0.0,
         "y": 100.0

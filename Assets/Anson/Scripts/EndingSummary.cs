@@ -80,12 +80,15 @@ public class EndingSummary : MonoBehaviour
 
     public List<EndingSummaryConditions> EndingSummaries { get => endingSummaries; set => endingSummaries = value; }
 
+    [ContextMenu("Save Summaries to CSV")]
 
     public void SaveEndingSummaryConditions()
     {
         print(endingSummaries.Count);
         FileLoader.SaveToFile(Application.dataPath + "/Resources/Data/", "EndingSummaries.json", new EndingSummaryList(endingSummaries));
     }
+
+    [ContextMenu("Load Summaries from CSV")]
 
     public void LoadEndingSummaryConditions()
     {
