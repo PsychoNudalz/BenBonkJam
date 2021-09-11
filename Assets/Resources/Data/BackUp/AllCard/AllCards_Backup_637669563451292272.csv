@@ -163,4 +163,4 @@ TEE_012_,,2/,,bluelight,A weird blue light appears...,Must be a display...(Ignor
 TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event!,Eat well  stay fit,20,0,0,,,,17/,,Eat delicious junk food,0,0,20,,,,,,END
 TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,TEE_015_/,,,Force yourself to train,-25,0,0,,TEE_015_/,,,,END
 TEE_015_,,2/,,health gain,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament! Keep going!,-100,0,-25,,,,8/,,END
-TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,TEE_014_/,,,,Get Protein Shakes ,-15,-5,5,,,,,,END
+TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,,,,,Get Protein Shakes ,-15,-5,5,,,,,,END

@@ -205,5 +205,17 @@ public static class FileLoader
         return fileList;
     }
 
+    public static string ConvertToCSVSafe(string input)
+    {
+        input = input.Replace(",", "<COMMA>");
 
+        return input;
+    }
+
+    public static string ConvertFromCSVSafe(string input)
+    {
+        input = input.Replace(",", "<COMMA>");
+
+        return input;
+    }
 }

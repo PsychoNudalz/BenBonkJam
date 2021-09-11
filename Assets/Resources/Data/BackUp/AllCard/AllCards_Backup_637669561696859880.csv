@@ -31,7 +31,7 @@ ADU_028_,,3/,4/,rob bank,You were caught robbing a bank,I'm innocent!,0,0,0,,,,,
 ADU_029_,Milf_False,3/,,milf,69 HOT MILFs in your area are bored!,Investigate,-10,-25,-10,,,,,,Ignore,0,0,0,,,,,,END
 ADU_030_,,3/,,bunny,A bunny runs on the road.,Slam the breaks,-5,0,10,,,,,,Run over the bunny,-10,0,-30,,,,,,END
 ADU_031_,,3/,,doge,Invest in Index Funds or Dogecoin?,Index Funds,0,30,15,,,,,,DOGECOIN to the moon!,0,15,30,,,,,,END
-ADU_032_,pet cat,3/,,cat,Get a pet cat?,Yes.  aww,-5,-15,15,,,,34/,,No they shed fur everywhere,0,0,0,,,,,,END
+ADU_032_,pet cat,3/,,,Get a pet cat?,Yes.  aww,-5,-15,15,,,,34/,,No they shed fur everywhere,0,0,0,,,,,,END
 ADU_033_,Milf_True,3/,,milf,69 HOT MILFs are bored in your area!,Investigate,0,0,40,,,,,7/,Ignore,0,0,0,,,,,,END
 ADU_034_,,3/,20/,have a child stork,Perhap havng kids makes a better family... though the cost could be high... but the profit... ,Use your own ways to have one ,-10,-50,30,,,,13/,,No kids,0,0,0,,,,,,END
 ADU_035_,,3/,20/,marriage,People say marriage is a big investment. What about me? ,Propose marriage sincerely,0,-30,40,,,,1/,,I can have a partner without needing to marry  you know...,0,0,0,,,,,,END
@@ -66,7 +66,6 @@ ADU_063_,,3/,25/,,You are asked to test an experimental serum on yourself,Yes ma
 ADU_064_,What even,3/,25/,,What even is this anyway? What ever happened to your choices?,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_065_/ADU_066_/,,,END
 ADU_065_,,3/,25/,,You are asked to build a machine for your master.,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_066_/,,,END
 ADU_066_,,3/,25/,,You are asked to power the machine with your soul.,Yes master.,-999,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,,,,END
-ADU_067_,,3/,3/19/,,You failed the mission,body hurts,0,-10,0,,,,,,soul hurts,0,0,-10,,,,,,END
 BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END
 BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END
 BAB_002_,,0/,,babyannoiyin,...,Googoo,5,0,5,,,,,,Gaagaa,-5,0,5,,,,,,END
@@ -150,7 +149,7 @@ OLD_008_,,4/,13/,will,Time to write a will,Give to children,-30,30,30,13/,,,,,Do
 TEE_000_,,2/,,bird poop,A bird poops on you,Curse at it,0,0,0,,,,,,Maybe it's a sign of luck,0,0,0,,,,,,END
 TEE_001_,Pineapple on pizza,2/,,pineapple_pizza,Pineapple on pizza?,Yes!,0,0,0,,,,,,This should be a crime,0,0,0,,,,,,END
 TEE_002_,,2/,,soulmate,Dating...,Find Soulmate,0,0,20,,,,20/,,Find Others,0,0,5,,,,,,END
-TEE_003_,,2/,,driving test,Driving test soon  practice?,Practice,0,-10,0,,,,18/,,Don't practice,0,0,0,,,,,,END
+TEE_003_,,2/,,truck,Driving test soon  practice?,Practice,0,-10,0,,,,18/,,Don't practice,0,0,0,,,,,,END
 TEE_004_,,2/,10/,education 2,Education 2  Electric Boogaloo,University,0,-10,-10,,GEN_008_/,,,,Vocational Training,0,-10,-5,,,,12/,,END
 TEE_005_,,2/,,education 2,Do I continue high school?,Highschool,0,-10,-10,,,,10/,,Dropout,0,0,0,,,,16/,,END
 TEE_006_,,2/,,console xbox,The newest games console has released!,SHUT UP AND TAKE MY MONEY,0,-30,30,,,,,,don’t buy and save up,0,10,0,,,,,,END
@@ -161,6 +160,7 @@ TEE_010_,,2/,,truck,You get hit by a car,Cry for help,15,0,-20,,,,,,Find strengt
 TEE_011_,,2/,,invest money,Sigh… Need money,Part-time Job,0,25,-10,,,,15/,,ShopLifting,0,10,0,,,,4/,,END
 TEE_012_,,2/,,bluelight,A weird blue light appears...,Must be a display...(Ignore and sleep),10,0,0,,,,,,investigate this fascinating phenomenon,0,0,10,,,,9/,,END
 TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event!,Eat well  stay fit,20,0,0,,,,17/,,Eat delicious junk food,0,0,20,,,,,,END
-TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,TEE_015_/,,,Force yourself to train,-25,0,0,,TEE_015_/,,,,END
+TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,TEE_015_/,,,Force yourself to train,-25,0,0,,,,,,END
 TEE_015_,,2/,,health gain,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament! Keep going!,-100,0,-25,,,,8/,,END
-TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,TEE_014_/,,,,Get Protein Shakes ,-15,-5,5,,,,,,END
+TEE_016_,,2/,,steroids,Choices for competitive team sports...,Stay Clean,5,0,0,,,,,,Get Protein Shakes ,-15,-5,5,,,,,,END
+ADU_067_,,3/,3/19/,,You failed the mission,body hurts,0,-10,0,,,,,,soul hurts,0,0,-10,,,,,,END
