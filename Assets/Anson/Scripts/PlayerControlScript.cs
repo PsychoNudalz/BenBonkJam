@@ -16,7 +16,7 @@ public class PlayerControlScript : MonoBehaviour
 
     [Header("Control Stats")]
     [Range(0f, 1f)]
-    [SerializeField] float launchForce ;
+    [SerializeField] float launchForce;
     [SerializeField] float forceRate = 2f;
     [SerializeField] bool isGain;
     [SerializeField] bool isCharging;
@@ -27,6 +27,8 @@ public class PlayerControlScript : MonoBehaviour
 
     public bool ControlLock => controlLock;
 
+    public bool IsCharging { get => isCharging; set => isCharging = value; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +37,7 @@ public class PlayerControlScript : MonoBehaviour
             lineRenderer = GetComponentInChildren<LineRenderer>();
         }
         lineRenderer.widthMultiplier = lineWidth;
-        
+
     }
 
     // Update is called once per frame
@@ -51,13 +53,13 @@ public class PlayerControlScript : MonoBehaviour
     void ShowLaunchForce()
     {
         lineRenderer.SetPosition(0, new Vector3());
-        lineRenderer.SetPosition(1, lineDir* lineLength * ConvertForce());
+        lineRenderer.SetPosition(1, lineDir * lineLength * ConvertForce());
     }
     void ChargeForce()
     {
         if (isGain)
         {
-        launchForce += forceRate * Time.deltaTime;
+            launchForce += forceRate * Time.deltaTime;
 
         }
         else
@@ -81,11 +83,32 @@ public class PlayerControlScript : MonoBehaviour
         {
             return;
         }
+        //if (callbackContext.performed)
+        //{
+        //    isCharging = true;
+        //}
+         if (callbackContext.canceled)
+        {
+            if (isCharging)
+            {
+                coinFlipScript.LaunchCoin(ConvertForce());
+                launchForce = 0f;
+                SetControlLock(true);
+            }
+            isCharging = false;
+        }
+    }
+    public void SetChargeHold(InputAction.CallbackContext callbackContext)
+    {
+        if (controlLock || KeyboardInput.current.ControlsLocked)
+        {
+            return;
+        }
         if (callbackContext.performed)
         {
             isCharging = true;
         }
-        else if ( callbackContext.canceled)
+        else if (callbackContext.canceled)
         {
             if (isCharging)
             {
@@ -97,6 +120,7 @@ public class PlayerControlScript : MonoBehaviour
         }
     }
 
+
     public void SetCharge(bool b)
     {
         if (controlLock)
@@ -107,7 +131,7 @@ public class PlayerControlScript : MonoBehaviour
         {
             isCharging = true;
         }
-        else 
+        else
         {
             if (isCharging)
             {
@@ -127,9 +151,9 @@ public class PlayerControlScript : MonoBehaviour
     public float ConvertForce()
     {
         float temp = lineCurve.Evaluate(launchForce);
-        float i = 1f /(float) Segments;
+        float i = 1f / (float)Segments;
 
-        temp = temp - temp%i;
+        temp = temp - temp % i;
         return temp;
     }
 }

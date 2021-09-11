@@ -94,4 +94,8 @@ public class CoinScript : MonoBehaviour
         launchCoin = false;
 
     }
+    public void OnLand()
+    {
+
+    }
 }

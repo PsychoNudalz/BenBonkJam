@@ -96,8 +96,8 @@
                 },
                 {
                     "name": "",
-                    "id": "39bc9ad2-cab8-4a89-b795-af6da2c3a47a",
-                    "path": "<Keyboard>/space",
+                    "id": "b458e52b-f300-4bfd-93ce-9392be87cc83",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -107,8 +107,8 @@
                 },
                 {
                     "name": "",
-                    "id": "b458e52b-f300-4bfd-93ce-9392be87cc83",
-                    "path": "<Keyboard>/f",
+                    "id": "426b80cd-72bc-4053-8792-676da58fdac7",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

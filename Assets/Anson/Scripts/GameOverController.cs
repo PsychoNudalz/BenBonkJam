@@ -27,17 +27,18 @@ public class GameOverController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Initialise(Player player, string grade, float totalScore)
     {
+
         //Stats Bar
         health.Initialise(player.HealthPoints);
         bux.Initialise(player.BuxPoint);
@@ -55,7 +56,6 @@ public class GameOverController : MonoBehaviour
 
     private void OnEnable()
     {
-        
     }
 
 }

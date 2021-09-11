@@ -12,12 +12,19 @@ public class KeyboardInput : MonoBehaviour
     private UIHandler uiHandler;
     private bool controlsLocked = false;
 
+    public static KeyboardInput current;
+
     public bool ControlsLocked
     {
         get => controlsLocked;
         set => controlsLocked = value;
     }
 
+    private void Awake()
+    {
+        current = this;
+
+    }
     void Start()
     {
         playerControl = FindObjectOfType<PlayerControlScript>();
@@ -26,11 +33,11 @@ public class KeyboardInput : MonoBehaviour
 
     void OnFlipKeyboard()
     {
+        /*
         if(controlsLocked){return;}
-        if (playerControl.ControlLock)
+        if (!playerControl.IsCharging)
         {
             buttons.SetActive(false);
-            playerControl.SetControlLock(false);
             coinText.SetActive(true);
             playerControl.SetCharge(true);
         }
@@ -38,6 +45,7 @@ public class KeyboardInput : MonoBehaviour
         {
             playerControl.SetCharge(false);
         }
+        */
     }
 
     void OnHeads()

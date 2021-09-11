@@ -30,7 +30,7 @@ public class UIHandler : MonoBehaviour
     [SerializeField] GameObject gameOverScreen;
     [SerializeField] TextMeshProUGUI gradeText;
     [SerializeField] TextMeshProUGUI extraMessage;
-    
+
 
     [Header("Particle Effects")]
     [SerializeField] ParticleSystem health_Gain;
@@ -40,6 +40,9 @@ public class UIHandler : MonoBehaviour
     [SerializeField] ParticleSystem mood_Gain;
     [SerializeField] ParticleSystem mood_Lose;
 
+    [Header("Coin Flip")]
+    [SerializeField] GameObject buttons;
+    [SerializeField] GameObject CoinText;
 
     GraphicRaycaster m_Raycaster;
     PointerEventData m_PointerEventData;
@@ -82,7 +85,7 @@ public class UIHandler : MonoBehaviour
 
         //Raycast using the Graphics Raycaster and mouse click position
         m_Raycaster.Raycast(m_PointerEventData, results);
-        
+
         //For every result returned, output the name of the GameObject on the Canvas hit by the Ray
         foreach (RaycastResult result in results)
         {
@@ -94,15 +97,15 @@ public class UIHandler : MonoBehaviour
             else
             {
                 Tooltip.HideTooltip_Static();
-                if(result.gameObject.CompareTag("HP Bar"))
+                if (result.gameObject.CompareTag("HP Bar"))
                 {
                     SummaryTooltip.ShowTooltip_Static(SummaryType.HP);
                 }
-                else if(result.gameObject.CompareTag("Bux Bar"))
+                else if (result.gameObject.CompareTag("Bux Bar"))
                 {
                     SummaryTooltip.ShowTooltip_Static(SummaryType.Bux);
                 }
-                else if(result.gameObject.CompareTag("Mood Bar"))
+                else if (result.gameObject.CompareTag("Mood Bar"))
                 {
                     SummaryTooltip.ShowTooltip_Static(SummaryType.Mood);
                 }
@@ -143,7 +146,7 @@ public class UIHandler : MonoBehaviour
             }
         }
         UIStatusEffect currentUI;
-        foreach(StatusEnum se in p.status.currentstatus)
+        foreach (StatusEnum se in p.status.currentstatus)
         {
             currentUI = Instantiate(UIStatusEffectGO, statusDisplay.transform).GetComponent<UIStatusEffect>();
             currentUI.SetNewStatus(StatusEffectManager.current.GetStatusEffect(se));
@@ -156,7 +159,7 @@ public class UIHandler : MonoBehaviour
     {
         foreach (Transform g in statusDisplay.transform.GetComponentsInChildren<Transform>())
         {
-            if (g.TryGetComponent( out UIStatusEffect temp))
+            if (g.TryGetComponent(out UIStatusEffect temp))
             {
                 if (temp.status.Equals(se))
                 {
@@ -225,7 +228,7 @@ public class UIHandler : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        if(SceneTransition.Instance != null)
+        if (SceneTransition.Instance != null)
         {
             SceneTransition.Instance.FadeToScene(0);
         }
@@ -241,6 +244,14 @@ public class UIHandler : MonoBehaviour
         gradeText.text = grade;
         //extraMessage.text = s;
         //statusDisplay.transform.parent = gameOverScreen.transform;
-        gameOverController.Initialise(playerStats,grade,score);
+        gameOverController.Initialise(playerStats, grade, score);
+        KeyboardInput.current.LockControls();
+
+    }
+
+    public void SetCoinFlipButtons(bool b)
+    {
+        buttons.SetActive(b);
+        CoinText.SetActive(!b);
     }
 }

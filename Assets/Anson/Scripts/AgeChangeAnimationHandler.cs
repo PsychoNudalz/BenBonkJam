@@ -48,6 +48,13 @@ public class AgeChangeAnimationHandler : MonoBehaviour
 
         animator.Play($"AgeChange_{ageEnum.ToString()}");
         StartBackground();
+        KeyboardInput.current.LockControls();
+    }
+
+    public void EndAnimation()
+    {
+        KeyboardInput.current.UnlockControls();
+        EndBackground();
     }
 
     Vector2 GetTiling(AgeEnum ageEnum)
