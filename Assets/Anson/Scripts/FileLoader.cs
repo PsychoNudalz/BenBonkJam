@@ -208,14 +208,16 @@ public static class FileLoader
     public static string ConvertToCSVSafe(string input)
     {
         input = input.Replace(",", "<COMMA>");
-
+        input = input.Replace("\n", "<NEWLINE>").Replace("\r", " ");
+        input = input.Replace("?", "<QUESTION>");
         return input;
     }
 
     public static string ConvertFromCSVSafe(string input)
     {
-        input = input.Replace(",", "<COMMA>");
-
+        input = input.Replace("<COMMA>", ",");
+        input = input.Replace("<NEWLINE>","\n");
+        input = input.Replace("<QUESTION>","?");
         return input;
     }
 }

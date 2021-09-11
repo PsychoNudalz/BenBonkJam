@@ -209,9 +209,9 @@ public class Card : MonoBehaviour
 
     void UpdateCardDescriptions()
     {
-        cardDescriptionTMPro.text = cardDescriptionText;
-        headsDescriptionTMPro.text = headsDescriptionText;
-        tailsDescriptionTMPro.text = tailsDescriptionText;
+        cardDescriptionTMPro.text = FileLoader.ConvertFromCSVSafe( cardDescriptionText);
+        headsDescriptionTMPro.text = FileLoader.ConvertFromCSVSafe(headsDescriptionText);
+        tailsDescriptionTMPro.text = FileLoader.ConvertFromCSVSafe(tailsDescriptionText);
     }
 
     void UpdateCardSprite(Sprite s)
