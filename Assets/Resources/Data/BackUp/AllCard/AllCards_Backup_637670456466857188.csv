@@ -115,13 +115,13 @@ DEA_021_,,5/,2/20/,,You manage to convince a couple of angels. And there are eno
 DEA_022_,,5/,2/20/,,You are kicked from heaven for being too proud. You shall be escorted to hell,Let it be,0,0,0,,,,,,Please No,0,0,0,,,,,,END
 DEA_023_,,5/,2/20/,,You are in heaven and saved humanity. What more could you ask for,I need nothing,0,0,0,,,,,,I need everything,0,0,10,,,,,,END
 DEA_024_,,5/,0/25/,,You relied on the power of demons in your life... now its time to pay this debt with your soul,Submit to the Overlord of hell,0,0,0,,DEA_026_/,,,,Try to protest,0,0,-5,,DEA_025_/,,,,END
-DEA_025_,,5/,0/25/,hell_overlord,The overlord of hell seems amused by your futile struggling. Perhaps you could get on his good side,Dance for his amusement,0,0,0,,DEA_028_/,,,,Show him the finger,0,0,0,,DEA_031_/,,,,END
-DEA_026_,,5/,0/25/,hell_overlord,The Mighty Overlord is in a good mood today. You shall be his foot rest for the rest of eternity,Yes my lord ,0,0,0,,DEA_027_/,,,,Yes my Overlord,0,0,5,,,,,,END
-DEA_027_,,5/,0/25/,death,How dare you. You are executed on the spot for disrespecting the Overlord,I lived the way I liked,0,0,0,,,,,,Rules are meant to be broken,0,0,0,,,,,,END
-DEA_028_,,5/,0/25/,hell_dance,Your dance was great entertainment. The demons are excited and ask you about entertainment on the surface...,Tell them about video games,0,0,0,,DEA_030_/,,,,Tell them about memes,0,0,0,,DEA_029_/,,,,END
-DEA_029_,,5/,0/25/,hell_naughty_soul,The demons are very impressed by your incredible tales. You are granted great powers to bring Earth entertainment to hell,Have fun and hang out in hell,0,0,5,,,,,,Gain the support of other lesser demons,0,0,0,,DEA_030_/,,,,END
-DEA_030_,,5/,0/25/,hell_bribe,The lesser demons admire you and would like to elect you as their new Overlord,Bribe some extra votes,0,0,0,,,,,,Let the elections take their course,0,0,0,,,,,,END
-DEA_031_,,5/,0/25/,hell_final,You have angered the Mighty Overlord. Terrible punishment awaits you in the torture chambers of hell,Beg for forgiveness,0,0,0,,,,,,Accept your fate,0,0,0,,,,,,END
+DEA_025_,,5/,0/25/,,The overlord of hell seems amused by your futile struggling. Perhaps you could get on his good side,Dance for his amusement,0,0,0,,DEA_028_/,,,,Show him the finger,0,0,0,,DEA_031_/,,,,END
+DEA_026_,,5/,0/25/,,The Mighty Overlord is in a good mood today. You shall be his foot rest for the rest of eternity,Yes my lord ,0,0,0,,DEA_027_/,,,,Yes my Overlord,0,0,5,,,,,,END
+DEA_027_,,5/,0/25/,,How dare you. You are executed on the spot for disrespecting the Overlord,I lived the way I liked,0,0,0,,,,,,Rules are meant to be broken,0,0,0,,,,,,END
+DEA_028_,,5/,0/25/,,Your dance was great entertainment. The demons are excited and ask you about entertainment on the surface...,Tell them about video games,0,0,0,,DEA_030_/,,,,Tell them about memes,0,0,0,,DEA_029_/,,,,END
+DEA_029_,,5/,0/25/,,The demons are very impressed by your incredible tales. You are granted great powers to bring Earth entertainment to hell,Have fun and hang out in hell,0,0,5,,,,,,Gain the support of other lesser demons,0,0,0,,DEA_030_/,,,,END
+DEA_030_,,5/,0/25/,,The lesser demons admire you and would like to elect you as their new Overlord,Bribe some extra votes,0,0,0,,,,,,Let the elections take their course,0,0,0,,,,,,END
+DEA_031_,,5/,0/25/,,You have angered the Mighty Overlord. Terrible punishment awaits you in the torture chambers of hell,Beg for forgiveness,0,0,0,,,,,,Accept your fate,0,0,0,,,,,,END
 DEA_032_,,5/,9/,,You thought you were about to die but the alien mothership has come to your place to collect and preserve your body.,Let them take you,0,0,0,,DEA_033_/,,,,Try to complain with your last remaining strength,0,0,0,,DEA_034_/,,,,END
 DEA_033_,,5/,9/,,you are finally awakened from cryogenic sleep. How do you greet the aliens,let me go. I want to go back home and die on Earth,0,0,0,,,,,,thank you for saving me,0,0,0,,DEA_035_/,,,,END
 DEA_034_,,5/,9/,,After waking up you notice that you are feeling odd,check if your body is ok,0,0,0,,DEA_036_/,,,,it must be the shock,0,0,-5,,DEA_036_/,,,,END
