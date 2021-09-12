@@ -3183,8 +3183,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sylux02 - https://sylux02.itch.io\nJoi Ruden - https://www.artstation.com/joirudin\nNudalZmith
-    - https://nudalzmith.itch.io/\r\nHcay - https://hcay.itch.io\r"
+  m_text: 'Sylux02 - https://sylux02.itch.io
+
+    Joi Ruden - https://www.artstation.com/joirudin
+
+    NudalZmith
+    - https://nudalzmith.itch.io/
+
+    Hcay - https://hcay.itch.io
+
+    Daniel
+    Newsom - https://www.danielnewsom.co.uk/
+
+    Jimmy Yau - https://soundcloud.com/jimmy_yau'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
   m_sharedMaterial: {fileID: 1762920664241692319, guid: 67b2753cd45572e44af9a73926469d98, type: 2}
@@ -19288,19 +19299,7 @@ MonoBehaviour:
     endingsFound: 0
     uniqueCardsDiscovered: 0
   endingsUnlocked:
-    alien: 0
-    athlete: 0
-    borderAwake: 0
-    dieYoung: 0
-    friendGhost: 0
-    NewEnding: 0
-    hell: 0
-    paradise: 0
-    purgatory: 0
-    reincarnation: 0
-    sick: 0
-    voidEnding: 0
-    wakeUpSim: 0
+    earnedEndings: 
   statusesGained: []
 --- !u!4 &1679239963
 Transform:
