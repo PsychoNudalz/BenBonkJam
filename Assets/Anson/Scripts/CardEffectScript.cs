@@ -23,6 +23,7 @@ public class CardEffectScript : MonoBehaviour
     [SerializeField] AudioMixerGroup audioMixerGroup;
 
     [Header("Effects")]
+    [SerializeField] bool autoFindParticles;
     [SerializeField] UnityEvent headsEffect;
     [SerializeField] UnityEvent tailsEffect;
 
@@ -37,6 +38,10 @@ public class CardEffectScript : MonoBehaviour
             playCardSound.outputAudioMixerGroup = audioMixerGroup;
             headsSound.outputAudioMixerGroup = audioMixerGroup;
             tailsSound.outputAudioMixerGroup = audioMixerGroup;
+        }
+        if (autoFindParticles|| (headsEffect.GetPersistentEventCount()==0&& headsEffect.GetPersistentEventCount() == 0))
+        {
+            AutoAddEffects();
         }
     }
 
@@ -74,5 +79,25 @@ public class CardEffectScript : MonoBehaviour
         tailsEffect.Invoke();
         PlaySound(CardSoundEnum.TAILS);
 
+    }
+
+    
+    [ContextMenu("Auto find and add particles")]
+    public void AutoAddEffects()
+    {
+        AutoAddEffectsToUE(headsEffect, "head");
+        AutoAddEffectsToUE(tailsEffect, "tail");
+    }
+
+    void AutoAddEffectsToUE(UnityEvent ue, string name)
+    {
+        //ue.RemoveAllListeners();
+        foreach (ParticleSystem ps in GetComponentsInChildren<ParticleSystem>())
+        {
+            if (ps.name.ToLower().Contains(name.ToLower()))
+            {
+                ue.AddListener(ps.Play);
+            }
+        }
     }
 }

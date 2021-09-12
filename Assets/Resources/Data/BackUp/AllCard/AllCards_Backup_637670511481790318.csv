@@ -114,7 +114,7 @@ DEA_020_,,5/,2/20/,,An irritated angel looks at you. then asserts that you have 
 DEA_021_,,5/,2/20/,,You manage to convince a couple of angels. And there are enough votes to prevent the destruction of humankind.,yay,0,0,0,,DEA_023_/,,,,BOW BEFORE ME,0,0,0,,DEA_022_/,,,,END
 DEA_022_,,5/,2/20/,,You are kicked from heaven for being too proud. You shall be escorted to hell,Let it be,0,0,0,,,,,,Please No,0,0,0,,,,,,END
 DEA_023_,,5/,2/20/,,You are in heaven and saved humanity. What more could you ask for,I need nothing,0,0,0,,,,,,I need everything,0,0,10,,,,,,END
-DEA_024_,,5/,0/25/,hell_final,You relied on the power of demons in your life... now its time to pay this debt with your soul,Submit to the Overlord of hell,0,0,0,,DEA_026_/,,,,Try to protest,0,0,-5,,DEA_025_/,,,,END
+DEA_024_,,5/,0/25/,,You relied on the power of demons in your life... now its time to pay this debt with your soul,Submit to the Overlord of hell,0,0,0,,DEA_026_/,,,,Try to protest,0,0,-5,,DEA_025_/,,,,END
 DEA_025_,,5/,0/25/,hell_overlord,The overlord of hell seems amused by your futile struggling. Perhaps you could get on his good side,Dance for his amusement,0,0,0,,DEA_028_/,,,,Show him the finger,0,0,0,,DEA_031_/,,,,END
 DEA_026_,,5/,0/25/,hell_overlord,The Mighty Overlord is in a good mood today. You shall be his foot rest for the rest of eternity,Yes my lord ,0,0,0,,DEA_027_/,,,,Yes my Overlord,0,0,5,,,,,,END
 DEA_027_,,5/,0/25/,death,How dare you. You are executed on the spot for disrespecting the Overlord,I lived the way I liked,0,0,0,,,,,,Rules are meant to be broken,0,0,0,,,,,,END

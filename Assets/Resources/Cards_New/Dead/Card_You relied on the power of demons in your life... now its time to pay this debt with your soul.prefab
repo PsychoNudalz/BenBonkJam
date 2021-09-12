@@ -1,5 +1,62 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4377878010413269411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7040626201188262433}
+    m_Modifications:
+    - target: {fileID: 373814089407450130, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_Name
+      value: HellEffects
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0466162
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.10183667
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.16865607
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808042071381047654, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5371b527c0411e04da1f36cc5e9cf19b, type: 3}
 --- !u!1001 &6302477631189338787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60,10 +117,22 @@ PrefabInstance:
       propertyPath: tailsOption.sequenceCardsAdd.Array.data[0]
       value: 
       objectReference: {fileID: 6111575046635476598, guid: 219076cda0bc9ae44bf400ec197902a5, type: 3}
+    - target: {fileID: 1315884174672864196, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490181617090522943, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
       value: You relied on the power of demons in your life... now its time to pay
         this debt with your soul
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_fontSize
+      value: 3.55
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
@@ -72,6 +141,10 @@ PrefabInstance:
     - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
       value: Submit to the Overlord of hell
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_fontSize
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Name
@@ -122,5 +195,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aacf724a6d3d8184abdaa64d30b0b9a8, type: 3}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8972083844679716449, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: autoFindParticles
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8972083844679716449, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsEffect.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8972083844679716449, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: tailsEffect.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+--- !u!4 &7040626201188262433 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+  m_PrefabInstance: {fileID: 6302477631189338787}
+  m_PrefabAsset: {fileID: 0}
