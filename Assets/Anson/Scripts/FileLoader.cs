@@ -210,6 +210,7 @@ public static class FileLoader
         input = input.Replace(",", "<COMMA>");
         input = input.Replace("\n", "<NEWLINE>").Replace("\r", " ");
         input = input.Replace("?", "<QUESTION>");
+        input = input.Replace("!", "<EXMARK>");
         return input;
     }
 
@@ -218,6 +219,7 @@ public static class FileLoader
         input = input.Replace("<COMMA>", ",");
         input = input.Replace("<NEWLINE>","\n");
         input = input.Replace("<QUESTION>","?");
+        input = input.Replace("<EXMARK>", "!");
         return input;
     }
 }
