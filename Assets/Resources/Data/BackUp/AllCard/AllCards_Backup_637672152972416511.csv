@@ -103,8 +103,8 @@ DEA_009_,,5/,22/,dead baby,You died as a baby….. Somehow…..,(Regret...) ,0,0
 DEA_010_,,5/,21/,ghost friend,After you died you become friends with ghosts,Spook other people,0,0,0,,,,,,Dance with them,0,0,0,,,,,,END
 DEA_011_,,5/,0/,death,You entered HELL,Be a prisoner ,0,0,0,,,,,,Be the Hell Lord,0,0,0,,,,,,END
 DEA_012_,,5/,2/20/,,The angels appreciate the virtue you showed in life. You now have an exclusive spot in heaven.,Express gratitude,0,0,0,,DEA_013_/,,,,Look smug leave me alone<EXMARK> ,0,0,0,,DEA_018_/,,,,END
-DEA_013_,,5/,2/20/,angel_tribunal,You are now before the angel council. Spectating a heated debate<EXMARK>,Ask what is going on,0,0,0,,DEA_017_/,,,,This is not your problem. go chill elsewhere,0,0,0,,DEA_014_/,,,,END
-DEA_014_,,5/,2/20/,angel_apple,This haven place is pretty neat.  There are many places where you can relax,Go drink from a radiant fountain,0,0,0,,DEA_016_/,,,,Eat a shiny apple,0,0,0,,DEA_015_/,,,,END
+DEA_013_,,5/,2/20/,,You are now before the angel council. Spectating a heated debate<EXMARK>,Ask what is going on,0,0,0,,DEA_017_/,,,,This is not your problem. go chill elsewhere,0,0,0,,DEA_014_/,,,,END
+DEA_014_,,5/,2/20/,,This haven place is pretty neat.  There are many places where you can relax,Go drink from a radiant fountain,0,0,0,,DEA_016_/,,,,Eat a shiny apple,0,0,0,,DEA_015_/,,,,END
 DEA_015_,,5/,2/20/,,Consuming havenly foods has some odd effects. You start feeling odd and lightheaded,What...,0,0,-5,,,,,,Huh,0,0,-5,,,,,,END
 DEA_016_,,5/,2/20/,,Your conciousness fades into nothingness and your existance fuses with the universe. ,Reincarnate and live again,0,0,0,,,,,,Chill out in the void,0,0,0,,,,,,END
 DEA_017_,,5/,2/20/,,The angel council is voting on humanity's destiny. Many are arguing that humanity should be exterminated for being evil,Plea for humanity salvation,0,0,0,,DEA_021_/,,,,Do nothing,0,0,0,,DEA_020_/,,,,END
@@ -112,7 +112,7 @@ DEA_018_,,5/,2/20/,,This does not affect you. However. guilt shall haunt you for
 DEA_019_,,5/,2/20/,,A compassionate angel feels sorry for you and your kind and tries to convince the council to show mercy.,Thank the angel,0,0,0,,,,,,Shout.Make humanity great again <EXMARK>,0,0,0,,,,,,END
 DEA_020_,,5/,2/20/,angel_annoyed,An irritated angel looks at you.She asserts that humanity is indeed unsalvageable from your actions�,No we human really tried to avoid evilness but sadly sometimes we just can't control ourselves. I am sorry,0,0,0,,DEA_019_/,,,,I am not afraid of you. I am right and you are wrong<EXMARK> (Fight),0,0,0,,DEA_022_/,,,,END
 DEA_021_,,5/,2/20/,,You manage to convince a couple of angels. And there are enough votes to prevent the destruction of humankind.,yay,0,0,0,,DEA_023_/,,,,BOW BEFORE ME,0,0,0,,DEA_022_/,,,,END
-DEA_022_,,5/,2/20/,angel_kick,You are kicked from heaven for being too proud. You shall be escorted to hell,Let it be,0,0,0,,,,,,Please No,0,0,0,,,,,,END
+DEA_022_,,5/,2/20/,,You are kicked from heaven for being too proud. You shall be escorted to hell,Let it be,0,0,0,,,,,,Please No,0,0,0,,,,,,END
 DEA_023_,,5/,2/20/,,You are in heaven and saved humanity. What more could you ask for,I need nothing,0,0,0,,,,,,I need everything,0,0,10,,,,,,END
 DEA_024_,,5/,0/25/,hell_final,You relied on the power of demons in your life... now its time to pay this debt with your soul,Submit to the Overlord of hell,0,0,0,,DEA_026_/,,,,Try to protest,0,0,-5,,DEA_025_/,,,,END
 DEA_025_,,5/,0/25/,hell_overlord,The overlord of hell seems amused by your futile struggling. Perhaps you could get on his good side,Dance for his amusement,0,0,0,,DEA_028_/,,,,Show him the finger,0,0,0,,DEA_031_/,,,,END
