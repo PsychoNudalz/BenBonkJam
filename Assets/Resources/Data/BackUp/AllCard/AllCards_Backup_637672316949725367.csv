@@ -43,7 +43,7 @@ ADU_040_,,3/,17/,team sport,Professional Sports Player,Yes<EXMARK>,0,30,-10,,,AD
 ADU_041_,,3/,4/,criminal,Criminal,Yes<EXMARK>,-10,40,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_042_,Chat ask question,3/,23/,,Chat asks you a question. ,Hi Chat. Lets chat,0,0,0,,,,,,No chat,0,0,0,,,,,,END
 ADU_043_,follower ask question,3/,43/,,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
-ADU_044_,you were assassinated,3/,25/,kill_assassinated,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
+ADU_044_,you were assassinated,3/,25/,,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
 ADU_045_,,3/,3/19/,,Your pets yearn for adventure and everlasting glory,fulfill their wish,0,0,0,,ADU_046_/,,,,nah,0,0,0,,,,,,END
 ADU_046_,,3/,3/19/,,what epic quest do you wish to tackle,rescue the distressed Princess (neighbour's tabby cat),0,0,0,,,,,,fight the invaders,0,0,0,,ADU_048_/,,,,END
 ADU_047_,,3/,3/19/,,Princess is rescured. What now<QUESTION>,let's adopt another cat,0,0,0,,,,46/,,return Princess to your neighbor,0,0,20,,,,,,END
@@ -60,12 +60,12 @@ ADU_057_,,3/,,,Your company is now traded publicly after an Initial Public Offer
 ADU_058_,,3/,44/,,Time to expand your business into an empire...,Build self driving cars,0,0,0,,ADU_053_/,,,,Buy crypto,0,0,0,,ADU_053_/,,,,END
 ADU_059_,,3/,,,Workers are complaining...,Improve conditions,0,0,0,,ADU_060_/,,,,Dismantle unions and fire them,0,0,0,,,,,,END
 ADU_060_,,3/,,,It's time for a new space race,Fly to the moon on a rocket,0,0,60,,,,,,Fly to Mars on a rocket,0,0,60,,,,,,END
-ADU_061_,,3/,25/,evil lair,You are asked to build a lair for your master,Yes master,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_022_/ADU_062_/ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,END
-ADU_062_,,3/,25/,clone_evil,You are asked to clone your master,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,END
-ADU_063_,,3/,25/,evil_scientist,You are asked to test an experimental serum on yourself,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_064_/ADU_065_/ADU_066_/,,,END
-ADU_064_,What even,3/,25/,evil_scientist,What even is this anyway<QUESTION> What ever happened to your choices<QUESTION>,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_065_/ADU_066_/,,,END
-ADU_065_,,3/,25/,Machine,You are asked to build a machine for your master.,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_066_/,,,END
-ADU_066_,,3/,25/,Machine,You are asked to power the machine with your soul.,Yes master.,-999,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,,,,END
+ADU_061_,,3/,25/,,You are asked to build a lair for your master,Yes master,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_022_/ADU_062_/ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,END
+ADU_062_,,3/,25/,,You are asked to clone your master,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,END
+ADU_063_,,3/,25/,,You are asked to test an experimental serum on yourself,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_064_/ADU_065_/ADU_066_/,,,END
+ADU_064_,What even,3/,25/,,What even is this anyway<QUESTION> What ever happened to your choices<QUESTION>,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_065_/ADU_066_/,,,END
+ADU_065_,,3/,25/,,You are asked to build a machine for your master.,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_066_/,,,END
+ADU_066_,,3/,25/,,You are asked to power the machine with your soul.,Yes master.,-999,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,,,,END
 ADU_067_,,3/,3/19/,,You failed the mission,body hurts,0,-10,0,,,,,,soul hurts,0,0,-10,,,,,,END
 BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END
 BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END
