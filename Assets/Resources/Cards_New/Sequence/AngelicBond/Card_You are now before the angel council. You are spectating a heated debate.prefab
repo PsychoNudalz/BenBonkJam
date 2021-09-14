@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardDescriptionText
-      value: You are now before the angel council. You are spectating a heated debate
+      value: You are now before the angel council. Spectating a heated debate!
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: ageNeeded.Array.size
@@ -65,15 +65,27 @@ PrefabInstance:
       objectReference: {fileID: 8833631965724270662, guid: 6b5e5e922ce91d6488433b6e2d32ca6b, type: 3}
     - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: You are now before the angel council. You are spectating a heated debate
+      value: You are now before the angel council. Spectating a heated debate!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657608576844, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_fontSize
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
       value: This is not your problem. go chill elsewhere
       objectReference: {fileID: 0}
+    - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_fontSize
+      value: 3.25
+      objectReference: {fileID: 0}
     - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
       value: Ask what is going on
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193657792254159, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_fontSize
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657962473601, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_Name
@@ -123,6 +135,30 @@ PrefabInstance:
     - target: {fileID: 3946193657962473602, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986072, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986072, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Size.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Size.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 72e6f919a1d87db48bd79a5c3495ffa4, type: 3}
+    - target: {fileID: 3946193658470986073, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
