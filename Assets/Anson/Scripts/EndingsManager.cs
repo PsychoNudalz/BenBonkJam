@@ -32,6 +32,7 @@ public class EndingsManager : PlayerCollectionManager
     // Start is called before the first frame update
     void Start()
     {
+        AutoLoadName();
         playerCollections = new List<PlayerCollection>();
         playerCollections.AddRange(endingCollections);
         LoadIsUnlocked();
@@ -119,6 +120,17 @@ public class EndingsManager : PlayerCollectionManager
                 break;
         }
         */
+    }
+
+    void AutoLoadName()
+    {
+        foreach (EndingCollection ec in endingCollections)
+        {
+            if (ec.CollectionName.Equals(""))
+            {
+                ec.CollectionName = ec.EndingEnum.ToString();
+            }
+        }
     }
 
 }

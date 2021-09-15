@@ -468,27 +468,30 @@ MonoBehaviour:
   endingCollections:
   - collectionName: 
     sprite: {fileID: 21300000, guid: dba92a5a837c8754ebba436c64965731, type: 3}
-    details: 
+    details: You thought you were about to die but the alien mothership has come
+      to your place to collect and preserve your body.
     isUnlocked: 0
     endingEnum: 0
   - collectionName: 
     sprite: {fileID: 21300000, guid: dfcbc588a0dab0240887273ad6949f2a, type: 3}
-    details: 
+    details: You earned eternal fame as an honourable athlete in heaven.
     isUnlocked: 0
     endingEnum: 1
   - collectionName: 
     sprite: {fileID: 21300000, guid: e9feae37e9895ae4b82d86ee57c91225, type: 3}
-    details: 
+    details: Hey  you. You're finally awake. You were trying to cross the border 
+      right? Walked right into that Imperial ambush  same as us  and that thief over
+      there.
     isUnlocked: 0
     endingEnum: 2
   - collectionName: 
-    sprite: {fileID: 21300000, guid: 527d7da5ab3953040ad1bc1c98669c2d, type: 3}
-    details: 
+    sprite: {fileID: 21300000, guid: 4f0950b2450a28d47988669569154010, type: 3}
+    details: "You died as a baby\u2026.. Somehow\u2026.."
     isUnlocked: 0
     endingEnum: 3
   - collectionName: 
     sprite: {fileID: 21300000, guid: b0d77b0ec0e36a94fb3fb7daae3b393e, type: 3}
-    details: 
+    details: After you died you become friends with ghosts
     isUnlocked: 0
     endingEnum: 4
   - collectionName: 
@@ -498,37 +501,39 @@ MonoBehaviour:
     endingEnum: 5
   - collectionName: 
     sprite: {fileID: 21300000, guid: 2826c7c0d1e87114a8c1a18d1a366293, type: 3}
-    details: 
+    details: You relied on the power of demons in your life... now its time to pay
+      this debt with your soul
     isUnlocked: 0
     endingEnum: 6
   - collectionName: 
     sprite: {fileID: 21300000, guid: 585765699edfa804db4d40d49bdb8a64, type: 3}
-    details: 
+    details: 'You entered Paradise. '
     isUnlocked: 0
     endingEnum: 7
   - collectionName: 
     sprite: {fileID: 21300000, guid: 79eba9b0444d1e147b89fe0a65eeede4, type: 3}
-    details: 
+    details: 'You entered Purgatory '
     isUnlocked: 0
     endingEnum: 8
   - collectionName: 
     sprite: {fileID: 21300000, guid: f7f1e207b7c604b40af81772818cd9d8, type: 3}
-    details: 
+    details: 'You can reincarnate with a new destiny... '
     isUnlocked: 0
     endingEnum: 9
   - collectionName: 
     sprite: {fileID: 21300000, guid: b03146edd9153c5468a3d1677b547848, type: 3}
-    details: 
+    details: "Your body fails  you feel so ill\u2026 and die in sick pain."
     isUnlocked: 0
     endingEnum: 10
   - collectionName: 
     sprite: {fileID: 21300000, guid: dfe4808336512524b8ae8e7462ccc7e6, type: 3}
-    details: 
+    details: 'You Entered the Void. '
     isUnlocked: 0
     endingEnum: 11
   - collectionName: 
     sprite: {fileID: 21300000, guid: af1fa913f33707e478068c5d96b4fa75, type: 3}
-    details: 
+    details: Congratulations  you have escaped the simulation. Welcome to the real
+      world.
     isUnlocked: 0
     endingEnum: 12
 --- !u!1 &6507146075200512113
@@ -1617,7 +1622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.58431375}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

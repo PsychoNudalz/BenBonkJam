@@ -138,7 +138,7 @@ GEN_005_,,,11/,fail drop out,You are expelled by the University.,Argue with the 
 GEN_006_,,,12/,fail drop out,You are expelled by the Vocational Training college.,Argue with the school,-10,-20,0,,,,,,Accept the fate,0,0,-15,,,,,12/,END
 GEN_007_,,,,devil,As your scribbles take shape  a pentagram glows amongst your doodles and a demonic voice answers your call - I guess a demon is going to suggest your test’s answers<QUESTION>,...,0,0,0,,,,,,...,0,0,0,,,,,,END
 GEN_008_,,,,exam,Eeek<EXMARK> Cramming for the final exam<EXMARK>,Study Hard<EXMARK> Make your parents proud,-10,30,-10,,,,11/,,Do something fun instead,0,-10,10,,,,,,END
-OLD_000_,,4/,,AD,You have been diagnosed with Alzheimer’s disease.,Guess I’ll die ¯\_( '_' )_/¯,-75,0,-50,,,,8/,,Buy and take medicine,-30,-10,5,,,,,,END
+OLD_000_,,4/,,AD,You have been diagnosed with Alzheimer’s disease.,Guess I’ll die ¯\_(ツ)_/¯,-75,0,-50,,,,8/,,Buy and take medicine,-30,-10,5,,,,,,END
 OLD_001_,,4/,,bird,There are birds in your garden.,Feed them food,0,0,10,,,,,,Catch them... MUHAHAA<EXMARK>,-100,0,10,,,,,,END
 OLD_002_,,4/,,truck,Crossing a busy road  an angry truck rushed at you with high speed… ,use your mighty walking stick to stop the truck and scold the driver,-50,0,-25,,,,,,HURRY up to evade<EXMARK>,-100,0,0,,,,,,END
 OLD_003_,,4/,0/,death,You fall asleep and dream... then you see an evil spirit spinning its body and saying “DIE  DIE  DIE<EXMARK>”,Submit to the spirit peacefully,-100,0,10,,,,0/,,Try to Resist and wake yourself up,-100,0,-50,,,,,,END

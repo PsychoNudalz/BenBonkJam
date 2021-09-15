@@ -817,7 +817,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pass Lives
+  m_text: Past Lives
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5b630d75e7eca641b14c75508b1697f, type: 2}
   m_sharedMaterial: {fileID: -1538479818881790407, guid: e5b630d75e7eca641b14c75508b1697f, type: 2}
