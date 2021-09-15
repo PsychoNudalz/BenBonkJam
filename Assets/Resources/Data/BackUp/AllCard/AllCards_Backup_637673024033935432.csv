@@ -14,7 +14,7 @@ ADU_011_,Stonk_Good,3/,,doge,Meme stocks are available to buy...,Buy<EXMARK>,0,2
 ADU_012_,,3/,9/,ufo,UFOlogist,Yes<EXMARK>,20,20,20,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_013_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/47/,16/,No,0,0,0,,,,,,END
 ADU_014_,,3/,11/,education 2,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not<QUESTION>,-30,-30,-30,,,,24/,11/10/,No<EXMARK> It will be too much<EXMARK>,0,0,0,,,,,,END
-ADU_015_,,3/,11/,education 2,You are accepted into university... but your research needs money.,Beg for a grant,0,-10,-5,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
+ADU_015_,,3/,11/,,You are accepted into university... but your research needs money.,Beg for a grant,0,-10,-5,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
 ADU_016_,,3/,,streamer,Streamer,Hell yeah<EXMARK>,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,Nah,0,0,0,,,,,,END
 ADU_017_,,3/,24/,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No,0,0,0,,,,,,END
 ADU_018_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/,,,,I refuse,-10,-50,20,,,,16/,,END
@@ -102,7 +102,7 @@ DEA_008_,,5/,7/,ending,Hey  you. You're finally awake. You were trying to cross 
 DEA_009_,,5/,22/,dead baby,You died as a baby….. Somehow…..,(Regret...) ,0,0,0,,,,,,Accept fate,0,0,0,,,,,,END
 DEA_010_,,5/,21/,ghost friend,After you died you become friends with ghosts,Spook other people,0,0,0,,,,,,Dance with them,0,0,0,,,,,,END
 DEA_011_,,5/,0/,death,You entered HELL,Be a prisoner ,0,0,0,,,,,,Be the Hell Lord,0,0,0,,,,,,END
-DEA_012_,,5/,2/20/,haven_end,The angels appreciate the virtue you showed in life. You now have an exclusive spot in heaven.,Express gratitude,0,0,0,,DEA_013_/,,,,Look smug leave me alone<EXMARK> ,0,0,0,,DEA_018_/,,,,END
+DEA_012_,,5/,2/20/,,The angels appreciate the virtue you showed in life. You now have an exclusive spot in heaven.,Express gratitude,0,0,0,,DEA_013_/,,,,Look smug leave me alone<EXMARK> ,0,0,0,,DEA_018_/,,,,END
 DEA_013_,,5/,2/20/,angel_tribunal,You are now before the angel council. Spectating a heated debate<EXMARK>,Ask what is going on,0,0,0,,DEA_017_/,,,,This is not your problem. go chill elsewhere,0,0,0,,DEA_014_/,,,,END
 DEA_014_,,5/,2/20/,angel_apple,This haven place is pretty neat.  There are many places where you can relax,Go drink from a radiant fountain,0,0,0,,DEA_016_/,,,,Eat a shiny apple,0,0,0,,DEA_015_/,,,,END
 DEA_015_,,5/,2/20/,,Consuming havenly foods has some odd effects. You start feeling odd and lightheaded,What...,0,0,-5,,,,,,Huh,0,0,-5,,,,,,END
@@ -122,7 +122,7 @@ DEA_028_,,5/,0/25/,hell_dance,Your dance was great entertainment. The demons are
 DEA_029_,,5/,0/25/,hell_naughty_soul,The demons are very impressed by your incredible tales. You are granted great powers to bring Earth entertainment to hell,Have fun and hang out in hell,0,0,5,,,,,,Gain the support of other lesser demons,0,0,0,,DEA_030_/,,,,END
 DEA_030_,,5/,0/25/,hell_bribe,The lesser demons admire you and would like to elect you as their new Overlord,Bribe some extra votes,0,0,0,,,,,,Let the elections take their course,0,0,0,,,,,,END
 DEA_031_,,5/,0/25/,hell_final,You have angered the Mighty Overlord. Terrible punishment awaits you in the torture chambers of hell,Beg for forgiveness,0,0,0,,,,,,Accept your fate,0,0,0,,,,,,END
-DEA_032_,,5/,9/,alien_end,You thought you were about to die but the alien mothership has come to your place to collect and preserve your body.,Let them take you,0,0,0,,DEA_033_/,,,,Try to complain with your last remaining strength,0,0,0,,DEA_034_/,,,,END
+DEA_032_,,5/,9/,,You thought you were about to die but the alien mothership has come to your place to collect and preserve your body.,Let them take you,0,0,0,,DEA_033_/,,,,Try to complain with your last remaining strength,0,0,0,,DEA_034_/,,,,END
 DEA_033_,,5/,9/,,you are finally awakened from cryogenic sleep. How do you greet the aliens,let me go. I want to go back home and die on Earth,0,0,0,,DEA_037_/,,,,thank you for saving me,0,0,0,,DEA_035_/,,,,END
 DEA_034_,,5/,9/,,After waking up you notice that you are feeling odd,check if your body is ok,0,0,0,,DEA_036_/,,,,It must be the shock<EXMARK>,0,0,-5,,DEA_036_/,,,,END
 DEA_035_,,5/,9/,,Your new alien family likes you but is very confused about your odd attachment to bux. What do you do with your now obsolete currency,build a comfy bed,0,0,0,,DEA_038_/,,,,use it as toilet paper,0,-5,0,,DEA_038_/,,,,END
