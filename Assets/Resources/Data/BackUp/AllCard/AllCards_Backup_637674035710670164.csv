@@ -17,7 +17,7 @@ ADU_014_,,3/,11/,education 2,More University. Maybe I don't want a life. But it 
 ADU_015_,,3/,11/,education 2,You are accepted into university... but your research needs money.,Beg for a grant,0,-10,-5,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
 ADU_016_,,3/,,streamer,Streamer,Hell yeah<EXMARK>,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,Nah,0,0,0,,,,,,END
 ADU_017_,,3/,24/,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No,0,0,0,,,,,,END
-ADU_018_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/,,,,I refuse,-10,-50,20,,,,16/,,END
+ADU_018_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/,,,,I refuse,-10,-50,20,,,,16/,,END
 ADU_019_,,3/,24/,evil_scientist,Evil scientist,Yes,0,0,0,,ADU_021_/,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,25/15/,16/,No,0,0,0,,,,,,END
 ADU_020_,,3/,,middle east,A soul seeking vacation to the Middle East<QUESTION>,Time for a trip<EXMARK>,0,-40,40,,,,7/,,Nah,0,0,0,,,,,,END
 ADU_021_,,3/,25/,minion_help,Being alone makes everything difficult.  You really need help in your... sinister scientific advances.,Hire some minions.,5,5,5,,,,,,Work for an evil corp.,-10,30,-10,,ADU_061_/ADU_022_/ADU_062_/ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,,END
@@ -40,7 +40,7 @@ ADU_037_,Stonk_Bad,3/,,doge,Meme stonks are available to buy...,BUY<EXMARK>,0,-2
 ADU_038_,,3/,,telemarketer,Someone on behalf of tech support says your computer have some issues and need a fix. ,Oh yeah the computer is slow  just let them help,-5,-50,-40,,,,,,Thats not legit  what nonsense<EXMARK> Ignore them.,0,0,0,,,,,,END
 ADU_039_,,3/,,burger flipper,Burger Flipper,Yes<EXMARK>,0,20,-20,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_040_,,3/,17/,team sport,Professional Sports Player,Yes<EXMARK>,0,30,-10,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
-ADU_041_,,3/,4/,criminal,Criminal,Yes<EXMARK>,-10,40,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/,16/,15/,END
+ADU_041_,,3/,4/,criminal,Criminal,Yes<EXMARK>,-10,40,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
 ADU_042_,Chat ask question,3/,23/,chat_stream,Chat asks you a question. ,Hi Chat. Lets chat,0,0,0,,,,,,No chat,0,0,0,,,,,,END
 ADU_043_,follower ask question,3/,43/,streamer,One of your followers asks you a question. ,Yes please.,0,0,0,,,,,,Maybe next time...,0,0,0,,,,,,END
 ADU_044_,you were assassinated,3/,25/,kill_assassinated,You were assassinated. Maybe you should have just done what your master wanted.,I am not afraid of you. I will be back.,-999,0,0,,,,,,FORGET THIS I M OUT,-999,0,0,,,,,,END
@@ -105,15 +105,15 @@ DEA_011_,,5/,0/,death,You entered HELL,Be a prisoner ,0,0,0,,,,,,Be the Hell Lor
 DEA_012_,,5/,2/20/,haven_end,The angels appreciate the virtue you showed in life. You now have an exclusive spot in heaven.,Express gratitude,0,0,0,,DEA_013_/,,,,Look smug leave me alone<EXMARK> ,0,0,0,,DEA_018_/,,,,END
 DEA_013_,,5/,2/20/,angel_tribunal,You are now before the angel council. Spectating a heated debate<EXMARK>,Ask what is going on,0,0,0,,DEA_017_/,,,,This is not your problem. go chill elsewhere,0,0,0,,DEA_014_/,,,,END
 DEA_014_,,5/,2/20/,angel_apple,This haven place is pretty neat.  There are many places where you can relax,Go drink from a radiant fountain,0,0,0,,DEA_016_/,,,,Eat a shiny apple,0,0,0,,DEA_015_/,,,,END
-DEA_015_,,5/,2/20/,angel_apple,Consuming havenly foods has some odd effects. You start feeling odd and lightheaded,What...,0,0,-5,,,,,,Huh,0,0,-5,,,,,,END
-DEA_016_,,5/,2/20/,void,Your conciousness fades into nothingness and your existance fuses with the universe. ,Reincarnate and live again,0,0,0,,,,,,Chill out in the void,0,0,0,,,,,,END
-DEA_017_,,5/,2/20/,angel_tribunal,The angel council is voting on humanity's destiny. Many are arguing that humanity should be exterminated for being evil,Plea for humanity salvation,0,0,0,,DEA_021_/,,,,Do nothing,0,0,0,,DEA_020_/,,,,END
-DEA_018_,,5/,2/20/,haven_end,This does not affect you. However. guilt shall haunt you for the rest of eternity. Do you truly deserve heaven<QUESTION>,Yes,0,0,0,,,,,,Maybe yes,0,0,0,,,,,,END
-DEA_019_,,5/,2/20/,angel_sprite,A compassionate angel feels sorry for you and your kind and tries to convince the council to show mercy.,Thank the angel,0,0,0,,,,,,Shout.Make humanity great again <EXMARK>,0,0,0,,,,,,END
+DEA_015_,,5/,2/20/,,Consuming havenly foods has some odd effects. You start feeling odd and lightheaded,What...,0,0,-5,,,,,,Huh,0,0,-5,,,,,,END
+DEA_016_,,5/,2/20/,,Your conciousness fades into nothingness and your existance fuses with the universe. ,Reincarnate and live again,0,0,0,,,,,,Chill out in the void,0,0,0,,,,,,END
+DEA_017_,,5/,2/20/,,The angel council is voting on humanity's destiny. Many are arguing that humanity should be exterminated for being evil,Plea for humanity salvation,0,0,0,,DEA_021_/,,,,Do nothing,0,0,0,,DEA_020_/,,,,END
+DEA_018_,,5/,2/20/,,This does not affect you. However. guilt shall haunt you for the rest of eternity. Do you truly deserve heaven<QUESTION>,Yes,0,0,0,,,,,,Maybe yes,0,0,0,,,,,,END
+DEA_019_,,5/,2/20/,,A compassionate angel feels sorry for you and your kind and tries to convince the council to show mercy.,Thank the angel,0,0,0,,,,,,Shout.Make humanity great again <EXMARK>,0,0,0,,,,,,END
 DEA_020_,,5/,2/20/,angel_annoyed,An irritated angel looks at you.  She asserts that humanity is indeed unsalvageable from your actions~,No we human really tried to avoid evilness but sadly sometimes we just can't control ourselves. I am sorry,0,0,0,,DEA_019_/,,,,I am not afraid of you. I am right and you are wrong<EXMARK> (Fight),0,0,0,,DEA_022_/,,,,END
-DEA_021_,,5/,2/20/,angel_tribunal,You manage to convince a couple of angels. And there are enough votes to prevent the destruction of humankind.,yay,0,0,0,,DEA_023_/,,,,BOW BEFORE ME,0,0,0,,DEA_022_/,,,,END
+DEA_021_,,5/,2/20/,,You manage to convince a couple of angels. And there are enough votes to prevent the destruction of humankind.,yay,0,0,0,,DEA_023_/,,,,BOW BEFORE ME,0,0,0,,DEA_022_/,,,,END
 DEA_022_,,5/,2/20/,angel_kick,You are kicked from heaven for being too proud. You shall be escorted to hell,Let it be,0,0,0,,,,,,Please No,0,0,0,,,,,,END
-DEA_023_,,5/,2/20/,haven_end,You are in heaven and saved humanity. What more could you ask for,I need nothing,0,0,0,,,,,,I need EVERYING,0,0,10,,,,,,END
+DEA_023_,,5/,2/20/,,You are in heaven and saved humanity. What more could you ask for,I need nothing,0,0,0,,,,,,I need everything,0,0,10,,,,,,END
 DEA_024_,,5/,0/25/,hell_final,You relied on the power of demons in your life... now its time to pay this debt with your soul,Submit to the Overlord of hell,0,0,0,,DEA_026_/,,,,Try to protest,0,0,-5,,DEA_025_/,,,,END
 DEA_025_,,5/,0/25/,hell_overlord,The overlord of hell seems amused by your futile struggling. Perhaps you could get on his good side,Dance for his amusement,0,0,0,,DEA_028_/,,,,Show him the finger,0,0,0,,DEA_031_/,,,,END
 DEA_026_,,5/,0/25/,hell_overlord,The Mighty Overlord is in a good mood today. You shall be his foot rest for the rest of eternity,Yes my lord ,0,0,0,,DEA_027_/,,,,Yes my Overlord,0,0,5,,,,,,END
@@ -138,7 +138,7 @@ GEN_005_,,,11/,fail drop out,You are expelled by the University.,Argue with the 
 GEN_006_,,,12/,fail drop out,You are expelled by the Vocational Training college.,Argue with the school,-10,-20,0,,,,,,Accept the fate,0,0,-15,,,,,12/,END
 GEN_007_,,,,devil,As your scribbles take shape  a pentagram glows amongst your doodles and a demonic voice answers your call - I guess a demon is going to suggest your test’s answers<QUESTION>,...,0,0,0,,,,,,...,0,0,0,,,,,,END
 GEN_008_,,,,exam,Eeek<EXMARK> Cramming for the final exam<EXMARK>,Study Hard<EXMARK> Make your parents proud,-10,30,-10,,,,11/,,Do something fun instead,0,-10,10,,,,,,END
-OLD_000_,,4/,,AD,You have been diagnosed with Alzheimer’s disease.,Guess I’ll die ¯\_( '_' )_/¯,-75,0,-50,,,,8/,,Buy and take medicine,-30,-10,5,,,,,,END
+OLD_000_,,4/,,AD,You have been diagnosed with Alzheimer’s disease.,Guess I’ll die ¯\_(ツ)_/¯,-75,0,-50,,,,8/,,Buy and take medicine,-30,-10,5,,,,,,END
 OLD_001_,,4/,,bird,There are birds in your garden.,Feed them food,0,0,10,,,,,,Catch them... MUHAHAA<EXMARK>,-100,0,10,,,,,,END
 OLD_002_,,4/,,truck,Crossing a busy road  an angry truck rushed at you with high speed… ,use your mighty walking stick to stop the truck and scold the driver,-50,0,-25,,,,,,HURRY up to evade<EXMARK>,-100,0,0,,,,,,END
 OLD_003_,,4/,0/,death,You fall asleep and dream... then you see an evil spirit spinning its body and saying “DIE  DIE  DIE<EXMARK>”,Submit to the spirit peacefully,-100,0,10,,,,0/,,Try to Resist and wake yourself up,-100,0,-50,,,,,,END
