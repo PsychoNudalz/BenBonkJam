@@ -55,11 +55,19 @@ public class AgeChangeAnimationHandler : MonoBehaviour
     {
         KeyboardInput.current.UnlockControls();
         EndBackground();
+        if (Player.current.age.Equals(AgeEnum.DEAD))
+        {
+            CardEventManager.current.LoadGameOverCard();
+        }
+        else
+        {
+            CardEventManager.current.LoadNewCard();
+        }
     }
 
     Vector2 GetTiling(AgeEnum ageEnum)
     {
-        foreach(AgeTilingPair atp in tilingPair)
+        foreach (AgeTilingPair atp in tilingPair)
         {
             if (atp.ageEnum.Equals(ageEnum))
             {

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CardEventManager : MonoBehaviour
 {
+    public static CardEventManager current;
+
     public List<Card> allCards;
     public List<Card> tempCards;
     public List<Card> deathCards;
@@ -34,6 +36,7 @@ public class CardEventManager : MonoBehaviour
 
     private void Start()
     {
+        current = this;
         tempCards = new List<Card>(allCards);
         if (!playerScript)
         {
@@ -49,10 +52,11 @@ public class CardEventManager : MonoBehaviour
         {
             randomPickTry = allCards.Count * 2;
         }
-        LoadNewCard();
-        currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
-
         AgeChangeAnimationHandler.current.PlayAnimation(playerScript.age);
+        //LoadNewCard();
+        //currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
+        //animator.SetTrigger("Next");
+
 
         //Running conversion from old to new Card System
         if (runConverter)
@@ -65,10 +69,16 @@ public class CardEventManager : MonoBehaviour
     public void LoadNewCard()
     {
         UpdatePlayerStatsUI();
+        if (!currentCard)
+        {
+            animator.SetTrigger("Next");
+
+        }
+
 
         Card newCard = null;
 
-        if (currentCard && currentCard.IsEnding&& cardBuffer.Count == 0)
+        if (currentCard && currentCard.IsEnding && cardBuffer.Count == 0)
         {
             CallGameOver();
             return;
@@ -87,25 +97,8 @@ public class CardEventManager : MonoBehaviour
             }
             else
             {
-                print($"Age player: {playerScript.age}");
-                if (isDeathStage)
-                {
-                    newCard = LoadGameOverCard();
-                    if (currentCard.Equals(newCard))
-                    {
-                        CallGameOver();
-                    }
-                    else
-                    {
-                        SetNewCard(newCard);
-                    }
-                    return;
-                }
-                else
-                {
-                    LoadNewCard();
-                    return;
-                }
+
+                return;
             }
         }
 
@@ -137,8 +130,21 @@ public class CardEventManager : MonoBehaviour
         SetNewCard(newCard);
     }
 
+    public void LoadGameOverCard()
+    {
+        Card newCard = PickGameOverCard();
+        if (currentCard.Equals(newCard))
+        {
+            CallGameOver();
+        }
+        else
+        {
+            SetNewCard(newCard);
+        }
+        return;
+    }
 
-    Card LoadGameOverCard()
+    Card PickGameOverCard()
     {
         tempCards = new List<Card>();
         cardBuffer = new List<Card>(deathCards);
@@ -387,7 +393,7 @@ public class CardEventManager : MonoBehaviour
             playerScript.SetAge((int)AgeEnum.DEAD);
             if (!isDeathStage)
             {
-           CameraShake.current.PlayShake(.3f, .4f);
+                CameraShake.current.PlayShake(.3f, .4f);
             }
             return true;
         }
@@ -498,6 +504,9 @@ public class CardEventManager : MonoBehaviour
 
     public void Animation_PlaySound()
     {
-        currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
+        if (currentCard)
+        {
+            currentCard.CardEffectScript.PlaySound(CardSoundEnum.PLAY);
+        }
     }
 }
