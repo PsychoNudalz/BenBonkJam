@@ -25116,7 +25116,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906904587}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1e90526fd855d84c8dd2cf2b178c018, type: 3}
   m_Name: 
@@ -30037,9 +30037,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: bf23592de9751334796d0290df4478af, type: 3}
     - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
-      propertyPath: cardPerAge
+      propertyPath: allCards.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
+      propertyPath: allCards.Array.data[0]
+      value: 
+      objectReference: {fileID: 1481376898587113683, guid: ba4b2ef95da766245829c3f39504ed6e, type: 3}
     - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: EndingUnlocks.Array.size
       value: 13
