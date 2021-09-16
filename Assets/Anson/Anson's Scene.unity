@@ -25121,7 +25121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e90526fd855d84c8dd2cf2b178c018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startEffects: 0000000003000000280000000f00000019000000
+  startEffects: 00000000190000000f000000
 --- !u!114 &1985600314 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5751716910500585729, guid: 2281cb9fa63d8784d8997fb0cd03ad7f, type: 3}
@@ -30026,7 +30026,7 @@ PrefabInstance:
       objectReference: {fileID: 1906904589}
     - target: {fileID: 5130095086612330753, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: cardPerAge
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5130095086973248282, guid: 00ef6671243e5e346b25c78b71a8f0a6, type: 3}
       propertyPath: EndingUnlocks.Array.size
