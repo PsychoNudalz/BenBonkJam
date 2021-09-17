@@ -342,7 +342,8 @@ public class CardEventManager : MonoBehaviour
             }
         }
 
-        isDeathStage = ModifyPlayerStats(values);
+        bool killsPlayer = ModifyPlayerStats(values);
+
         if (sequence.Count > 0)
         {
             WipeBuffer();
@@ -368,6 +369,13 @@ public class CardEventManager : MonoBehaviour
                 playerScript.RemoveStatus(remS);
             }
         }
+
+        if (killsPlayer&&!isDeathStage)
+        {
+            isDeathStage = isDeathStage || killsPlayer;
+            WipeBuffer();
+        }
+
         lastPressTime = Time.time;
         UpdatePlayerStatsUI();
 
