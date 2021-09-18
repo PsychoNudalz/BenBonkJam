@@ -65,7 +65,7 @@ ADU_062_,,3/,25/,clone_evil,You are asked to clone your master,Yes master.,0,0,0
 ADU_063_,,3/,25/,evil_scientist,You are asked to test an experimental serum on yourself,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_065_/ADU_066_/,,,END
 ADU_064_,What even,3/,25/,evil_scientist,What even is this anyway<QUESTION> What ever happened to your choices<QUESTION>,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_065_/ADU_066_/,,,END
 ADU_065_,,3/,25/,,You are asked to build a machine for your master.,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_066_/,,,END
-ADU_066_,,3/,25/,clone_evil,You are asked to power the machine with your soul.,Yes master.,-999,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,,,,END
+ADU_066_,,3/,25/,,You are asked to power the machine with your soul.,Yes master.,-999,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,,,,END
 ADU_067_,,3/,3/19/,pet_adventure_badass_sound,You failed the mission,body hurts,0,-10,0,,,,,,soul hurts,0,0,-10,,,,,,END
 BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END
 BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END
