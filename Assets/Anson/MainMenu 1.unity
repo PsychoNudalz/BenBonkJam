@@ -3192,8 +3192,8 @@ MonoBehaviour:
 
     Hcay - https://hcay.itch.io
 
-    Daniel
-    Newsom - https://www.danielnewsom.co.uk/
+    Daniel Newsom
+    - https://www.danielnewsom.co.uk/
 
     Jimmy Yau - https://soundcloud.com/jimmy_yau'
   m_isRightToLeft: 0
@@ -17147,6 +17147,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6465122462911353293, guid: 601b5790ad53f7b4fa6bba7a95db4b23, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3bfa2e0f8045310418db42b8efef85e1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 601b5790ad53f7b4fa6bba7a95db4b23, type: 3}
 --- !u!114 &1424179777 stripped
