@@ -136,37 +136,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7480651368630108165}
     m_Modifications:
-    - target: {fileID: 8161021720503284764, guid: 2e53530cb72fc24409484945f4373983, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8161021720503284764, guid: 2e53530cb72fc24409484945f4373983, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8161021720503284764, guid: 2e53530cb72fc24409484945f4373983, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 8161021720503284764, guid: 2e53530cb72fc24409484945f4373983, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 8161021720503284765, guid: 2e53530cb72fc24409484945f4373983, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8161021720503284765, guid: 2e53530cb72fc24409484945f4373983, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.3167696
-      objectReference: {fileID: 0}
-    - target: {fileID: 8161021720503284765, guid: 2e53530cb72fc24409484945f4373983, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4.3167696
-      objectReference: {fileID: 0}
-    - target: {fileID: 8161021720503284765, guid: 2e53530cb72fc24409484945f4373983, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 4.3167696
       objectReference: {fileID: 0}
     - target: {fileID: 8161021720503284765, guid: 2e53530cb72fc24409484945f4373983, type: 3}
       propertyPath: m_LocalPosition.x
