@@ -87,7 +87,7 @@ CHI_007_,,1/,,gaming,Play games for how long<QUESTION>,Play for an hour,0,0,5,,,
 CHI_008_,unicorn for christmas,1/,,unicorn_pet,Do you want a unicorn for christmas<QUESTION>,PLEASE YES PLEASE,10,0,10,,,,32/,,they don't exist,-2,0,-7,,,,,,END
 CHI_009_,,1/,,team sport,You play some team sports,Impress your crush,0,0,10,,,,,,Tackle the school bully,-20,0,-5,,,,,,END
 CHI_010_,,1/,,ouja_board,You found a Ouija board in your parents room,Read the instructions and try to use it,-5,0,5,,,,21/,,I am too scared of the occult :(,-5,0,-5,,,,,,END
-CHI_011_,,1/,,sloth vs ant,Pretend to be...,A sloth (LAZYNESS FTW),0,-10,15,,,,,,An ant (SIGMA GRINDSET),0,5,0,,,,,,END
+CHI_011_,,1/,,sloth vs ant,Pretend to be...,A sloth (Lazy),0,-10,10,,,,,,An ant (Hard working),0,20,0,,,,,,END
 CHI_012_,,1/,,schoolskip,Skip school today<QUESTION>,Yes school SUX,0,-5,10,,,,,,No,0,0,-10,,,,,,END
 CHI_013_,,1/2/3/4/,,food,A delicious burger has appeared on the table<EXMARK>,Eat<EXMARK> ,-10,0,10,,,,,,No junk food  don't eat,20,0,0,,,,,,END
 DEA_000_,,5/,9/,alien,After your death  you become an alien,Be an ordinary resident in an other galaxy,0,0,0,,,,,,Be a space traveller in your spaceship,0,0,0,,,,,,END
@@ -149,7 +149,7 @@ OLD_007_,,4/,,martial art,A Chinese martial art class is out  maybe I can join a
 OLD_008_,,4/,13/,will,Time to write a will,Give to children,-30,30,30,13/,,,,,Donate to charity,-10,-5,5,,,,,,END
 TEE_000_,,2/,,bird poop,A bird poops on you,Curse at it,0,0,0,,,,,,Maybe it's a sign of luck,0,0,0,,,,,,END
 TEE_001_,Pineapple on pizza,2/,,pineapple_pizza,Pineapple on pizza<QUESTION>,Yes<EXMARK>,0,0,0,,,,,,This should be a crime,0,0,0,,,,,,END
-TEE_002_,,2/,,soulmate,Dating...,Find Soulmate,0,-20,20,,,,20/,,Stay single,0,0,-5,,,,,,END
+TEE_002_,,2/,,soulmate,Dating...,Find Soulmate,0,0,20,,,,20/,,Find Others,0,0,5,,,,,,END
 TEE_003_,,2/,,driving test,Driving test soon  practice<QUESTION>,Practice,0,-10,0,,,,18/,,Don't practice,0,0,0,,,,,,END
 TEE_004_,,2/,10/,education 2,Education 2  Electric Boogaloo,University,0,-10,-10,,GEN_008_/,,,,Vocational Training,0,-10,-5,,,,12/,,END
 TEE_005_,,2/,,education 2,Do I continue high school<QUESTION>,Highschool,0,-10,-10,,,,10/,,Dropout,0,0,0,,,,16/,,END
@@ -163,4 +163,4 @@ TEE_012_,,2/,,bluelight,A weird blue light appears...,Must be a display...(Ignor
 TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event<EXMARK>,Eat well  stay fit,20,0,0,,,,17/,,Eat delicious junk food,0,0,20,,,,,,END
 TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,TEE_015_/,,,Force yourself to train,-25,0,0,,TEE_015_/,,,,END
 TEE_015_,,2/,,sick,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament<EXMARK> Keep going<EXMARK>,-100,0,-25,,,,8/,,END
-TEE_016_,,2/,,whey,Choices for competitive team sports...,Eat Chicken and broccoli,15,0,-15,,TEE_014_/,,,,Get Protein Shakes ,10,-15,0,,TEE_014_/,,,,END
+TEE_016_,,2/,,whey,Choices for competitive team sports...,Eat Chicken and broccoli,15,0,0,,TEE_014_/,,,,Get Protein Shakes ,-15,-5,5,,TEE_014_/,,,,END

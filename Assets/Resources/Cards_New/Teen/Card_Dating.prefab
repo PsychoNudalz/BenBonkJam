@@ -16,12 +16,16 @@ PrefabInstance:
       value: Dating
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
+      propertyPath: headsOption.bux
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: headsOption.mood
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsOption.mood
-      value: 5
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: cardDescriptionText
@@ -37,7 +41,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: tailsDescriptionText
-      value: Find Others
+      value: Stay single
       objectReference: {fileID: 0}
     - target: {fileID: -2587406193006211280, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: ageNeeded.Array.data[0]
@@ -101,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_text
-      value: Find Others
+      value: Stay single
       objectReference: {fileID: 0}
     - target: {fileID: 3946193657743435847, guid: 1410b046bc1818142ac5be1cb1e5b5f8, type: 3}
       propertyPath: m_fontSize
