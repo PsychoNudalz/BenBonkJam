@@ -15,7 +15,7 @@ ADU_012_,,3/,9/,ufo,UFOlogist,Yes<EXMARK>,20,20,20,,,ADU_017_/ADU_039_/ADU_040_/
 ADU_013_,,3/,,zookeeper,Zookeeper,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/47/,16/,No,0,0,0,,,,,,END
 ADU_014_,,3/,11/,education 2,More University. Maybe I don't want a life. But it will cost much of my mood and money.,Why not<QUESTION>,-30,-30,-30,,,,24/,11/10/,No<EXMARK> It will be too much<EXMARK>,0,0,0,,,,,,END
 ADU_015_,,3/,11/,education 2,You are accepted into university... but your research needs money.,Beg for a grant,0,-10,-5,,,,,,I'm rich and can fund it,0,0,0,,,,,,END
-ADU_016_,,3/,,streamer,Streamer,POG<EXMARK>,0,0,5,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,Nah,0,0,0,,,,,,END
+ADU_016_,,3/,,streamer,Streamer,Hell yeah<EXMARK>,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,Nah,0,0,0,,,,,,END
 ADU_017_,,3/,24/,mad_scientist,Good scientist - Use your education status for the good of humanity,Yes,0,0,0,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,15/,16/,No,0,0,0,,,,,,END
 ADU_018_,,3/,,job needs you,Time to find a job.....,Okay  Society,0,0,10,,ADU_019_/ADU_017_/ADU_039_/ADU_040_/ADU_041_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/,,,,I refuse,-10,-50,20,,,,16/,,END
 ADU_019_,,3/,24/,evil_scientist,Evil scientist,Yes,0,0,0,,ADU_021_/,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/ADU_019_/,25/15/,16/,No,0,0,0,,,,,,END
@@ -24,7 +24,7 @@ ADU_021_,,3/,25/,minion_help,Being alone makes everything difficult.  You really
 ADU_022_,,3/,25/,rocket,You are asked to build a rocket for your master.,Yes  my liege,-20,50,-25,,,,,,FORGET THIS I'M OUT,-5,-10,-10,,ADU_044_/,ADU_062_/ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,END
 ADU_023_,How do you respond on TV,3/,43/,TV,Someone calls your station and asks... How do you respond on TV<QUESTION>,,0,0,0,,,,,,,0,0,0,,,,,,END
 ADU_024_,Play the lottery,3/,,lotttery,Play the lottery<QUESTION>,Let's see my luck,0,75,-10,,,,,,Forget it,0,0,0,,,,,,END
-ADU_025_,,3/,,telemarketer,Tech support.  Does not seem legit though,Accept their help,0,0,0,,,,,,IT'S A TRAP,0,0,0,,,,,,END
+ADU_025_,,3/,,,Tech support.  Does not seem legit though,Accept their help,0,0,0,,,,,,IT'S A TRAP,0,0,0,,,,,,END
 ADU_026_,Olympics,3/,17/,olympics,You are being invited to take part in the Olympics,I shall accept the oppertunity of a lifetime,25,15,30,,,,,,Nah.  Too much effort.,-12,0,-30,,,,,,END
 ADU_027_,Rob a bank,3/,4/,rob bank,Rob a bank<QUESTION>,Hell yeah<EXMARK>,-10,80,-25,,,,,,No.  Too risky.,0,0,-10,,,,,,END
 ADU_028_,,3/,4/,rob bank,You were caught robbing a bank,I'm innocent<EXMARK>,0,0,0,,,,,,Yes it was me,0,0,0,,,,,,END
@@ -64,8 +64,8 @@ ADU_061_,,3/,25/,evil lair,You are asked to build a lair for your master,Yes mas
 ADU_062_,,3/,25/,clone_evil,You are asked to clone your master,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_063_/ADU_064_/ADU_065_/ADU_066_/,,,END
 ADU_063_,,3/,25/,evil_scientist,You are asked to test an experimental serum on yourself,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_065_/ADU_066_/,,,END
 ADU_064_,What even,3/,25/,evil_scientist,What even is this anyway<QUESTION> What ever happened to your choices<QUESTION>,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_065_/ADU_066_/,,,END
-ADU_065_,,3/,25/,evil_scientist,You are asked to build a machine for your master.,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_066_/,,,END
-ADU_066_,,3/,25/,evil_scientist,You are asked to power the machine with your soul.,Yes master.,-999,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,,,,END
+ADU_065_,,3/,25/,,You are asked to build a machine for your master.,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_066_/,,,END
+ADU_066_,,3/,25/,clone_evil,You are asked to power the machine with your soul.,Yes master.,-999,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,,,,END
 ADU_067_,,3/,3/19/,pet_adventure_badass_sound,You failed the mission,body hurts,0,-10,0,,,,,,soul hurts,0,0,-10,,,,,,END
 BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END
 BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END
@@ -163,4 +163,4 @@ TEE_012_,,2/,,bluelight,A weird blue light appears...,Must be a display...(Ignor
 TEE_013_,,2/,,team sport,You entered the finals in the sports tournament event<EXMARK>,Eat well  stay fit,20,0,0,,,,17/,,Eat delicious junk food,0,0,20,,,,,,END
 TEE_014_,,2/,,injury,You got Injured...,Rest and heal,0,0,-10,,TEE_013_/,TEE_015_/,,,Force yourself to train,-25,0,0,,TEE_015_/,,,,END
 TEE_015_,,2/,,sick,Your body is failing  you feel so ill...,Give up and rest,0,0,-25,,,,,8/,Never give up the tournament<EXMARK> Keep going<EXMARK>,-100,0,-25,,,,8/,,END
-TEE_016_,,2/,,whey,Choices for competitive team sports...,Eat Chicken and broccoli,15,0,0,,TEE_014_/,,,,Get Protein Shakes ,-15,-5,5,,TEE_014_/,,,,END
+TEE_016_,,2/,,whey,Choices for competitive team sports...,Stay Clean,5,0,0,,TEE_014_/,,,,Get Protein Shakes ,-15,-5,5,,TEE_014_/,,,,END
