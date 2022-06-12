@@ -6,14 +6,16 @@ using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
-    public Button mainMenu;
-    public Button resume;
-    public Button yesButton;
-    public Button noButton;
+    [Header("Pause Menu Buttons")]
+    [SerializeField] private Button mainMenu;
+    [SerializeField] private Button resume;
+    [SerializeField] private Button yesButton;
+    [SerializeField] private Button noButton;
 
-    public GameObject pauseCanvas;
-    public GameObject areYouSureCanvas;
-    public GameObject mainPauseCanvas;
+    [Header("Game Objects")]
+    [SerializeField] private GameObject pauseCanvas;
+    [SerializeField] private GameObject areYouSureCanvas;
+    [SerializeField] private GameObject mainPauseCanvas;
 
     void Start()
     {
