@@ -71,5 +71,5 @@ Material:
     m_Colors:
     - Vector2_43a759b22100446d808a8284015b01b9: {r: 0, g: 1, b: 0, a: 0}
     - Vector2_6230853bbfd04db0b67ac4c8f5440615: {r: 0, g: 1, b: 0, a: 0}
-    - _TileSize: {r: 6, g: 7, b: 0, a: 0}
+    - _TileSize: {r: 4, g: 5, b: 0, a: 0}
   m_BuildTextureStacks: []
