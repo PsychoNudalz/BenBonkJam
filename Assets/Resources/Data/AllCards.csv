@@ -1,4 +1,4 @@
-Card ID,Card Details,Ages Neede,Status Needed,Card Sprite Name,Card Description,Heads Description,Heads Health,Heads Bux,Heads Mood,Heads Required Status,Heads Sequence Cards Add,Heads Sequence Cards Remove,Heads Status Add,Heads Status Remove,Tails Description,Tails Health,Tails Bux,Tails Mood,Tails Required Status,Tails Sequence Cards Add,Tails Sequence Cards Remove,Tails Status Add,Tails Status Remove,END  Rules: Age and stats must be in integer.  Set a card detail if description contains special characters,
+Card ID,Card Details,Ages Neede,Status Needed,Card Sprite Name,Card Description,Heads Description,Heads Health,Heads Bux,Heads Mood,Heads Required Status,Heads Sequence Cards Add,Heads Sequence Cards Remove,Heads Status Add,Heads Status Remove,Tails Description,Tails Health,Tails Bux,Tails Mood,Tails Required Status,Tails Sequence Cards Add,Tails Sequence Cards Remove,Tails Status Add,Tails Status Remove,END  Rules: Age and stats must be in integer.  Set a card detail if description contains special characters
 ADU_000_,,3/,,nigerian prince,A Nigerian Prince needs your help<EXMARK>,Help this fine man,0,-40,-20,,,,2/,,Move to SPAM,0,0,0,,,,,,END
 ADU_001_,,3/,,dogo,Adopt a dog<QUESTION>,Adopt,0,-5,30,,,,3/,,Nah..,0,0,0,,,,,,END
 ADU_002_,,3/,12/,plumber,Plumber,Yes<EXMARK>,0,20,-15,,,ADU_017_/ADU_039_/ADU_040_/ADU_041_/GEN_000_/ADU_002_/ADU_004_/ADU_006_/ADU_007_/ADU_009_/ADU_012_/ADU_016_/ADU_013_/,15/,16/,No... Next Job,0,0,0,,,,16/,15/,END
@@ -66,14 +66,6 @@ ADU_064_,What even,3/,25/,evil_scientist,What even is this anyway<QUESTION> What
 ADU_065_,,3/,25/,,You are asked to build a machine for your master.,Yes master.,0,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,ADU_066_/,,,END
 ADU_066_,,3/,25/,clone_evil,You are asked to power the machine with your soul.,Yes master.,-999,0,0,,,,,,FORGET THIS IM OUT,0,0,0,,ADU_044_/,,,,END
 ADU_067_,,3/,3/19/,pet_adventure_badass_sound,You failed the mission,body hurts,0,-10,0,,,,,,soul hurts,0,0,-10,,,,,,END
-BAB_000_,,0/,,battery,You see a battery on the floor,Play with battery,0,0,5,,,,,,Eat battery,-100,0,15,,,,22/,,END
-BAB_001_,,0/,,babyannoiyin,Behave... or not,Cry,0,0,-20,,,,,,Sleep,0,0,5,,,,,,END
-BAB_002_,,0/,,babyannoiyin,...,Googoo,5,0,5,,,,,,Gaagaa,-5,0,5,,,,,,END
-BAB_003_,,0/,,baby scream noise,Make a Noise,AWWWW LOOOUUD,0,0,10,,,,,,Mild,0,0,-15,,,,,,END
-BAB_004_,,0/,,babyannoiyin,...,Mommy,0,0,20,,,,,,Daddy,0,20,-10,,,,,,END
-BAB_005_,,0/,,socket,Play with a mysterious fissure in the wall...,Insert a coin...,-100,0,-50,,,,22/,,Look for something else,0,0,0,,,,,,END
-BAB_006_,,0/,,poop,RELEASE THE FLOOD GATES<EXMARK>,Sweet relief<EXMARK>,0,0,10,,,,,,HOLD IT<EXMARK><EXMARK><EXMARK>,-10,0,-10,,,,,,END
-BAB_007_,,0/,,sus noise,You hear squeaking noises from the ceiling,Investigate,0,0,10,,,,,,Ignore,0,0,0,,,,,,END
 BAB_008_,,0/,,vase,Push the vase off the table<QUESTION>,YES<EXMARK> Muhahaa I am the destroyer,0,0,10,,,,,,Nah mommy will be sad,0,0,0,,,,,,END
 CHI_000_,,1/,,Choices,What do you want for your birthday<QUESTION>,Action Figure,0,0,20,,,,,,Firetruck,20,0,0,,,,,,END
 CHI_001_,,1/,,note,You find a strange note in class...,Prepare cheat notes for the test,0,0,10,,CHI_004_/,,,,Make a neat airplane,0,5,-10,,,,,,END
