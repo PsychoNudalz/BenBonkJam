@@ -35,6 +35,7 @@ public class CardHandlerWindow : EditorWindow
         GUILayout.Label("Remeber to save ctrl+s", EditorStyles.boldLabel);
         GUILayout.Label("And also Uncheck and Check the card handler and apply the prefab", EditorStyles.boldLabel);
         GUILayout.Label("And apply the prefab", EditorStyles.boldLabel);
+        GUILayout.Label("To delete cards, remove the prefab and delete from the CSV file.", EditorStyles.boldLabel);
         GUILayout.Space(10);
 
         GUILayout.Label("Card Handler", EditorStyles.boldLabel);
