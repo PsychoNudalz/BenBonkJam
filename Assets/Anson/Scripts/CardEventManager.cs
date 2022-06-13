@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// controls what cards are drawn.
 public class CardEventManager : MonoBehaviour
 {
     public static CardEventManager current;
@@ -243,6 +244,8 @@ public class CardEventManager : MonoBehaviour
         return true;
     }
 
+
+    // Destroys the previous card and instantiates a new card.
     void SetNewCard(Card newCard)
     {
         if (previousCard)

@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 
 [System.Serializable]
+// This script controls the card that is played and what the card's effect is.
 public struct CardOption
 {
     [Header("Stats")]
