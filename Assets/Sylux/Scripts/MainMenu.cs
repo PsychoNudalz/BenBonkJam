@@ -103,7 +103,6 @@ public class MainMenu : MonoBehaviour
 
     public void DisableHelp()
     {
-        helpCanvas.SetActive(false);
         helpCanvasPage1.SetActive(false);
         helpCanvasPage2.SetActive(false);
         helpCanvasPage3.SetActive(false);
