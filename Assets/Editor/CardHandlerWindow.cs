@@ -23,20 +23,27 @@ public class CardHandlerWindow : EditorWindow
         GUILayout.Label("There must be a card handler in the scene", EditorStyles.boldLabel);
         if (cardHandler)
         {
-            GUILayout.Label("Clear", EditorStyles.boldLabel);
+            GUILayout.Label("Card Handler Present", EditorStyles.boldLabel);
 
         }
         else
         {
-            GUILayout.Label("MISSING", EditorStyles.boldLabel);
+            GUILayout.Label("Card Handler MISSING", EditorStyles.boldLabel);
 
         }
 
-        GUILayout.Label("Remeber to save ctrl+s", EditorStyles.boldLabel);
+        GUILayout.Label("Remember to save ctrl+s", EditorStyles.boldLabel);
         GUILayout.Label("And also Uncheck and Check the card handler and apply the prefab", EditorStyles.boldLabel);
         GUILayout.Label("And apply the prefab", EditorStyles.boldLabel);
         GUILayout.Space(10);
-
+        GUILayout.Label("Adding Cards", EditorStyles.boldLabel);
+        GUILayout.Label("1.	Go to the card handler scene.\n2.Create a new prefab of the card.\n3.Add the new card to the card handler." +
+    "\n4.Sort the cards in the Card Handler Window.\n5.Set card ID.\n6.Full save to CSV.", EditorStyles.boldLabel);
+        GUILayout.Space(10);
+        GUILayout.Label("Deleting Cards", EditorStyles.boldLabel);
+        GUILayout.Label("1.	Go to the card handler scene.\n2.Delete the prefab of the card in the assets folder.\n3.Remove the ‘missing’ card array in the CardHandler." +
+            "\n4.Sort the cards in the Card Handler Window.\n5.Set card ID.\n6.Full save to CSV.", EditorStyles.boldLabel);
+        GUILayout.Space(10);
         GUILayout.Label("Card Handler", EditorStyles.boldLabel);
         if (GUILayout.Button("Sort Cards"))
         {
