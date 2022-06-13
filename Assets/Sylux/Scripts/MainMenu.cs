@@ -6,40 +6,52 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public Canvas mainCanvas;
-    public Canvas helpCanvas;
-    public Canvas creditsCanvas;
-    public Canvas optionsCanvas;
-    public Canvas statsCanvas;
+    [Header("Canvases")]
+    [SerializeField] private Canvas mainCanvas;
+    [SerializeField] private Canvas creditsCanvas;
+    [SerializeField] private Canvas optionsCanvas;
+    [SerializeField] private Canvas statsCanvas;
 
-    // credits objects
-    public GameObject mainCredits;
-    public GameObject sfxCredits1;
-    public GameObject sfxCredits2;
-    public GameObject sfxCredits3;
+    [Header("Help Canvases")]
+    [SerializeField] private GameObject helpCanvas;
+    [SerializeField] private GameObject helpCanvasPage1;
+    [SerializeField] private GameObject helpCanvasPage2;
+    [SerializeField] private GameObject helpCanvasPage3;
 
-    //stats objects
-    public Canvas statisticsCanvas;
-    public Canvas achievementsCanvas;
-    public Canvas endingsCanvas;
+    [Header("Credits Objects")]
+    [SerializeField] private GameObject mainCredits;
+    [SerializeField] private GameObject sfxCredits1;
+    [SerializeField] private GameObject sfxCredits2;
+    [SerializeField] private GameObject sfxCredits3;
 
-    //achievements Canvas
-    public Canvas achievementsCanvas2;
-    public Canvas achievementsCanvas3;
+    [Header("Stats Objects")]
+    [SerializeField] private Canvas statisticsCanvas;
+    [SerializeField] private Canvas achievementsCanvas;
+    [SerializeField] private Canvas endingsCanvas;
 
-    // endings Canvas
-    public Canvas endingsCanvas2;
-    public Canvas endingCanvas3;
+    [Header("Achievements Canvas")]
+    [SerializeField] private Canvas achievementsCanvas2;
+    [SerializeField] private Canvas achievementsCanvas3;
+
+    [Header("Ending Canvas")]
+    [SerializeField] private Canvas endingsCanvas2;
+    [SerializeField] private Canvas endingCanvas3;
 
     void Start()
+    {
+        DisableAllUI();
+        mainCanvas.enabled = true;
+    }
+
+    public void DisableAllUI()
     {
         endingsCanvas2.enabled = false;
         endingCanvas3.enabled = false;
         achievementsCanvas2.enabled = false;
         achievementsCanvas3.enabled = false;
-        mainCanvas.enabled = true;
+        mainCanvas.enabled = false;
         statsCanvas.enabled = false;
-        helpCanvas.enabled = false;
+        helpCanvas.SetActive(false);
         creditsCanvas.enabled = false;
         statisticsCanvas.enabled = false;
         achievementsCanvas.enabled = false;
@@ -61,14 +73,9 @@ public class MainMenu : MonoBehaviour
 
     public void Stats()
     {
-        mainCanvas.enabled = false;
-        helpCanvas.enabled = false;
-        creditsCanvas.enabled = false;
+        DisableAllUI();
         statsCanvas.enabled = true;
         achievementsCanvas.enabled = true;
-        endingsCanvas.enabled = false;
-        endingsCanvas2.enabled = false;
-        endingCanvas3.enabled = false;
     }
 
     public void Options()
@@ -86,9 +93,35 @@ public class MainMenu : MonoBehaviour
     public void Help()
     {
         mainCanvas.enabled = false;
-        helpCanvas.enabled = true;
+        DisableHelp();
+        helpCanvas.SetActive(true);
+        helpCanvasPage1.SetActive(true);
         creditsCanvas.enabled = false;
     }
+
+    #region Help
+
+    public void DisableHelp()
+    {
+        helpCanvas.SetActive(false);
+        helpCanvasPage1.SetActive(false);
+        helpCanvasPage2.SetActive(false);
+        helpCanvasPage3.SetActive(false);
+    }
+
+    public void Help2()
+    {
+        DisableHelp();
+        helpCanvasPage2.SetActive(true);
+    }
+
+    public void Help3()
+    {
+        DisableHelp();
+        helpCanvasPage3.SetActive(true);
+
+    }
+    #endregion
 
     //statisticsMenu
     #region statistics
@@ -152,10 +185,16 @@ public class MainMenu : MonoBehaviour
     #region Credits
     public void Credits()
     {
-        mainCanvas.enabled = false;
+        DisableAllCredits();
         creditsCanvas.enabled = true;
-        helpCanvas.enabled = false;
         mainCredits.SetActive(true);
+    }
+
+    public void DisableAllCredits()
+    {
+        mainCanvas.enabled = false;
+        helpCanvas.SetActive(false);
+        mainCredits.SetActive(false);
         sfxCredits1.SetActive(false);
         sfxCredits2.SetActive(false);
         sfxCredits3.SetActive(false);
@@ -163,37 +202,26 @@ public class MainMenu : MonoBehaviour
 
     public void SFXCreditsOne()
     {
-        mainCredits.SetActive(false);
+        DisableAllCredits();
         sfxCredits1.SetActive(true);
-        sfxCredits2.SetActive(false);
-        sfxCredits3.SetActive(false);
     }
 
     public void SFXCreditsTwo()
     {
-        mainCredits.SetActive(false);
-        sfxCredits1.SetActive(false);
+        DisableAllCredits();
         sfxCredits2.SetActive(true);
-        sfxCredits3.SetActive(false);
     }
 
     public void SFXCreditsThree()
     {
-        mainCredits.SetActive(false);
-        sfxCredits1.SetActive(false);
-        sfxCredits2.SetActive(false);
+        DisableAllCredits();
         sfxCredits3.SetActive(true);
     }
     #endregion
     public void backToMain()
     {
+        DisableAllUI();
         mainCanvas.enabled = true;
-        helpCanvas.enabled = false;
-        creditsCanvas.enabled = false;
-        statsCanvas.enabled = false;
-        achievementsCanvas.enabled = false;
-        statisticsCanvas.enabled = false;
-        endingsCanvas.enabled = false;
     }
 
     public void Quit()
