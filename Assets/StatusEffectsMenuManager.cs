@@ -4,17 +4,7 @@ using UnityEngine;
 
 public enum StatusEffectsEnum
 {
-    gradeSObtained,
-    statusEffects10Obtained,
-    educationMaxedOut,
-    oldAgeObtained,
-    die50Times,
-    adoptAllPossibleAnimals,
-    dieAsABaby,
-    dieAtOldAgeWith100Mood,
-    dieAtOldAgeWith100Bux,
-    haveChildren,
-    getScammed
+    PetHamster
 }
 
 // this is part of the achievements menu in the main menu

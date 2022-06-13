@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+// grabs the player stats that are found in the stats menu.
 public class PlayerStatsLoader : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timesDied;

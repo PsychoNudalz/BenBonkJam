@@ -349,11 +349,11 @@ public class GameDataManager : MonoBehaviour
         public List<StatusEffectsEnum> earnedStatusEffects = new List<StatusEffectsEnum>();
 
         // stats
-        public bool hamster;
+        public bool PetHamster;
 
-        public StatusEffectsUnlocked(bool hamster)
+        public StatusEffectsUnlocked(bool PetHamster)
         {
-            this.hamster = hamster;
+            this.PetHamster = PetHamster;
 
             /*
             this.gradeSObtained = gradeSObtained;
@@ -366,7 +366,7 @@ public class GameDataManager : MonoBehaviour
 
         public StatusEffectsUnlocked()
         {
-            this.hamster = false;
+            this.PetHamster = false;
 
             /*
             this.gradeSObtained = false;

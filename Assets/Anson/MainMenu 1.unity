@@ -23115,6 +23115,9 @@ MonoBehaviour:
   endingsUnlocked:
     earnedEndings: 
   statusesGained: []
+  statusEffectsUnlocked:
+    earnedStatusEffects: 
+    PetHamster: 0
 --- !u!4 &1679239963
 Transform:
   m_ObjectHideFlags: 0
@@ -29454,6 +29457,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 586688203478040056, guid: 25c756e054174cb4aa1183370aebe972, type: 3}
+      propertyPath: m_Name
+      value: EndingsTitleText
+      objectReference: {fileID: 0}
     - target: {fileID: 659489117661237244, guid: 25c756e054174cb4aa1183370aebe972, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -29662,6 +29669,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5789268511436335851, guid: 25c756e054174cb4aa1183370aebe972, type: 3}
+      propertyPath: m_Name
+      value: StatusEffectsTitleText
+      objectReference: {fileID: 0}
     - target: {fileID: 6920964577102956817, guid: 25c756e054174cb4aa1183370aebe972, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -29838,6 +29849,9 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1294817939593804079, guid: 25c756e054174cb4aa1183370aebe972, type: 3}
+    - target: {fileID: 8676730755875249257, guid: 25c756e054174cb4aa1183370aebe972, type: 3}
+      propertyPath: m_Name
+      value: AchievementsTitleText
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25c756e054174cb4aa1183370aebe972, type: 3}

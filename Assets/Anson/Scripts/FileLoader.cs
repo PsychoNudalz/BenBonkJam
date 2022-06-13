@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+// works with the card manager.
 public static class FileLoader
 {
 

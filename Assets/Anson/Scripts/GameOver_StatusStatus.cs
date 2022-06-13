@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
+// controls the animations for the game over
 public class GameOver_StatusStatus : MonoBehaviour
 {
     [SerializeField] Image image;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+// controls the game over stats UI
 public class GameOverController : MonoBehaviour
 {
     [SerializeField] Animator animator;

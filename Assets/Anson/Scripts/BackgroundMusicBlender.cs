@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+// controls the music that should play and the fading.
 [System.Serializable]
 public class BackgroundMusic
 {

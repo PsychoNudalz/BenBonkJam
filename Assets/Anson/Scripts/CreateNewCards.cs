@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-
+// works with the card manager
 public static class CreateNewCards
 {
     public static GameObject[] CreateNewCard(CardHandler cardHandler, GameObject baseCard, CardSave cs, string cardName = null)
