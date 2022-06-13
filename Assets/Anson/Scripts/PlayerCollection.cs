@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
+// connects with the achievements.
 public class PlayerCollection
 {
     [SerializeField] string collectionName;
@@ -37,4 +38,15 @@ public class EndingCollection : PlayerCollection
     [SerializeField] EndingEnum endingEnum;
 
     public EndingEnum EndingEnum { get => endingEnum; set => endingEnum = value; }
+}
+
+
+[System.Serializable]
+
+public class StatusEffectsCollecton : PlayerCollection
+{
+    [Header("Status Effects")]
+    [SerializeField] StatusEffectsEnum statusEffectsEnum;
+
+    public StatusEffectsEnum StatusEffectsEnum { get => statusEffectsEnum; set => statusEffectsEnum = value; }
 }

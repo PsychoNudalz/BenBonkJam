@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum AchievementEnum
+public enum StatusEffectsEnum
 {
     gradeSObtained,
     statusEffects10Obtained,
@@ -21,12 +21,12 @@ public enum AchievementEnum
 public class StatusEffectsMenuManager : PlayerCollectionManager
 {
     [Header("Achiements")]
-    [SerializeField] AchievementCollection[] achievementCollections;
+    [SerializeField] StatusEffectsCollecton[] statusEffectsCollectons;
     // Start is called before the first frame update
     void Start()
     {
         playerCollections = new List<PlayerCollection>();
-        playerCollections.AddRange(achievementCollections);
+        playerCollections.AddRange(statusEffectsCollectons);
         LoadIsUnlocked();
         LoadButtons();
 
@@ -55,20 +55,20 @@ public class StatusEffectsMenuManager : PlayerCollectionManager
             return;
         }
 
-        foreach (AchievementCollection ac in achievementCollections)
+        foreach (StatusEffectsCollecton se in statusEffectsCollectons)
         {
-            CardIsUnlocked(gameDataManager, ac);
+            CardIsUnlocked(gameDataManager, se);
 
         }
 
     }
 
-    private static void CardIsUnlocked(GameDataManager gameDataManager, AchievementCollection ac)
+    private static void CardIsUnlocked(GameDataManager gameDataManager, StatusEffectsCollecton se)
     {
 
-        if (gameDataManager.Achievements1.earnedAchievements.Contains(ac.AchievementEnum))
+        if (gameDataManager.StatusEffectsUnlocked1.earnedStatusEffects.Contains(se.StatusEffectsEnum))
         {
-            ac.IsUnlocked = true;
+            se.IsUnlocked = true;
         }
 
         /*

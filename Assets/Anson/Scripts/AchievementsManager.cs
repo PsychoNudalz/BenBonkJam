@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum StatusEffectsEnum
+// this script handles achievements in the main menu. Checks the gamedatamanager if an achievement is unlocked, then puts it in the scene.
+public enum AchievementEnum
 {
     gradeSObtained,
     statusEffects10Obtained,
@@ -63,6 +64,7 @@ public class AchievementsManager : PlayerCollectionManager
 
     }
 
+    // Check game data manager if achievement unlocked.
     private static void CardIsUnlocked(GameDataManager gameDataManager, AchievementCollection ac)
     {
 

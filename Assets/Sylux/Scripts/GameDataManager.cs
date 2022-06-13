@@ -20,11 +20,14 @@ public class GameDataManager : MonoBehaviour
     [SerializeField] EndingsUnlocked endingsUnlocked = new EndingsUnlocked();
     [SerializeField] List<StatusEffect> statusesGained = new List<StatusEffect>();
 
+    [SerializeField] StatusEffectsUnlocked statusEffectsUnlocked = new StatusEffectsUnlocked();
+
 
     public static GameDataManager gameDataManagerInstance;
 
     public Achievements Achievements1 { get => achievements; set => achievements = value; }
     public EndingsUnlocked EndingsUnlocked1 { get => endingsUnlocked; set => endingsUnlocked = value; }
+    public StatusEffectsUnlocked StatusEffectsUnlocked1 { get => statusEffectsUnlocked; set => statusEffectsUnlocked = value; }
 
     private void Awake()
     {
@@ -70,6 +73,27 @@ public class GameDataManager : MonoBehaviour
             Debug.LogWarning($"Endings save file not found!");
             endingsUnlocked = new EndingsUnlocked();
         }
+
+        // load Status Effects
+        
+        filePath = $"{Application.persistentDataPath}/Save/statusEffects.save";
+        if (File.Exists(filePath))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(filePath, FileMode.Open);
+
+            string json3 = (string)formatter.Deserialize(stream);
+            statusEffectsUnlocked = JsonUtility.FromJson<StatusEffectsUnlocked>(json3);
+            stream.Close();
+            //Debug.Log("Load player Save clear");
+        }
+        else
+        {
+            Debug.LogWarning($"Status Effects save file not found!");
+            statusEffectsUnlocked = new StatusEffectsUnlocked();
+        }
+
+        
         /* string json = JsonUtility.ToJson(achievements);
          string json2 = JsonUtility.ToJson(endingsUnlocked);
          try
@@ -114,6 +138,7 @@ public class GameDataManager : MonoBehaviour
     {
         Debug.Log("Writing Player Save");
 
+        // achievements
         BinaryFormatter formatter = new BinaryFormatter();
         /*CreateSaveDirectoryPaths();*/
         string filePath = $"{Application.persistentDataPath}/Save/achievements.save";
@@ -123,12 +148,20 @@ public class GameDataManager : MonoBehaviour
         stream.Close();
         Debug.Log("Saved Ach.");
 
+        // endings
         filePath = $"{Application.persistentDataPath}/Save/endings.save";
         stream = new FileStream(filePath, FileMode.Create);
         string json2 = JsonUtility.ToJson(endingsUnlocked);
         formatter.Serialize(stream, json2);
         stream.Close();
         Debug.Log("Saved End.");
+
+        filePath = $"{Application.persistentDataPath}/Save/statusEffects.save";
+        stream = new FileStream(filePath, FileMode.Create);
+        string json3 = JsonUtility.ToJson(statusEffectsUnlocked);
+        formatter.Serialize(stream, json3);
+        stream.Close();
+        Debug.Log("Saved StatusEffects.");
 
         /*Debug.Log("Writing Save");
 
@@ -292,6 +325,65 @@ public class GameDataManager : MonoBehaviour
             wakeUpSim = false;
         }
         */
+    }
+
+    [System.Serializable]
+    public class StatusEffectsUnlocked
+    {
+        // achievements
+        /*
+        public bool die50Times = false;
+        public bool gradeSObtained = false;
+        public bool statusEffects10Obtained = false;
+        public bool educationMaxedOut = false;
+        public bool oldAgeObtained = false;
+        public bool adoptAllPossibleAnimals = false;
+        public bool dieAsABaby = false;
+        public bool dieAtOldAgeWith100Mood = false;
+        public bool dieAtOldAgeWith100Bux = false;
+        public bool haveChildren = false;
+        public bool getScammed = false;
+
+        */
+
+        public List<StatusEffectsEnum> earnedStatusEffects = new List<StatusEffectsEnum>();
+
+        // stats
+        public bool hamster;
+
+        public StatusEffectsUnlocked(bool hamster)
+        {
+            this.hamster = hamster;
+
+            /*
+            this.gradeSObtained = gradeSObtained;
+            this.statusEffects10Obtained = statusEffects10Obtained;
+            this.educationMaxedOut = educationMaxedOut;
+            this.oldAgeObtained = oldAgeObtained;
+            this.die50Times = die50Times;
+            */
+        }
+
+        public StatusEffectsUnlocked()
+        {
+            this.hamster = false;
+
+            /*
+            this.gradeSObtained = false;
+            this.statusEffects10Obtained = false;
+            this.educationMaxedOut = false;
+            this.oldAgeObtained = false;
+            this.die50Times = false;
+            */
+        }
+
+        public void AddStatusEffect(StatusEffectsEnum se)
+        {
+            if (!earnedStatusEffects.Contains(se))
+            {
+                earnedStatusEffects.Add(se);
+            }
+        }
     }
 
 
