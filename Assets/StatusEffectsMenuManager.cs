@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum StatusEffectsEnum
+public enum AchievementEnum
 {
     gradeSObtained,
     statusEffects10Obtained,
     educationMaxedOut,
-    oldAgeObtained, 
+    oldAgeObtained,
     die50Times,
     adoptAllPossibleAnimals,
     dieAsABaby,
@@ -17,8 +17,8 @@ public enum StatusEffectsEnum
     getScammed
 }
 
-
-public class AchievementsManager : PlayerCollectionManager
+// this is part of the achievements menu in the main menu
+public class StatusEffectsMenuManager : PlayerCollectionManager
 {
     [Header("Achiements")]
     [SerializeField] AchievementCollection[] achievementCollections;

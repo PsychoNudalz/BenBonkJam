@@ -26,16 +26,24 @@ public class MainMenu : MonoBehaviour
 
     [Header("Stats Objects")]
     [SerializeField] private Canvas statisticsCanvas;
-    [SerializeField] private Canvas achievementsCanvas;
-    [SerializeField] private Canvas endingsCanvas;
+    [SerializeField] private GameObject achievementsAndEndingsObject;
 
     [Header("Achievements Canvas")]
+    [SerializeField] private Canvas achievementsCanvas;
     [SerializeField] private Canvas achievementsCanvas2;
     [SerializeField] private Canvas achievementsCanvas3;
 
     [Header("Ending Canvas")]
+    [SerializeField] private Canvas endingsCanvas;
     [SerializeField] private Canvas endingsCanvas2;
     [SerializeField] private Canvas endingCanvas3;
+
+    [Header("Status Effects Canvas")]
+    [SerializeField] private Canvas statusEffectsCanvasMain;
+    [SerializeField] private Canvas statusEffectsCanvas;
+    [SerializeField] private Canvas statusEffectsCanvas2;
+    [SerializeField] private Canvas statusEffectsCanvas3;
+
 
     void Start()
     {
@@ -57,6 +65,11 @@ public class MainMenu : MonoBehaviour
         achievementsCanvas.enabled = false;
         endingsCanvas.enabled = false;
         optionsCanvas.enabled = false;
+
+        statusEffectsCanvas.enabled = false;
+        statusEffectsCanvas2.enabled = false;
+        statusEffectsCanvas3.enabled = false;
+        achievementsAndEndingsObject.SetActive(false);
     }
 
     public void Play()
@@ -76,6 +89,7 @@ public class MainMenu : MonoBehaviour
         DisableAllUI();
         statsCanvas.enabled = true;
         achievementsCanvas.enabled = true;
+        achievementsAndEndingsObject.SetActive(true);
     }
 
     public void Options()
@@ -131,6 +145,10 @@ public class MainMenu : MonoBehaviour
         endingsCanvas.enabled = true;
         endingsCanvas2.enabled = false;
         endingCanvas3.enabled = false;
+        statusEffectsCanvas.enabled = false;
+        statusEffectsCanvas2.enabled = false;
+        statusEffectsCanvas3.enabled = false;
+        statusEffectsCanvasMain.enabled = false;
     }
 
     public void Endings2()
@@ -156,6 +174,10 @@ public class MainMenu : MonoBehaviour
         endingCanvas3.enabled = false;
         achievementsCanvas2.enabled = false;
         achievementsCanvas3.enabled = false;
+        statusEffectsCanvas.enabled = false;
+        statusEffectsCanvas2.enabled = false;
+        statusEffectsCanvas3.enabled = false;
+        statusEffectsCanvasMain.enabled = false;
     }
 
     public void Achievements2()
@@ -170,6 +192,28 @@ public class MainMenu : MonoBehaviour
         achievementsCanvas2.enabled = false;
         achievementsCanvas3.enabled = true;
         achievementsCanvas.enabled = false;
+    }
+
+    public void StatusEffects()
+    {
+        statusEffectsCanvas.enabled = true;
+        statusEffectsCanvas2.enabled = false;
+        statusEffectsCanvas3.enabled = false;
+        statusEffectsCanvasMain.enabled = true;
+    }
+
+    public void StatusEffects2()
+    {
+        statusEffectsCanvas.enabled = false;
+        statusEffectsCanvas2.enabled = true;
+        statusEffectsCanvas3.enabled = false;
+    }
+
+    public void StatusEffects3()
+    {
+        statusEffectsCanvas.enabled = false;
+        statusEffectsCanvas2.enabled = false;
+        statusEffectsCanvas3.enabled = true;
     }
 
     public void Statistics()
