@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// controls the buttons in the stats menu.
 public class PlayerCollectionButton : MonoBehaviour
 {
     [SerializeField] PlayerCollection currentPC;

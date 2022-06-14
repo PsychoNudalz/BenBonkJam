@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+// controls the players health etc.
 public enum StatsType
 {
     HEALTH,
